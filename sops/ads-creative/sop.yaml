@@ -1,0 +1,15 @@
+id: ads-creative
+version: 0.1.0
+title: "Ads Creative \u2014 Cross-Platform Creative Quality Audit"
+maturity: released
+inputs:
+- creative_assets
+- creative_performance
+- platform_mix
+- brand_guidelines
+outputs:
+- '{brain}/ads/creative/ads-creative-audit-{date}.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/ads-creative/SKILL.md

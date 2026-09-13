@@ -1,0 +1,17 @@
+id: content-campaign
+version: 0.1.0
+title: Content Campaign
+maturity: released
+inputs:
+- campaign_goal
+- campaign_type
+- timeline
+- content_strategy_artifact
+- current_calendar
+- budget_and_capacity
+outputs:
+- '{brain}/content/campaigns/campaign-{slug}-{date}.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/content-campaign/SKILL.md

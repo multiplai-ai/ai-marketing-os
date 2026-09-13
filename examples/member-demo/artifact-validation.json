@@ -1,0 +1,26 @@
+{
+  "source_commit": "6c4632ac8ba16bc2fb6baf94728e7a2b3fa57b3d",
+  "artifact": "multiplai-core-4.0.0-rc.13.tar.zst (local candidate; not published)",
+  "digest": "sha256:a2d582a554f33e3754e4106b000028d226f1547d6b7f678b0c7cc3ebf1ce189c",
+  "file_count": 462,
+  "byte_identical_builds": true,
+  "signatures": "both verified with ephemeral test key, not production key",
+  "archive_gate": "release content: pass (member-distribution inputs; not a rights or access review)\nSOP canon valid: 89 packages\ngenerated adapters current: 89\ncapability catalog current\nclient scrub: pass\noffline CLI/import checks: 18 tools passed (Python sockets blocked)\n........................................................................ [ 35%]\n........................................................................ [ 70%]\n.............................................................            [100%]\n205 passed in 16.13s",
+  "member_setup": "verified signed full artifact, 3 starter adapters, writing config",
+  "installed_gate": {
+    "errors": [],
+    "metrics": {
+      "generic_phrase_count": 0,
+      "sentence_count": 1,
+      "short_sentence_count": 0,
+      "word_count": 14
+    },
+    "passed": true,
+    "positive_signals": [],
+    "warnings": []
+  },
+  "receipt_verified_after_tool_execution": true,
+  "uninstall": "removed managed installation; preserved business context",
+  "production_release_published": false,
+  "scope": "Tested source commit precedes documentation/validation receipt updates. Rebuild final reviewed commit before production delivery."
+}

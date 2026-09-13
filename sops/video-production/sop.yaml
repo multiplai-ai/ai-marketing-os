@@ -1,0 +1,21 @@
+id: video-production
+version: 0.1.1
+title: Video Production
+maturity: released
+inputs:
+- video_goal
+- audience
+- brand_system
+- script_or_source_material
+- target_format
+- production_constraints
+outputs:
+- '{brain}/content/video/{project}/brief.md'
+- '{brain}/content/video/{project}/script.md'
+- '{brain}/content/video/{project}/'
+- '{brain}/creative-assets/video/{project}/'
+tools: []
+approval_classes: []
+tests:
+- tests/test_brand_source_contract.py
+source_provenance: core/skills/video-production/SKILL.md

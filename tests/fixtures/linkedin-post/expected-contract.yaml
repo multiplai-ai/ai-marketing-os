@@ -1,0 +1,24 @@
+delivered_posts: 4
+reader_jobs:
+  - reframe
+  - prove
+  - teach
+  - diagnose
+claim_usage:
+  P1: [C6]
+  P2: [C1, C2, C3]
+  P3: [C6]
+  P4: [C1, C2, C3, C4]
+excluded_claims: [C5]
+required_handoff_fields:
+  - destination_url
+  - campaign_objective
+  - target_audience
+  - primary_conversion_action
+  - source_article_title
+  - source_article_promise
+  - post_promises
+  - required_message_match
+  - proof_available
+  - evidence_gaps
+  - constraints_or_assumptions

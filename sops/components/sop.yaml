@@ -1,0 +1,16 @@
+id: components
+version: 0.1.1
+title: "Components \u2014 SVG Component Library"
+maturity: released
+inputs:
+- brand_guide_artifact
+- tokens_artifact
+- component_inventory_preferences
+outputs:
+- '{brain}/creative/components/'
+- '{brain}/creative/component-inventory.md'
+tools: []
+approval_classes: []
+tests:
+- tests/test_brand_source_contract.py
+source_provenance: core/skills/components/SKILL.md

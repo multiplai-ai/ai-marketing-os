@@ -1,0 +1,15 @@
+id: ads-youtube
+version: 0.1.0
+title: YouTube Ads Analysis
+maturity: released
+inputs:
+- youtube_campaign_export
+- video_assets
+- audience_setup
+- measurement_context
+outputs:
+- '{brain}/ads/platforms/youtube-ads-audit-{date}.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/ads-youtube/SKILL.md

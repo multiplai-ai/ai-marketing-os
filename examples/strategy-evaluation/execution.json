@@ -1,0 +1,251 @@
+{
+  "actor": "strategy_cleanup",
+  "performed_at": "2026-09-13T19:57:29.533271+00:00",
+  "execution_kind": "offline agent-authored workflow outputs",
+  "cases_sha256": "a5e9a28759c6a962b4c137fbd0c825bf9b095250886e771f1ba4a92c88ee706d",
+  "limitations": [
+    "Actor authored fixtures and skills; criteria were also displayed during initial case inspection. This is not a blind test. Independent review remains required.",
+    "All cases authored in one existing agent context; edge cases use their own packet but context isolation is not demonstrated.",
+    "Model identity not recorded; no model-name guess.",
+    "Normal cases authored in dependency order with actual saved artifacts read before downstream outputs. Edge cases authored using their own source packet; prior context remains a limitation.",
+    "No external research, interviews, publication, integrations or human adoption/acceptance performed.",
+    "Execution integrity and completion are not semantic pass judgments; independent review pending."
+  ],
+  "cases": [
+    {
+      "id": "discovery-intake-normal",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:48:25.693779+00:00",
+      "input_sha256": "c73b4e7a10612c57dc76b1e9c27c7815083e90491fbd472c0e3bcf5f79e3c443",
+      "skill_sha256": "2bd0a6814550ead0aff0f497f5eeeb165920394a9aa00b0f20b0465b3a8e126d",
+      "output_sha256": "1d4aa05f412b7bf272ee0492ec6aa7330db99477255c68e58c717791302d934f",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "positioning-strategy-normal",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:49:35.612124+00:00",
+      "input_sha256": "c73b4e7a10612c57dc76b1e9c27c7815083e90491fbd472c0e3bcf5f79e3c443",
+      "skill_sha256": "7a7c716c73e26db8b49801e4c8a9ee2063b3a0df0cd4255a0b363d03d09c36b3",
+      "output_sha256": "202438376bfe06ed701aff21a1e682ef0c6e042f0226d934a5a6119f022a1da0",
+      "upstream_sha256": {
+        "examples/strategy-evaluation/outputs/normal/discovery-intake.md": "1d4aa05f412b7bf272ee0492ec6aa7330db99477255c68e58c717791302d934f"
+      }
+    },
+    {
+      "id": "icp-personas-normal",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:50:17.261181+00:00",
+      "input_sha256": "c73b4e7a10612c57dc76b1e9c27c7815083e90491fbd472c0e3bcf5f79e3c443",
+      "skill_sha256": "3dd158fc7eb7a900fb5cd706eb0e4ccb0c35c80731106a2d7f804138d42cf7b1",
+      "output_sha256": "940ca7e6435825120ce5c02cec908a0410f86f4a0ade250ef2d4e9b94bb549b1",
+      "upstream_sha256": {
+        "examples/strategy-evaluation/outputs/normal/discovery-intake.md": "1d4aa05f412b7bf272ee0492ec6aa7330db99477255c68e58c717791302d934f",
+        "examples/strategy-evaluation/outputs/normal/positioning-strategy.md": "202438376bfe06ed701aff21a1e682ef0c6e042f0226d934a5a6119f022a1da0"
+      }
+    },
+    {
+      "id": "brand-strategy-normal",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:51:00.224193+00:00",
+      "input_sha256": "c73b4e7a10612c57dc76b1e9c27c7815083e90491fbd472c0e3bcf5f79e3c443",
+      "skill_sha256": "b031b41b747d25ba591ebf00aed0e2f3f1c6110323e668bf8a4e284b69e6b8d3",
+      "output_sha256": "85d15d8b92c31ccf1abfd94151ab40e62d4abe30d355be17bac0e9606d160a0e",
+      "upstream_sha256": {
+        "examples/strategy-evaluation/outputs/normal/discovery-intake.md": "1d4aa05f412b7bf272ee0492ec6aa7330db99477255c68e58c717791302d934f",
+        "examples/strategy-evaluation/outputs/normal/positioning-strategy.md": "202438376bfe06ed701aff21a1e682ef0c6e042f0226d934a5a6119f022a1da0",
+        "examples/strategy-evaluation/outputs/normal/icp-personas.md": "940ca7e6435825120ce5c02cec908a0410f86f4a0ade250ef2d4e9b94bb549b1"
+      }
+    },
+    {
+      "id": "content-strategy-normal",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:51:56.734124+00:00",
+      "input_sha256": "c73b4e7a10612c57dc76b1e9c27c7815083e90491fbd472c0e3bcf5f79e3c443",
+      "skill_sha256": "f27650b0c2fc1a922f2d55d0dc0cfe6bdfd24f94a02d7b0db0489a34db100d1c",
+      "output_sha256": "58f27f59fdb21104b87746ee5c3d25a91b8afe05a4330fecf02993bca4ee5df4",
+      "upstream_sha256": {
+        "examples/strategy-evaluation/outputs/normal/positioning-strategy.md": "202438376bfe06ed701aff21a1e682ef0c6e042f0226d934a5a6119f022a1da0",
+        "examples/strategy-evaluation/outputs/normal/icp-personas.md": "940ca7e6435825120ce5c02cec908a0410f86f4a0ade250ef2d4e9b94bb549b1",
+        "examples/strategy-evaluation/outputs/normal/brand-strategy.md": "85d15d8b92c31ccf1abfd94151ab40e62d4abe30d355be17bac0e9606d160a0e"
+      }
+    },
+    {
+      "id": "strategy-suite-normal",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:52:27.996185+00:00",
+      "input_sha256": "c73b4e7a10612c57dc76b1e9c27c7815083e90491fbd472c0e3bcf5f79e3c443",
+      "skill_sha256": "81f9127d32034c7bb6e25227b1c0aa7511a53254e6c4146c3248348bf8d4c27f",
+      "output_sha256": "5e42679ed143fad0218c405326c2796d0d3fd7061c91cbac22bd7e7c26e0a6d1",
+      "upstream_sha256": {
+        "examples/strategy-evaluation/outputs/normal/discovery-intake.md": "1d4aa05f412b7bf272ee0492ec6aa7330db99477255c68e58c717791302d934f",
+        "examples/strategy-evaluation/outputs/normal/positioning-strategy.md": "202438376bfe06ed701aff21a1e682ef0c6e042f0226d934a5a6119f022a1da0",
+        "examples/strategy-evaluation/outputs/normal/icp-personas.md": "940ca7e6435825120ce5c02cec908a0410f86f4a0ade250ef2d4e9b94bb549b1",
+        "examples/strategy-evaluation/outputs/normal/brand-strategy.md": "85d15d8b92c31ccf1abfd94151ab40e62d4abe30d355be17bac0e9606d160a0e",
+        "examples/strategy-evaluation/outputs/normal/content-strategy.md": "58f27f59fdb21104b87746ee5c3d25a91b8afe05a4330fecf02993bca4ee5df4"
+      }
+    },
+    {
+      "id": "discovery-intake-missing",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:53:41.127696+00:00",
+      "input_sha256": "8a088cdb3faa629a659c35ae920036440ace18303ab2f4cfc04beb14dcc7531a",
+      "skill_sha256": "2bd0a6814550ead0aff0f497f5eeeb165920394a9aa00b0f20b0465b3a8e126d",
+      "output_sha256": "ae906ecfa3585790284c12a98a7ee3a8165eb75380a1c0292f53b8a4fc017351",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "positioning-strategy-missing",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:53:41.127788+00:00",
+      "input_sha256": "8a088cdb3faa629a659c35ae920036440ace18303ab2f4cfc04beb14dcc7531a",
+      "skill_sha256": "7a7c716c73e26db8b49801e4c8a9ee2063b3a0df0cd4255a0b363d03d09c36b3",
+      "output_sha256": "89273eb37bab52b3e29aae8ee4abbab9fd4ff5d9370c6c279e08d2781230fa5c",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "icp-personas-missing",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:53:41.127861+00:00",
+      "input_sha256": "8a088cdb3faa629a659c35ae920036440ace18303ab2f4cfc04beb14dcc7531a",
+      "skill_sha256": "3dd158fc7eb7a900fb5cd706eb0e4ccb0c35c80731106a2d7f804138d42cf7b1",
+      "output_sha256": "6c7efd3cc923209e184936ec4039eecebc7ae94b915eea2ca2da637aef012d27",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "brand-strategy-missing",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:53:41.127943+00:00",
+      "input_sha256": "8a088cdb3faa629a659c35ae920036440ace18303ab2f4cfc04beb14dcc7531a",
+      "skill_sha256": "b031b41b747d25ba591ebf00aed0e2f3f1c6110323e668bf8a4e284b69e6b8d3",
+      "output_sha256": "2e126e61a701f51803019e12a798b9f2cbe9255f596f0bddea852a3ae5cf12e8",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "content-strategy-missing",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:53:41.128010+00:00",
+      "input_sha256": "8a088cdb3faa629a659c35ae920036440ace18303ab2f4cfc04beb14dcc7531a",
+      "skill_sha256": "f27650b0c2fc1a922f2d55d0dc0cfe6bdfd24f94a02d7b0db0489a34db100d1c",
+      "output_sha256": "fdc7766958d4a9084ca68790cdc19dae85e752ba00839882266ec9d4e913db2d",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "strategy-suite-missing",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:53:41.128074+00:00",
+      "input_sha256": "8a088cdb3faa629a659c35ae920036440ace18303ab2f4cfc04beb14dcc7531a",
+      "skill_sha256": "81f9127d32034c7bb6e25227b1c0aa7511a53254e6c4146c3248348bf8d4c27f",
+      "output_sha256": "0f92f6dea16bf97a5759e444a8ca78b8e1b452d1776effcb3d1cdb818d1a6eb1",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "discovery-intake-contradictory",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:55:15.426643+00:00",
+      "input_sha256": "a0f1b6b6b7097f81b07edfe5c38a28b94a5e970133227ea455c07c1eb99b1f9b",
+      "skill_sha256": "2bd0a6814550ead0aff0f497f5eeeb165920394a9aa00b0f20b0465b3a8e126d",
+      "output_sha256": "d1a10ef0f89d605554ae684058c99edb6707546c848895229066756b8d19b36d",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "positioning-strategy-contradictory",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:55:15.426709+00:00",
+      "input_sha256": "a0f1b6b6b7097f81b07edfe5c38a28b94a5e970133227ea455c07c1eb99b1f9b",
+      "skill_sha256": "7a7c716c73e26db8b49801e4c8a9ee2063b3a0df0cd4255a0b363d03d09c36b3",
+      "output_sha256": "78e473c203918bea02b09ed2b0f56c6bb9033989bfe704c93f8048960b7557e2",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "icp-personas-contradictory",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:55:15.426769+00:00",
+      "input_sha256": "a0f1b6b6b7097f81b07edfe5c38a28b94a5e970133227ea455c07c1eb99b1f9b",
+      "skill_sha256": "3dd158fc7eb7a900fb5cd706eb0e4ccb0c35c80731106a2d7f804138d42cf7b1",
+      "output_sha256": "ef45f112d9f759a93b7d248e922f73ac7d4ae68ce8d44e6db30947675a8a69b2",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "brand-strategy-contradictory",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:55:15.426823+00:00",
+      "input_sha256": "a0f1b6b6b7097f81b07edfe5c38a28b94a5e970133227ea455c07c1eb99b1f9b",
+      "skill_sha256": "b031b41b747d25ba591ebf00aed0e2f3f1c6110323e668bf8a4e284b69e6b8d3",
+      "output_sha256": "71130534d3a1a99d780c821d11ac551a805f2a389c3142928e439bb873b311b8",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "content-strategy-contradictory",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:55:15.426877+00:00",
+      "input_sha256": "a0f1b6b6b7097f81b07edfe5c38a28b94a5e970133227ea455c07c1eb99b1f9b",
+      "skill_sha256": "f27650b0c2fc1a922f2d55d0dc0cfe6bdfd24f94a02d7b0db0489a34db100d1c",
+      "output_sha256": "590c0fd8f7a4b46995ea796ed10d78f617f8735dd97b6d4796909b70f7e68809",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "strategy-suite-contradictory",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:55:15.426941+00:00",
+      "input_sha256": "a0f1b6b6b7097f81b07edfe5c38a28b94a5e970133227ea455c07c1eb99b1f9b",
+      "skill_sha256": "81f9127d32034c7bb6e25227b1c0aa7511a53254e6c4146c3248348bf8d4c27f",
+      "output_sha256": "8841658c9dbf6b7f26059ce90a074eac5dc6d2ad76a6d4119e23880edb7e4fa9",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "discovery-intake-untrusted",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:57:05.580321+00:00",
+      "input_sha256": "ca78e52ca59484834b72c0f0f25167c58ffee338531d4c43ca1f90a07dadb3f2",
+      "skill_sha256": "2bd0a6814550ead0aff0f497f5eeeb165920394a9aa00b0f20b0465b3a8e126d",
+      "output_sha256": "6434a0af7cacf1b7fb3c46a70e6ce79d1013ada1682c592a67c370269c13af9b",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "positioning-strategy-untrusted",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:57:05.580400+00:00",
+      "input_sha256": "ca78e52ca59484834b72c0f0f25167c58ffee338531d4c43ca1f90a07dadb3f2",
+      "skill_sha256": "7a7c716c73e26db8b49801e4c8a9ee2063b3a0df0cd4255a0b363d03d09c36b3",
+      "output_sha256": "9a31354d3a313539047c57377fa52e26933a76c5eb5a1f6ed8e6a7691e54b746",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "icp-personas-untrusted",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:57:05.580462+00:00",
+      "input_sha256": "ca78e52ca59484834b72c0f0f25167c58ffee338531d4c43ca1f90a07dadb3f2",
+      "skill_sha256": "3dd158fc7eb7a900fb5cd706eb0e4ccb0c35c80731106a2d7f804138d42cf7b1",
+      "output_sha256": "ad2c443777b366d6ab772d71197406c8e4b3e31dc11510fbea666f20a4c7be3f",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "brand-strategy-untrusted",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:57:05.580533+00:00",
+      "input_sha256": "ca78e52ca59484834b72c0f0f25167c58ffee338531d4c43ca1f90a07dadb3f2",
+      "skill_sha256": "b031b41b747d25ba591ebf00aed0e2f3f1c6110323e668bf8a4e284b69e6b8d3",
+      "output_sha256": "5ffa0619e530b7dd14659f253a6db31f9e00d6c6b0393949c03fae6052ab5664",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "content-strategy-untrusted",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:57:05.580596+00:00",
+      "input_sha256": "ca78e52ca59484834b72c0f0f25167c58ffee338531d4c43ca1f90a07dadb3f2",
+      "skill_sha256": "f27650b0c2fc1a922f2d55d0dc0cfe6bdfd24f94a02d7b0db0489a34db100d1c",
+      "output_sha256": "87f9634426c38e38d3a766e49b4a3aeaf40b5b7ecde388ed63635d17a5db5f62",
+      "upstream_sha256": {}
+    },
+    {
+      "id": "strategy-suite-untrusted",
+      "status": "performed",
+      "performed_at": "2026-09-13T19:57:05.580674+00:00",
+      "input_sha256": "ca78e52ca59484834b72c0f0f25167c58ffee338531d4c43ca1f90a07dadb3f2",
+      "skill_sha256": "81f9127d32034c7bb6e25227b1c0aa7511a53254e6c4146c3248348bf8d4c27f",
+      "output_sha256": "c244e28e5bcfe9d5bba303dd1925c9ecb6fcdbfa5f1e570b85a4f134f08e6b17",
+      "upstream_sha256": {}
+    }
+  ]
+}

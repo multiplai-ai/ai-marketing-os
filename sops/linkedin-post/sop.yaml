@@ -1,0 +1,24 @@
+id: linkedin-post
+version: 0.2.0
+title: LinkedIn Post
+maturity: released
+inputs:
+- mode
+- raw_idea_or_draft
+- source_article
+- evidence_ledger_or_handoff
+- voice_profile
+- exemplar_posts
+- audience_and_campaign_objective
+- destination_page
+outputs:
+- review_ready_linkedin_post
+- source_and_evidence_audit
+- review_ready_linkedin_post_batch
+- batch_coverage_map
+- landing_page_handoff
+tools: []
+approval_classes: []
+tests:
+- tests/test_linkedin_post_contract.py
+source_provenance: portable-core-v0.2

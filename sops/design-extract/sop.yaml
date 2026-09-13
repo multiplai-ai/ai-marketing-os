@@ -1,0 +1,16 @@
+id: design-extract
+version: 0.1.0
+title: Design Extract
+maturity: released
+inputs:
+- url
+- project_name
+- entity_dir
+- extraction_goal
+outputs:
+- '{brain}/projects/{project}/palette-typography.md'
+- '{brain}/projects/{project}/extracted-tokens.json'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/design-extract/SKILL.md

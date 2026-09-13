@@ -1,0 +1,16 @@
+id: build-workflow
+version: 0.1.0
+title: Build Workflow
+maturity: released
+inputs:
+- automation_goal
+- repeatability
+- exploration_required
+- tools_or_apis
+- user_surface
+outputs:
+- '{brain}/workflows/{slug}-workflow-spec.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/build-workflow/SKILL.md

@@ -1,0 +1,13 @@
+[Service]
+Type=oneshot
+User=hermes-backup-%i
+Group=hermes-backup-%i
+UMask=0077
+ExecStart=/opt/multiplai/hermes/profiles/%i/current/scripts/profile_backup.py backup --profile %i --source /var/lib/hermes/%i/profile --output /var/lib/hermes/%i/backups/latest.age --snapshotter /opt/multiplai/hermes/bin/profile-snapshot --encryptor /opt/multiplai/hermes/bin/backup-encrypt
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateNetwork=true
+ReadOnlyPaths=/var/lib/hermes/%i/profile /opt/multiplai/hermes
+ReadWritePaths=/var/lib/hermes/%i/backups

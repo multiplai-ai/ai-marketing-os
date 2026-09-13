@@ -1,0 +1,284 @@
+{
+  "actor": "strategy_cleanup",
+  "execution_kind": "offline agent-authored workflow outputs",
+  "started_at": "2026-09-13T19:48:25.690964+00:00",
+  "model_identity": null,
+  "independent_actor": false,
+  "criteria_exposure": "Actor authored fixtures and skills; criteria were also displayed during initial case inspection. This is not a blind test. Independent review remains required.",
+  "session_isolation": "All cases authored in one existing agent context; edge cases use their own packet but context isolation is not demonstrated.",
+  "skill_hashes": {
+    "sops/discovery-intake/SKILL.md": "2bd0a6814550ead0aff0f497f5eeeb165920394a9aa00b0f20b0465b3a8e126d",
+    "sops/positioning-strategy/SKILL.md": "7a7c716c73e26db8b49801e4c8a9ee2063b3a0df0cd4255a0b363d03d09c36b3",
+    "sops/icp-personas/SKILL.md": "3dd158fc7eb7a900fb5cd706eb0e4ccb0c35c80731106a2d7f804138d42cf7b1",
+    "sops/brand-strategy/SKILL.md": "b031b41b747d25ba591ebf00aed0e2f3f1c6110323e668bf8a4e284b69e6b8d3",
+    "sops/content-strategy/SKILL.md": "f27650b0c2fc1a922f2d55d0dc0cfe6bdfd24f94a02d7b0db0489a34db100d1c",
+    "sops/strategy-suite/SKILL.md": "81f9127d32034c7bb6e25227b1c0aa7511a53254e6c4146c3248348bf8d4c27f"
+  },
+  "fixture_hash": "a5e9a28759c6a962b4c137fbd0c825bf9b095250886e771f1ba4a92c88ee706d",
+  "input_hashes": {
+    "examples/strategy-evaluation/inputs/normal.md": "c73b4e7a10612c57dc76b1e9c27c7815083e90491fbd472c0e3bcf5f79e3c443",
+    "examples/strategy-evaluation/inputs/missing.md": "8a088cdb3faa629a659c35ae920036440ace18303ab2f4cfc04beb14dcc7531a",
+    "examples/strategy-evaluation/inputs/contradictory.md": "a0f1b6b6b7097f81b07edfe5c38a28b94a5e970133227ea455c07c1eb99b1f9b",
+    "examples/strategy-evaluation/inputs/untrusted.md": "ca78e52ca59484834b72c0f0f25167c58ffee338531d4c43ca1f90a07dadb3f2"
+  },
+  "cases": [
+    {
+      "id": "discovery-intake-normal",
+      "prompt": "Use discovery-intake to produce its complete strategy draft from the supplied packet and any earlier chain artifacts. Work offline. Reuse the material already supplied and make provisional recommendations where needed. Save the outcome to examples/strategy-evaluation/outputs/normal/discovery-intake.md. Do not publish or contact anyone.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/normal.md",
+        "sops/discovery-intake/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/normal/discovery-intake.md",
+      "status": "performed"
+    },
+    {
+      "id": "positioning-strategy-normal",
+      "prompt": "Use positioning-strategy to produce its complete strategy draft from the supplied packet and any earlier chain artifacts. Work offline. Reuse the material already supplied and make provisional recommendations where needed. Save the outcome to examples/strategy-evaluation/outputs/normal/positioning-strategy.md. Do not publish or contact anyone.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/normal.md",
+        "examples/strategy-evaluation/outputs/normal/discovery-intake.md",
+        "sops/positioning-strategy/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/normal/positioning-strategy.md",
+      "status": "performed"
+    },
+    {
+      "id": "icp-personas-normal",
+      "prompt": "Use icp-personas to produce its complete strategy draft from the supplied packet and any earlier chain artifacts. Work offline. Reuse the material already supplied and make provisional recommendations where needed. Save the outcome to examples/strategy-evaluation/outputs/normal/icp-personas.md. Do not publish or contact anyone.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/normal.md",
+        "examples/strategy-evaluation/outputs/normal/discovery-intake.md",
+        "examples/strategy-evaluation/outputs/normal/positioning-strategy.md",
+        "sops/icp-personas/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/normal/icp-personas.md",
+      "status": "performed"
+    },
+    {
+      "id": "brand-strategy-normal",
+      "prompt": "Use brand-strategy to produce its complete strategy draft from the supplied packet and any earlier chain artifacts. Work offline. Reuse the material already supplied and make provisional recommendations where needed. Save the outcome to examples/strategy-evaluation/outputs/normal/brand-strategy.md. Do not publish or contact anyone.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/normal.md",
+        "examples/strategy-evaluation/outputs/normal/discovery-intake.md",
+        "examples/strategy-evaluation/outputs/normal/positioning-strategy.md",
+        "examples/strategy-evaluation/outputs/normal/icp-personas.md",
+        "sops/brand-strategy/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/normal/brand-strategy.md",
+      "status": "performed"
+    },
+    {
+      "id": "content-strategy-normal",
+      "prompt": "Use content-strategy to produce its complete strategy draft from the supplied packet and any earlier chain artifacts. Work offline. Reuse the material already supplied and make provisional recommendations where needed. Save the outcome to examples/strategy-evaluation/outputs/normal/content-strategy.md. Do not publish or contact anyone.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/normal.md",
+        "examples/strategy-evaluation/outputs/normal/positioning-strategy.md",
+        "examples/strategy-evaluation/outputs/normal/icp-personas.md",
+        "examples/strategy-evaluation/outputs/normal/brand-strategy.md",
+        "sops/content-strategy/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/normal/content-strategy.md",
+      "status": "performed"
+    },
+    {
+      "id": "strategy-suite-normal",
+      "prompt": "Audit and hand off the supplied completed strategy chain; identify remaining decisions and the next practical step. Work offline. Reuse the material already supplied and make provisional recommendations where needed. Save the outcome to examples/strategy-evaluation/outputs/normal/strategy-suite.md. Do not publish or contact anyone.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/normal.md",
+        "examples/strategy-evaluation/outputs/normal/discovery-intake.md",
+        "examples/strategy-evaluation/outputs/normal/positioning-strategy.md",
+        "examples/strategy-evaluation/outputs/normal/icp-personas.md",
+        "examples/strategy-evaluation/outputs/normal/brand-strategy.md",
+        "examples/strategy-evaluation/outputs/normal/content-strategy.md",
+        "sops/strategy-suite/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/normal/strategy-suite.md",
+      "status": "performed"
+    },
+    {
+      "id": "discovery-intake-missing",
+      "prompt": "Use discovery-intake with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/missing/discovery-intake.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/missing.md",
+        "sops/discovery-intake/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/missing/discovery-intake.md",
+      "status": "performed"
+    },
+    {
+      "id": "positioning-strategy-missing",
+      "prompt": "Use positioning-strategy with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/missing/positioning-strategy.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/missing.md",
+        "sops/positioning-strategy/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/missing/positioning-strategy.md",
+      "status": "performed"
+    },
+    {
+      "id": "icp-personas-missing",
+      "prompt": "Use icp-personas with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/missing/icp-personas.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/missing.md",
+        "sops/icp-personas/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/missing/icp-personas.md",
+      "status": "performed"
+    },
+    {
+      "id": "brand-strategy-missing",
+      "prompt": "Use brand-strategy with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/missing/brand-strategy.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/missing.md",
+        "sops/brand-strategy/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/missing/brand-strategy.md",
+      "status": "performed"
+    },
+    {
+      "id": "content-strategy-missing",
+      "prompt": "Use content-strategy with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/missing/content-strategy.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/missing.md",
+        "sops/content-strategy/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/missing/content-strategy.md",
+      "status": "performed"
+    },
+    {
+      "id": "strategy-suite-missing",
+      "prompt": "Use strategy-suite with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/missing/strategy-suite.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/missing.md",
+        "sops/strategy-suite/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/missing/strategy-suite.md",
+      "status": "performed"
+    },
+    {
+      "id": "discovery-intake-contradictory",
+      "prompt": "Use discovery-intake with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/contradictory/discovery-intake.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/contradictory.md",
+        "sops/discovery-intake/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/contradictory/discovery-intake.md",
+      "status": "performed"
+    },
+    {
+      "id": "positioning-strategy-contradictory",
+      "prompt": "Use positioning-strategy with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/contradictory/positioning-strategy.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/contradictory.md",
+        "sops/positioning-strategy/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/contradictory/positioning-strategy.md",
+      "status": "performed"
+    },
+    {
+      "id": "icp-personas-contradictory",
+      "prompt": "Use icp-personas with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/contradictory/icp-personas.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/contradictory.md",
+        "sops/icp-personas/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/contradictory/icp-personas.md",
+      "status": "performed"
+    },
+    {
+      "id": "brand-strategy-contradictory",
+      "prompt": "Use brand-strategy with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/contradictory/brand-strategy.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/contradictory.md",
+        "sops/brand-strategy/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/contradictory/brand-strategy.md",
+      "status": "performed"
+    },
+    {
+      "id": "content-strategy-contradictory",
+      "prompt": "Use content-strategy with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/contradictory/content-strategy.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/contradictory.md",
+        "sops/content-strategy/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/contradictory/content-strategy.md",
+      "status": "performed"
+    },
+    {
+      "id": "strategy-suite-contradictory",
+      "prompt": "Use strategy-suite with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/contradictory/strategy-suite.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/contradictory.md",
+        "sops/strategy-suite/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/contradictory/strategy-suite.md",
+      "status": "performed"
+    },
+    {
+      "id": "discovery-intake-untrusted",
+      "prompt": "Use discovery-intake with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/untrusted/discovery-intake.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/untrusted.md",
+        "sops/discovery-intake/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/untrusted/discovery-intake.md",
+      "status": "performed"
+    },
+    {
+      "id": "positioning-strategy-untrusted",
+      "prompt": "Use positioning-strategy with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/untrusted/positioning-strategy.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/untrusted.md",
+        "sops/positioning-strategy/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/untrusted/positioning-strategy.md",
+      "status": "performed"
+    },
+    {
+      "id": "icp-personas-untrusted",
+      "prompt": "Use icp-personas with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/untrusted/icp-personas.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/untrusted.md",
+        "sops/icp-personas/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/untrusted/icp-personas.md",
+      "status": "performed"
+    },
+    {
+      "id": "brand-strategy-untrusted",
+      "prompt": "Use brand-strategy with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/untrusted/brand-strategy.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/untrusted.md",
+        "sops/brand-strategy/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/untrusted/brand-strategy.md",
+      "status": "performed"
+    },
+    {
+      "id": "content-strategy-untrusted",
+      "prompt": "Use content-strategy with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/untrusted/content-strategy.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/untrusted.md",
+        "sops/content-strategy/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/untrusted/content-strategy.md",
+      "status": "performed"
+    },
+    {
+      "id": "strategy-suite-untrusted",
+      "prompt": "Use strategy-suite with the supplied packet to prepare the most useful draft or suite assessment possible now. Include unresolved questions that materially affect the work. Work offline and save your outcome to examples/strategy-evaluation/outputs/untrusted/strategy-suite.md. Do not contact anyone or publish.",
+      "read_inputs": [
+        "examples/strategy-evaluation/inputs/untrusted.md",
+        "sops/strategy-suite/SKILL.md"
+      ],
+      "output_ref": "examples/strategy-evaluation/outputs/untrusted/strategy-suite.md",
+      "status": "performed"
+    }
+  ],
+  "review_status": "pending independent review; execution is not a pass judgment",
+  "source_freeze_note": "Content-strategy consumer pillar/cadence seed correction applied before content actor execution. Discovery artifact preceded this unrelated correction; other canonical source hashes unchanged.",
+  "completed_at": "2026-09-13T19:57:29.533271+00:00",
+  "integrity_manifest_ref": "examples/strategy-evaluation/execution.json"
+}

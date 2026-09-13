@@ -1,0 +1,18 @@
+id: ai-tool-review
+version: 0.1.1
+title: AI Tool Review
+maturity: released
+inputs:
+- tool_name
+- tool_url
+- testing_notes_or_transcript
+- voice_profile_path
+- brand_strategy_artifact
+- publication_channel
+outputs:
+- '{brain}/content/ai-tool-review-[tool-name]-YYYY-MM-DD.md'
+tools: []
+approval_classes: []
+tests:
+- tests/test_brand_source_contract.py
+source_provenance: core/skills/ai-tool-review/SKILL.md

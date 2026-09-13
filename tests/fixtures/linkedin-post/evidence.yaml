@@ -1,0 +1,32 @@
+fixture_notice: Synthetic evidence for contract testing; it is not a real customer study.
+claims:
+  - id: C1
+    claim: The synthetic review included 14 fictional B2B go-to-market teams.
+    status: supported
+    source: tests/fixtures/linkedin-post/article.md
+    safe_use: Preserve "synthetic" and "fictional" qualifiers.
+  - id: C2
+    claim: Median first-useful-response time was 19 hours across the synthetic sample.
+    status: supported
+    source: tests/fixtures/linkedin-post/article.md
+    safe_use: Use only with C1's sample qualifier.
+  - id: C3
+    claim: Five fictional teams with a documented routing checklist had a 6-hour median.
+    status: supported
+    source: tests/fixtures/linkedin-post/article.md
+    safe_use: Do not claim the checklist caused the difference.
+  - id: C4
+    claim: A routing checklist caused faster response times.
+    status: inference
+    source: tests/fixtures/linkedin-post/article.md
+    safe_use: May be framed only as a hypothesis or question, not a causal fact.
+  - id: C5
+    claim: The routing worksheet reduces customer churn by 31 percent.
+    status: unsupported
+    source: none
+    safe_use: Exclude from posts and landing-page proof.
+  - id: C6
+    claim: Conversion quality should include the experience after the click.
+    status: opinion
+    source: tests/fixtures/linkedin-post/article.md
+    safe_use: Attribute to RelayForge or frame as a point of view.

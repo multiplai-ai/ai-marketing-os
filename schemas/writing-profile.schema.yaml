@@ -1,0 +1,54 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://multiplai.local/schemas/writing-profile.schema.yaml
+title: Portable writing profile
+type: object
+additionalProperties: false
+required: [schema_version, author_id, voice_guide_ref, good_exemplars, bad_exemplars]
+properties:
+  schema_version: {const: 1}
+  author_id: {type: string, minLength: 1}
+  voice_guide_ref: {$ref: '#/$defs/relative_ref'}
+  writing_profile_ref: {$ref: '#/$defs/relative_ref'}
+  article_asset_catalog_ref: {$ref: '#/$defs/relative_ref'}
+  editorial_standard_ref: {$ref: '#/$defs/relative_ref'}
+  good_exemplar_refs: {$ref: '#/$defs/relative_refs'}
+  bad_exemplar_refs: {$ref: '#/$defs/relative_refs'}
+  default_output_root:
+    type: string
+    minLength: 1
+    pattern: '^(?!/)(?![A-Za-z]:[\\/])(?!.*(?:^|/)\.\.(?:/|$)).+$'
+  additional_quality_gate_refs: {$ref: '#/$defs/relative_refs'}
+  production_log_ref: {$ref: '#/$defs/relative_ref'}
+  good_exemplars:
+    type: array
+    items: {$ref: '#/$defs/good_exemplar'}
+  bad_exemplars:
+    type: array
+    items: {$ref: '#/$defs/bad_exemplar'}
+$defs:
+  relative_ref:
+    type: string
+    minLength: 1
+    pattern: '^(?!/)(?![A-Za-z]:[\\/])(?!.*(?:^|/)\.\.(?:/|$)).+$'
+  relative_refs:
+    type: array
+    items: {$ref: '#/$defs/relative_ref'}
+    uniqueItems: true
+  good_exemplar:
+    type: object
+    additionalProperties: false
+    required: [id, path, calibration_notes, approved]
+    properties:
+      id: {type: string, minLength: 1}
+      path: {$ref: '#/$defs/relative_ref'}
+      calibration_notes: {type: string, minLength: 1}
+      approved: {const: true}
+  bad_exemplar:
+    type: object
+    additionalProperties: false
+    required: [id, path, rejection_notes, approved]
+    properties:
+      id: {type: string, minLength: 1}
+      path: {$ref: '#/$defs/relative_ref'}
+      rejection_notes: {type: string, minLength: 1}
+      approved: {const: true}

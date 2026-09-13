@@ -1,0 +1,13 @@
+mode: article_batch
+batch_size: 4
+source_article: tests/fixtures/linkedin-post/article.md
+evidence_ledger: tests/fixtures/linkedin-post/evidence.yaml
+audience: B2B demand generation and revenue operations leaders
+campaign_objective: Help teams inspect the operational handoff after a demo request.
+destination_url: https://example.invalid/routing-worksheet
+primary_conversion_action: Download the free routing worksheet.
+voice_direction:
+  tone: Practical, candid, and precise.
+  avoid:
+    - Inflated certainty
+    - Generic engagement questions

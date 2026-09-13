@@ -1,0 +1,10 @@
+id: daily-brief-cron-prompt
+version: 0.1.1
+title: "Daily Morning Brief \u2014 Cron Prompt Template"
+maturity: internal
+inputs: []
+outputs: []
+tools: []
+approval_classes: []
+tests: []
+source_provenance: docs/runbooks/hermes/daily-brief-cron-prompt.md

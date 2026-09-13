@@ -1,0 +1,10 @@
+id: vps-phase0-2-cutover
+version: 0.1.1
+title: Legacy VPS Inventory and Cutover Reference
+maturity: internal
+inputs: []
+outputs: []
+tools: []
+approval_classes: []
+tests: []
+source_provenance: docs/runbooks/hermes/vps-phase0-2-cutover.md

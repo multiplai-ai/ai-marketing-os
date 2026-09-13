@@ -1,0 +1,21 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://multiplai.local/schemas/sop.schema.yaml
+title: MultiplAI canonical SOP
+type: object
+additionalProperties: false
+required: [id, version, title, maturity, inputs, outputs, tools, approval_classes, tests, source_provenance]
+properties:
+  id: {type: string, pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$'}
+  version: {type: string, pattern: '^[0-9]+\.[0-9]+\.[0-9]+(?:-[0-9A-Za-z.-]+)?$'}
+  title: {type: string, minLength: 1}
+  maturity: {enum: [draft, internal, released, deprecated]}
+  inputs: {type: array, items: {type: string}, uniqueItems: true}
+  outputs: {type: array, items: {type: string}, uniqueItems: true}
+  tools: {type: array, items: {type: string}, uniqueItems: true}
+  approval_classes: {type: array, items: {type: string}, uniqueItems: true}
+  tests: {type: array, items: {type: string}, uniqueItems: true}
+  source_provenance:
+    type: string
+    minLength: 1
+    description: Repository-relative historical source or portable provenance identifier, not a host path.
+    pattern: '^(?!/)(?![A-Za-z]:)(?!.*\\)(?!.*(?:^|/)\.\.(?:/|$)).+$'

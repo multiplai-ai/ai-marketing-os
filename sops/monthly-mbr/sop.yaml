@@ -1,0 +1,10 @@
+id: monthly-mbr
+version: 0.1.1
+title: entity Monthly MBR Runbook
+maturity: internal
+inputs: []
+outputs: []
+tools: []
+approval_classes: []
+tests: []
+source_provenance: brains/entity/runbooks/monthly-mbr.md

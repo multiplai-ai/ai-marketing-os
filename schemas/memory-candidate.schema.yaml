@@ -1,0 +1,16 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://multiplai.local/schemas/memory-candidate.schema.yaml
+type: object
+additionalProperties: false
+required: [schema_version, kind, agent, source_task, observed_at, scope, sensitivity, confidence, proposed_destination, summary]
+properties:
+  schema_version: {const: 1}
+  kind: {enum: [personal_policy, entity_fact, procedure_improvement, generic_tool]}
+  agent: {type: string}
+  source_task: {type: string}
+  observed_at: {type: string, format: date-time}
+  scope: {enum: [profile, entity, repository, core]}
+  sensitivity: {enum: [public, internal, confidential, restricted]}
+  confidence: {type: number, minimum: 0, maximum: 1}
+  proposed_destination: {type: string, pattern: '^[a-zA-Z0-9][a-zA-Z0-9_.-]*(?:/[a-zA-Z0-9][a-zA-Z0-9_.-]*)?$'}
+  summary: {type: string, minLength: 1}

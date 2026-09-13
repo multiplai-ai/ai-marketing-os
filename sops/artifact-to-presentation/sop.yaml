@@ -1,0 +1,10 @@
+id: artifact-to-presentation
+version: 0.1.0
+title: Artifact-First Reporting And Presentation Runbook
+maturity: internal
+inputs: []
+outputs: []
+tools: []
+approval_classes: []
+tests: []
+source_provenance: docs/runbooks/reporting/artifact-to-presentation.md

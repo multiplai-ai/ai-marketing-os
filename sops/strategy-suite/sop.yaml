@@ -1,0 +1,13 @@
+id: strategy-suite
+version: 0.2.0
+title: Strategy Suite SOP
+maturity: released
+inputs:
+- entity_context
+- available_strategy_artifacts
+outputs:
+- '{brain}/strategy/strategy-suite-status.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/strategy-suite-sop/SKILL.md

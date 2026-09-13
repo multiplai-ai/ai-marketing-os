@@ -1,0 +1,16 @@
+id: cro
+version: 0.1.0
+title: CRO Audit
+maturity: released
+inputs:
+- url_or_page_content
+- business_context
+- target_audience
+- conversion_goal
+- traffic_sources
+outputs:
+- "artifact_path: {brain}/content/cro/cro-audit-{slug}-{date}.md"
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/cro/SKILL.md

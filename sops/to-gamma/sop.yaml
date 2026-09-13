@@ -1,0 +1,11 @@
+id: to-gamma
+version: 0.1.1
+title: Gamma Publishing Runbook
+maturity: internal
+inputs: []
+outputs: []
+tools: []
+approval_classes: []
+tests:
+- tests/test_brand_source_contract.py
+source_provenance: docs/runbooks/publishing/to-gamma.md

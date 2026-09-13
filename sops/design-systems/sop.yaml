@@ -1,0 +1,23 @@
+id: design-systems
+version: 0.1.0
+title: Design Systems
+maturity: released
+inputs:
+- brand_strategy_artifact
+- positioning_artifact
+- visual_references
+- anti_references
+- implementation_targets
+outputs:
+- '{brain}/strategy/mood-direction.md'
+- '{brain}/strategy/palette-typography.md'
+- '{brain}/strategy/design-system.md'
+- '{brain}/strategy/design-tokens.json'
+- '{brain}/strategy/design-tokens.css'
+- '{brain}/strategy/tailwind.extend.js'
+- .tmp/visuals/palette-preview-{option}.html (working preview)
+- .tmp/visuals/style-tile-final.html (working preview)
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/design-systems/SKILL.md

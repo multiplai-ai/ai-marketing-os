@@ -1,0 +1,70 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://multiplai.local/schemas/writing-handoff.schema.yaml
+title: Long-form downstream marketing handoff
+type: object
+additionalProperties: false
+required: [schema_version, article_ref, source_packet_ref, message, offer, destination, social_angle_candidates, landing_audit, readiness]
+properties:
+  schema_version: {const: 1}
+  article_ref: {type: string, minLength: 1}
+  source_packet_ref: {type: string, minLength: 1}
+  message:
+    type: object
+    additionalProperties: false
+    required: [core_thesis, promised_outcome, audience, supporting_claim_ids, exact_phrase_ids]
+    properties:
+      core_thesis: {type: string, minLength: 1}
+      promised_outcome: {type: string, minLength: 1}
+      audience: {type: string, minLength: 1}
+      supporting_claim_ids: {type: array, items: {type: string}, uniqueItems: true}
+      exact_phrase_ids: {type: array, items: {type: string}, uniqueItems: true}
+  offer:
+    type: object
+    additionalProperties: false
+    required: [name, summary, conversion_goal, primary_cta]
+    properties:
+      name: {type: string}
+      summary: {type: string}
+      conversion_goal: {type: string}
+      primary_cta: {type: string}
+  destination:
+    type: object
+    additionalProperties: false
+    required: [url, desired_action, message_match_terms, proof_expectations]
+    properties:
+      url: {type: string}
+      desired_action: {type: string}
+      message_match_terms: {type: array, items: {type: string}}
+      proof_expectations: {type: array, items: {type: string}}
+  social_angle_candidates:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [id, angle, claim_ids, exact_phrase_ids, cta_posture]
+      properties:
+        id: {type: string, minLength: 1}
+        angle: {type: string, minLength: 1}
+        claim_ids: {type: array, items: {type: string}, uniqueItems: true}
+        exact_phrase_ids: {type: array, items: {type: string}, uniqueItems: true}
+        cta_posture: {type: string}
+  landing_audit:
+    type: object
+    additionalProperties: false
+    required: [traffic_source, entry_message, target_audience, expected_offer, expected_cta, expected_proof, destination_url]
+    properties:
+      traffic_source: {type: string}
+      entry_message: {type: string}
+      target_audience: {type: string}
+      expected_offer: {type: string}
+      expected_cta: {type: string}
+      expected_proof: {type: array, items: {type: string}}
+      destination_url: {type: string}
+  readiness:
+    type: object
+    additionalProperties: false
+    required: [linkedin_ready, landing_audit_ready, blockers]
+    properties:
+      linkedin_ready: {type: boolean}
+      landing_audit_ready: {type: boolean}
+      blockers: {type: array, items: {type: string}}

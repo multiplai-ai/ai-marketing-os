@@ -1,0 +1,10 @@
+id: monthly-scorecard
+version: 0.1.0
+title: entity Monthly Scorecard Runbook
+maturity: internal
+inputs: []
+outputs: []
+tools: []
+approval_classes: []
+tests: []
+source_provenance: brains/entity/runbooks/monthly-scorecard.md

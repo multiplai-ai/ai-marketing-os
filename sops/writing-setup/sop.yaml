@@ -1,0 +1,24 @@
+id: writing-setup
+version: 1.0.0
+title: Writing Setup
+maturity: released
+inputs:
+- setup_mode
+- voice_inputs
+- good_examples
+- bad_examples
+- requested_asset_types
+- social_evidence
+outputs:
+- writing_profile_path
+- asset_catalog_path
+- configured_asset_type_ids
+- approval_candidates
+- validation_result
+tools:
+- scaffold_writing_setup
+- validate_writing_config
+approval_classes: []
+tests:
+- tests/test_writing_setup.py
+source_provenance: portable-core-v1

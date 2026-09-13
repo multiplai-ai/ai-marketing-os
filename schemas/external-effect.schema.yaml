@@ -1,0 +1,14 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://multiplai.local/schemas/external-effect.schema.yaml
+type: object
+additionalProperties: false
+required: [schema_version, profile, action_type, target_alias, idempotency_key, policy_decision, request_file, request_sha256]
+properties:
+  schema_version: {const: 1}
+  profile: {type: string, pattern: '^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$'}
+  action_type: {type: string, pattern: '^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$'}
+  target_alias: {type: string, pattern: '^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$'}
+  idempotency_key: {type: string, pattern: '^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$'}
+  policy_decision: {const: allowed}
+  request_file: {type: string, minLength: 1}
+  request_sha256: {type: string, pattern: '^[0-9a-f]{64}$'}

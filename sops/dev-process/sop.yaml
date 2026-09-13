@@ -1,0 +1,14 @@
+id: dev-process
+version: 0.1.0
+title: "Dev Process \u2014 Lifecycle Orchestrator"
+maturity: released
+inputs:
+- user_request
+- repo_context
+- current_stage
+outputs:
+- '{brain}/workflows/dev-plan-{slug}.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/dev-process/SKILL.md

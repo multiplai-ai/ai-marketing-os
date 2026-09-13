@@ -1,0 +1,20 @@
+id: social-growth-os
+version: 0.1.0
+title: Social Growth OS
+maturity: internal
+inputs:
+- brain_path
+- mode (daily | weekly | monthly | report)
+- operator_identity
+- approval_queue_state
+- social_metrics
+- inbound_signals
+outputs:
+- daily execution queue with drafts and rationale for operator approval
+- weekly routing into social-audience-growth-weekly and the interview-to-content chain
+- monthly routing into audit-funnel, ecosystem-partnerships, speaking-events-pipeline, content-calendar
+- '{brain}/content/social-audience-growth/{period}-operator-report.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/social-growth-os/SKILL.md

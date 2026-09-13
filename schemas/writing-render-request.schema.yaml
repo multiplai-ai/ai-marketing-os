@@ -1,0 +1,17 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://multiplai.local/schemas/writing-render-request.schema.yaml
+title: Writing V1 long-form render request
+type: object
+additionalProperties: false
+required: [schema_version, source_packet_ref, asset_type_id, output_path]
+properties:
+  schema_version: {const: 1}
+  source_packet_ref: {$ref: '#/$defs/relative_ref'}
+  asset_type_id: {type: string, minLength: 1}
+  asset_kind: {const: long_form}
+  output_path: {$ref: '#/$defs/relative_ref'}
+$defs:
+  relative_ref:
+    type: string
+    minLength: 1
+    pattern: '^(?!/)(?![A-Za-z]:[\\/])(?!.*(?:^|/)\.\.(?:/|$)).+$'

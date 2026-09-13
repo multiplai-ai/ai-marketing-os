@@ -1,0 +1,15 @@
+id: ads-linkedin
+version: 0.1.0
+title: LinkedIn Ads Deep Analysis
+maturity: released
+inputs:
+- linkedin_ads_export
+- insight_tag_status
+- lead_gen_forms
+- audience_setup
+outputs:
+- '{brain}/ads/platforms/linkedin-ads-audit-{date}.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/ads-linkedin/SKILL.md

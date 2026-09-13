@@ -1,0 +1,17 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://multiplai.local/schemas/hermes-bundle.schema.yaml
+type: object
+additionalProperties: false
+required: [schema_version, profile, version, revision, core_commit, control_commit, created_at, files]
+properties:
+  schema_version: {const: 1}
+  profile: {type: string, pattern: '^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$'}
+  version: {type: string, pattern: '^[0-9]+\.[0-9]+\.[0-9]+(?:-[0-9A-Za-z.-]+)?$'}
+  revision: {type: integer, minimum: 1}
+  core_commit: {type: string, pattern: '^[0-9a-f]{40}$'}
+  control_commit: {type: string, pattern: '^[0-9a-f]{40}$'}
+  created_at: {type: integer, minimum: 0}
+  files:
+    type: object
+    propertyNames: {pattern: '^(?!/)(?!.*\.\.).+$'}
+    additionalProperties: {type: string, pattern: '^[0-9a-f]{64}$'}

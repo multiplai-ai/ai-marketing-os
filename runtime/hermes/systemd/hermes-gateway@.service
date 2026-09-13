@@ -1,0 +1,31 @@
+[Unit]
+Description=Hermes gateway for isolated profile %i
+After=network-online.target
+Wants=network-online.target
+[Service]
+User=hermes-frontdoor-%i
+Group=hermes-frontdoor-%i
+UMask=0077
+WorkingDirectory=/var/lib/hermes/%i/frontdoor
+Environment=HOME=/var/lib/hermes/%i/profile/home
+LoadCredential=frontdoor.env:/etc/hermes/credentials/%i.frontdoor.env
+ExecStart=/opt/multiplai/hermes/profiles/%i/current/bin/hermes-gateway
+Restart=on-failure
+RestartSec=5s
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+MemoryDenyWriteExecute=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+SystemCallArchitectures=native
+ReadWritePaths=/var/lib/hermes/%i/profile /var/lib/hermes/%i/frontdoor /srv/hermes/tasks/%i
+ReadOnlyPaths=/opt/multiplai/hermes/profiles/%i/current
+[Install]
+WantedBy=multi-user.target

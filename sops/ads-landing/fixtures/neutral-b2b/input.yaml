@@ -1,0 +1,11 @@
+source_asset_type: long-form article
+source_promise: A documented incident-handoff rhythm helps B2B operations teams reduce dropped ownership during escalations.
+audience: Operations leaders at growing B2B software companies whose support and engineering teams share incident ownership.
+offer: A 20-minute workflow review that maps the team's current incident handoff.
+source_cta: Book a 20-minute workflow review.
+conversion_goal: Completed workflow-review booking.
+traffic_source: Organic LinkedIn post derived from the article.
+landing_page_evidence: landing-page-snapshot.md
+evidence_limitations:
+- Text-only snapshot; responsive behavior and visual hierarchy cannot be verified.
+- No field performance, analytics, tag debugger output, or event documentation supplied.

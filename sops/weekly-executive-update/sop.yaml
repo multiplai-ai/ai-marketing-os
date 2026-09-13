@@ -1,0 +1,10 @@
+id: weekly-executive-update
+version: 0.1.1
+title: entity Weekly Executive Update Runbook
+maturity: internal
+inputs: []
+outputs: []
+tools: []
+approval_classes: []
+tests: []
+source_provenance: brains/entity/runbooks/weekly-executive-update.md

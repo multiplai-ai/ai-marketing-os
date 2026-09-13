@@ -1,0 +1,5 @@
+schema_version: 1
+source_repository: OWNER/mitl-os
+source_commit: REPLACE_WITH_40_CHAR_SHA
+snapshot_date: REPLACE_WITH_DATE
+history_policy: clean_reviewed_snapshot

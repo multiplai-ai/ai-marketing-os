@@ -1,0 +1,12 @@
+id: creative-suite
+version: 0.1.0
+title: Creative Suite SOP
+maturity: released
+inputs:
+- entity_dir
+- creative_foundation_artifacts
+outputs: []
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/creative-suite-sop/SKILL.md

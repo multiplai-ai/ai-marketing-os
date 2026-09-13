@@ -1,0 +1,16 @@
+id: templates
+version: 0.1.0
+title: "Templates \u2014 Platform Templates"
+maturity: released
+inputs:
+- component_inventory_artifact
+- brand_guide_artifact
+- tokens_artifact
+- priority_channels
+outputs:
+- '{brain}/creative/templates/'
+- '{brain}/creative/template-inventory.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/templates/SKILL.md

@@ -1,0 +1,5 @@
+schema_version: 1
+id: REPLACE_ENTITY_ID
+name: REPLACE_ENTITY_NAME
+type: client
+status: active

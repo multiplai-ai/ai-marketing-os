@@ -1,0 +1,19 @@
+id: ads-landing
+version: 0.2.0
+title: Landing Page Conversion Quality Audit
+maturity: released
+inputs:
+- source_promise
+- audience
+- offer
+- cta
+- conversion_goal
+- landing_page_url_or_snapshot
+outputs:
+- ads-landing-audit-{date}.md
+tools: []
+approval_classes: []
+tests:
+- tests/test_ads_landing.py
+- sops/ads-landing/fixtures/neutral-b2b/expected-audit.md
+source_provenance: portable-core-v0.2

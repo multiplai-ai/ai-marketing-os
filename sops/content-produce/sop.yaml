@@ -1,0 +1,22 @@
+id: content-produce
+version: 0.1.0
+title: Content Produce
+maturity: released
+inputs:
+- topic_or_keyword
+- brief_artifact
+- article_artifact
+- brand_context
+- publication_channel
+- production_stage
+outputs:
+- '{brain}/content/briefs/{keyword-slug}-brief.md'
+- '{brain}/content/{content-type}-{date}.md'
+- '{brain}/content/images/{slug}-{type}.png'
+- '{brain}/content/production-log.md'
+- Ghost draft (created via API, URL returned)
+- Publer social post drafts (pushed at publish time)
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/content-produce/SKILL.md

@@ -1,0 +1,17 @@
+id: content-brief
+version: 0.1.0
+title: Content Brief
+maturity: released
+inputs:
+- primary_keyword
+- topic_angle
+- target_audience
+- brand_strategy_context
+- content_strategy_context
+- optional_serp_data
+outputs:
+- '{brain}/content/briefs/brief-YYYY-MM-DD-{slug}.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/content-brief/SKILL.md

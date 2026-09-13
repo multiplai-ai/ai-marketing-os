@@ -1,0 +1,7 @@
+# Strategy workflow evaluation fixtures
+
+These fictional packets exercise the six canonical strategy workflows. They are raw inputs and evaluation prompts, not evidence that any workflow has passed. `cases.json` supplies stable IDs, prompts, input references, actual output destinations, and reviewer criteria. `normal` runs discovery → positioning → ICP → brand → content → suite assessment, passing each actual artifact to the next stage. The three edge packets each run independently against all six workflows: 24 cases total.
+
+For each actor, supply the case prompt, its input packet, applicable upstream output files, and the canonical skill at `sops/<workflow>/SKILL.md`. Do not supply the reviewer criteria or another case's output to the actor. Work only within the current Codex-managed workspace; do not create a manual worktree. Save actual actor artifacts at each `output_ref`. The normal packet is fictional consumer context; its explicit output paths are evaluation destinations, not Core defaults for real business work.
+
+An independent reviewer assesses the actual artifact against the case criteria and cited input. Record model/session, exact source and skill hashes, artifact hashes, reviewer findings, and limitations using the repository evaluation evidence mechanism. A metadata check proves no output quality. Human acceptance, live market results, and external publishing/integration tests remain distinct and are not performed by these offline cases. Do not mark fabricated placeholder files as actor outputs or approvals.

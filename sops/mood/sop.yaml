@@ -1,0 +1,15 @@
+id: mood
+version: 0.1.0
+title: Mood
+maturity: released
+inputs:
+- entity_name
+- visual_research_artifact
+- brand_strategy_artifact
+- user_preferences
+outputs:
+- '{brain}/creative/mood-direction.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/mood/SKILL.md

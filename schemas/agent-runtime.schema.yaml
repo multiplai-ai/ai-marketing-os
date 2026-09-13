@@ -1,0 +1,14 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://multiplai.local/schemas/agent-runtime.schema.yaml
+type: object
+additionalProperties: false
+required: [schema_version, profile, repository, branch, permissions, executor, credential_aliases]
+properties:
+  schema_version: {const: 1}
+  profile: {type: string, maxLength: 80, pattern: '^[a-zA-Z0-9][a-zA-Z0-9_.-]*$'}
+  repository: {type: string, pattern: '^[^/]+/[^/]+$'}
+  branch: {const: main}
+  permissions: {type: array, items: {type: string}, uniqueItems: true}
+  executor: {const: codex}
+  credential_aliases: {type: array, items: {type: string}, uniqueItems: true}
+  negative_scopes: {type: array, items: {type: string}, uniqueItems: true}

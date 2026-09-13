@@ -1,0 +1,15 @@
+id: ads-microsoft
+version: 0.1.0
+title: "Microsoft Ads \u2014 Deep Analysis (Search, PMax, Copilot, Import)"
+maturity: released
+inputs:
+- microsoft_ads_export
+- uet_status
+- google_import_settings
+- campaign_performance
+outputs:
+- '{brain}/ads/platforms/microsoft-ads-audit-{date}.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/ads-microsoft/SKILL.md

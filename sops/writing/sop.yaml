@@ -1,0 +1,29 @@
+id: writing
+version: 1.0.0
+title: Writing
+maturity: released
+inputs:
+- topic_or_assignment
+- voice_inputs
+- source_packet_ref
+- writing_profile
+- asset_catalog
+- asset_type_id
+- source_refs
+- output_path
+outputs:
+- source_packet_path
+- draft_path
+- handoff_path
+- unresolved_claims
+- checks_run
+- status
+tools:
+- validate_writing_config
+- writing_source_packet
+- human_writing_gate
+approval_classes: []
+tests:
+- tests/test_writing_capture.py
+- tests/test_writing_render_contract.py
+source_provenance: portable-core-v1

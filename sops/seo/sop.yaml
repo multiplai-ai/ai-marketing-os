@@ -1,0 +1,18 @@
+id: seo
+version: 0.1.1
+title: SEO Audit
+maturity: released
+inputs:
+- domain
+- gsc_export
+- ga4_export
+- site_info
+- priority_pages
+- competitors
+outputs:
+- '{brain}/ops/seo/seo-audit-{domain}-{date}.md'
+- '{brain}/ops/seo/seo-audit-{domain}-{date}.xlsx'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/seo/SKILL.md

@@ -1,0 +1,23 @@
+id: ads-plan
+version: 0.1.0
+title: Strategic Paid Advertising Plan
+maturity: released
+inputs:
+- business_type
+- target_audience
+- goals
+- budget
+- timeline
+- current_ad_status
+outputs:
+- '{brain}/ads/plans/ads-strategy-{date}.md'
+- '{brain}/ads/plans/campaign-architecture-{date}.md'
+- '{brain}/ads/plans/budget-plan-{date}.md'
+- '{brain}/ads/plans/creative-brief-{date}.md'
+- '{brain}/ads/plans/tracking-setup-{date}.md'
+- '{brain}/ads/plans/implementation-roadmap-{date}.md'
+- '{brain}/ads/plans/ads-plan-{date}.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/ads-plan/SKILL.md

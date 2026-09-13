@@ -1,0 +1,17 @@
+id: creative-produce
+version: 0.1.0
+title: Creative Produce
+maturity: released
+inputs:
+- entity_dir
+- asset_request
+- campaign_context
+- channel_list
+- creative_foundation_artifacts
+outputs:
+- '{brain}/creative/output/{campaign-name}/'
+- '{brain}/creative/output/{campaign-name}/production-log.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/creative-produce/SKILL.md
