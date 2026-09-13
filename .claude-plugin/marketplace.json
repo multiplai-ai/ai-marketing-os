@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "multiplai-marketing",
+  "description": "Plain-language marketing workflows for Claude, maintained by MultiplAI.",
+  "owner": {
+    "name": "MultiplAI"
+  },
+  "plugins": [
+    {
+      "name": "ai-marketing-os",
+      "description": "Practical marketing workflows for strategy, content, writing, advertising, SEO, creative work, and reporting.",
+      "version": "4.0.0-rc.14",
+      "author": {
+        "name": "MultiplAI"
+      },
+      "homepage": "https://github.com/multiplai-ai/ai-marketing-os",
+      "repository": "https://github.com/multiplai-ai/ai-marketing-os",
+      "license": "MIT",
+      "category": "marketing",
+      "tags": ["marketing", "strategy", "content", "writing", "advertising", "seo"],
+      "source": "./"
+    }
+  ]
+}

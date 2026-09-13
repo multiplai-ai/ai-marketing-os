@@ -7,7 +7,6 @@ description: Write a product-review style AI tool evaluation with a decisive ver
 
 Write a product-review style AI tool evaluation with a decisive verdict, differentiated alternatives, and promo social posts, grounded in firsthand testing and the entity's real voice.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/content/ai-tool-review.md (rich) + skills-core/skills/content/ai-tool-review.md (portable stub) on 2026-07-02.
 
 **Core principle:** You're testing these tools so your readers don't have to. Evaluate like a growth engineer, not a casual user. Every review answers: Can this plug into a real marketing workflow? Does the output hold up when real money is behind it?
 

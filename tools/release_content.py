@@ -11,9 +11,9 @@ from pathlib import PurePosixPath
 ROOT_FILES = {
     "AGENTS.md", "README.md", "CONTRIBUTING.md", "SECURITY.md", "NOTICE",
     "NOTICE.md", "LICENSE", "LICENSE.md", "pyproject.toml", ".gitignore",
-    "provenance.yaml", "CODEOWNERS", "BEGINNER-GIT-WORKFLOW.md",
+    "provenance.yaml", "CODEOWNERS", "BEGINNER-GIT-WORKFLOW.md", "START-HERE.md",
 }
-SOURCE_DIRS = {"sops", "tools", "schemas", "generated", "runtime", "templates", "tests", ".github"}
+SOURCE_DIRS = {"sops", "tools", "schemas", "runtime", "templates", "tests", ".github", ".claude-plugin"}
 DOCUMENTS = {
     "docs/member-guide.md", "docs/capabilities.md", "docs/readiness-report.md",
     "docs/maintainer-guide.md", "releases/TRUST.md", "releases/trust/minisign.pub",

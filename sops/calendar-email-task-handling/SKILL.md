@@ -7,7 +7,7 @@ description: Route calendar, email, and task requests through a configured assis
 
 Resolve the consumer's account bindings, canonical task store, routing policy and
 communication rules. Private task files, mail, meeting notes and personal context
-belong in approved consumer storage, never shared Core source.
+belong in approved consumer storage, never shared workflow library.
 
 ## Task handling
 

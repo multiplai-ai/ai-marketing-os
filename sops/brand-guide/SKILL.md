@@ -7,7 +7,6 @@ description: Lock in every visual decision — colors, typography, textures, but
 
 Lock in every visual decision — colors, typography, textures, buttons, imagery, AI prompts — and compile into both a human-readable brand guide and machine-readable W3C design tokens.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cd/brand-guide.md (rich) + skills-core/skills/creative/brand-guide.md (portable stub) on 2026-07-02.
 
 Legacy adapters: previously invoked as the `/cd/brand-guide` command via `.claude/commands/cd/brand-guide.md`, and exposed as an MCP skill at `products/organization-skills-mcp/skills/creative/brand-guide.md`; those paths are now adapters, not the canonical mechanism.
 

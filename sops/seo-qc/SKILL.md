@@ -7,7 +7,6 @@ description: 'Post-draft optimization and quality check for articles before publ
 
 Post-draft optimization and quality check for articles before publishing: takes a draft, scores it across SEO, AEO, and content quality dimensions, and recommends prioritized fixes.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/content/seo-qc.md (rich) + skills-core/skills/ops/seo-qc.md (portable stub) on 2026-07-03.
 
 **Input:** `$ARGUMENTS` = file path to draft article (example: `{brain}/content/article-example.md`)
 

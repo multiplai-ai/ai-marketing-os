@@ -1,106 +1,167 @@
-# Capability catalog
+# Workflow library
 
-The default member set is intentionally three workflows. The two editorial
-workflows have eight recorded offline agent-output cases in total; writing setup
-has deterministic configuration and preservation tests. These are different kinds
-of evidence. See [the readiness report](readiness-report.md).
+This is the human-readable map of AI Marketing OS. Each workflow is a reusable
+set of instructions for Claude or Codex. Click a workflow name to read the full
+instructions the assistant follows.
 
-| Default workflow | Inputs / prerequisites | Output | Actions and fallback | Evidence / maturity | First prompt |
-| --- | --- | --- | --- | --- | --- |
-| content-brief | Business packet, reader, keyword, desired action; agent with file access | Local brief with source limits and handoff | No publishing; supplied excerpts support an offline brief | Evaluated offline preview; live research unverified | Create an offline brief using context/business-context.md. |
-| human-writing-standard | Draft and source packet; voice guide when available | Revised prose, claim findings, deterministic gate report | Local edits only; absent evidence stays unverified | Evaluated offline preview; gate is not a fact checker | Review this draft against our business packet. |
-| writing-setup | Consumer directory and author preferences; Python 3.12 base dependencies | Consumer-owned profile, templates, catalog | Creates local configuration; preserves existing files | Mechanically tested setup; human calibration still required | Configure writing; leave exemplars unapproved until I review them. |
+You do not need to configure all of them. Choose one outcome, give the assistant
+the relevant source material, and describe the task in normal language. In
+Claude, you can also select an installed workflow from the `/` or `+` menu.
 
-All other workflows below are available for inspection and explicit opt-in.
-Where a recorded offline evaluation exists, it is identified below; otherwise
-task execution remains unverified. Live integration status is unverified. Historical metadata `released`
-is not a new readiness endorsement. Read each canonical contract for exact inputs,
-outputs, approval classes and tools. Do not enable scheduled agents or external
-publishing merely because a procedure exists. Optional integrations may require
-paid accounts, credentials and tools that are not installed in your agent.
+## Good places to start
 
-| Workflow | Canonical title | Historical metadata | Member status | Declared tools |
-| --- | --- | --- | --- | --- |
-| [ads](../sops/ads/SKILL.md) | Ads — Multi-Platform Paid Advertising Audit & Optimization | released | Opt-in; execution unverified | None declared |
-| [ads-audit](../sops/ads-audit/SKILL.md) | Full Multi-Platform Ads Audit | released | Opt-in; execution unverified | None declared |
-| [ads-budget](../sops/ads-budget/SKILL.md) | Budget Allocation & Bidding Strategy | released | Opt-in; execution unverified | None declared |
-| [ads-competitor](../sops/ads-competitor/SKILL.md) | Competitor Ad Intelligence | released | Opt-in; execution unverified | None declared |
-| [ads-creative](../sops/ads-creative/SKILL.md) | Ads Creative — Cross-Platform Creative Quality Audit | released | Opt-in; execution unverified | None declared |
-| [ads-google](../sops/ads-google/SKILL.md) | Google Ads Deep Analysis | released | Opt-in; execution unverified | None declared |
-| [ads-landing](../sops/ads-landing/SKILL.md) | Landing Page Conversion Quality Audit | released | Opt-in; execution unverified | None declared |
-| [ads-linkedin](../sops/ads-linkedin/SKILL.md) | LinkedIn Ads Deep Analysis | released | Opt-in; execution unverified | None declared |
-| [ads-meta](../sops/ads-meta/SKILL.md) | Meta Ads Deep Analysis | released | Opt-in; execution unverified | None declared |
-| [ads-microsoft](../sops/ads-microsoft/SKILL.md) | Microsoft Ads — Deep Analysis (Search, PMax, Copilot, Import) | released | Opt-in; execution unverified | None declared |
-| [ads-plan](../sops/ads-plan/SKILL.md) | Strategic Paid Advertising Plan | released | Opt-in; execution unverified | None declared |
-| [ads-tiktok](../sops/ads-tiktok/SKILL.md) | Ads TikTok — TikTok Ads Deep Analysis | released | Opt-in; execution unverified | None declared |
-| [ads-youtube](../sops/ads-youtube/SKILL.md) | YouTube Ads Analysis | released | Opt-in; execution unverified | None declared |
-| [ai-tool-review](../sops/ai-tool-review/SKILL.md) | AI Tool Review | released | Opt-in; execution unverified | None declared |
-| [artifact-to-presentation](../sops/artifact-to-presentation/SKILL.md) | Artifact-First Reporting And Presentation Runbook | internal | Opt-in; execution unverified | None declared |
-| [audit-funnel](../sops/audit-funnel/SKILL.md) | Audit Funnel | internal | Opt-in; execution unverified | None declared |
-| [brand-guide](../sops/brand-guide/SKILL.md) | Brand Guide | released | Opt-in; execution unverified | None declared |
-| [brand-strategy](../sops/brand-strategy/SKILL.md) | Brand Strategy & Key Messages | released | Opt-in; offline cases reviewed; see [test plan](workflow-testing.md) | None declared |
-| [build-workflow](../sops/build-workflow/SKILL.md) | Build Workflow | released | Opt-in; execution unverified | None declared |
-| [calendar-email-task-handling](../sops/calendar-email-task-handling/SKILL.md) | Calendar, Email and Task Handling | internal | Opt-in; execution unverified | None declared |
-| [components](../sops/components/SKILL.md) | Components — SVG Component Library | released | Opt-in; execution unverified | None declared |
-| [content-brief](../sops/content-brief/SKILL.md) | Content Brief | released | Default; evidence above | None declared |
-| [content-calendar](../sops/content-calendar/SKILL.md) | Content Calendar | released | Opt-in; execution unverified | None declared |
-| [content-campaign](../sops/content-campaign/SKILL.md) | Content Campaign | released | Opt-in; execution unverified | None declared |
-| [content-ideas-slack-to-notion-browser-handoff](../sops/content-ideas-slack-to-notion-browser-handoff/SKILL.md) | Slack to Notion content intake and mini briefs | internal | Opt-in; execution unverified | None declared |
-| [content-produce](../sops/content-produce/SKILL.md) | Content Produce | released | Opt-in; execution unverified | None declared |
-| [content-strategy](../sops/content-strategy/SKILL.md) | Content Strategy | released | Opt-in; offline cases reviewed; see [test plan](workflow-testing.md) | None declared |
-| [creative-produce](../sops/creative-produce/SKILL.md) | Creative Produce | released | Opt-in; execution unverified | None declared |
-| [creative-status](../sops/creative-status/SKILL.md) | Creative Status | released | Opt-in; execution unverified | None declared |
-| [creative-suite](../sops/creative-suite/SKILL.md) | Creative Suite SOP | released | Opt-in; execution unverified | None declared |
-| [cro](../sops/cro/SKILL.md) | CRO Audit | released | Opt-in; execution unverified | None declared |
-| [daily-brief-cron-prompt](../sops/daily-brief-cron-prompt/SKILL.md) | Daily Morning Brief — Cron Prompt Template | internal | Opt-in; execution unverified | None declared |
-| [design-extract](../sops/design-extract/SKILL.md) | Design Extract | released | Opt-in; execution unverified | None declared |
-| [design-systems](../sops/design-systems/SKILL.md) | Design Systems | released | Opt-in; execution unverified | None declared |
-| [dev-process](../sops/dev-process/SKILL.md) | Dev Process — Lifecycle Orchestrator | released | Opt-in; execution unverified | None declared |
-| [discovery-intake](../sops/discovery-intake/SKILL.md) | Discovery & Intake | released | Opt-in; offline cases reviewed; see [test plan](workflow-testing.md) | None declared |
-| [ecosystem-partnerships](../sops/ecosystem-partnerships/SKILL.md) | Ecosystem Partnerships | internal | Opt-in; execution unverified | None declared |
-| [engagement-report](../sops/engagement-report/SKILL.md) | Engagement Report Runbook | internal | Opt-in; execution unverified | None declared |
-| [granola-api-access](../sops/granola-api-access/SKILL.md) | Granola API access | internal | Opt-in; execution unverified | None declared |
-| [growth-operator-hiring](../sops/growth-operator-hiring/SKILL.md) | Full-Loop Growth Operator Hiring | released | Opt-in; execution unverified | None declared |
-| [growth-operator-onboarding](../sops/growth-operator-onboarding/SKILL.md) | Growth operator onboarding | internal | Opt-in; execution unverified | None declared |
-| [hermes-runtime-recovery](../sops/hermes-runtime-recovery/SKILL.md) | Hermes Runtime Recovery | internal | Opt-in; execution unverified | None declared |
-| [human-writing-standard](../sops/human-writing-standard/SKILL.md) | Human Writing Standard | released | Default; evidence above | human_writing_gate |
-| [icp-personas](../sops/icp-personas/SKILL.md) | ICP & Personas | released | Opt-in; offline cases reviewed; see [test plan](workflow-testing.md) | None declared |
-| [jira-marketing](../sops/jira-marketing/SKILL.md) | Launch Visibility SOP — Category Management Team | internal | Opt-in; execution unverified | None declared |
-| [l2-microsite-report](../sops/l2-microsite-report/SKILL.md) | L2 Microsite Report Runbook | internal | Opt-in; execution unverified | None declared |
-| [linkedin-post](../sops/linkedin-post/SKILL.md) | LinkedIn Post | released | Opt-in; execution unverified | None declared |
-| [mcp-skill-release-newsletter](../sops/mcp-skill-release-newsletter/SKILL.md) | brand MCP Skill Release Newsletter Workflow | internal | Opt-in; execution unverified | None declared |
-| [monthly-content-planning-and-publishing](../sops/monthly-content-planning-and-publishing/SKILL.md) | Monthly Content Planning and Publishing SOP | internal | Opt-in; execution unverified | None declared |
-| [monthly-mbr](../sops/monthly-mbr/SKILL.md) | entity Monthly MBR Runbook | internal | Opt-in; execution unverified | None declared |
-| [monthly-scorecard](../sops/monthly-scorecard/SKILL.md) | entity Monthly Scorecard Runbook | internal | Opt-in; execution unverified | None declared |
-| [mood](../sops/mood/SKILL.md) | Mood | released | Opt-in; execution unverified | None declared |
-| [morning-brief-setup](../sops/morning-brief-setup/SKILL.md) | Morning Brief System — Setup Runbook | internal | Opt-in; execution unverified | None declared |
-| [positioning-strategy](../sops/positioning-strategy/SKILL.md) | Positioning Strategy | released | Opt-in; offline cases reviewed; see [test plan](workflow-testing.md) | None declared |
-| [prompt-optimizer](../sops/prompt-optimizer/SKILL.md) | Prompt Optimizer | released | Opt-in; execution unverified | None declared |
-| [publish](../sops/publish/SKILL.md) | Publishing Runbook | internal | Opt-in; execution unverified | None declared |
-| [quarterly-content-planning](../sops/quarterly-content-planning/SKILL.md) | Quarterly Content Planning SOP | internal | Opt-in; execution unverified | None declared |
-| [research](../sops/research/SKILL.md) | Research | released | Opt-in; execution unverified | None declared |
-| [routing-and-notifications](../sops/routing-and-notifications/SKILL.md) | Routing and Notifications | internal | Opt-in; execution unverified | None declared |
-| [scrape-website](../sops/scrape-website/SKILL.md) | Website Scraping Runbook | internal | Opt-in; execution unverified | None declared |
-| [seo](../sops/seo/SKILL.md) | SEO Audit | released | Opt-in; execution unverified | None declared |
-| [seo-qc](../sops/seo-qc/SKILL.md) | SEO/AEO Quality Check | released | Opt-in; execution unverified | None declared |
-| [social-audience-growth-weekly](../sops/social-audience-growth-weekly/SKILL.md) | Social Audience Growth Weekly | internal | Opt-in; execution unverified | None declared |
-| [social-growth-os](../sops/social-growth-os/SKILL.md) | Social Growth OS | internal | Opt-in; execution unverified | None declared |
-| [speaking-events-pipeline](../sops/speaking-events-pipeline/SKILL.md) | Speaking Events Pipeline | internal | Opt-in; execution unverified | None declared |
-| [strategy-suite](../sops/strategy-suite/SKILL.md) | Strategy Suite SOP | released | Opt-in; offline cases reviewed; see [test plan](workflow-testing.md) | None declared |
-| [sync-repo](../sops/sync-repo/SKILL.md) | Sync Repo | internal | Opt-in; execution unverified | None declared |
-| [templates](../sops/templates/SKILL.md) | Templates — Platform Templates | released | Opt-in; execution unverified | None declared |
-| [to-gamma](../sops/to-gamma/SKILL.md) | Gamma Publishing Runbook | internal | Opt-in; execution unverified | None declared |
-| [to-notion](../sops/to-notion/SKILL.md) | Notion Publishing Runbook | internal | Opt-in; execution unverified | None declared |
-| [to-sheets](../sops/to-sheets/SKILL.md) | Google Sheets Publishing Runbook | internal | Opt-in; execution unverified | None declared |
-| [video-production](../sops/video-production/SKILL.md) | Video Production | released | Opt-in; execution unverified | None declared |
-| [visual-content](../sops/visual-content/SKILL.md) | visual-content — Shareable Visual Generator | released | Opt-in; execution unverified | None declared |
-| [vps-agent-update](../sops/vps-agent-update/SKILL.md) | Legacy VPS Agent Update | internal | Opt-in; execution unverified | None declared |
-| [vps-phase0-2-cutover](../sops/vps-phase0-2-cutover/SKILL.md) | Legacy VPS Inventory and Cutover Reference | internal | Opt-in; execution unverified | None declared |
-| [weekly-audience-report](../sops/weekly-audience-report/SKILL.md) | Weekly Audience / User Growth Report Runbook | internal | Opt-in; execution unverified | None declared |
-| [weekly-executive-update](../sops/weekly-executive-update/SKILL.md) | entity Weekly Executive Update Runbook | internal | Opt-in; execution unverified | None declared |
-| [weekly-kpi-report](../sops/weekly-kpi-report/SKILL.md) | SOP: How to run the Weekly Program Success KPI Report | internal | Opt-in; execution unverified | None declared |
-| [weekly-social-audience-growth](../sops/weekly-social-audience-growth/SKILL.md) | Weekly Social Audience Growth | internal | Opt-in; execution unverified | None declared |
-| [whitelist-email-refresh](../sops/whitelist-email-refresh/SKILL.md) | entity Whitelist Email Refresh Runbook | internal | Opt-in; execution unverified | None declared |
-| [writing](../sops/writing/SKILL.md) | Writing | released | Opt-in; execution unverified | validate_writing_config, writing_source_packet, human_writing_gate |
-| [writing-setup](../sops/writing-setup/SKILL.md) | Writing Setup | released | Default; evidence above | scaffold_writing_setup, validate_writing_config |
-| [youtube-transcript](../sops/youtube-transcript/SKILL.md) | YouTube Transcript | internal | Opt-in; execution unverified | None declared |
+| What you want to accomplish | Workflow | Example request |
+| --- | --- | --- |
+| Work out which strategy step comes next | [Strategy Guide](../sops/strategy-suite/SKILL.md) | “Review our existing strategy files and guide me through the next missing decision.” |
+| Decide what content to create and why | [Content Strategy](../sops/content-strategy/SKILL.md) | “Build a content strategy from these business goals, customer notes, and positioning.” |
+| Prepare a well-sourced article | [Article Content Brief](../sops/content-brief/SKILL.md) | “Create a content brief from these sources and clearly label missing research.” |
+| Draft an article or newsletter | [Article and Newsletter Writing](../sops/writing/SKILL.md) | “Turn this transcript and brief into an article without inventing claims.” |
+| Make writing sound less generic | [Human Writing Review](../sops/human-writing-standard/SKILL.md) | “Review this draft for generic language and unsupported claims.” |
+| Draft a social post | [LinkedIn Post](../sops/linkedin-post/SKILL.md) | “Turn this idea into one LinkedIn post for review. Do not publish it.” |
+| Find the biggest advertising problems | [Paid Advertising Audit](../sops/ads-audit/SKILL.md) | “Review these exports and explain the three highest-priority problems.” |
+| Improve a landing page | [Landing Page Review](../sops/ads-landing/SKILL.md) | “Compare this page with the promise that sends visitors there.” |
+
+## How to read the labels
+
+- **Good place to start:** broadly useful and a sensible first experience.
+- **Evidence reviewed:** recorded offline examples exist, with limits documented.
+- **Test with your setup:** included for use, but live accounts and integrations
+  have not been verified across every environment.
+
+## Strategy and customers
+
+| Workflow | What it helps you do | Readiness |
+| --- | --- | --- |
+| [Brand Strategy and Key Messages](../sops/brand-strategy/SKILL.md) | Turn positioning and customer research into a clear message hierarchy, proof points, and voice guidance. | Evidence reviewed |
+| [Content Strategy](../sops/content-strategy/SKILL.md) | Decide what to publish, for whom, on which channels, and how the work supports business goals. | Good place to start |
+| [Business Discovery](../sops/discovery-intake/SKILL.md) | Organize business, customer, marketing, evidence, and constraint information before strategy work begins. | Evidence reviewed |
+| [Growth Operator Hiring](../sops/growth-operator-hiring/SKILL.md) | Define the role, score candidates, and run a practical hiring process for a full-loop growth operator. | Test with your setup |
+| [Ideal Customers and Buyer Personas](../sops/icp-personas/SKILL.md) | Define the companies, people, buying roles, and real work patterns most likely to fit the offer. | Evidence reviewed |
+| [Positioning Strategy](../sops/positioning-strategy/SKILL.md) | Choose the market alternative to compete against and explain why the offer is meaningfully different. | Evidence reviewed |
+| [Strategy Guide](../sops/strategy-suite/SKILL.md) | Review what strategy already exists and guide the next decision across discovery, positioning, customers, brand, and content. | Good place to start |
+
+## Content and writing
+
+| Workflow | What it helps you do | Readiness |
+| --- | --- | --- |
+| [AI Tool Review](../sops/ai-tool-review/SKILL.md) | Turn firsthand product testing into a fair, useful review with a clear recommendation. | Test with your setup |
+| [Article Content Brief](../sops/content-brief/SKILL.md) | Prepare a sourced article brief with audience, angle, structure, search questions, and missing research. | Good place to start |
+| [Monthly Content Calendar](../sops/content-calendar/SKILL.md) | Turn an approved content strategy into a realistic four-week publishing plan. | Test with your setup |
+| [Content Campaign Plan](../sops/content-campaign/SKILL.md) | Plan the coordinated articles, social posts, emails, and other assets for a launch or campaign. | Test with your setup |
+| [Content Production](../sops/content-produce/SKILL.md) | Move one content idea from an approved brief through drafting, review, and publish-ready files. | Test with your setup |
+| [Human Writing Review](../sops/human-writing-standard/SKILL.md) | Keep writing grounded in a real author's words, evidence, judgment, and natural rhythm. | Good place to start |
+| [LinkedIn Post](../sops/linkedin-post/SKILL.md) | Turn a real idea or source into one voice-matched LinkedIn post, or a deliberately varied batch. | Good place to start |
+| [Article and Newsletter Writing](../sops/writing/SKILL.md) | Draft source-faithful long-form writing from a brief, transcript, interview, research set, or notes. | Good place to start |
+| [Writing Setup](../sops/writing-setup/SKILL.md) | Set up voice examples, source rules, and output formats for repeatable writing work. | Test with your setup |
+
+## Advertising and conversion
+
+| Workflow | What it helps you do | Readiness |
+| --- | --- | --- |
+| [Paid Advertising Guide](../sops/ads/SKILL.md) | Choose the right advertising review or planning workflow for the channels you use. | Test with your setup |
+| [Paid Advertising Audit](../sops/ads-audit/SKILL.md) | Review several advertising channels together and leave with a prioritized fix list. | Good place to start |
+| [Advertising Budget Review](../sops/ads-budget/SKILL.md) | Decide where to increase, reduce, or stop advertising spend based on performance and readiness. | Test with your setup |
+| [Competitor Advertising Review](../sops/ads-competitor/SKILL.md) | Study competitors' visible advertising to find useful messaging, creative, and channel patterns. | Test with your setup |
+| [Advertising Creative Review](../sops/ads-creative/SKILL.md) | Find weak, repetitive, or poorly matched advertising creative and plan the next tests. | Test with your setup |
+| [Google Ads Review](../sops/ads-google/SKILL.md) | Review Google Ads structure, tracking, search terms, creative, and wasted spend. | Test with your setup |
+| [Landing Page Review](../sops/ads-landing/SKILL.md) | Check whether a landing page fulfills the promise that brought visitors there and makes the next step clear. | Good place to start |
+| [LinkedIn Ads Review](../sops/ads-linkedin/SKILL.md) | Review LinkedIn Ads targeting, tracking, forms, creative, and bidding. | Test with your setup |
+| [Meta Ads Review](../sops/ads-meta/SKILL.md) | Review Facebook and Instagram campaign tracking, audiences, creative, structure, and performance. | Test with your setup |
+| [Microsoft Ads Review](../sops/ads-microsoft/SKILL.md) | Review Microsoft and Bing campaigns, including imported settings, tracking, targeting, and search traffic. | Test with your setup |
+| [Paid Advertising Plan](../sops/ads-plan/SKILL.md) | Choose channels, campaign structure, budget, creative needs, measurement, and a phased launch plan. | Test with your setup |
+| [TikTok Ads Review](../sops/ads-tiktok/SKILL.md) | Review TikTok campaign tracking, creative, bidding, structure, and shopping setup. | Test with your setup |
+| [YouTube Ads Review](../sops/ads-youtube/SKILL.md) | Review YouTube campaign formats, video creative, audiences, and measurement. | Test with your setup |
+
+## SEO and websites
+
+| Workflow | What it helps you do | Readiness |
+| --- | --- | --- |
+| [Website Conversion Review](../sops/cro/SKILL.md) | Find the page changes most likely to make the offer clearer and the next action easier. | Test with your setup |
+| [SEO Audit](../sops/seo/SKILL.md) | Use search and site data to find and prioritize technical, content, and authority improvements. | Test with your setup |
+| [Article Search Quality Check](../sops/seo-qc/SKILL.md) | Review a finished article for search usefulness, answer quality, evidence, and specific improvements. | Good place to start |
+
+## Brand, creative, and presentations
+
+| Workflow | What it helps you do | Readiness |
+| --- | --- | --- |
+| [Visual Brand Guide](../sops/brand-guide/SKILL.md) | Turn approved visual decisions into a usable guide for color, type, imagery, layout, and reusable design rules. | Test with your setup |
+| [Reusable Brand Graphics](../sops/components/SKILL.md) | Create editable graphic building blocks from an approved visual brand system. | Test with your setup |
+| [Create Campaign Assets](../sops/creative-produce/SKILL.md) | Produce campaign assets from an approved brief and visual brand system. | Test with your setup |
+| [Creative Readiness Check](../sops/creative-status/SKILL.md) | See which brand and creative foundations exist, what is missing, and what to create next. | Test with your setup |
+| [Creative System Guide](../sops/creative-suite/SKILL.md) | Set up and operate a repeatable system for visual research, brand decisions, templates, and campaign assets. | Test with your setup |
+| [Website Style Extraction](../sops/design-extract/SKILL.md) | Turn the visual patterns on an existing website into reusable colors, type, spacing, and component rules. | Test with your setup |
+| [Design System](../sops/design-systems/SKILL.md) | Build an approved visual system that can guide websites, presentations, social assets, and other creative work. | Test with your setup |
+| [Visual Direction](../sops/mood/SKILL.md) | Compare a few visual directions and choose the feeling, texture, energy, and composition the brand should use. | Test with your setup |
+| [Visual and Competitor Research](../sops/research/SKILL.md) | Collect visual references, compare patterns, and turn them into clear direction for creative work. | Test with your setup |
+| [Brand Templates](../sops/templates/SKILL.md) | Create reusable, editable templates for common social, presentation, and campaign formats. | Test with your setup |
+| [Video Production](../sops/video-production/SKILL.md) | Plan or produce titles, overlays, motion graphics, and edits from an approved brief and visual identity. | Test with your setup |
+| [Shareable Visuals](../sops/visual-content/SKILL.md) | Turn content into editable diagrams, frameworks, infographics, and reference cards. | Test with your setup |
+
+## Operations and automation
+
+| Workflow | What it helps you do | Readiness |
+| --- | --- | --- |
+| [Build an AI Workflow](../sops/build-workflow/SKILL.md) | Design and validate a reusable Claude workflow for a repeated task. | Test with your setup |
+| [Software Work Guide](../sops/dev-process/SKILL.md) | Guide a software change from understanding and planning through implementation, review, and release. | Test with your setup |
+| [Prompt Improver](../sops/prompt-optimizer/SKILL.md) | Turn a rough request into a clear prompt with the context, constraints, output, and success criteria the model needs. | Good place to start |
+
+<details>
+<summary><strong>Advanced and system workflows</strong></summary>
+
+These workflows support specialized reporting, publishing, account operations,
+or older systems. Read the requirements before using them. Some need configured
+accounts, exports, approval rules, or tools that are not included automatically.
+
+| Workflow | What it helps you do |
+| --- | --- |
+| [Artifact-First Reporting And Presentation Runbook](../sops/artifact-to-presentation/SKILL.md) | Use this as the default workflow for analytical reports, executive narratives, dashboards, and visual recommendations that may need to become Google Slides, Google Docs, Confluence pages, or other stakeholder-facing d… |
+| [Audit Funnel](../sops/audit-funnel/SKILL.md) | Run an entity's assessment-led sales funnel: a scored diagnostic survey that produces an instant personalized report, segmented follow-up, and a tracked pipeline from completed audit to closed engagement. |
+| [Calendar, Email and Task Handling](../sops/calendar-email-task-handling/SKILL.md) | Route calendar, email, and task requests through a configured assistant while keeping private content in consumer-owned storage. |
+| [Slack to Notion content intake and mini briefs](../sops/content-ideas-slack-to-notion-browser-handoff/SKILL.md) | Set up a Slack-to-Notion content intake workflow and next-day mini briefs using consumer-configured channels and databases. |
+| [Daily Morning Brief — Cron Prompt Template](../sops/daily-brief-cron-prompt/SKILL.md) | Prepare a daily morning brief and refresh a weekly operating board from configured consumer calendar and task sources. |
+| [Ecosystem Partnerships](../sops/ecosystem-partnerships/SKILL.md) | Run the entity's ecosystem-partnership motion: keep the partner map current, drive a small monthly queue of warm relationship moves, execute the joint webinar / newsletter swap / podcast guesting playbooks, track part… |
+| [Engagement Report Runbook](../sops/engagement-report/SKILL.md) | Generate deterministic entity engagement reports from Tableau exports. |
+| [Granola API access](../sops/granola-api-access/SKILL.md) | Fetch authorized Granola meeting notes through a consumer-configured API account and optional local helper. |
+| [Growth operator onboarding](../sops/growth-operator-onboarding/SKILL.md) | Guide a collaborator through growth-operator onboarding, required tools, source context, and approval responsibilities. |
+| [Hermes Runtime Recovery](../sops/hermes-runtime-recovery/SKILL.md) | Diagnose and recover the current live Hermes profile runtime and its Slack front door without exposing credentials or confusing v3 compatibility paths with the approved v4 target. |
+| [Launch Visibility SOP — Category Management Team](../sops/jira-marketing/SKILL.md) | Coordinate marketing launch visibility through weekly triage, launch tickets, and category-management review rituals. |
+| [L2 Microsite Report Runbook](../sops/l2-microsite-report/SKILL.md) | Generate L2 microsite funnel analysis with the canonical report generator. |
+| [brand MCP Skill Release Newsletter Workflow](../sops/mcp-skill-release-newsletter/SKILL.md) | Prepare a newsletter announcing MCP or skill releases from verified product changes and approved source material. |
+| [Monthly Content Planning and Publishing SOP](../sops/monthly-content-planning-and-publishing/SKILL.md) | Plan monthly articles and social batches from quarterly priorities, then prepare approved content for publishing. |
+| [entity Monthly MBR Runbook](../sops/monthly-mbr/SKILL.md) | Prepare a monthly business review package from consumer-provided metrics, reports, and executive priorities. |
+| [entity Monthly Scorecard Runbook](../sops/monthly-scorecard/SKILL.md) | Produce the question-grouped, traffic-light monthly scorecard for the recurring monthly review meeting. |
+| [Morning Brief System — Setup Runbook](../sops/morning-brief-setup/SKILL.md) | Configure or restore a consumer-owned daily and weekly morning brief with verified data sources and delivery settings. |
+| [Publishing Runbook](../sops/publish/SKILL.md) | Use this when content is ready to move from local markdown into publishing systems. |
+| [Quarterly Content Planning SOP](../sops/quarterly-content-planning/SKILL.md) | Plan the next quarter of content from the current strategy before choosing individual article topics or filling a weekly calendar. |
+| [Routing and Notifications](../sops/routing-and-notifications/SKILL.md) | Route assistant work to configured owners and apply the consumer notification policy for delegated tasks. |
+| [Website Scraping Runbook](../sops/scrape-website/SKILL.md) | Scrape articles from an index page into markdown files for research or read-later workflows. |
+| [Social Audience Growth Weekly](../sops/social-audience-growth-weekly/SKILL.md) | Run the weekly organic audience-growth operation for an entity's founder or personal-brand social channels. |
+| [Social Growth OS](../sops/social-growth-os/SKILL.md) | The plain-language entry point for running an entity's social growth system day to day. |
+| [Speaking Events Pipeline](../sops/speaking-events-pipeline/SKILL.md) | Run the entity's speaking-engagement pipeline as calendar automation: a monthly CFP radar that never misses a submission window, event tiering, human-approved abstract drafting, and a from-stage conversion playbook th… |
+| [Sync Repo](../sops/sync-repo/SKILL.md) | Keep the brand OS repository current before Hermes edits files, and push Hermes-authored changes with a clear commit prefix. |
+| [Gamma Publishing Runbook](../sops/to-gamma/SKILL.md) | Publish a markdown file to Gamma as a presentation, document, or webpage. |
+| [Notion Publishing Runbook](../sops/to-notion/SKILL.md) | Publish a markdown file to a Notion database for collaboration and comments. |
+| [Google Sheets Publishing Runbook](../sops/to-sheets/SKILL.md) | Publish markdown tables to Google Sheets while preserving columns. |
+| [Legacy VPS Agent Update](../sops/vps-agent-update/SKILL.md) | Review a consumer's legacy VPS agent update procedure; use the current signed runtime workflow for bundle-based installations. |
+| [Legacy VPS Inventory and Cutover Reference](../sops/vps-phase0-2-cutover/SKILL.md) | Consult legacy VPS inventory and cutover reference material; do not use this runbook to execute a current runtime cutover. |
+| [Weekly Audience / User Growth Report Runbook](../sops/weekly-audience-report/SKILL.md) | Produce a weekly audience-growth narrative and audit workbook from consumer-configured analytics exports, with optional authorized Confluence publishing. |
+| [entity Weekly Executive Update Runbook](../sops/weekly-executive-update/SKILL.md) | Draft a weekly executive update from a locked KPI table, source evidence, and consumer-defined priorities. |
+| [SOP: How to run the Weekly Program Success KPI Report](../sops/weekly-kpi-report/SKILL.md) | Build a weekly program-success report from the required Tableau exports with the consumer-configured report generator. |
+| [Weekly Social Audience Growth](../sops/weekly-social-audience-growth/SKILL.md) | Run a weekly social audience-growth review and execution queue for configured LinkedIn and X channels. |
+| [entity Whitelist Email Refresh Runbook](../sops/whitelist-email-refresh/SKILL.md) | Refresh the weekly performance tracker for entity's whitelist email program (BULK + BET). |
+| [YouTube Transcript](../sops/youtube-transcript/SKILL.md) | Fetch English YouTube transcripts and format them as timestamped, source-faithful Markdown with a deterministic local tool. |
+
+</details>
+
+## What a workflow can and cannot do
+
+A workflow improves how the assistant approaches a task. It does not provide
+facts about your business or automatic access to your accounts. Workflows that
+need analytics, ads, publishing systems, or other services require you to supply
+the right exports or configure the relevant connection.
+
+Creating a draft or recommendation does not authorize publishing, sending,
+scheduling, spending money, or changing an external account. Review those
+actions separately.
+
+For installation and a first task, use [Start here](../START-HERE.md).

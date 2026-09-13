@@ -7,7 +7,6 @@ description: Generate SEO/AEO-optimized content briefs from a target keyword + t
 
 Generate SEO/AEO-optimized content briefs from a target keyword + topic — SERP analysis, content patterns, brain context, and AEO question targets, output as a structured brief ready for `/writing` or SEO+AEO drafting.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/content/content-brief.md (rich) + skills-core/skills/content/content-brief.md (portable stub) on 2026-07-02.
 
 **When to use:**
 - Before writing any SEO/AEO-targeted article — the brief replaces guessing with data: what ranks, what's missing, and what angle makes our take worth reading.

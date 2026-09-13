@@ -7,7 +7,6 @@ description: 'Cross-platform creative quality audit covering ad copy, video, ima
 
 Cross-platform creative quality audit covering ad copy, video, image, and format diversity across all platforms: detects creative fatigue, evaluates platform-native compliance, assesses message coverage, and produces production priority recommendations.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/distribution/ads/ads-creative/SKILL.md (rich) + skills-core/skills/paid-media/ads-creative.md (portable stub) on 2026-07-02.
 
 Legacy adapter: previously invoked as the `/ads creative` sub-skill via `.claude/commands/cmo/distribution/ads/ads-creative/SKILL.md`; that path is now an adapter, not the canonical mechanism.
 

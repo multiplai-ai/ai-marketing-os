@@ -38,6 +38,12 @@ jobs:
       - name: Validate the exact commit before signing
         run: python3 tools/check_core.py
       - run: python3 tools/build_core_bundle.py --version "$RELEASE_VERSION" --output dist
+      - run: python3 tools/build_claude_plugin.py --version "$RELEASE_VERSION" --output dist
+      - name: Validate the Claude upload package
+        run: |
+          python3 -m zipfile -e "dist/ai-marketing-os-claude-plugin-${RELEASE_VERSION}.zip" "$RUNNER_TEMP/claude-plugin"
+          test -f "$RUNNER_TEMP/claude-plugin/.claude-plugin/plugin.json"
+          test "$(find "$RUNNER_TEMP/claude-plugin/sops" -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l)" -eq 83
       - name: Validate the built archive
         run: |
           mkdir "$RUNNER_TEMP/core-artifact"

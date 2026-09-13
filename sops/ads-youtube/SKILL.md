@@ -7,7 +7,6 @@ description: YouTube Ads specific analysis covering campaign types, creative qua
 
 YouTube Ads specific analysis covering campaign types, creative quality, audience targeting, and measurement — evaluates video ad performance across skippable, non-skippable, bumper, Shorts, and Demand Gen formats, plus platform-specific video requirements.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/distribution/ads/ads-youtube/SKILL.md (rich) + skills-core/skills/paid-media/ads-youtube.md (portable stub) on 2026-07-02.
 
 Triggers on: "YouTube Ads", "video ads", "pre-roll", "bumper ads", "YouTube campaign", "Shorts ads".
 

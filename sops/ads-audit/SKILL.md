@@ -7,7 +7,6 @@ description: 'Full multi-platform paid advertising audit with parallel subagent 
 
 Full multi-platform paid advertising audit with parallel subagent delegation: assess paid media account health across Google Ads, Meta Ads, LinkedIn Ads, TikTok Ads, and Microsoft Ads, and produce per-platform and aggregate health scores plus an executive-readable action plan.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/distribution/ads/ads-audit/SKILL.md (rich) + skills-core/skills/paid-media/ads-audit.md (portable stub) on 2026-07-02.
 
 Legacy adapter: previously invoked via `.claude/commands/cmo/distribution/ads/ads-audit/SKILL.md`; that path is now an adapter, not the canonical mechanism.
 

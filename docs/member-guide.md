@@ -1,4 +1,4 @@
-# Member first run
+# Codex workspace setup
 
 Start with the signed public preview and a fictional business, then adapt your
 own workspace. See [README](../README.md) for the copy-and-paste clone and setup
@@ -98,8 +98,9 @@ content, lock and adapters. Adapters can reinstall the pinned release if invoked
 to stop using them, remove only the three generated starter skill directories
 after reviewing their paths. Never delete the business workspace as an uninstall
 step. Installation, failed-signature handling and removal have automated tests;
-signed update/rollback preservation has additional regression coverage;
-an interactive update/discovery session remains unverified.
+signed update/rollback preservation has additional regression coverage. Claude
+plugin discovery is verified with the Claude loader. An interactive signed-update
+session remains unverified.
 
 ## Troubleshooting and support scope
 
@@ -114,5 +115,6 @@ an interactive update/discovery session remains unverified.
   the procedure permits it. Substack uses an unofficial API and may require manual
   editor entry. Live Ghost/Substack and other external writes were not tested.
 - Supported test environment: Python 3.12 on macOS arm64 locally, plus Ubuntu CI
-  as recorded in the readiness report. Windows, other Python versions, Claude/Cursor discovery and native Windows setup are unverified. Public downloads
+  as recorded in the readiness report. Windows, other Python versions, Cursor
+  discovery, and native Windows setup are unverified. Public downloads
   do not require GitHub entitlement.

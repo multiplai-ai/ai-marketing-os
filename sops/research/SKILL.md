@@ -7,7 +7,6 @@ description: 'Visual research & competitive analysis: harvest competitor and asp
 
 Visual research & competitive analysis: harvest competitor and aspirational brand references as code (HTML/Tailwind/SVG), analyze visual patterns, and synthesize structured research that feeds the creative foundation.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cd/research.md (rich) + skills-core/skills/creative/research.md (portable stub) on 2026-07-02.
 
 Legacy adapter: previously invoked as the `/cd/research` command via `.claude/commands/cd/research.md`; that path is now an adapter, not the canonical mechanism. The stub also registered an MCP adapter at `products/organization-skills-mcp/skills/creative/research.md`.
 

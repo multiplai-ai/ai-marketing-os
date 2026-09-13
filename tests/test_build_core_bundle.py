@@ -105,10 +105,10 @@ def test_submodule_rejected(repo: Path) -> None:
 
 
 def test_distributed_content_checked_beyond_sops_and_tools(repo: Path) -> None:
-    commit_file(repo, "generated/codex/skills/demo/SKILL.md", "Use /Users/example/private/input.md\n")
+    commit_file(repo, ".claude-plugin/plugin.json", 'Use /Users/example/private/input.md\n')
     with pytest.raises(BundleError, match="host-specific"):
         tar_bytes(repo)
-    assert any("generated/codex" in issue for issue in check(repo))
+    assert any(".claude-plugin" in issue for issue in check(repo))
 
 
 def test_trust_and_maintenance_files_included_but_operator_docs_excluded() -> None:

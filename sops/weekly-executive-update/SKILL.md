@@ -62,7 +62,7 @@ Save the approved markdown to:
 
 `{report_output_dir}/YYYY-MM-DD-weekly-update.md`
 
-Keep business artifacts in approved consumer storage, not shared Core source.
+Keep business artifacts in approved consumer storage, not shared workflow library.
 
 If Gmail drafting tools are available, create a draft only. Do not send.
 

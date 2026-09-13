@@ -10,7 +10,6 @@ def main():
     commands = (
         ['tools/check_release_content.py', '.'],
         ['tools/validate_sop_canon.py'],
-        ['tools/generate_adapters.py', '.', '--check'],
         ['tools/generate_catalog.py', '--check'],
         ['tools/check_client_scrub.py', '.'],
         ['tools/check_offline_cli.py'],

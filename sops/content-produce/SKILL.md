@@ -7,7 +7,6 @@ description: 'End-to-end content production pipeline: takes a content item from 
 
 End-to-end content production pipeline: takes a content item from brief through publish-ready (or runs any individual stage), with human checkpoints between stages.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/content/produce.md (rich) + skills-core/skills/content/content-produce.md (portable stub) on 2026-07-02.
 
 ```
 /produce                          # Interactive — assess what's ready, suggest next step

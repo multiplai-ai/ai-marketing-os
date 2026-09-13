@@ -7,7 +7,6 @@ description: 'Mood board and visual direction skill: turn visual research into 2
 
 Mood board and visual direction skill: turn visual research into 2-3 mood concepts and an approved mood direction — defining feel, energy, texture, and composition, but NOT colors or fonts (those come in the brand-guide step) — plus tool-agnostic AI image prompts.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cd/mood.md (rich) + skills-core/skills/creative/mood.md (portable stub) on 2026-07-02.
 
 Legacy adapter: previously invoked as the `/cd/mood` command via `.claude/commands/cd/mood.md`; that path is now an adapter, not the canonical mechanism. A second adapter existed at `products/organization-skills-mcp/skills/creative/mood.md` (MCP skill).
 

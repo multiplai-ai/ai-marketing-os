@@ -7,7 +7,6 @@ description: 'Competitor ad intelligence analysis across Google, Meta, LinkedIn,
 
 Competitor ad intelligence analysis across Google, Meta, LinkedIn, TikTok, Microsoft, and YouTube: analyze competitor ad copy, creative strategy, keyword targeting, and estimated spend, and turn them into messaging, platform, creative, and budget opportunities.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/distribution/ads/ads-competitor/SKILL.md (rich) + skills-core/skills/paid-media/ads-competitor.md (portable stub) on 2026-07-02.
 
 ## When To Use
 

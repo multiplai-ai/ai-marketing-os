@@ -7,7 +7,6 @@ description: Generate SVG templates for every platform with branded backgrounds,
 
 Generate SVG templates for every platform with branded backgrounds, placeholder zones, and pre-placed logo lockups — built from brand components and tokens for consistent cross-platform production.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cd/templates.md (rich) + skills-core/skills/creative/templates.md (portable stub) on 2026-07-02.
 
 Legacy adapter: previously invoked as the `/cd/templates` command via `.claude/commands/cd/templates.md`; that path is now an adapter, not the canonical mechanism.
 

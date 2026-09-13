@@ -7,7 +7,6 @@ description: Extract a design system from a live URL — reverse-engineers color
 
 Extract a design system from a live URL — reverse-engineers colors, typography, spacing, borders, and shadows into a usable token architecture that feeds directly into `/design-systems` Stage 3.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/strategy/design-extract.md (rich) + skills-core/skills/strategy/design-extract.md (portable stub) on 2026-07-02.
 
 Extract an existing website's design system and feed it into `/design-systems` Stage 3 (full system build) — skipping the manual mood/palette exploration stages.
 

@@ -7,7 +7,6 @@ description: TikTok Ads deep analysis covering creative quality, tracking, biddi
 
 TikTok Ads deep analysis covering creative quality, tracking, bidding, campaign structure, and TikTok Shop — evaluates 25 checks with emphasis on creative-first strategy, safe zone compliance, and Smart+ campaigns.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/distribution/ads/ads-tiktok/SKILL.md (rich) + skills-core/skills/paid-media/ads-tiktok.md (portable stub) on 2026-07-02.
 
 Legacy adapter: previously invoked via `.claude/commands/cmo/distribution/ads/ads-tiktok/SKILL.md`; that path is now an adapter, not the canonical mechanism.
 

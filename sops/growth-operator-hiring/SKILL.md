@@ -7,7 +7,6 @@ description: Define, source, evaluate, and score "full-loop" growth operators ba
 
 Define, source, evaluate, and score "full-loop" growth operators based on loop ownership, business-model fit, and execution traits — replacing functional hiring with capability-based hiring.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/ops/growth-operator-hiring.md (rich) + skills-core/skills/ops/growth-operator-hiring.md (portable stub) on 2026-07-03.
 
 ## Overview
 

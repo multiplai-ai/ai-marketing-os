@@ -7,7 +7,6 @@ description: 'Budget allocation and bidding strategy review across all ad platfo
 
 Budget allocation and bidding strategy review across all ad platforms: evaluates spend distribution, bidding strategy appropriateness, scaling readiness, and identifies campaigns to kill or scale using the 70/20/10 rule, 3x Kill Rule, and 20% scaling rule.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/distribution/ads/ads-budget/SKILL.md (rich) + skills-core/skills/paid-media/ads-budget.md (portable stub) on 2026-07-02.
 
 Legacy adapter: previously invoked via `.claude/commands/cmo/distribution/ads/ads-budget/SKILL.md`; that path is now an adapter, not the canonical mechanism.
 

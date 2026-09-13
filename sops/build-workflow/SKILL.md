@@ -7,7 +7,6 @@ description: Build skills, agents, or hybrid workflows for Claude Code automatio
 
 Build skills, agents, or hybrid workflows for Claude Code automation — decide the right automation shape, define the contract, implement, and validate.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cto/build-workflow.md (rich) + skills-core/skills/cto/build-workflow.md (portable stub) on 2026-07-03.
 
 ---
 
@@ -259,7 +258,7 @@ metadata:
   mcp-server: server-name
 ```
 
-**Output location:** `core/skills/<skill-name>/SKILL.md` (canon). `.claude/commands/<skill-name>.md` remains the legacy executable adapter until Phase 5.
+**Output location:** `sops/<skill-name>/SKILL.md` (canon). `.claude/commands/<skill-name>.md` remains the legacy executable adapter until Phase 5.
 
 ---
 
@@ -509,7 +508,7 @@ If you're fighting the pattern, you probably chose wrong. Revisit Step 1.
 
 ### File locations
 
-- Skills (canon): `core/skills/<skill-name>/SKILL.md` — `.claude/commands/<skill-name>.md` is the legacy executable adapter until Phase 5
+- Skills (canon): `sops/<skill-name>/SKILL.md` — `.claude/commands/<skill-name>.md` is the legacy executable adapter until Phase 5
 - Agent definitions: Within skills or inline Task tool calls
 - Outputs: Per skill specification (usually `.tmp/` or cloud services); workflow specs go to `{brain}/workflows/{slug}-workflow-spec.md`
 

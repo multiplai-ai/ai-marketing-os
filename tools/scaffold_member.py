@@ -35,7 +35,7 @@ def _destination(path: Path) -> Path:
         raise MemberSetupError("consumer destination must not be a symlink")
     root = path.resolve()
     if root == SOURCE_ROOT or SOURCE_ROOT in root.parents:
-        raise MemberSetupError("consumer destination must be outside the Core source checkout")
+        raise MemberSetupError("consumer destination must be outside the AI Marketing OS source checkout")
     if root.exists() and (not root.is_dir() or any(root.iterdir())):
         raise MemberSetupError("consumer destination must be absent or an empty directory; existing files are preserved")
     return root

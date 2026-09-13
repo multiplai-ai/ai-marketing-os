@@ -7,7 +7,6 @@ description: Plan and brief coordinated content campaigns for launches, series, 
 
 Plan and brief coordinated content campaigns for launches, series, and events — producing campaign briefs with launch tier assignments, GACCS briefs, asset lists, and success metrics.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/content/content-campaign.md (rich) + skills-core/skills/content/content-campaign.md (portable stub) on 2026-07-02.
 
 **When to use:** When planning a coordinated content push — product launches, feature launches, content series, event promotions (webinar, workshop, conference talk), partnership announcements, brand moments, or any major thought-leadership push that needs more coordination than the regular calendar.
 

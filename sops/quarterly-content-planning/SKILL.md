@@ -306,7 +306,7 @@ The quarter is ready for monthly execution only when the approver confirms:
 
 ## Related workflows
 
-- **Strategy refresh:** `core/skills/content-strategy/SKILL.md`
-- **Monthly execution calendar:** `core/skills/content-calendar/SKILL.md`
-- **Anchor content brief:** `core/skills/content-campaign/SKILL.md` or `core/skills/content-brief/SKILL.md`, depending on whether the work is a campaign or search/AEO-targeted piece
-- **Writing and production:** `core/skills/writing/SKILL.md`
+- **Strategy refresh:** `sops/content-strategy/SKILL.md`
+- **Monthly execution calendar:** `sops/content-calendar/SKILL.md`
+- **Anchor content brief:** `sops/content-campaign/SKILL.md` or `sops/content-brief/SKILL.md`, depending on whether the work is a campaign or search/AEO-targeted piece
+- **Writing and production:** `sops/writing/SKILL.md`

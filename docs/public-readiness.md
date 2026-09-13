@@ -8,7 +8,7 @@ not imported; existing consumers keep their signed pins and trust root.
 
 ## Release boundary
 
-The first snapshot contains 83 procedures and their generated adapters, selected
+The public snapshot contains 83 procedures, selected
 source tools, schemas, tests, fictional examples, and member documentation.
 The six GEO procedures, inherited reference corpus, and associated tools are
 omitted. Dependencies are installed separately. No historical branches, tags,

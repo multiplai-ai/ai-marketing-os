@@ -159,7 +159,7 @@ def test_nonempty_destination_preserves_existing_files(release: tuple[Path, Path
 def test_destination_inside_core_rejected_without_writes(release: tuple[Path, Path]) -> None:
     directory, key = release
     destination = ROOT / "member-setup-rejection-fixture"
-    with pytest.raises(MemberSetupError, match="outside the Core"):
+    with pytest.raises(MemberSetupError, match="outside the AI Marketing OS source checkout"):
         scaffold_member(destination, directory, VERSION, key)
     assert not destination.exists()
 
