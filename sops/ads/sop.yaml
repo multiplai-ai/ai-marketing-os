@@ -1,0 +1,15 @@
+id: ads
+version: 0.1.0
+title: "Ads \u2014 Multi-Platform Paid Advertising Audit & Optimization"
+maturity: released
+inputs:
+- business_context
+- active_platforms
+- ad_account_exports
+- campaign_goal
+outputs:
+- '{brain}/ads/ads-router-{date}.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/ads/SKILL.md

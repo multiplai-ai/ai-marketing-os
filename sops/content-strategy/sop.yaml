@@ -1,0 +1,15 @@
+id: content-strategy
+version: 0.2.0
+title: Content Strategy
+maturity: released
+inputs:
+- positioning_artifact
+- brand_strategy_artifact
+- icp_artifact
+- voice_profile
+outputs:
+- '{brain}/strategy/content-strategy.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/content-strategy/SKILL.md

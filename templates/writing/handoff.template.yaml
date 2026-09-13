@@ -1,0 +1,32 @@
+schema_version: 1
+article_ref: ""
+source_packet_ref: ""
+message:
+  core_thesis: ""
+  promised_outcome: ""
+  audience: ""
+  supporting_claim_ids: []
+  exact_phrase_ids: []
+offer:
+  name: ""
+  summary: ""
+  conversion_goal: ""
+  primary_cta: ""
+destination:
+  url: ""
+  desired_action: ""
+  message_match_terms: []
+  proof_expectations: []
+social_angle_candidates: []
+landing_audit:
+  traffic_source: LinkedIn organic
+  entry_message: ""
+  target_audience: ""
+  expected_offer: ""
+  expected_cta: ""
+  expected_proof: []
+  destination_url: ""
+readiness:
+  linkedin_ready: false
+  landing_audit_ready: false
+  blockers: []

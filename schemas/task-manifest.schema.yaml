@@ -1,0 +1,36 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://multiplai.local/schemas/task-manifest.schema.yaml
+type: object
+additionalProperties: false
+required: [schema_version, task_id, profile, agent, repository, base_sha, branch, executor, instruction, timeout_seconds, credential_aliases, validation, external_actions, recovery_state]
+properties:
+  schema_version: {const: 1}
+  task_id: {type: string, minLength: 1}
+  profile: {type: string, pattern: '^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$'}
+  agent: {type: string, pattern: '^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$'}
+  repository: {type: string, pattern: '^[^/]+/[^/]+$'}
+  base_sha: {type: string, pattern: '^[0-9a-f]{40}$'}
+  branch: {type: [string, 'null'], pattern: '^(hermes|codex)/.+'}
+  sop_id: {type: string}
+  binding: {type: string, pattern: '^config/sop-bindings/.+\.yaml$'}
+  executor: {const: codex}
+  instruction: {type: string, minLength: 1}
+  timeout_seconds: {type: integer, minimum: 1, maximum: 86400}
+  credential_aliases:
+    type: array
+    items: {type: string, pattern: '^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$'}
+    uniqueItems: true
+  validation: {type: array, items: {type: string, minLength: 1}}
+  pull_request: {type: [string, 'null']}
+  external_actions:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [action_type, target_alias, idempotency_key, policy_decision]
+      properties:
+        action_type: {type: string, pattern: '^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$'}
+        target_alias: {type: string, pattern: '^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$'}
+        idempotency_key: {type: string, pattern: '^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$'}
+        policy_decision: {enum: [allowed, approval-required, prohibited]}
+  recovery_state: {enum: [clean, preserved, blocked]}

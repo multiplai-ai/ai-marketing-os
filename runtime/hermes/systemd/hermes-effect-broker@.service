@@ -1,0 +1,24 @@
+[Unit]
+Description=Privileged Hermes effect broker request for profile %i
+
+[Service]
+Type=simple
+User=hermes-broker-%i
+Group=hermes-broker-%i
+UMask=0077
+LoadCredential=effect.env:/etc/hermes/credentials/%i.effect.env
+ExecStart=/opt/multiplai/hermes/profiles/%i/current/scripts/effect_socket.py --profile %i --db /var/lib/hermes-broker/%i/effects.db --approval-verifier /opt/multiplai/hermes/bin/verify-effect-approval --adapter /opt/multiplai/hermes/bin/provider-effect-%i --state-root /var/lib/hermes-broker/%i/approved-effects
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+MemoryDenyWriteExecute=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+ReadOnlyPaths=/opt/multiplai/hermes /etc/hermes/credentials /etc/hermes/trust
+ReadWritePaths=/var/lib/hermes-broker/%i

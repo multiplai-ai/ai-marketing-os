@@ -1,0 +1,17 @@
+id: human-writing-standard
+version: 1.0.0
+title: Human Writing Standard
+maturity: released
+inputs:
+- draft_text
+- source_packet
+- writing_profile
+outputs:
+- gate_report
+- human_review_findings
+tools:
+- human_writing_gate
+approval_classes: []
+tests:
+- tests/test_human_writing_gate.py
+source_provenance: portable-core-v1

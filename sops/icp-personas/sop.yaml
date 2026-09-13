@@ -1,0 +1,14 @@
+id: icp-personas
+version: 0.2.0
+title: ICP & Personas
+maturity: released
+inputs:
+- discovery_artifact
+- positioning_artifact
+- workflow_definition
+outputs:
+- '{brain}/strategy/icp-personas.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/icp-personas/SKILL.md

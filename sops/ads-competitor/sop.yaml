@@ -1,0 +1,17 @@
+id: ads-competitor
+version: 0.1.0
+title: Competitor Ad Intelligence
+maturity: released
+inputs:
+- competitor_list
+- business_type
+- target_market
+- priority_platforms
+outputs:
+- '{brain}/ads/competitive/COMPETITOR-INTELLIGENCE-REPORT.md'
+- '{brain}/ads/competitive/COMPETITIVE-GAPS.md'
+- '{brain}/ads/competitive/ads-competitor-{date}.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/ads-competitor/SKILL.md

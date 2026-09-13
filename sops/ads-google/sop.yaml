@@ -1,0 +1,15 @@
+id: ads-google
+version: 0.1.0
+title: Google Ads Deep Analysis
+maturity: released
+inputs:
+- google_ads_export
+- search_terms_report
+- conversion_actions
+- campaign_settings
+outputs:
+- '{brain}/ads/platforms/google-ads-audit-{date}.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/ads-google/SKILL.md

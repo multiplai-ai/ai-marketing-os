@@ -1,0 +1,61 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://multiplai.local/schemas/writing-source-packet.schema.yaml
+title: Format-neutral editorial source packet
+type: object
+additionalProperties: false
+required: [schema_version, topic_or_assignment, source_input_refs, thesis, trigger, tension, stakes, exact_phrases, firsthand_evidence, claims, counterargument, reader_outcome, cutting_room, sensitive_details]
+properties:
+  schema_version: {const: 1}
+  topic_or_assignment: {type: string, minLength: 1}
+  source_input_refs:
+    type: array
+    items: {type: string, minLength: 1}
+    uniqueItems: true
+  thesis: {type: string}
+  trigger: {type: string}
+  tension: {type: string}
+  stakes: {type: string}
+  exact_phrases:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [id, text, source_ref]
+      properties:
+        id: {type: string, minLength: 1}
+        text: {type: string, minLength: 1}
+        source_ref: {type: string, minLength: 1}
+  firsthand_evidence:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [id, summary, source_ref, sensitivity]
+      properties:
+        id: {type: string, minLength: 1}
+        summary: {type: string, minLength: 1}
+        source_ref: {type: string, minLength: 1}
+        sensitivity: {enum: [public, anonymize, private, unknown]}
+  claims:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [id, text, support_status, evidence_refs, attribution]
+      properties:
+        id: {type: string, minLength: 1}
+        text: {type: string, minLength: 1}
+        support_status: {enum: [firsthand, verified, unresolved]}
+        evidence_refs:
+          type: array
+          items: {type: string, minLength: 1}
+          uniqueItems: true
+        attribution: {type: string}
+  counterargument: {type: string}
+  reader_outcome: {type: string}
+  cutting_room:
+    type: array
+    items: {type: string}
+  sensitive_details:
+    type: array
+    items: {type: string}

@@ -1,0 +1,22 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://multiplai.local/schemas/sop-binding.schema.yaml
+title: Operating repository SOP binding
+type: object
+additionalProperties: false
+required: [schema_version, sop_id, entity, values]
+properties:
+  schema_version: {const: 1}
+  sop_id: {type: string, pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$'}
+  entity: {type: string, minLength: 1}
+  values: {type: object, minProperties: 1}
+  connector_aliases: {type: object, additionalProperties: {type: string}}
+  credential_aliases: {type: array, items: {type: string}, uniqueItems: true}
+  approver: {type: string}
+  policy_refs: {type: array, items: {type: string}, uniqueItems: true}
+  output_refs: {type: array, items: {type: string}, uniqueItems: true}
+not:
+  anyOf:
+    - {required: [steps]}
+    - {required: [procedure]}
+    - {required: [instructions]}
+    - {required: [runbook]}

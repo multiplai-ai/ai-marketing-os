@@ -1,0 +1,21 @@
+id: visual-content
+version: 0.1.1
+title: "visual-content \u2014 Shareable Visual Generator"
+maturity: released
+inputs:
+- content_excerpt_or_article_path
+- visual_goal
+- entity_dir
+- brand_tokens_artifact
+- visual_exemplars
+- target_platform
+outputs:
+- '{brain}/content/visuals/{slug}.html'
+- '{brain}/content/visuals/{slug}.svg'
+- '{brain}/content/images/{article-slug}/01-hero.svg'
+- .tmp/visuals/visual-{type}-{timestamp}.html (working draft/preview)
+tools: []
+approval_classes: []
+tests:
+- tests/test_brand_source_contract.py
+source_provenance: core/skills/visual-content/SKILL.md

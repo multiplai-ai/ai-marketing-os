@@ -1,0 +1,10 @@
+id: content-ideas-slack-to-notion-browser-handoff
+version: 0.1.1
+title: Slack to Notion content intake and mini briefs
+maturity: internal
+inputs: []
+outputs: []
+tools: []
+approval_classes: []
+tests: []
+source_provenance: docs/runbooks/hermes/content-ideas-slack-to-notion-browser-handoff.md

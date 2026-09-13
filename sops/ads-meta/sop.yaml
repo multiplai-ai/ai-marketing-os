@@ -1,0 +1,15 @@
+id: ads-meta
+version: 0.1.0
+title: Meta Ads Deep Analysis
+maturity: released
+inputs:
+- meta_ads_export
+- events_manager_status
+- creative_assets
+- audience_setup
+outputs:
+- "artifact_path: {brain}/ads/platforms/meta-ads-audit-{date}.md"
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/ads-meta/SKILL.md

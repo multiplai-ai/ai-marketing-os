@@ -1,0 +1,14 @@
+[Unit]
+Description=Reconcile approved Hermes runtime bundles
+[Service]
+Type=oneshot
+User=root
+UMask=0077
+ExecStart=/opt/multiplai/hermes/bin/runtime-reconcile-approved
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateNetwork=true
+ReadWritePaths=/opt/multiplai/hermes /var/lib/hermes/reconcile
+ReadOnlyPaths=/etc/hermes/trust

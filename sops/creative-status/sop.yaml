@@ -1,0 +1,14 @@
+id: creative-status
+version: 0.1.0
+title: Creative Status
+maturity: released
+inputs:
+- entity_name
+- entity_dir
+- workspace_manifest
+outputs:
+- '{brain}/creative/status-report.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/creative-status/SKILL.md

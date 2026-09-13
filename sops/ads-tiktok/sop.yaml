@@ -1,0 +1,15 @@
+id: ads-tiktok
+version: 0.1.0
+title: "Ads TikTok \u2014 TikTok Ads Deep Analysis"
+maturity: released
+inputs:
+- tiktok_ads_export
+- pixel_status
+- creative_assets
+- shop_or_catalog_status
+outputs:
+- '{brain}/ads/platforms/tiktok-ads-audit-{date}.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/ads-tiktok/SKILL.md

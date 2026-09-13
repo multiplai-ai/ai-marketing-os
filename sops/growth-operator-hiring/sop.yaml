@@ -1,0 +1,15 @@
+id: growth-operator-hiring
+version: 0.1.0
+title: Full-Loop Growth Operator Hiring
+maturity: released
+inputs:
+- company_context
+- growth_motion_or_loop
+- sector_or_business_model
+- hiring_constraints
+outputs:
+- '{brain}/ops/hiring/growth-operator-hiring-plan.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/growth-operator-hiring/SKILL.md

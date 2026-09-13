@@ -1,0 +1,10 @@
+id: scrape-website
+version: 0.1.0
+title: Website Scraping Runbook
+maturity: internal
+inputs: []
+outputs: []
+tools: []
+approval_classes: []
+tests: []
+source_provenance: docs/runbooks/research/scrape-website.md

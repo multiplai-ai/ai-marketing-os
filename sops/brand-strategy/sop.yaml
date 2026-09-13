@@ -1,0 +1,14 @@
+id: brand-strategy
+version: 0.2.0
+title: Brand Strategy & Key Messages
+maturity: released
+inputs:
+- discovery_artifact
+- positioning_artifact
+- icp_artifact
+outputs:
+- '{brain}/strategy/brand-strategy.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/brand-strategy/SKILL.md

@@ -1,0 +1,17 @@
+id: positioning-strategy
+version: 0.2.0
+title: Positioning Strategy
+maturity: released
+inputs:
+- discovery_artifact
+- product_description
+- target_customers
+- current_alternatives
+- customer_language
+outputs:
+- '{brain}/strategy/positioning-strategy.md'
+- '{brain}/strategy/positioning-strategy-[company-name].md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/positioning-strategy/SKILL.md

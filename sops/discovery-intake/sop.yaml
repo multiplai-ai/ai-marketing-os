@@ -1,0 +1,20 @@
+id: discovery-intake
+version: 0.2.0
+title: Discovery & Intake
+maturity: released
+inputs:
+- entity_name
+- business_description
+- company_stage
+- primary_goal
+- product_description
+- target_customers
+- current_marketing_state
+- constraints
+- available_assets
+outputs:
+- '{brain}/strategy/discovery-intake.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/discovery-intake/SKILL.md

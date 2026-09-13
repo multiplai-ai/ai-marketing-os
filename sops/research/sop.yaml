@@ -1,0 +1,19 @@
+id: research
+version: 0.1.0
+title: Research
+maturity: released
+inputs:
+- entity_name
+- competitor_references
+- aspirational_references
+- anti_references
+- strategy_artifacts
+outputs:
+- '{brain}/creative/visual-research.md'
+- '{brain}/creative/references/competitors/'
+- '{brain}/creative/references/aspirational/'
+- '{brain}/creative/references/screenshots/'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/research/SKILL.md

@@ -1,0 +1,17 @@
+id: content-calendar
+version: 0.1.1
+title: Content Calendar
+maturity: released
+inputs:
+- month
+- content_strategy_artifact
+- brand_strategy_artifact
+- production_log
+- publishing_constraints
+outputs:
+- '{brain}/content/calendar-YYYY-MM.md'
+tools: []
+approval_classes: []
+tests:
+- tests/test_brand_source_contract.py
+source_provenance: core/skills/content-calendar/SKILL.md

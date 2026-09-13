@@ -1,0 +1,10 @@
+id: sync-repo
+version: 0.1.0
+title: Sync Repo
+maturity: internal
+inputs: []
+outputs: []
+tools: []
+approval_classes: []
+tests: []
+source_provenance: products/hermes-brand-agent/skills/sync-repo/SKILL.md

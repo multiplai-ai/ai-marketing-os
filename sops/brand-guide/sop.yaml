@@ -1,0 +1,21 @@
+id: brand-guide
+version: 0.1.0
+title: Brand Guide
+maturity: released
+inputs:
+- mood_direction_artifact
+- visual_research_artifact
+- brand_strategy_artifact
+- implementation_targets
+outputs:
+- '{brain}/creative/brand-guide.md'
+- '{brain}/creative/tokens.json'
+- '{brain}/creative/generated/variables.css'
+- '{brain}/creative/generated/tailwind.config.js'
+- '{brain}/creative/generated/gamma-prompts.md'
+- '{brain}/creative/generated/figma-tokens.json'
+- '{brain}/creative/generated/pencil-variables.json'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/brand-guide/SKILL.md

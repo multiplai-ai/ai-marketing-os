@@ -1,0 +1,55 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://multiplai.local/schemas/writing-asset-catalog.schema.yaml
+title: Portable writing asset catalog
+type: object
+additionalProperties: false
+required: [schema_version, asset_types]
+properties:
+  schema_version: {const: 1}
+  asset_types:
+    type: array
+    items: {$ref: '#/$defs/asset'}
+$defs:
+  relative_ref:
+    type: string
+    minLength: 1
+    pattern: '^(?!/)(?![A-Za-z]:[\\/])(?!.*(?:^|/)\.\.(?:/|$)).+$'
+  refs:
+    type: array
+    items: {$ref: '#/$defs/relative_ref'}
+    uniqueItems: true
+  evidence_classes:
+    type: object
+    additionalProperties: false
+    required: [taste, owned_performance, category_performance]
+    properties:
+      taste: {$ref: '#/$defs/refs'}
+      owned_performance: {$ref: '#/$defs/refs'}
+      category_performance: {$ref: '#/$defs/refs'}
+  asset:
+    type: object
+    additionalProperties: false
+    required: [id, kind, editorial_brief_ref, template_ref, standards_refs, good_exemplar_refs, bad_exemplar_refs, required_inputs, quality_gates]
+    properties:
+      id: {type: string, pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$'}
+      kind: {enum: [long_form, social_post]}
+      evidence_classes: {$ref: '#/$defs/evidence_classes'}
+      editorial_brief_ref: {$ref: '#/$defs/relative_ref'}
+      template_ref: {$ref: '#/$defs/relative_ref'}
+      standards_refs: {$ref: '#/$defs/refs'}
+      good_exemplar_refs: {$ref: '#/$defs/refs'}
+      bad_exemplar_refs: {$ref: '#/$defs/refs'}
+      required_inputs:
+        type: array
+        items: {type: string, minLength: 1}
+        uniqueItems: true
+      quality_gates:
+        type: array
+        items: {type: string, minLength: 1}
+        uniqueItems: true
+    allOf:
+      - if:
+          properties: {kind: {const: social_post}}
+          required: [kind]
+        then:
+          required: [evidence_classes]

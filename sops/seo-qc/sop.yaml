@@ -1,0 +1,16 @@
+id: seo-qc
+version: 0.1.1
+title: SEO/AEO Quality Check
+maturity: released
+inputs:
+- draft_article_path
+- target_keyword
+- voice_profile
+- content_strategy_artifact
+outputs:
+- '{brain}/ops/seo/qc-{slug}-{date}.md'
+tools: []
+approval_classes: []
+tests:
+- tests/test_brand_source_contract.py
+source_provenance: core/skills/seo-qc/SKILL.md

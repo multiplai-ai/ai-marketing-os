@@ -1,0 +1,20 @@
+id: speaking-events-pipeline
+version: 0.1.1
+title: Speaking Events Pipeline
+maturity: internal
+inputs:
+- brain_path
+- review_month
+- speaking_targets_doc
+- content_pillars
+- cfp_tracker_data
+- upcoming_confirmed_talks
+outputs:
+- '{brain}/content/speaking/{month}-cfp-radar.md'
+- draft CFP submission packages for human approval
+- per-talk stage-conversion kit (gated slides, unique artifact URL, follow-up sequence drafts)
+- talk-to-lead attribution rollup in the monthly radar
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/speaking-events-pipeline/SKILL.md

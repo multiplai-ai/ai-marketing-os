@@ -1,0 +1,11 @@
+[Service]
+Type=oneshot
+User=root
+UMask=0077
+ExecStart=/opt/multiplai/hermes/bin/workspace-gc --root /srv/hermes/tasks --state /var/lib/hermes --preserve-dirty-and-unpushed
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateNetwork=true
+ReadWritePaths=/srv/hermes/tasks /var/lib/hermes

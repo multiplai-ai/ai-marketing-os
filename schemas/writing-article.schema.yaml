@@ -1,0 +1,26 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://multiplai.local/schemas/writing-article.schema.yaml
+title: Portable long-form article frontmatter
+type: object
+additionalProperties: true
+required: [schema_version, artifact_type, status, title, slug, created, asset_type, audience, thesis, source_packet_ref, handoff_ref, unresolved_claim_ids, checks_run]
+properties:
+  schema_version: {const: 1}
+  artifact_type: {const: long_form_article}
+  status: {enum: [incomplete, draft, review_ready]}
+  title: {type: string, minLength: 1}
+  slug: {type: string, pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$'}
+  created: {type: string, format: date}
+  asset_type: {type: string, minLength: 1}
+  audience: {type: string, minLength: 1}
+  thesis: {type: string, minLength: 1}
+  source_packet_ref: {type: string, minLength: 1}
+  handoff_ref: {type: string, minLength: 1}
+  unresolved_claim_ids:
+    type: array
+    items: {type: string, minLength: 1}
+    uniqueItems: true
+  checks_run:
+    type: array
+    items: {type: string, minLength: 1}
+    uniqueItems: true

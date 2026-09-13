@@ -1,0 +1,4 @@
+interface:
+  display_name: "YouTube Transcript"
+  short_description: "Fetch YouTube transcripts as source-faithful Markdown"
+  default_prompt: "Use $youtube-transcript to fetch and format a YouTube transcript for source-based content work."

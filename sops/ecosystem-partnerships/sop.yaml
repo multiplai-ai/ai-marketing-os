@@ -1,0 +1,20 @@
+id: ecosystem-partnerships
+version: 0.1.1
+title: Ecosystem Partnerships
+maturity: internal
+inputs:
+- brain_path
+- review_month
+- partner_map_doc
+- partner_queue_data
+- active_commitments
+- lead_pipeline_data
+outputs:
+- '{brain}/content/partnerships/{month}-partner-review.md'
+- monthly warm outreach queue (3-5 moves, drafted with rationale) for human approval
+- joint webinar / newsletter swap / podcast pitch drafts for human approval
+- partner-sourced lead rollup in the lead pipeline
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/ecosystem-partnerships/SKILL.md

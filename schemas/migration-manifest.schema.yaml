@@ -1,0 +1,9 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://multiplai.local/schemas/migration-manifest.schema.yaml
+type: object
+additionalProperties: false
+required: [schema_version, kind, entries]
+properties:
+  schema_version: {const: 1}
+  kind: {enum: [sop_migration, file_ownership, provider_dependencies]}
+  entries: {type: array, items: {type: object}, minItems: 1}

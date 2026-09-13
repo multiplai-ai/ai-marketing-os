@@ -1,0 +1,10 @@
+id: jira-marketing
+version: 0.1.1
+title: "Launch Visibility SOP \u2014 Category Management Team"
+maturity: internal
+inputs: []
+outputs: []
+tools: []
+approval_classes: []
+tests: []
+source_provenance: brains/entity/projects/_jira-sops/jira-marketing-sop.md

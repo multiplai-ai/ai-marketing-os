@@ -1,0 +1,10 @@
+id: l2-microsite-report
+version: 0.1.0
+title: L2 Microsite Report Runbook
+maturity: internal
+inputs: []
+outputs: []
+tools: []
+approval_classes: []
+tests: []
+source_provenance: docs/runbooks/reporting/l2-microsite-report.md

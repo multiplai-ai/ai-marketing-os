@@ -1,0 +1,6 @@
+id: codex
+command: codex
+environment_allowlist: [PATH, LANG, LC_ALL, SSL_CERT_FILE, SSL_CERT_DIR]
+credential_files: {codex_oauth: auth.json}
+fallback: prohibited
+required_user_template: hermes-task-{profile}

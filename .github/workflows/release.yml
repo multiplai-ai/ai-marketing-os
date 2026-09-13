@@ -1,0 +1,87 @@
+name: release
+on:
+  workflow_dispatch:
+    inputs:
+      version: {required: true, type: string}
+concurrency:
+  group: core-release
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  checks:
+    permissions:
+      contents: read
+    uses: ./.github/workflows/validate.yml
+  bundle:
+    environment: release
+    needs: checks
+    runs-on: ubuntu-latest
+    env:
+      RELEASE_VERSION: ${{ inputs.version }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with: {python-version: '3.12'}
+      - run: sudo apt-get update && sudo apt-get install -y zstd minisign
+      - name: Validate release version
+        run: |
+          [[ "$RELEASE_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-rc\.[0-9]+)?$ ]]
+          test "$GITHUB_REF" = "refs/heads/main"
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          ! gh release view "v$RELEASE_VERSION" >/dev/null 2>&1
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - run: python3 -m pip install -e '.[dev,publishing]'
+      - name: Validate the exact commit before signing
+        run: python3 tools/check_core.py
+      - run: python3 tools/build_core_bundle.py --version "$RELEASE_VERSION" --output dist
+      - name: Validate the built archive
+        run: |
+          mkdir "$RUNNER_TEMP/core-artifact"
+          zstd -dc "dist/multiplai-core-${RELEASE_VERSION}.tar.zst" | tar -xf - -C "$RUNNER_TEMP/core-artifact"
+          cd "$RUNNER_TEMP/core-artifact/multiplai-core"
+          python3 tools/check_core.py
+      - name: Sign and verify release files
+        env:
+          MINISIGN_SECRET_KEY: ${{ secrets.MINISIGN_SECRET_KEY }}
+          MINISIGN_PUBLIC_KEY: ${{ secrets.MINISIGN_PUBLIC_KEY }}
+        run: |
+          test -n "$MINISIGN_SECRET_KEY"
+          test -n "$MINISIGN_PUBLIC_KEY"
+          umask 077
+          printf '%s\n' "$MINISIGN_SECRET_KEY" > "$RUNNER_TEMP/minisign.key"
+          artifact="dist/multiplai-core-${RELEASE_VERSION}.tar.zst"
+          manifest="dist/multiplai-core-${RELEASE_VERSION}.manifest.json"
+          minisign -S -s "$RUNNER_TEMP/minisign.key" -m "$artifact"
+          minisign -S -s "$RUNNER_TEMP/minisign.key" -m "$manifest"
+          minisign -Vm "$artifact" -P "$MINISIGN_PUBLIC_KEY"
+          minisign -Vm "$manifest" -P "$MINISIGN_PUBLIC_KEY"
+      - name: Remove temporary signing key
+        if: ${{ always() }}
+        run: rm -f "$RUNNER_TEMP/minisign.key"
+      - name: Test signed member installation before publication
+        run: |
+          python3 tools/scaffold_member.py \
+            --consumer-root "$RUNNER_TEMP/member-consumer" \
+            --release-dir dist --version "$RELEASE_VERSION" \
+            --public-key-file releases/trust/minisign.pub > "$RUNNER_TEMP/member-receipt.json"
+          python3 -B - <<'PYTHON'
+          import json, os, pathlib, subprocess, sys
+          receipt = json.loads((pathlib.Path(os.environ["RUNNER_TEMP"]) / "member-receipt.json").read_text())
+          installed = pathlib.Path(receipt["install_root"])
+          subprocess.run([sys.executable, "-B", str(installed / "tools/human_writing_gate.py"),
+                          str(installed / "examples/member-demo/example-prose.md"), "--json"], check=True)
+          PYTHON
+          python3 tools/install_core_bundle.py --consumer-root "$RUNNER_TEMP/member-consumer" --verify-only
+          python3 tools/install_core_bundle.py --consumer-root "$RUNNER_TEMP/member-consumer" --remove
+      - name: Publish signed public release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "v${RELEASE_VERSION}" dist/* \
+            --target "$GITHUB_SHA" \
+            --title "AI Marketing OS ${RELEASE_VERSION}" \
+            --prerelease --notes "Signed AI Marketing OS preview ${RELEASE_VERSION}. Start with README.md; live integrations remain opt-in and unverified."

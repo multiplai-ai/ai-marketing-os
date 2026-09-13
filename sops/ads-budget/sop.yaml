@@ -1,0 +1,16 @@
+id: ads-budget
+version: 0.1.0
+title: Budget Allocation & Bidding Strategy
+maturity: released
+inputs:
+- spend_by_platform
+- campaign_performance
+- target_cpa_or_roas
+- conversion_volume
+- business_goal
+outputs:
+- '{brain}/ads/budget/ads-budget-review-{date}.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/ads-budget/SKILL.md
