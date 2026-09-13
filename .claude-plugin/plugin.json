@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "ai-marketing-os",
-  "version": "4.0.0-rc.14",
+  "version": "4.0.0-rc.15",
   "description": "Practical marketing workflows for strategy, content, writing, advertising, SEO, creative work, and reporting.",
   "author": {
     "name": "MultiplAI"
@@ -9,6 +9,6 @@
   "homepage": "https://github.com/multiplai-ai/ai-marketing-os",
   "repository": "https://github.com/multiplai-ai/ai-marketing-os",
   "license": "MIT",
-  "keywords": ["marketing", "strategy", "content", "writing", "advertising", "seo"],
+  "keywords": ["marketing", "strategy", "content", "writing", "advertising", "seo", "geo"],
   "skills": ["./sops/"]
 }

@@ -1,0 +1,23 @@
+id: geo-audit
+version: 1.0.0
+title: GEO Audit
+maturity: released
+inputs:
+- primary_domain
+- business_context
+- audience_and_offer
+- priority_topics
+- optional_priority_urls
+- optional_competitors
+- optional_performance_exports
+- optional_ai_answer_sample
+outputs:
+- geo/audits/{date}/data-inventory.md
+- geo/audits/{date}/page-scorecards/
+- geo/audits/{date}/diagnostic.md
+tools:
+- tools/geo_audit.py
+approval_classes: []
+tests:
+- tests/test_geo_audit.py
+source_provenance: owner-authored-standalone-geo-audit-v1

@@ -15,7 +15,7 @@ passing technical check does not establish strategy quality or live integration.
 Suggested first session: 10 minutes on fresh setup, 15 minutes on a useful brief
 and prose revision, then 20–30 minutes reviewing a strategy chain for one real
 business. Treat those as planning estimates, not measured completion times.
-Do not ask subscribers to test all 83 included procedures at once.
+Do not ask subscribers to test all 84 included procedures at once.
 
 ## Recorded evidence
 
