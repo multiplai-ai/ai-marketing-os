@@ -29,6 +29,7 @@ More relevant source material usually produces a better result.
 | Draft a LinkedIn post | [LinkedIn Post](sops/linkedin-post/SKILL.md) | “Turn this idea into one LinkedIn post for review. Do not publish it.” |
 | Review paid advertising | [Ads Audit](sops/ads-audit/SKILL.md) | “Audit these ad exports and explain the three highest-priority problems.” |
 | Review a website or landing page | [Landing Page Audit](sops/ads-landing/SKILL.md) | “Compare this page with the promise that sends people there and recommend improvements.” |
+| Improve visibility in AI answers | [GEO Audit](sops/geo-audit/SKILL.md) | “Audit these priority pages for AI search visibility. Separate observations from assumptions and give me a 30-day plan.” |
 
 ## Install in Claude
 
@@ -77,4 +78,4 @@ change an account.
 
 The [workflow library](docs/capabilities.md) groups the available workflows by
 the job they help accomplish. Each name links directly to the full instructions.
-Start with one workflow and one real task. You do not need to configure all 83.
+Start with one workflow and one real task. You do not need to configure all 84.

@@ -13,6 +13,7 @@ dashboard and you do not need to learn the repository's code to use it.
 - Turn source material into briefs, articles, newsletters, and LinkedIn posts
 - Plan content calendars and campaigns
 - Review SEO, landing pages, creative, and paid advertising
+- Audit how well AI answer engines can understand and cite a website
 - Create reports, presentations, visual directions, and operating plans
 
 [Browse the workflow library](docs/capabilities.md) or follow the
@@ -104,9 +105,9 @@ for inspection but have not been tested with every account, connector, operating
 system, or business. A workflow may need source files, account access, or a
 separate integration. Claude should explain what it needs before taking action.
 
-The six unresolved GEO workflows remain excluded from this public release. The
-source is MIT licensed; AI subscriptions, APIs, connectors, and third-party
-services are separate.
+The standalone GEO Audit is included. Five related GEO adaptations and their
+inherited reference corpus remain excluded. The source is MIT licensed; AI
+subscriptions, APIs, connectors, and third-party services are separate.
 
 ## Contributing
 

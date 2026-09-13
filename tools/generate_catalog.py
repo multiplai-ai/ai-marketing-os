@@ -12,7 +12,7 @@ import yaml
 STARTERS = {
     "strategy-suite", "content-strategy", "content-brief", "writing",
     "human-writing-standard", "linkedin-post", "ads-audit", "ads-landing",
-    "seo-qc", "prompt-optimizer",
+    "seo-qc", "geo-audit", "prompt-optimizer",
 }
 EVALUATED = {
     "discovery-intake", "positioning-strategy", "icp-personas",
@@ -54,6 +54,7 @@ PUBLIC_GUIDE = {
     "dev-process": ("Software Work Guide", "Guide a software change from understanding and planning through implementation, review, and release."),
     "discovery-intake": ("Business Discovery", "Organize business, customer, marketing, evidence, and constraint information before strategy work begins."),
     "growth-operator-hiring": ("Growth Operator Hiring", "Define the role, score candidates, and run a practical hiring process for a full-loop growth operator."),
+    "geo-audit": ("GEO Audit", "Review how easily AI answer engines can discover, understand, and cite a website, then prioritize improvements."),
     "human-writing-standard": ("Human Writing Review", "Keep writing grounded in a real author's words, evidence, judgment, and natural rhythm."),
     "icp-personas": ("Ideal Customers and Buyer Personas", "Define the companies, people, buying roles, and real work patterns most likely to fit the offer."),
     "linkedin-post": ("LinkedIn Post", "Turn a real idea or source into one voice-matched LinkedIn post, or a deliberately varied batch."),
@@ -73,6 +74,8 @@ PUBLIC_GUIDE = {
 
 
 def category(sid: str) -> str:
+    if sid == "geo-audit":
+        return "AI search visibility"
     if sid.startswith("ads"):
         return "Advertising and conversion"
     if sid in {"discovery-intake", "positioning-strategy", "icp-personas", "brand-strategy",
@@ -136,7 +139,7 @@ def render(root: Path) -> str:
     workflows = load_workflows(root)
     categories = (
         "Strategy and customers", "Content and writing", "Advertising and conversion",
-        "SEO and websites", "Brand, creative, and presentations",
+        "SEO and websites", "AI search visibility", "Brand, creative, and presentations",
         "Reporting and publishing", "Operations and automation",
     )
     text = """# Workflow library
@@ -161,6 +164,7 @@ Claude, you can also select an installed workflow from the `/` or `+` menu.
 | Draft a social post | [LinkedIn Post](../sops/linkedin-post/SKILL.md) | “Turn this idea into one LinkedIn post for review. Do not publish it.” |
 | Find the biggest advertising problems | [Paid Advertising Audit](../sops/ads-audit/SKILL.md) | “Review these exports and explain the three highest-priority problems.” |
 | Improve a landing page | [Landing Page Review](../sops/ads-landing/SKILL.md) | “Compare this page with the promise that sends visitors there.” |
+| Improve visibility in AI answers | [GEO Audit](../sops/geo-audit/SKILL.md) | “Audit these priority pages for AI search visibility and give me an evidence-backed 30-day plan.” |
 
 ## How to read the labels
 

@@ -45,6 +45,7 @@ def test_discovery_includes_new_executable_without_allowlist(tmp_path):
     ('web_scraper', ['https://example.invalid', 'out'], 'web'),
     ('extract_design_tokens', ['https://example.invalid'], 'web'),
     ('generate_design_visual', ['--prompt', 'fictional tile', '--output', 'tile.png'], 'google'),
+    ('geo_audit', ['--url', 'https://example.invalid', '--output', 'out'], 'geo'),
     ('gamma_create_presentation', ['--test'], 'publishing'),
     ('templated_renderer', ['--test'], 'publishing'),
 ])
@@ -57,7 +58,7 @@ def test_missing_integration_is_actionable_before_network(tmp_path, name, args, 
 
 
 @pytest.mark.parametrize('name', [
-    'web_scraper', 'extract_design_tokens', 'generate_design_visual',
+    'web_scraper', 'extract_design_tokens', 'generate_design_visual', 'geo_audit',
     'gamma_create_presentation', 'templated_renderer',
 ])
 def test_help_with_all_optional_packages_absent(tmp_path, name):
@@ -97,8 +98,10 @@ def test_playwright_other_runtime_errors_are_preserved():
         launch_chromium(BrokenBrowser())
 
 
-def test_optional_extras_cover_packages_used_by_llm_and_visuals():
+def test_optional_extras_cover_packages_used_by_geo_llm_and_visuals():
     extras = tomllib.loads((ROOT / 'pyproject.toml').read_text())['project']['optional-dependencies']
+    assert any(item.startswith('textstat') for item in extras['geo'])
+    assert any(item.startswith('readability-lxml') for item in extras['geo'])
     assert any(item.startswith('anthropic') for item in extras['llm'])
     assert any(item.startswith('openai') for item in extras['llm'])
     assert any(item.startswith('Pillow') for item in extras['google'])
@@ -112,7 +115,7 @@ def test_no_implicit_dotenv_reads_on_tool_import(tmp_path):
     shutil.copytree(ROOT / 'tools', fixture / 'tools', ignore=shutil.ignore_patterns('__pycache__'))
     (fixture / '.env').write_text('CORE_SYNTHETIC_TEST_MARKER=must-not-load\n')
     (tmp_path / 'sitecustomize.py').write_text(GUARD)
-    modules = ('generate_design_visual', 'gamma_create_presentation', 'templated_renderer',
+    modules = ('generate_design_visual', 'geo_audit', 'gamma_create_presentation', 'templated_renderer',
                'buffer_publisher', 'metricool_publisher', 'publer_publisher',
                'notion_content_db', 'notion_publish', 'sheets_publish')
     code = 'import runpy,sys; [runpy.run_path(p, run_name="offline_import") for p in sys.argv[1:]]'

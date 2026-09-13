@@ -43,7 +43,7 @@ jobs:
         run: |
           python3 -m zipfile -e "dist/ai-marketing-os-claude-plugin-${RELEASE_VERSION}.zip" "$RUNNER_TEMP/claude-plugin"
           test -f "$RUNNER_TEMP/claude-plugin/.claude-plugin/plugin.json"
-          test "$(find "$RUNNER_TEMP/claude-plugin/sops" -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l)" -eq 83
+          test "$(find "$RUNNER_TEMP/claude-plugin/sops" -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l)" -eq 84
       - name: Validate the built archive
         run: |
           mkdir "$RUNNER_TEMP/core-artifact"

@@ -20,6 +20,7 @@ Claude, you can also select an installed workflow from the `/` or `+` menu.
 | Draft a social post | [LinkedIn Post](../sops/linkedin-post/SKILL.md) | “Turn this idea into one LinkedIn post for review. Do not publish it.” |
 | Find the biggest advertising problems | [Paid Advertising Audit](../sops/ads-audit/SKILL.md) | “Review these exports and explain the three highest-priority problems.” |
 | Improve a landing page | [Landing Page Review](../sops/ads-landing/SKILL.md) | “Compare this page with the promise that sends visitors there.” |
+| Improve visibility in AI answers | [GEO Audit](../sops/geo-audit/SKILL.md) | “Audit these priority pages for AI search visibility and give me an evidence-backed 30-day plan.” |
 
 ## How to read the labels
 
@@ -79,6 +80,12 @@ Claude, you can also select an installed workflow from the `/` or `+` menu.
 | [Website Conversion Review](../sops/cro/SKILL.md) | Find the page changes most likely to make the offer clearer and the next action easier. | Test with your setup |
 | [SEO Audit](../sops/seo/SKILL.md) | Use search and site data to find and prioritize technical, content, and authority improvements. | Test with your setup |
 | [Article Search Quality Check](../sops/seo-qc/SKILL.md) | Review a finished article for search usefulness, answer quality, evidence, and specific improvements. | Good place to start |
+
+## AI search visibility
+
+| Workflow | What it helps you do | Readiness |
+| --- | --- | --- |
+| [GEO Audit](../sops/geo-audit/SKILL.md) | Review how easily AI answer engines can discover, understand, and cite a website, then prioritize improvements. | Good place to start |
 
 ## Brand, creative, and presentations
 
