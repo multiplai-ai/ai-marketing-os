@@ -33,10 +33,13 @@ auto-merge, release signing or public visibility changes.
 ## Server-side release controls
 
 The intended main protection payload is `.github/main-protection.proposed.json`:
-require the core check on an up-to-date branch, one approval, fresh approval after
-new commits, resolved conversations, and administrator enforcement. Prohibit
-force pushes and deletion. Read back the actual GitHub settings after applying;
-a checked-in file alone does not enforce these controls.
+require the core check on an up-to-date branch, resolved conversations, and
+administrator enforcement. Prohibit force pushes and deletion. The repository
+currently has one GitHub collaborator, so a required independent GitHub review
+would prevent every merge. Require explicit owner authorization before a solo
+maintainer merges; restore required GitHub reviews when another maintainer is
+available. Read back the actual GitHub settings after applying; a checked-in
+file alone does not enforce these controls.
 
 The `release` environment must require owner approval and main-only deployment.
 Keep signing secrets in that environment. The workflow validates the source and
