@@ -7,7 +7,6 @@ description: Build comprehensive, production-ready design systems through a stag
 
 Build comprehensive, production-ready design systems through a staged, collaborative workflow — translate brand voice and positioning into an approved mood direction, locked color and typography, a tiered token architecture, and implementation-ready component guidance.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/strategy/design-systems.md (rich) + skills-core/skills/strategy/design-systems.md (portable stub) on 2026-07-02.
 
 Legacy adapters: previously invoked as the `/design-systems` command via `.claude/commands/cmo/strategy/design-systems.md`, and exposed as an MCP skill via `products/organization-skills-mcp/skills/strategy/design-systems.md`. Those paths are now adapters, not the canonical mechanism.
 

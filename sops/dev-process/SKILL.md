@@ -7,7 +7,6 @@ description: 'Development lifecycle orchestrator — the entry point for all dev
 
 Development lifecycle orchestrator — the entry point for all development work: route the request through understand, plan, implement, debug, review, and ship stages instead of jumping straight to code, mapping each stage to the right superpower.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cto/dev-process.md (rich) + skills-core/skills/cto/dev-process.md (portable stub) on 2026-07-03.
 
 Legacy adapter: previously invoked as the `/cto:dev-process` command via `.claude/commands/cto/dev-process.md`; that path is now an adapter, not the canonical mechanism.
 

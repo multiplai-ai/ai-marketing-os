@@ -7,7 +7,6 @@ description: Run an advisory SEO audit using GSC, GA4, site data, and structured
 
 Run an advisory SEO audit using GSC, GA4, site data, and structured findings that produce an executive summary, prioritized issue backlog, and action plan (xlsx + markdown).
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/distribution/seo.md (rich) + skills-core/skills/ops/seo.md (portable stub) on 2026-07-03.
 
 Legacy command name: `mktg-seo` (invoked as `/cmo/distribution/seo`) — legacy; use skill id `seo`.
 

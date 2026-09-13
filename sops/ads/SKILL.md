@@ -7,7 +7,6 @@ description: 'Comprehensive paid advertising audit and optimization for any busi
 
 Comprehensive paid advertising audit and optimization for any business type: routes paid media requests to the right workflow, then runs full multi-platform audits (Google, Meta, LinkedIn, TikTok, Microsoft), platform deep dives, conversion tracking health checks, creative quality assessment, budget allocation optimization, bidding strategy evaluation, and compliance verification.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/distribution/ads/ads/SKILL.md (rich) + skills-core/skills/paid-media/ads.md (portable stub) on 2026-07-02.
 
 Legacy adapter: previously invoked as the `/ads` command via `.claude/commands/cmo/distribution/ads/ads/SKILL.md`; that path is now an adapter, not the canonical mechanism.
 

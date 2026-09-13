@@ -7,7 +7,6 @@ description: 'Creative foundation progress check: report which Creative Director
 
 Creative foundation progress check: report which Creative Director foundation stages are complete for an entity (or all entities), what's missing, and what to run next.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cd/status.md (rich) + skills-core/skills/creative/creative-status.md (portable stub) on 2026-07-02.
 
 Legacy adapter: previously invoked as the `/cd/status` command via `.claude/commands/cd/status.md`; that path is now an adapter, not the canonical mechanism.
 

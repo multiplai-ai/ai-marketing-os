@@ -7,7 +7,6 @@ description: 'Conversion rate optimization audits for landing pages and key webp
 
 Conversion rate optimization audits for landing pages and key webpages: fetch the page, analyze it through a priority-ordered 7-dimension framework, and output prioritized recommendations with specific copy alternatives.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/content/cro.md (rich) + skills-core/skills/content/cro.md (portable stub) on 2026-07-02.
 
 ## When To Use
 

@@ -27,7 +27,7 @@ Reuse supplied context and resolve missing essentials:
 
 Relevant procedures and source documents must be available in the current
 consumer's repository or connected storage. Do not pull another client's private
-context or reproduce shared Core procedures in a local synchronized copy. Missing
+context or reproduce shared library procedures in a local synchronized copy. Missing
 credentials or a scheduler are setup gaps, not proof that the workflow is live.
 
 ## Who does what

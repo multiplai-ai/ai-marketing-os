@@ -7,7 +7,6 @@ description: Build a focused monthly content calendar from your content strategy
 
 Build a focused monthly content calendar from your content strategy — a 4-week calendar with themed content, GACCS briefs, distribution plans, and mileage maps, with production constraints enforced.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/content/content-calendar.md (rich) + skills-core/skills/content/content-calendar.md (portable stub) on 2026-07-02.
 
 **When to use:** At the start of each month to plan that month's content production. Pull from content strategy for pillars, shows, and themes. Also useful whenever the team needs to align production, review, distribution, and repurposing before drafting.
 

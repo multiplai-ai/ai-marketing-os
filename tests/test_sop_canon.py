@@ -1,13 +1,9 @@
 """Regression cases for metadata and generated discovery defects missed by rc.12 CI."""
 from pathlib import Path
 import shutil
-import subprocess
-import sys
-
 import pytest
 import yaml
 
-from tools.generate_adapters import adapter_drift, expected_adapters
 from tools.validate_sop_canon import validate
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,10 +23,6 @@ def canon(tmp_path):
     }))
     (tmp_path / "sops/manifest.yaml").write_text("sops: [example]\n")
     (tmp_path / "provenance.yaml").write_text("sop_count: 1\n")
-    for relative, content in expected_adapters(tmp_path).items():
-        path = tmp_path / "generated/codex/skills" / relative
-        path.parent.mkdir(parents=True)
-        path.write_text(content)
     return tmp_path
 
 
@@ -109,50 +101,3 @@ def test_required_inventory_files(canon, relative):
 def test_manifest_inventory_must_match(canon):
     (canon / "sops/manifest.yaml").write_text("sops: [example, removed]\n")
     assert any("manifest" in error for error in validate(canon))
-
-
-@pytest.mark.parametrize("drift", ["missing", "stale", "edited", "symlink"])
-def test_check_detects_drift_without_writing(canon, drift):
-    out = canon / "generated/codex/skills"
-    path = out / "example/SKILL.md"
-    if drift == "missing":
-        path.unlink()
-    elif drift == "stale":
-        path = out / "removed/SKILL.md"
-        path.parent.mkdir()
-        path.write_text("stale pointer")
-    elif drift == "edited":
-        path.write_text("edited pointer")
-    else:
-        path.unlink()
-        path.symlink_to(canon / "sops/example/SKILL.md")
-    before = {str(p): p.read_bytes() for p in out.rglob("*") if p.is_file()}
-    result = subprocess.run([sys.executable, str(ROOT / "tools/generate_adapters.py"), str(canon), "--check"], capture_output=True, text=True)
-    assert result.returncode == 1
-    assert adapter_drift(canon)
-    assert before == {str(p): p.read_bytes() for p in out.rglob("*") if p.is_file()}
-
-
-def test_regeneration_removes_stale_and_restores_missing(canon):
-    out = canon / "generated/codex/skills"
-    (out / "example/SKILL.md").unlink()
-    (out / "removed").mkdir()
-    (out / "removed/SKILL.md").write_text("stale")
-    result = subprocess.run([sys.executable, str(ROOT / "tools/generate_adapters.py"), str(canon)], capture_output=True, text=True)
-    assert result.returncode == 0, result.stdout + result.stderr
-    assert adapter_drift(canon) == []
-    assert not (out / "removed").exists()
-
-
-def test_generator_rejects_linked_output_directory(canon, tmp_path):
-    out = canon / "generated/codex/skills"
-    external = canon / "preserve"
-    out.rename(external)
-    out.symlink_to(external, target_is_directory=True)
-    before = (external / "example/SKILL.md").read_bytes()
-    for flags in ([], ["--check"]):
-        result = subprocess.run([sys.executable, str(ROOT / "tools/generate_adapters.py"), str(canon), *flags], capture_output=True, text=True)
-        assert result.returncode == 1
-        assert "symlink" in result.stdout
-    assert (external / "example/SKILL.md").read_bytes() == before
-    assert validate(canon)

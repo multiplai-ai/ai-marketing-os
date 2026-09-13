@@ -7,7 +7,6 @@ description: 'Google Ads deep analysis covering Search, Performance Max, Display
 
 Google Ads deep analysis covering Search, Performance Max, Display, YouTube, and Demand Gen campaigns: evaluates 74 checks across conversion tracking, wasted spend, account structure, keywords, ads, and settings, producing a weighted health score and prioritized action plan.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/distribution/ads/ads-google/SKILL.md (rich) + skills-core/skills/paid-media/ads-google.md (portable stub) on 2026-07-02.
 
 Legacy adapter: previously invoked via `.claude/commands/cmo/distribution/ads/ads-google/SKILL.md`; that path is now an adapter, not the canonical mechanism.
 

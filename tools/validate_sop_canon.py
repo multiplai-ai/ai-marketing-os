@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate canonical SOP schema, discovery metadata, references and adapter drift."""
+"""Validate canonical SOP schema, discovery metadata and local references."""
 from __future__ import annotations
 
 import argparse
@@ -9,10 +9,31 @@ from pathlib import Path, PurePosixPath
 import yaml
 from jsonschema import Draft202012Validator
 
-if __package__:
-    from .generate_adapters import adapter_drift, frontmatter
-else:
-    from generate_adapters import adapter_drift, frontmatter
+
+def frontmatter(text: str) -> dict:
+    if not text.startswith("---\n"):
+        raise ValueError("SKILL.md requires YAML frontmatter")
+    end = text.find("\n---\n", 4)
+    if end < 0:
+        raise ValueError("SKILL.md frontmatter is not closed")
+    try:
+        data = yaml.safe_load(text[4:end])
+    except yaml.YAMLError as exc:
+        raise ValueError(f"invalid SKILL.md frontmatter: {exc}") from exc
+    if not isinstance(data, dict):
+        raise ValueError("SKILL.md frontmatter must be a mapping")
+    allowed = {"name", "description", "license", "allowed-tools", "metadata"}
+    if set(data) - allowed:
+        raise ValueError("custom SKILL.md frontmatter fields belong under metadata")
+    name = data.get("name")
+    description = data.get("description")
+    if not isinstance(name, str) or not 1 <= len(name) <= 64:
+        raise ValueError("SKILL.md name must be a string of 1–64 characters")
+    if not isinstance(description, str) or not description.strip() or len(description) > 1024:
+        raise ValueError("SKILL.md description must be nonempty and at most 1024 characters")
+    if "<" in description or ">" in description:
+        raise ValueError("SKILL.md description must not contain angle brackets")
+    return data
 
 
 def read_yaml(path: Path):
@@ -93,10 +114,6 @@ def validate(root: Path) -> list[str]:
                 errors.append("sops/manifest.yaml does not match canonical SOP packages")
         elif not isinstance(data, dict) or data.get("sop_count") != len(seen):
             errors.append("provenance.yaml sop_count does not match canonical SOP packages")
-    try:
-        errors.extend(adapter_drift(root))
-    except (OSError, ValueError) as exc:
-        errors.append(f"cannot validate generated adapters: {exc}")
     return errors
 
 

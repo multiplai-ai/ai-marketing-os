@@ -7,7 +7,6 @@ description: Generate a library of native SVG components from brand tokens — b
 
 Generate a library of native SVG components from brand tokens — backgrounds, textures, buttons, badges, dividers, card frames, icons, and logo lockups — every one Figma-importable as editable vector layers.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cd/components.md (rich) + skills-core/skills/creative/components.md (portable stub) on 2026-07-02.
 
 ## Goal
 

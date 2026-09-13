@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "multiplai-core"
-version = "4.0.0rc13"
+version = "4.0.0rc14"
 description = "Canonical shared marketing procedures and member tools"
 requires-python = ">=3.12,<3.13"
 dependencies = ["PyYAML==6.0.2", "jsonschema==4.25.1"]

@@ -2,7 +2,7 @@
 
 ## Author a procedure
 
-Establish Core ownership before editing: shared use in two active consumers or a
+Establish shared-library ownership before editing: use in two active consumers or a
 platform contract. State trigger, necessary inputs, observable output, source
 boundary, side effects, missing-input fallback, and neighboring workflow routes.
 Keep conditional reference material behind explicit pointers; remove obsolete
@@ -19,10 +19,10 @@ blinded old/new experiment if only a new version was run.
 
 Record the base commit and compare the proposed diff with requirements. Review
 ownership/intent separately from implementation and actual output usefulness.
-Check dependency setup, source references, generated inventory, negative paths,
+Check dependency setup, source references, the workflow library, negative paths,
 side effects, installation compatibility and release impact. Simplify only changed
 code and prose; do not add overlapping instruction bundles. Run the exact command
-in CONTRIBUTING.md. When main advances, integrate it deliberately, regenerate,
+in CONTRIBUTING.md. When main advances, integrate it deliberately, regenerate the library,
 and rerun affected checks. Preserve uncommitted work and surface ambiguous
 conflicts rather than forcing or staging everything.
 

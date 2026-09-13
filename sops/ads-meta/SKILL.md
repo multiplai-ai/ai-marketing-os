@@ -7,7 +7,6 @@ description: Audit Facebook and Instagram advertising for tracking health, creat
 
 Audit Facebook and Instagram advertising for tracking health, creative quality, campaign structure, audience strategy, and performance — 46 weighted checks across Pixel/CAPI health, creative diversity and fatigue, account structure, and audience targeting, including an Advantage+ assessment.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/distribution/ads/ads-meta/SKILL.md (rich) + skills-core/skills/paid-media/ads-meta.md (portable stub) on 2026-07-02.
 
 ## When To Use
 

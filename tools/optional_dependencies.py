@@ -16,7 +16,7 @@ def require_dependency(module: str, extra: str):
         return import_module(module)
     except ImportError as exc:
         raise MissingOptionalDependency(
-            f"Cannot load {module}: {exc}. From the Core checkout, run "
+            f"Cannot load {module}: {exc}. From the AI Marketing OS checkout, run "
             f"python -m pip install '.[{extra}]' using this Python environment."
         ) from exc
 

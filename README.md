@@ -1,19 +1,76 @@
 # AI Marketing OS
 
-A shared library of marketing workflows you can use with a local AI agent.
-Start with a business source packet, produce a content brief, and review a draft
-against those same facts. Your business context and outputs live in your own
-workspace.
+AI Marketing OS gives Claude or Codex a library of practical marketing
+workflows. You bring your business documents and judgment; the AI uses the
+relevant workflow to help research, plan, write, review, or analyze the work.
 
-The source is available under the [MIT License](LICENSE). AI subscriptions,
-API usage, and optional services are separate. The first release is a preview:
-start with the three tested starter workflows before exploring the broader library.
+This is a set of reusable instructions for your AI assistant. It is not a
+dashboard and you do not need to learn the repository's code to use it.
 
-## Create your first workspace
+## What can it help with?
 
-Install **Python 3.12, Git, zstd, and Minisign**. On macOS with Homebrew,
-`brew install python@3.12 git zstd minisign` provides these prerequisites.
-Then run:
+- Build positioning, ideal-customer, brand, and content strategy
+- Turn source material into briefs, articles, newsletters, and LinkedIn posts
+- Plan content calendars and campaigns
+- Review SEO, landing pages, creative, and paid advertising
+- Create reports, presentations, visual directions, and operating plans
+
+[Browse the workflow library](docs/capabilities.md) or follow the
+[five-minute guide](START-HERE.md).
+
+## Use it with Claude — recommended
+
+Most people should install AI Marketing OS as a Claude plugin. Once installed,
+Claude can choose a workflow automatically from your request, or you can select
+one from Claude's `/` or `+` menu.
+
+### Claude Desktop, Claude on the web, or Cowork
+
+1. Open the repository's [Releases](https://github.com/multiplai-ai/ai-marketing-os/releases) page.
+2. Open the newest release and download the file whose name starts with
+   `ai-marketing-os-claude-plugin-`.
+3. In Claude, open **Customize**, then **Plugins**.
+4. Choose the option to upload a custom plugin and select the downloaded ZIP file.
+5. Open a folder or project containing the source material you want Claude to use.
+
+If your organization manages plugins, an owner can add this GitHub repository
+to the organization's plugin library so members can install it from **Browse
+plugins**. Claude plugins are available on paid Claude plans; organization
+settings determine who may add or share them.
+
+### Claude Code
+
+Inside Claude Code, run:
+
+```text
+/plugin marketplace add multiplai-ai/ai-marketing-os
+/plugin install ai-marketing-os@multiplai-marketing
+```
+
+Start a new session, then ask in normal language:
+
+> Read the documents in this folder and help me create a content strategy.
+> Tell me what information is missing before you begin. Do not publish anything.
+
+Claude can also run a specific workflow, such as
+`/ai-marketing-os:content-brief` or `/ai-marketing-os:linkedin-post`.
+
+## Your first useful workflow
+
+Put a business overview, notes, transcript, or other source material in the
+folder you share with Claude. Then try:
+
+> Use the content-brief workflow. Create a brief for an article that helps
+> [audience] understand [topic]. Use only the supplied files for business claims,
+> identify missing evidence, and save the result as a draft. Do not publish it.
+
+Claude will read the workflow, inspect the sources you provided, ask for
+important missing information, and create a reviewable output. It should keep
+unsupported claims visibly separate from facts.
+
+## Use it with Codex
+
+Codex users can clone the repository and create a separate starter workspace:
 
 ```bash
 git clone https://github.com/multiplai-ai/ai-marketing-os.git
@@ -24,43 +81,35 @@ python -m pip install -e '.[publishing]'
 python tools/start_member.py --workspace ../my-marketing
 ```
 
-Setup anonymously downloads the pinned public release, verifies both signatures
-and the digest, and creates a separate workspace. It refuses to overwrite existing
-work. The source checkout pins the public signing key; obtain this checkout from
-the repository above and review [release trust](releases/TRUST.md).
+Open `my-marketing` in Codex. The setup adds three starter skills and a fictional
+example without changing your source checkout. See the [member guide](docs/member-guide.md)
+for installation details.
 
-Open `my-marketing` in Codex and ask:
+## Where are the actual workflows?
 
-> Use content-brief and context/business-context.md to create an offline brief
-> for bicycle repair scheduling. Save it in content/briefs/. Cite packet source
-> IDs, label live search research as not checked, and use the walkthrough CTA.
-> Do not publish.
+The full workflows are in [`sops/`](sops). Each workflow folder contains:
 
-The starting packet describes a fictional workshop. Review the result, then
-replace the packet with your own source-backed facts. Keep the Python environment
-active for agent terminal commands. For setup details, an explicit skill resolver,
-updates, and troubleshooting, see the [member guide](docs/member-guide.md).
+- `SKILL.md` — the instructions Claude or Codex follows
+- `sop.yaml` — a small technical record of its inputs, outputs, and maturity
 
-## What is included
+For example, [`sops/content-brief/SKILL.md`](sops/content-brief/SKILL.md) is the
+complete content-brief workflow. There is no separate “Core” repository required
+to read or use these workflows. “Core” in older files means this shared library.
 
-- **content-brief:** turn a business packet into a local, evidence-limited brief.
-- **human-writing-standard:** review prose and unsupported claims against sources.
-- **writing-setup:** create your writing configuration and calibrate voice with review.
-- **80 additional workflows:** inspect the [catalog](docs/capabilities.md) and opt in
-  deliberately. Live integrations remain unverified and may require separate tools.
+## A few honest limits
 
-Six GEO workflows and their inherited adaptations are excluded pending rights
-review. The [test plan](docs/workflow-testing.md) distinguishes automated checks,
-recorded agent outputs, and the human workflow tests still worth doing.
+Start with the workflows marked **Good place to start** in the
+[workflow library](docs/capabilities.md). Many additional workflows are included
+for inspection but have not been tested with every account, connector, operating
+system, or business. A workflow may need source files, account access, or a
+separate integration. Claude should explain what it needs before taking action.
 
-## Development and ownership
+The six unresolved GEO workflows remain excluded from this public release. The
+source is MIT licensed; AI subscriptions, APIs, connectors, and third-party
+services are separate.
 
-Use `python -m pip install -e '.[dev,publishing]'`, then
-`python tools/check_core.py`. Optional `web`, `google`, `llm`, and `video` extras
-support other integrations. Browser workflows also require
-`python -m playwright install chromium`.
+## Contributing
 
-This repository is the canonical home for future shared procedure changes.
-Edit `sops/<id>/SKILL.md`, regenerate adapters, validate, and submit a reviewed PR.
-See [contributing](CONTRIBUTING.md). Existing private history and signed releases
-remain private; old consumers retain their pins until a reviewed migration.
+This repository is the canonical home for shared workflows. Maintainers edit
+`sops/<workflow>/SKILL.md`, validate the change, and submit a reviewed pull
+request. See [CONTRIBUTING.md](CONTRIBUTING.md).

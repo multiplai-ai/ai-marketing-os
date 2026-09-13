@@ -7,7 +7,6 @@ description: Audit LinkedIn Ads for B2B advertising effectiveness — 25 weighte
 
 Audit LinkedIn Ads for B2B advertising effectiveness — 25 weighted checks across technical setup, audience targeting, creative quality, lead gen forms, and bidding strategy, including Thought Leader Ads, ABM, and predictive audiences.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/distribution/ads/ads-linkedin/SKILL.md (rich) + skills-core/skills/paid-media/ads-linkedin.md (portable stub) on 2026-07-02.
 
 **When to use:** When the user says "LinkedIn Ads", "B2B ads", "sponsored content", "lead gen forms", "InMail", or "LinkedIn campaign".
 

@@ -7,7 +7,6 @@ description: 'Campaign-aware production routing: loads brand tokens, components,
 
 Campaign-aware production routing: loads brand tokens, components, and templates to produce on-brand assets from an approved creative foundation, routing by asset type — static visuals, content visuals, or multi-channel campaigns.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cd/produce.md (rich) + skills-core/skills/creative/creative-produce.md (portable stub) on 2026-07-02.
 
 Legacy adapter: previously invoked as the `/cd/produce` command via `.claude/commands/cd/produce.md`; that path is now an adapter, not the canonical mechanism.
 

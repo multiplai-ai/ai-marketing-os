@@ -7,7 +7,6 @@ description: 'Standard operating procedure for the creative suite: explains the 
 
 Standard operating procedure for the creative suite: explains the 5-stage foundation, production workflow, storage architecture, translation scripts, and tool integration — from visual research to campaign assets.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cd/sop.md (rich) + skills-core/skills/creative/creative-suite-sop.md (portable stub) on 2026-07-02.
 
 Legacy adapter: previously invoked as the `/cd/sop` command via `.claude/commands/cd/sop.md`; that path is now an adapter, not the canonical mechanism. Sibling skills were previously `/cd/...` commands — the bare core skill ids used below are canonical.
 

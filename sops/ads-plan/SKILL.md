@@ -7,7 +7,6 @@ description: 'Strategic paid advertising planning with industry-specific templat
 
 Strategic paid advertising planning with industry-specific templates: platform selection, campaign architecture, budget planning, creative strategy, tracking setup, and a phased implementation roadmap.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/distribution/ads/ads-plan/SKILL.md (rich) + skills-core/skills/paid-media/ads-plan.md (portable stub) on 2026-07-02.
 
 Legacy adapter: previously invoked via `.claude/commands/cmo/distribution/ads/ads-plan/SKILL.md`; that path is now an adapter, not the canonical mechanism.
 

@@ -16,7 +16,6 @@ Use Python 3.12, Git, zstd and Minisign, then run:
 python3.12 -m venv .venv
 . .venv/bin/activate
 python -m pip install -e '.[dev,publishing]'
-python tools/generate_adapters.py .
 python tools/generate_catalog.py
 python tools/check_core.py
 ```

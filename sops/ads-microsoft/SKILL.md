@@ -7,7 +7,6 @@ description: Audit Microsoft Ads and Bing campaigns across search, Performance M
 
 Audit Microsoft Ads and Bing campaigns across search, Performance Max, Audience Network, and Copilot integration — 20 checks with attention to Google import validation, UET, syndication, LinkedIn profile targeting, unique Microsoft features, and cost advantage versus Google.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cmo/distribution/ads/ads-microsoft/SKILL.md (rich) + skills-core/skills/paid-media/ads-microsoft.md (portable stub) on 2026-07-02.
 
 Legacy adapter: previously invoked via `.claude/commands/cmo/distribution/ads/ads-microsoft/SKILL.md` (sub-skill of the `ads` router); that path is now an adapter, not the canonical mechanism.
 

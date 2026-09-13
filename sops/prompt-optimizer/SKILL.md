@@ -7,7 +7,6 @@ description: Transform rough prompts into high-performance, model-aware prompts 
 
 Transform rough prompts into high-performance, model-aware prompts — clear task framing, context, constraints, output shape, and success criteria — optimized for deep research and complex tasks.
 
-> Core skill canon (Phase 4). Merged from .claude/commands/cto/prompt-optimizer.md (rich) + skills-core/skills/cto/prompt-optimizer.md (portable stub) on 2026-07-03.
 
 ---
 
