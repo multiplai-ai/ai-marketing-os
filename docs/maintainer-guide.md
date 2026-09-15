@@ -47,4 +47,7 @@ change before each release. Keep production keys outside the repository.
 A new public snapshot must use the distribution allowlist and clean history.
 The existing private repository remains historical; do not synchronize future
 SOP edits into two canonical repositories. Existing private consumers keep their
-pins until an explicit reviewed migration.
+pins until an explicit reviewed migration. Before changing a consumer lock,
+router, installer, or default repository, complete the
+[consumer cutover test plan](cutover-testing.md) against the exact public
+release candidate and obtain the owner's go/no-go decision.

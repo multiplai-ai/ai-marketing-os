@@ -19,6 +19,19 @@ The prior history and ten old release sets were scanned. No credential patterns
 were found, but old assets and hosting metadata contain private operating
 identifiers. They remain private and are not cleared for redistribution.
 
+## Consumer cutover status
+
+AI Marketing OS is the only canonical source for future shared-workflow edits.
+Existing private consumers still use their signed historical pins while the
+public release is evaluated. Do not point a consumer lock, router, installer, or
+default repository at the public channel until the owner accepts the results of
+the [consumer cutover test plan](cutover-testing.md).
+
+The public library contains `geo-audit`. Five separate GEO adaptations remain
+outside this release. They need an ownership decision—move into an appropriate
+private operating repository, retire them, or separately clear them for public
+publication—before any consumer that uses them can move to the public channel.
+
 ## Required checks
 
 Before public launch, run the local gate and hosted CI on the selected source,

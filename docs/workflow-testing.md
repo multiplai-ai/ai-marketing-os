@@ -32,3 +32,6 @@ Do not ask subscribers to test all 84 included procedures at once.
 If a source or procedure changes, the old result becomes stale. Run the affected
 case and its downstream chain again; do not update hashes to re-label an old
 output as freshly evaluated. Keep failed cases and corrections visible.
+
+For the controlled comparison required before moving existing private consumers
+to AI Marketing OS, use the [consumer cutover test plan](cutover-testing.md).
