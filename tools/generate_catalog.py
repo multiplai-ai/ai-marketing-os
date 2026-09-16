@@ -86,7 +86,7 @@ def category(sid: str) -> str:
                "human-writing-standard", "linkedin-post", "monthly-content-planning-and-publishing",
                "quarterly-content-planning", "social-audience-growth-weekly", "social-growth-os",
                "weekly-social-audience-growth", "writing", "writing-setup", "youtube-transcript",
-               "ai-tool-review", "mcp-skill-release-newsletter"}:
+               "ai-tool-review"}:
         return "Content and writing"
     if sid in {"seo", "seo-qc", "cro", "scrape-website"}:
         return "SEO and websites"
@@ -94,9 +94,7 @@ def category(sid: str) -> str:
                "design-extract", "design-systems", "mood", "research", "templates",
                "video-production", "visual-content", "artifact-to-presentation"}:
         return "Brand, creative, and presentations"
-    if sid in {"engagement-report", "l2-microsite-report", "monthly-mbr", "monthly-scorecard",
-               "weekly-audience-report", "weekly-executive-update", "weekly-kpi-report",
-               "whitelist-email-refresh", "to-gamma", "to-notion", "to-sheets"}:
+    if sid in {"to-gamma", "to-notion", "to-sheets"}:
         return "Reporting and publishing"
     return "Operations and automation"
 

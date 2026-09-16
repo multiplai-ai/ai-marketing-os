@@ -43,7 +43,8 @@ jobs:
         run: |
           python3 -m zipfile -e "dist/ai-marketing-os-claude-plugin-${RELEASE_VERSION}.zip" "$RUNNER_TEMP/claude-plugin"
           test -f "$RUNNER_TEMP/claude-plugin/.claude-plugin/plugin.json"
-          test "$(find "$RUNNER_TEMP/claude-plugin/sops" -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l)" -eq 84
+          expected_count="$(python3 -c 'import pathlib, yaml; print(len(yaml.safe_load(pathlib.Path("sops/manifest.yaml").read_text())["sops"]))')"
+          test "$(find "$RUNNER_TEMP/claude-plugin/sops" -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l)" -eq "$expected_count"
       - name: Validate the built archive
         run: |
           mkdir "$RUNNER_TEMP/core-artifact"

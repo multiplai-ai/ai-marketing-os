@@ -125,19 +125,10 @@ accounts, exports, approval rules, or tools that are not included automatically.
 | [Audit Funnel](../sops/audit-funnel/SKILL.md) | Run an entity's assessment-led sales funnel: a scored diagnostic survey that produces an instant personalized report, segmented follow-up, and a tracked pipeline from completed audit to closed engagement. |
 | [Calendar, Email and Task Handling](../sops/calendar-email-task-handling/SKILL.md) | Route calendar, email, and task requests through a configured assistant while keeping private content in consumer-owned storage. |
 | [Slack to Notion content intake and mini briefs](../sops/content-ideas-slack-to-notion-browser-handoff/SKILL.md) | Set up a Slack-to-Notion content intake workflow and next-day mini briefs using consumer-configured channels and databases. |
-| [Daily Morning Brief — Cron Prompt Template](../sops/daily-brief-cron-prompt/SKILL.md) | Prepare a daily morning brief and refresh a weekly operating board from configured consumer calendar and task sources. |
 | [Ecosystem Partnerships](../sops/ecosystem-partnerships/SKILL.md) | Run the entity's ecosystem-partnership motion: keep the partner map current, drive a small monthly queue of warm relationship moves, execute the joint webinar / newsletter swap / podcast guesting playbooks, track part… |
-| [Engagement Report Runbook](../sops/engagement-report/SKILL.md) | Generate deterministic entity engagement reports from Tableau exports. |
 | [Granola API access](../sops/granola-api-access/SKILL.md) | Fetch authorized Granola meeting notes through a consumer-configured API account and optional local helper. |
 | [Growth operator onboarding](../sops/growth-operator-onboarding/SKILL.md) | Guide a collaborator through growth-operator onboarding, required tools, source context, and approval responsibilities. |
-| [Hermes Runtime Recovery](../sops/hermes-runtime-recovery/SKILL.md) | Diagnose and recover the current live Hermes profile runtime and its Slack front door without exposing credentials or confusing v3 compatibility paths with the approved v4 target. |
-| [Launch Visibility SOP — Category Management Team](../sops/jira-marketing/SKILL.md) | Coordinate marketing launch visibility through weekly triage, launch tickets, and category-management review rituals. |
-| [L2 Microsite Report Runbook](../sops/l2-microsite-report/SKILL.md) | Generate L2 microsite funnel analysis with the canonical report generator. |
-| [brand MCP Skill Release Newsletter Workflow](../sops/mcp-skill-release-newsletter/SKILL.md) | Prepare a newsletter announcing MCP or skill releases from verified product changes and approved source material. |
 | [Monthly Content Planning and Publishing SOP](../sops/monthly-content-planning-and-publishing/SKILL.md) | Plan monthly articles and social batches from quarterly priorities, then prepare approved content for publishing. |
-| [entity Monthly MBR Runbook](../sops/monthly-mbr/SKILL.md) | Prepare a monthly business review package from consumer-provided metrics, reports, and executive priorities. |
-| [entity Monthly Scorecard Runbook](../sops/monthly-scorecard/SKILL.md) | Produce the question-grouped, traffic-light monthly scorecard for the recurring monthly review meeting. |
-| [Morning Brief System — Setup Runbook](../sops/morning-brief-setup/SKILL.md) | Configure or restore a consumer-owned daily and weekly morning brief with verified data sources and delivery settings. |
 | [Publishing Runbook](../sops/publish/SKILL.md) | Use this when content is ready to move from local markdown into publishing systems. |
 | [Quarterly Content Planning SOP](../sops/quarterly-content-planning/SKILL.md) | Plan the next quarter of content from the current strategy before choosing individual article topics or filling a weekly calendar. |
 | [Routing and Notifications](../sops/routing-and-notifications/SKILL.md) | Route assistant work to configured owners and apply the consumer notification policy for delegated tasks. |
@@ -149,13 +140,7 @@ accounts, exports, approval rules, or tools that are not included automatically.
 | [Gamma Publishing Runbook](../sops/to-gamma/SKILL.md) | Publish a markdown file to Gamma as a presentation, document, or webpage. |
 | [Notion Publishing Runbook](../sops/to-notion/SKILL.md) | Publish a markdown file to a Notion database for collaboration and comments. |
 | [Google Sheets Publishing Runbook](../sops/to-sheets/SKILL.md) | Publish markdown tables to Google Sheets while preserving columns. |
-| [Legacy VPS Agent Update](../sops/vps-agent-update/SKILL.md) | Review a consumer's legacy VPS agent update procedure; use the current signed runtime workflow for bundle-based installations. |
-| [Legacy VPS Inventory and Cutover Reference](../sops/vps-phase0-2-cutover/SKILL.md) | Consult legacy VPS inventory and cutover reference material; do not use this runbook to execute a current runtime cutover. |
-| [Weekly Audience / User Growth Report Runbook](../sops/weekly-audience-report/SKILL.md) | Produce a weekly audience-growth narrative and audit workbook from consumer-configured analytics exports, with optional authorized Confluence publishing. |
-| [entity Weekly Executive Update Runbook](../sops/weekly-executive-update/SKILL.md) | Draft a weekly executive update from a locked KPI table, source evidence, and consumer-defined priorities. |
-| [SOP: How to run the Weekly Program Success KPI Report](../sops/weekly-kpi-report/SKILL.md) | Build a weekly program-success report from the required Tableau exports with the consumer-configured report generator. |
 | [Weekly Social Audience Growth](../sops/weekly-social-audience-growth/SKILL.md) | Run a weekly social audience-growth review and execution queue for configured LinkedIn and X channels. |
-| [entity Whitelist Email Refresh Runbook](../sops/whitelist-email-refresh/SKILL.md) | Refresh the weekly performance tracker for entity's whitelist email program (BULK + BET). |
 | [YouTube Transcript](../sops/youtube-transcript/SKILL.md) | Fetch English YouTube transcripts and format them as timestamped, source-faithful Markdown with a deterministic local tool. |
 
 </details>

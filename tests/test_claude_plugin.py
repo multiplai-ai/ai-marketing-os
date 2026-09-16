@@ -34,7 +34,7 @@ def test_every_manifest_workflow_is_discoverable_by_claude() -> None:
     }
 
     assert discovered == expected
-    assert len(discovered) == 84
+    assert len(discovered) == 69
 
 
 def test_removed_pointer_tree_does_not_return() -> None:
@@ -48,5 +48,5 @@ def test_uploadable_plugin_has_manifest_and_all_workflows(tmp_path: Path) -> Non
 
     assert ".claude-plugin/plugin.json" in names
     assert ".claude-plugin/marketplace.json" in names
-    assert len([name for name in names if name.startswith("sops/") and name.endswith("/SKILL.md")]) == 84
+    assert len([name for name in names if name.startswith("sops/") and name.endswith("/SKILL.md")]) == 69
     assert not any(name.startswith("generated/") for name in names)

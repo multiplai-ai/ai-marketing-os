@@ -8,7 +8,7 @@ not imported; existing consumers keep their signed pins and trust root.
 
 ## Release boundary
 
-The public snapshot contains 84 procedures, selected
+The public snapshot contains 69 procedures, selected
 source tools, schemas, tests, fictional examples, and member documentation.
 The standalone GEO Audit and its local page-audit tool are included. Five
 related GEO adaptations and their inherited reference corpus remain omitted.
