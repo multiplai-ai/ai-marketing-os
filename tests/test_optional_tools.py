@@ -42,11 +42,9 @@ def test_discovery_includes_new_executable_without_allowlist(tmp_path):
 
 
 @pytest.mark.parametrize('name,args,extra', [
-    ('web_scraper', ['https://example.invalid', 'out'], 'web'),
     ('extract_design_tokens', ['https://example.invalid'], 'web'),
     ('generate_design_visual', ['--prompt', 'fictional tile', '--output', 'tile.png'], 'google'),
     ('geo_audit', ['--url', 'https://example.invalid', '--output', 'out'], 'geo'),
-    ('gamma_create_presentation', ['--test'], 'publishing'),
     ('templated_renderer', ['--test'], 'publishing'),
 ])
 def test_missing_integration_is_actionable_before_network(tmp_path, name, args, extra):
@@ -58,20 +56,12 @@ def test_missing_integration_is_actionable_before_network(tmp_path, name, args, 
 
 
 @pytest.mark.parametrize('name', [
-    'web_scraper', 'extract_design_tokens', 'generate_design_visual', 'geo_audit',
-    'gamma_create_presentation', 'templated_renderer',
+    'extract_design_tokens', 'generate_design_visual', 'geo_audit', 'templated_renderer',
 ])
 def test_help_with_all_optional_packages_absent(tmp_path, name):
     result = run_tool(tmp_path, name, '--help')
     assert result.returncode == 0, result.stdout + result.stderr
     assert 'usage:' in result.stdout
-
-
-def test_gamma_dry_run_without_dependency_or_credentials(tmp_path):
-    draft = tmp_path / 'draft.md'
-    draft.write_text('# Fictional Demo\n\nA short offline draft.\n')
-    result = run_tool(tmp_path, 'gamma_create_presentation', str(draft), '--dry-run')
-    assert result.returncode == 0, result.stdout + result.stderr
 
 
 def test_templated_dry_run_without_dependency_or_credentials(tmp_path):
@@ -115,9 +105,9 @@ def test_no_implicit_dotenv_reads_on_tool_import(tmp_path):
     shutil.copytree(ROOT / 'tools', fixture / 'tools', ignore=shutil.ignore_patterns('__pycache__'))
     (fixture / '.env').write_text('CORE_SYNTHETIC_TEST_MARKER=must-not-load\n')
     (tmp_path / 'sitecustomize.py').write_text(GUARD)
-    modules = ('generate_design_visual', 'geo_audit', 'gamma_create_presentation', 'templated_renderer',
+    modules = ('generate_design_visual', 'geo_audit', 'templated_renderer',
                'buffer_publisher', 'metricool_publisher', 'publer_publisher',
-               'notion_content_db', 'notion_publish', 'sheets_publish')
+               'notion_content_db')
     code = 'import runpy,sys; [runpy.run_path(p, run_name="offline_import") for p in sys.argv[1:]]'
     result = subprocess.run([sys.executable, '-c', code,
                              *(str(fixture / 'tools' / f'{name}.py') for name in modules)],
@@ -125,15 +115,3 @@ def test_no_implicit_dotenv_reads_on_tool_import(tmp_path):
                             'HOME': str(tmp_path), 'PYTHONPATH': os.pathsep.join((str(tmp_path), str(fixture), str(fixture / 'tools')))},
                             capture_output=True, text=True, timeout=30)
     assert result.returncode == 0, result.stdout + result.stderr
-
-
-@pytest.mark.parametrize('status', [404, 429, 500])
-def test_gamma_error_response_does_not_verify_credentials(monkeypatch, capsys, status):
-    from tools import gamma_create_presentation as gamma
-    from types import SimpleNamespace
-    client = SimpleNamespace(get=lambda *args, **kwargs: SimpleNamespace(status_code=status),
-                             exceptions=SimpleNamespace(RequestException=RuntimeError))
-    monkeypatch.setattr(gamma, 'require_dependency', lambda *args: client)
-    monkeypatch.setenv('GAMMA_API_KEY', 'fixture')
-    assert gamma.test_connection() is False
-    assert 'credentials accepted' not in capsys.readouterr().out

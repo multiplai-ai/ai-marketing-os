@@ -36,7 +36,6 @@ Claude, you can also select an installed workflow from the `/` or `+` menu.
 | [Brand Strategy and Key Messages](../sops/brand-strategy/SKILL.md) | Turn positioning and customer research into a clear message hierarchy, proof points, and voice guidance. | Evidence reviewed |
 | [Content Strategy](../sops/content-strategy/SKILL.md) | Decide what to publish, for whom, on which channels, and how the work supports business goals. | Good place to start |
 | [Business Discovery](../sops/discovery-intake/SKILL.md) | Organize business, customer, marketing, evidence, and constraint information before strategy work begins. | Evidence reviewed |
-| [Growth Operator Hiring](../sops/growth-operator-hiring/SKILL.md) | Define the role, score candidates, and run a practical hiring process for a full-loop growth operator. | Test with your setup |
 | [Ideal Customers and Buyer Personas](../sops/icp-personas/SKILL.md) | Define the companies, people, buying roles, and real work patterns most likely to fit the offer. | Evidence reviewed |
 | [Positioning Strategy](../sops/positioning-strategy/SKILL.md) | Choose the market alternative to compete against and explain why the offer is meaningfully different. | Evidence reviewed |
 | [Strategy Guide](../sops/strategy-suite/SKILL.md) | Review what strategy already exists and guide the next decision across discovery, positioning, customers, brand, and content. | Good place to start |
@@ -86,6 +85,11 @@ Claude, you can also select an installed workflow from the `/` or `+` menu.
 | Workflow | What it helps you do | Readiness |
 | --- | --- | --- |
 | [GEO Audit](../sops/geo-audit/SKILL.md) | Review how easily AI answer engines can discover, understand, and cite a website, then prioritize improvements. | Good place to start |
+| [AI Citation Map](../sops/geo-citation-network-mapper/SKILL.md) | Find which sites AI answers cite and prioritize relevant earned-coverage opportunities. | Test with your setup |
+| [GEO Page Restructure](../sops/geo-content-restructure/SKILL.md) | Improve one page's clarity and extractability while preserving facts and client voice. | Test with your setup |
+| [GEO Action Plan](../sops/geo-plan/SKILL.md) | Turn audits and answer measurements into a prioritized plan, implementation cards, and transparent business scenarios. | Test with your setup |
+| [GEO Prompt Set](../sops/geo-prompt-set-builder/SKILL.md) | Build a repeatable set of buyer questions for measuring visibility in AI answers. | Test with your setup |
+| [AI Answer Visibility Measurement](../sops/geo-share-of-answers/SKILL.md) | Measure brand and competitor mentions across explicitly selected API models and report errors separately. | Test with your setup |
 
 ## Brand, creative, and presentations
 
@@ -103,47 +107,6 @@ Claude, you can also select an installed workflow from the `/` or `+` menu.
 | [Brand Templates](../sops/templates/SKILL.md) | Create reusable, editable templates for common social, presentation, and campaign formats. | Test with your setup |
 | [Video Production](../sops/video-production/SKILL.md) | Plan or produce titles, overlays, motion graphics, and edits from an approved brief and visual identity. | Test with your setup |
 | [Shareable Visuals](../sops/visual-content/SKILL.md) | Turn content into editable diagrams, frameworks, infographics, and reference cards. | Test with your setup |
-
-## Operations and automation
-
-| Workflow | What it helps you do | Readiness |
-| --- | --- | --- |
-| [Build an AI Workflow](../sops/build-workflow/SKILL.md) | Design and validate a reusable Claude workflow for a repeated task. | Test with your setup |
-| [Software Work Guide](../sops/dev-process/SKILL.md) | Guide a software change from understanding and planning through implementation, review, and release. | Test with your setup |
-| [Prompt Improver](../sops/prompt-optimizer/SKILL.md) | Turn a rough request into a clear prompt with the context, constraints, output, and success criteria the model needs. | Good place to start |
-
-<details>
-<summary><strong>Advanced and system workflows</strong></summary>
-
-These workflows support specialized reporting, publishing, account operations,
-or older systems. Read the requirements before using them. Some need configured
-accounts, exports, approval rules, or tools that are not included automatically.
-
-| Workflow | What it helps you do |
-| --- | --- |
-| [Artifact-First Reporting And Presentation Runbook](../sops/artifact-to-presentation/SKILL.md) | Use this as the default workflow for analytical reports, executive narratives, dashboards, and visual recommendations that may need to become Google Slides, Google Docs, Confluence pages, or other stakeholder-facing d… |
-| [Audit Funnel](../sops/audit-funnel/SKILL.md) | Run an entity's assessment-led sales funnel: a scored diagnostic survey that produces an instant personalized report, segmented follow-up, and a tracked pipeline from completed audit to closed engagement. |
-| [Calendar, Email and Task Handling](../sops/calendar-email-task-handling/SKILL.md) | Route calendar, email, and task requests through a configured assistant while keeping private content in consumer-owned storage. |
-| [Slack to Notion content intake and mini briefs](../sops/content-ideas-slack-to-notion-browser-handoff/SKILL.md) | Set up a Slack-to-Notion content intake workflow and next-day mini briefs using consumer-configured channels and databases. |
-| [Ecosystem Partnerships](../sops/ecosystem-partnerships/SKILL.md) | Run the entity's ecosystem-partnership motion: keep the partner map current, drive a small monthly queue of warm relationship moves, execute the joint webinar / newsletter swap / podcast guesting playbooks, track part… |
-| [Granola API access](../sops/granola-api-access/SKILL.md) | Fetch authorized Granola meeting notes through a consumer-configured API account and optional local helper. |
-| [Growth operator onboarding](../sops/growth-operator-onboarding/SKILL.md) | Guide a collaborator through growth-operator onboarding, required tools, source context, and approval responsibilities. |
-| [Monthly Content Planning and Publishing SOP](../sops/monthly-content-planning-and-publishing/SKILL.md) | Plan monthly articles and social batches from quarterly priorities, then prepare approved content for publishing. |
-| [Publishing Runbook](../sops/publish/SKILL.md) | Use this when content is ready to move from local markdown into publishing systems. |
-| [Quarterly Content Planning SOP](../sops/quarterly-content-planning/SKILL.md) | Plan the next quarter of content from the current strategy before choosing individual article topics or filling a weekly calendar. |
-| [Routing and Notifications](../sops/routing-and-notifications/SKILL.md) | Route assistant work to configured owners and apply the consumer notification policy for delegated tasks. |
-| [Website Scraping Runbook](../sops/scrape-website/SKILL.md) | Scrape articles from an index page into markdown files for research or read-later workflows. |
-| [Social Audience Growth Weekly](../sops/social-audience-growth-weekly/SKILL.md) | Run the weekly organic audience-growth operation for an entity's founder or personal-brand social channels. |
-| [Social Growth OS](../sops/social-growth-os/SKILL.md) | The plain-language entry point for running an entity's social growth system day to day. |
-| [Speaking Events Pipeline](../sops/speaking-events-pipeline/SKILL.md) | Run the entity's speaking-engagement pipeline as calendar automation: a monthly CFP radar that never misses a submission window, event tiering, human-approved abstract drafting, and a from-stage conversion playbook th… |
-| [Sync Repo](../sops/sync-repo/SKILL.md) | Keep the brand OS repository current before Hermes edits files, and push Hermes-authored changes with a clear commit prefix. |
-| [Gamma Publishing Runbook](../sops/to-gamma/SKILL.md) | Publish a markdown file to Gamma as a presentation, document, or webpage. |
-| [Notion Publishing Runbook](../sops/to-notion/SKILL.md) | Publish a markdown file to a Notion database for collaboration and comments. |
-| [Google Sheets Publishing Runbook](../sops/to-sheets/SKILL.md) | Publish markdown tables to Google Sheets while preserving columns. |
-| [Weekly Social Audience Growth](../sops/weekly-social-audience-growth/SKILL.md) | Run a weekly social audience-growth review and execution queue for configured LinkedIn and X channels. |
-| [YouTube Transcript](../sops/youtube-transcript/SKILL.md) | Fetch English YouTube transcripts and format them as timestamped, source-faithful Markdown with a deterministic local tool. |
-
-</details>
 
 ## What a workflow can and cannot do
 

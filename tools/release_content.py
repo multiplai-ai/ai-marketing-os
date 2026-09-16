@@ -18,7 +18,7 @@ DOCUMENTS = {
     "docs/member-guide.md", "docs/capabilities.md", "docs/readiness-report.md",
     "docs/maintainer-guide.md", "releases/TRUST.md", "releases/trust/minisign.pub",
     "archive/brand-history.json", "docs/public-readiness.md", "docs/third-party-review.md",
-    "docs/workflow-testing.md", "releases/channel.json",
+    "docs/workflow-testing.md", "docs/cutover-testing.md", "releases/channel.json",
 }
 
 

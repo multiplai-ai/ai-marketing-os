@@ -78,4 +78,4 @@ change an account.
 
 The [workflow library](docs/capabilities.md) groups the available workflows by
 the job they help accomplish. Each name links directly to the full instructions.
-Start with one workflow and one real task. You do not need to configure all 69.
+Start with one workflow and one real task. You do not need to configure the entire library.

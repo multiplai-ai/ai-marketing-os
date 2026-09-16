@@ -288,7 +288,10 @@ def install_core_bundle(
         signature_status = "verified"
 
     digest = str(lock["core"]["digest"]).split(":", 1)[1]
-    cache = (cache_root or root / ".multiplai" / "installed-core").resolve()
+    shared = lock["core"].get("repository") == "multiplai-ai/ai-marketing-os"
+    default_cache = (Path.home() / ".cache" / "ai-marketing-os" / "releases"
+                     if shared else root / ".multiplai" / "installed-core")
+    cache = (cache_root or default_cache).resolve()
     target_parent = cache / digest
     target = target_parent / "multiplai-core"
     cache.mkdir(parents=True, exist_ok=True)
@@ -301,13 +304,20 @@ def install_core_bundle(
         _, binding_hashes = _validate_consumer_contract(root, extracted)
         package_hashes = _package_hashes(extracted, lock["sops"])
         file_hashes = _file_hashes(extracted)
-        if target_parent.exists():
+        if target_parent.exists() and shared:
+            if _file_hashes(target) != file_hashes:
+                raise CoreInstallError("shared AI Marketing OS release changed; refusing to overwrite it")
+            for candidate in (target, *target.rglob("*")):
+                if candidate.is_symlink() or candidate.stat().st_mode & 0o222:
+                    raise CoreInstallError(f"shared AI Marketing OS release is writable or linked: {candidate}")
+        elif target_parent.exists():
             _make_writable(target_parent)
             shutil.rmtree(target_parent)
-        target_parent.mkdir(parents=True)
-        extracted.replace(target)
-        _make_read_only(target)
-        target_parent.chmod(0o555)
+        if not target_parent.exists():
+            target_parent.mkdir(parents=True)
+            extracted.replace(target)
+            _make_read_only(target)
+            target_parent.chmod(0o555)
     finally:
         if staging.exists():
             _make_writable(staging)
@@ -388,6 +398,12 @@ def remove_core_install(consumer_root: Path, *, cache_root: Path | None = None) 
     root = find_repo_root(consumer_root)
     lock = load_core_lock(root)
     digest = str(lock["core"]["digest"]).split(":", 1)[1]
+    if lock["core"].get("repository") == "multiplai-ai/ai-marketing-os":
+        # Another consumer may be using this immutable release. Detach only.
+        verify_core_install(root)
+        receipt = json.loads(_receipt_path(root).read_text(encoding="utf-8"))
+        _receipt_path(root).unlink()
+        return Path(receipt["install_root"]).parent
     cache = (cache_root or root / ".multiplai" / "installed-core").resolve()
     expected_parent = cache / digest
     receipt_path = _receipt_path(root)
@@ -451,7 +467,10 @@ def download_core_release(
     root = find_repo_root(consumer_root)
     lock = load_core_lock(root)
     version = str(lock["core"]["version"])
-    destination = (download_root or root / ".multiplai" / "downloads" / version).resolve()
+    shared = lock["core"].get("repository") == "multiplai-ai/ai-marketing-os"
+    default_downloads = (Path.home() / ".cache" / "ai-marketing-os" / "downloads"
+                         if shared else root / ".multiplai" / "downloads")
+    destination = (download_root or default_downloads / version).resolve()
     destination.mkdir(parents=True, exist_ok=True)
     names = (
         f"multiplai-core-{version}.tar.zst",

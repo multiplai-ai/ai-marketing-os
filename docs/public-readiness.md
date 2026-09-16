@@ -8,16 +8,25 @@ not imported; existing consumers keep their signed pins and trust root.
 
 ## Release boundary
 
-The public snapshot contains 69 procedures, selected
+The public snapshot contains 49 procedures, selected
 source tools, schemas, tests, fictional examples, and member documentation.
-The standalone GEO Audit and its local page-audit tool are included. Five
-related GEO adaptations and their inherited reference corpus remain omitted.
+All six GEO workflows and their companion tools are included. The inherited
+third-party reference corpus remains omitted; a local method guide is included.
 Dependencies are installed separately. No historical branches, tags,
 PRs, Actions logs, private operator guides, or old release assets are imported.
 
 The prior history and ten old release sets were scanned. No credential patterns
 were found, but old assets and hosting metadata contain private operating
 identifiers. They remain private and are not cleared for redistribution.
+
+## Consumer cutover status
+
+AI Marketing OS is the only canonical source for future shared-workflow edits.
+The owner authorized consumer cutover on September 15, 2026 with Core retained
+as an explicit rollback. Migration must verify every subscribed procedure,
+binding and tool against the signed public release before declaring success.
+See the [consumer cutover test plan](cutover-testing.md). Technical checks do
+not replace the planned comparison of real agent outputs.
 
 ## Required checks
 

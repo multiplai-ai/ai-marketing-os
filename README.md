@@ -14,7 +14,7 @@ dashboard and you do not need to learn the repository's code to use it.
 - Plan content calendars and campaigns
 - Review SEO, landing pages, creative, and paid advertising
 - Audit how well AI answer engines can understand and cite a website
-- Create reports, presentations, visual directions, and operating plans
+- Create campaign assets, visual directions, and shareable marketing visuals
 
 [Browse the workflow library](docs/capabilities.md) or follow the
 [five-minute guide](START-HERE.md).
@@ -100,14 +100,31 @@ to read or use these workflows. “Core” in older files means this shared libr
 ## A few honest limits
 
 Start with the workflows marked **Good place to start** in the
-[workflow library](docs/capabilities.md). Many additional workflows are included
-for inspection but have not been tested with every account, connector, operating
+[workflow library](docs/capabilities.md). Some workflows have not been tested
+with every account, connector, operating
 system, or business. A workflow may need source files, account access, or a
 separate integration. Claude should explain what it needs before taking action.
 
-The standalone GEO Audit is included. Five related GEO adaptations and their
-inherited reference corpus remain excluded. The source is MIT licensed; AI
+The GEO suite includes [prompt-set building](sops/geo-prompt-set-builder/SKILL.md),
+[answer visibility measurement](sops/geo-share-of-answers/SKILL.md),
+[site auditing](sops/geo-audit/SKILL.md),
+[citation mapping](sops/geo-citation-network-mapper/SKILL.md),
+[page restructuring](sops/geo-content-restructure/SKILL.md), and
+[action planning](sops/geo-plan/SKILL.md). Start with your business context and
+priority pages; add API measurement only when the inputs and budget are ready.
+The inherited third-party reference corpus remains excluded. The source is MIT licensed; AI
 subscriptions, APIs, connectors, and third-party services are separate.
+
+## Using the library from a client workspace
+
+Keep the client's facts, voice examples and outputs in its own workspace.
+The small skill routers resolve a signed, pinned AI Marketing OS release from
+one shared cache outside the client folders. They then read the complete
+procedure and supporting files there. A missing or changed installation is an
+error: the assistant must stop, show it, and never improvise the missing skill.
+Existing users can deliberately restore their previous Core pin if needed;
+Core is a rollback source, not a second place to maintain marketing workflows.
+See the [cutover and comparison guide](docs/cutover-testing.md).
 
 ## Contributing
 
