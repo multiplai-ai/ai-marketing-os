@@ -1,6 +1,6 @@
 # Public release trust
 
-The public channel is `multiplai-ai/ai-marketing-os`; the recommended preview
+The public channel is `multiplai-ai/ai-marketing-os`; the recommended release
 version is pinned in `releases/channel.json`. Obtain the source checkout from
 that repository. Its `releases/trust/minisign.pub` is the public channel's trust
 anchor. Do not replace it with a key supplied beside an untrusted archive.

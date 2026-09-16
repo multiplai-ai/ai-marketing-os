@@ -1,9 +1,30 @@
 # Codex workspace setup
 
-Start with the signed public preview and a fictional business, then adapt your
+Start with the signed public release and a fictional business, then adapt your
 own workspace. See [README](../README.md) for the copy-and-paste clone and setup
 commands. Python 3.12, Git, zstd, and Minisign are required. Code access does not
 include AI/API usage or optional services.
+
+## Install prerequisites
+
+The terminal setup supports macOS and Linux. For Claude Desktop, web, or Cowork,
+use the plugin ZIP in the README; Python and these terminal tools are not needed
+just to install the plugin.
+
+On macOS with Homebrew:
+
+```bash
+brew install python@3.12 git zstd minisign
+```
+
+On Ubuntu 24.04:
+
+```bash
+sudo apt-get update
+sudo apt-get install python3.12 python3.12-venv git zstd minisign
+```
+
+Then follow the clone and setup commands in the [README](../README.md#use-it-with-codex).
 
 ## What you will make
 
@@ -83,12 +104,12 @@ Git for rollback to an approved signed version. Do not run first-time scaffoldin
 against your existing workspace. No automatic update or background job is enabled.
 
 ```bash
-python /path/to/approved-core/tools/install_core_bundle.py \
+python /path/to/ai-marketing-os/tools/install_core_bundle.py \
   --consumer-root /path/to/riverton-workshop --release-dir /path/to/new-assets \
   --public-key-file /path/to/riverton-workshop/.multiplai/trust/minisign.pub
-python /path/to/approved-core/tools/generate_consumer_adapters.py \
+python /path/to/ai-marketing-os/tools/generate_consumer_adapters.py \
   --consumer-root /path/to/riverton-workshop
-python /path/to/approved-core/tools/install_core_bundle.py \
+python /path/to/ai-marketing-os/tools/install_core_bundle.py \
   --consumer-root /path/to/riverton-workshop --verify-only
 ```
 

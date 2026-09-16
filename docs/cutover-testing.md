@@ -75,3 +75,61 @@ test the installed result; then move to the next repository. Keep the private
 repository read-only throughout. A later technical rename of legacy artifact
 filenames is separate compatibility work, not a prerequisite for one canonical
 workflow source.
+
+## Retired workflow gate after rc.16
+
+The signed `v4.0.0-rc.16` artifact remains a complete, immutable rollback source.
+Consumers pinned to it do not depend on a maintainer's working tree and do not
+need to change merely because a later release removes a workflow.
+
+Before advancing a consumer beyond rc.16, remove or localize every subscribed
+workflow in this retired set:
+
+```text
+artifact-to-presentation
+audit-funnel
+build-workflow
+calendar-email-task-handling
+content-ideas-slack-to-notion-browser-handoff
+daily-brief-cron-prompt
+dev-process
+ecosystem-partnerships
+engagement-report
+granola-api-access
+growth-operator-hiring
+growth-operator-onboarding
+hermes-runtime-recovery
+jira-marketing
+l2-microsite-report
+mcp-skill-release-newsletter
+monthly-content-planning-and-publishing
+monthly-mbr
+monthly-scorecard
+morning-brief-setup
+prompt-optimizer
+publish
+quarterly-content-planning
+routing-and-notifications
+scrape-website
+social-audience-growth-weekly
+social-growth-os
+speaking-events-pipeline
+sync-repo
+to-gamma
+to-notion
+to-sheets
+vps-agent-update
+vps-phase0-2-cutover
+weekly-audience-report
+weekly-executive-update
+weekly-kpi-report
+weekly-social-audience-growth
+whitelist-email-refresh
+youtube-transcript
+```
+
+Move a still-active procedure into the operating repository that owns its
+context and destinations. Delete obsolete Hermes, VPS, generic software, and
+repo-maintenance procedures instead of recreating them locally. Do not update a
+lock until every requested workflow resolves from either the new shared release
+or an explicitly reviewed local package.

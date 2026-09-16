@@ -12,7 +12,7 @@ import yaml
 STARTERS = {
     "strategy-suite", "content-strategy", "content-brief", "writing",
     "human-writing-standard", "linkedin-post", "ads-audit", "ads-landing",
-    "seo-qc", "geo-audit", "prompt-optimizer",
+    "seo-qc", "geo-audit",
 }
 EVALUATED = {
     "discovery-intake", "positioning-strategy", "icp-personas",
@@ -43,7 +43,6 @@ PUBLIC_GUIDE = {
     "ai-tool-review": ("AI Tool Review", "Turn firsthand product testing into a fair, useful review with a clear recommendation."),
     "brand-guide": ("Visual Brand Guide", "Turn approved visual decisions into a usable guide for color, type, imagery, layout, and reusable design rules."),
     "brand-strategy": ("Brand Strategy and Key Messages", "Turn positioning and customer research into a clear message hierarchy, proof points, and voice guidance."),
-    "build-workflow": ("Build an AI Workflow", "Design and validate a reusable Claude workflow for a repeated task."),
     "components": ("Reusable Brand Graphics", "Create editable graphic building blocks from an approved visual brand system."),
     "content-brief": ("Article Content Brief", "Prepare a sourced article brief with audience, angle, structure, search questions, and missing research."),
     "content-calendar": ("Monthly Content Calendar", "Turn an approved content strategy into a realistic four-week publishing plan."),
@@ -56,16 +55,13 @@ PUBLIC_GUIDE = {
     "cro": ("Website Conversion Review", "Find the page changes most likely to make the offer clearer and the next action easier."),
     "design-extract": ("Website Style Extraction", "Turn the visual patterns on an existing website into reusable colors, type, spacing, and component rules."),
     "design-systems": ("Design System", "Build an approved visual system that can guide websites, presentations, social assets, and other creative work."),
-    "dev-process": ("Software Work Guide", "Guide a software change from understanding and planning through implementation, review, and release."),
     "discovery-intake": ("Business Discovery", "Organize business, customer, marketing, evidence, and constraint information before strategy work begins."),
-    "growth-operator-hiring": ("Growth Operator Hiring", "Define the role, score candidates, and run a practical hiring process for a full-loop growth operator."),
     "geo-audit": ("GEO Audit", "Review how easily AI answer engines can discover, understand, and cite a website, then prioritize improvements."),
     "human-writing-standard": ("Human Writing Review", "Keep writing grounded in a real author's words, evidence, judgment, and natural rhythm."),
     "icp-personas": ("Ideal Customers and Buyer Personas", "Define the companies, people, buying roles, and real work patterns most likely to fit the offer."),
     "linkedin-post": ("LinkedIn Post", "Turn a real idea or source into one voice-matched LinkedIn post, or a deliberately varied batch."),
     "mood": ("Visual Direction", "Compare a few visual directions and choose the feeling, texture, energy, and composition the brand should use."),
     "positioning-strategy": ("Positioning Strategy", "Choose the market alternative to compete against and explain why the offer is meaningfully different."),
-    "prompt-optimizer": ("Prompt Improver", "Turn a rough request into a clear prompt with the context, constraints, output, and success criteria the model needs."),
     "research": ("Visual and Competitor Research", "Collect visual references, compare patterns, and turn them into clear direction for creative work."),
     "seo": ("SEO Audit", "Use search and site data to find and prioritize technical, content, and authority improvements."),
     "seo-qc": ("Article Search Quality Check", "Review a finished article for search usefulness, answer quality, evidence, and specific improvements."),
@@ -84,25 +80,18 @@ def category(sid: str) -> str:
     if sid.startswith("ads"):
         return "Advertising and conversion"
     if sid in {"discovery-intake", "positioning-strategy", "icp-personas", "brand-strategy",
-               "content-strategy", "strategy-suite", "audit-funnel", "ecosystem-partnerships",
-               "growth-operator-hiring", "growth-operator-onboarding"}:
+               "content-strategy", "strategy-suite"}:
         return "Strategy and customers"
     if sid in {"content-brief", "content-calendar", "content-campaign", "content-produce",
-               "human-writing-standard", "linkedin-post", "monthly-content-planning-and-publishing",
-               "quarterly-content-planning", "social-audience-growth-weekly", "social-growth-os",
-               "weekly-social-audience-growth", "writing", "writing-setup", "youtube-transcript",
-               "ai-tool-review", "mcp-skill-release-newsletter"}:
+               "human-writing-standard", "linkedin-post", "writing", "writing-setup",
+               "ai-tool-review"}:
         return "Content and writing"
-    if sid in {"seo", "seo-qc", "cro", "scrape-website"}:
+    if sid in {"seo", "seo-qc", "cro"}:
         return "SEO and websites"
     if sid in {"brand-guide", "components", "creative-produce", "creative-status", "creative-suite",
                "design-extract", "design-systems", "mood", "research", "templates",
-               "video-production", "visual-content", "artifact-to-presentation"}:
+               "video-production", "visual-content"}:
         return "Brand, creative, and presentations"
-    if sid in {"engagement-report", "l2-microsite-report", "monthly-mbr", "monthly-scorecard",
-               "weekly-audience-report", "weekly-executive-update", "weekly-kpi-report",
-               "whitelist-email-refresh", "to-gamma", "to-notion", "to-sheets"}:
-        return "Reporting and publishing"
     return "Operations and automation"
 
 
@@ -145,8 +134,16 @@ def render(root: Path) -> str:
     categories = (
         "Strategy and customers", "Content and writing", "Advertising and conversion",
         "SEO and websites", "AI search visibility", "Brand, creative, and presentations",
-        "Reporting and publishing", "Operations and automation",
     )
+    non_marketing = [
+        workflow["id"] for workflow in workflows
+        if workflow["maturity"] != "released" or workflow["category"] == "Operations and automation"
+    ]
+    if non_marketing:
+        raise ValueError(
+            "public workflow library contains internal or non-marketing packages: "
+            + ", ".join(non_marketing)
+        )
     text = """# Workflow library
 
 This is the human-readable map of AI Marketing OS. Each workflow is a reusable
@@ -180,7 +177,7 @@ Claude, you can also select an installed workflow from the `/` or `+` menu.
 
 """
     for group in categories:
-        public = [w for w in workflows if w["category"] == group and w["maturity"] == "released" and group != "Operations and automation"]
+        public = [w for w in workflows if w["category"] == group]
         if not public:
             continue
         text += f"## {group}\n\n| Workflow | What it helps you do | Readiness |\n| --- | --- | --- |\n"
@@ -193,25 +190,7 @@ Claude, you can also select an installed workflow from the `/` or `+` menu.
             text += f'| [{title}](../sops/{item["id"]}/SKILL.md) | {description} | {readiness} |\n'
         text += "\n"
 
-    internal = [w for w in workflows if w["maturity"] != "released" or w["category"] == "Operations and automation"]
-    text += """<details>
-<summary><strong>Advanced and system workflows</strong></summary>
-
-These workflows support specialized reporting, publishing, account operations,
-or older systems. Read the requirements before using them. Some need configured
-accounts, exports, approval rules, or tools that are not included automatically.
-
-| Workflow | What it helps you do |
-| --- | --- |
-"""
-    for item in internal:
-        title = item["title"].replace("|", "\\|")
-        description = item["description"].replace("|", "\\|")
-        text += f'| [{title}](../sops/{item["id"]}/SKILL.md) | {description} |\n'
-    text += """
-</details>
-
-## What a workflow can and cannot do
+    text += """## What a workflow can and cannot do
 
 A workflow improves how the assistant approaches a task. It does not provide
 facts about your business or automatic access to your accounts. Workflows that

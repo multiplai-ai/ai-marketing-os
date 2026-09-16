@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "multiplai-core"
-version = "4.0.0rc16"
+version = "4.0.0"
 description = "Canonical shared marketing procedures and member tools"
 requires-python = ">=3.12,<3.13"
 dependencies = ["PyYAML==6.0.2", "jsonschema==4.25.1"]
@@ -13,9 +13,8 @@ dependencies = ["PyYAML==6.0.2", "jsonschema==4.25.1"]
 dev = ["pytest==9.0.3"]
 publishing = ["requests>=2.32.4,<3", "PyJWT>=2.10.1,<3", "Markdown>=3.8,<4"]
 web = ["requests>=2.32.4,<3", "beautifulsoup4>=4.13,<5", "Markdown>=3.8,<4", "trafilatura>=2,<3", "playwright>=1.51,<2", "tldextract>=5.1,<6"]
-google = ["gspread>=6.2,<7", "google-auth>=2.38,<3", "google-genai>=1.0,<2", "Pillow>=11,<13"]
+google = ["google-genai>=1.0,<2", "Pillow>=11,<13"]
 llm = ["anthropic>=0.49,<1", "openai>=1.68,<3", "google-genai>=1.0,<2", "requests>=2.32.4,<3"]
-video = ["youtube-transcript-api>=1.2,<2"]
 geo = ["requests>=2.32.4,<3", "beautifulsoup4>=4.13,<5", "textstat>=0.7.13,<0.8", "nltk>=3.9,<4", "readability-lxml>=0.8,<0.9", "Markdown>=3.8,<4", "tldextract>=5.1,<6"]
 
 [tool.setuptools]

@@ -14,7 +14,7 @@ dashboard and you do not need to learn the repository's code to use it.
 - Plan content calendars and campaigns
 - Review SEO, landing pages, creative, and paid advertising
 - Audit how well AI answer engines can understand and cite a website
-- Create reports, presentations, visual directions, and operating plans
+- Create campaign assets, visual directions, and shareable marketing visuals
 
 [Browse the workflow library](docs/capabilities.md) or follow the
 [five-minute guide](START-HERE.md).
@@ -71,7 +71,9 @@ unsupported claims visibly separate from facts.
 
 ## Use it with Codex
 
-Codex users can clone the repository and create a separate starter workspace:
+Codex users can clone the repository and create a separate starter workspace.
+Install **Python 3.12, Git, zstd, and Minisign** first; the
+[setup guide](docs/member-guide.md#install-prerequisites) has the commands:
 
 ```bash
 git clone https://github.com/multiplai-ai/ai-marketing-os.git
@@ -100,8 +102,8 @@ to read or use these workflows. “Core” in older files means this shared libr
 ## A few honest limits
 
 Start with the workflows marked **Good place to start** in the
-[workflow library](docs/capabilities.md). Many additional workflows are included
-for inspection but have not been tested with every account, connector, operating
+[workflow library](docs/capabilities.md). Some workflows have not been tested
+with every account, connector, operating
 system, or business. A workflow may need source files, account access, or a
 separate integration. Claude should explain what it needs before taking action.
 

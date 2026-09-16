@@ -8,7 +8,7 @@ not imported; existing consumers keep their signed pins and trust root.
 
 ## Release boundary
 
-The public snapshot contains 89 procedures, selected
+The public snapshot contains 49 procedures, selected
 source tools, schemas, tests, fictional examples, and member documentation.
 All six GEO workflows and their companion tools are included. The inherited
 third-party reference corpus remains omitted; a local method guide is included.

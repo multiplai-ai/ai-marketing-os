@@ -8,8 +8,8 @@
   "plugins": [
     {
       "name": "ai-marketing-os",
-      "description": "Practical marketing workflows for strategy, content, writing, advertising, SEO, creative work, and reporting.",
-      "version": "4.0.0-rc.16",
+      "description": "Practical marketing workflows for strategy, content, writing, advertising, SEO, GEO, and creative work.",
+      "version": "4.0.0",
       "author": {
         "name": "MultiplAI"
       },

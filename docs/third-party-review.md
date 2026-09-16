@@ -3,8 +3,7 @@
 On September 13, 2026, Hanna Huffman confirmed that MultiplAI owns or has permission
 to publish the inherited procedures and code, selected MIT, and directed that
 unresolved GEO adaptations be excluded. This is the owner's rights attestation;
-source lineage alone was not used as clearance. The existing MIT marker on the
-inherited sync-repo procedure is preserved under that attestation.
+source lineage alone was not used as clearance.
 
 The first public snapshot excluded the GEO suite. The owner subsequently
 approved the standalone audit, then directed inclusion of all remaining GEO
@@ -33,9 +32,7 @@ bundling them in future. Transitive dependencies require their own inventory.
 |---|---|---|
 | anthropic | 0.125.0 | MIT |
 | beautifulsoup4 | 4.15.0 | MIT License |
-| google-auth | 2.58.0 | Apache 2.0 |
 | google-genai | 1.75.0 | Apache-2.0 |
-| gspread | 6.2.1 | MIT License classifier |
 | jsonschema | 4.25.1 | MIT |
 | Markdown | 3.10.3 | BSD-3-Clause |
 | openai | 2.54.0 | Apache-2.0 |
@@ -47,4 +44,3 @@ bundling them in future. Transitive dependencies require their own inventory.
 | requests | 2.34.2 | Apache-2.0 |
 | tldextract | 5.3.2 | BSD-3-Clause |
 | trafilatura | 2.2.0 | Apache-2.0 |
-| youtube-transcript-api | 1.2.4 | MIT |

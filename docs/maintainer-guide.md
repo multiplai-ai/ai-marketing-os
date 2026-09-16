@@ -41,7 +41,8 @@ a checked-in file alone does not enforce these controls.
 The `release` environment must require owner approval and main-only deployment.
 Keep signing secrets in that environment. The workflow validates the source and
 built archive before signing, tests a signed member installation, and publishes
-a new preview version without overwriting old assets. Review a channel-version
+a new version without overwriting old assets. Versions ending in `-rc.N`
+are prereleases; other versions are published as the latest release. Review a channel-version
 change before each release. Keep production keys outside the repository.
 
 A new public snapshot must use the distribution allowlist and clean history.

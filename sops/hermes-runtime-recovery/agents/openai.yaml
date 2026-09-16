@@ -1,4 +1,0 @@
-interface:
-  display_name: "Hermes Runtime Recovery"
-  short_description: "Diagnose and recover live Hermes profile front doors"
-  default_prompt: "Use $hermes-runtime-recovery to diagnose a live Hermes profile or Slack front-door failure safely."

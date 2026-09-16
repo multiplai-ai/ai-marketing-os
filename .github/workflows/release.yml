@@ -43,7 +43,8 @@ jobs:
         run: |
           python3 -m zipfile -e "dist/ai-marketing-os-claude-plugin-${RELEASE_VERSION}.zip" "$RUNNER_TEMP/claude-plugin"
           test -f "$RUNNER_TEMP/claude-plugin/.claude-plugin/plugin.json"
-          test "$(find "$RUNNER_TEMP/claude-plugin/sops" -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l)" -eq "$(find sops -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l)"
+          expected_count="$(python3 -c 'import pathlib, yaml; print(len(yaml.safe_load(pathlib.Path("sops/manifest.yaml").read_text())["sops"]))')"
+          test "$(find "$RUNNER_TEMP/claude-plugin/sops" -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l)" -eq "$expected_count"
       - name: Validate the built archive
         run: |
           mkdir "$RUNNER_TEMP/core-artifact"
@@ -87,7 +88,12 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          release_flags=(--latest)
+          if [[ "$RELEASE_VERSION" == *-rc.* ]]; then
+            release_flags=(--prerelease --latest=false)
+          fi
           gh release create "v${RELEASE_VERSION}" dist/* \
             --target "$GITHUB_SHA" \
             --title "AI Marketing OS ${RELEASE_VERSION}" \
-            --prerelease --notes "Signed AI Marketing OS preview ${RELEASE_VERSION}. Start with README.md; live integrations remain opt-in and unverified."
+            "${release_flags[@]}" \
+            --notes "Marketing workflow library for Claude and Codex, including the complete GEO suite. Start with the README and START-HERE guide. Claude users: download the ai-marketing-os-claude-plugin ZIP. Codex users: follow the signed starter setup. Source is MIT licensed; AI subscriptions and optional services are separate. Live integrations require your own setup and review. Existing pinned workspaces stay on their current release until deliberately updated; see docs/cutover-testing.md for retired workflow migrations."

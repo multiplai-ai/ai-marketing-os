@@ -9,12 +9,7 @@
     "sops/ai-tool-review/SKILL.md",
     "sops/components/SKILL.md",
     "sops/content-calendar/SKILL.md",
-    "sops/mcp-skill-release-newsletter/SKILL.md",
-    "sops/monthly-content-planning-and-publishing/SKILL.md",
-    "sops/quarterly-content-planning/SKILL.md",
     "sops/seo-qc/SKILL.md",
-    "sops/social-audience-growth-weekly/SKILL.md",
-    "sops/to-gamma/SKILL.md",
     "sops/video-production/SKILL.md",
     "sops/video-production/references/brand-system.md",
     "sops/video-production/references/brand-video-production-rules.md",
@@ -27,7 +22,6 @@
     "sops/video-production/references/templates.md",
     "sops/video-production/references/workflow.md",
     "sops/visual-content/SKILL.md",
-    "sops/weekly-social-audience-growth/SKILL.md",
     "tools/tokens_to_pencil.py"
   ]
 }
