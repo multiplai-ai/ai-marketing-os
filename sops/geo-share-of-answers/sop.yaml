@@ -1,0 +1,20 @@
+id: geo-share-of-answers
+version: 0.1.0
+title: GEO Share of Answers
+maturity: released
+inputs:
+- prompt_set_csv
+- brands_csv
+- client_identifier
+- surfaces
+- runs_per_prompt
+- citation_classifier_mode
+outputs:
+- '{brain}/geo/share-of-answers/{date}/runs.csv'
+- '{brain}/geo/share-of-answers/{date}/summary.md'
+- '{brain}/geo/share-of-answers/{date}/trends.csv'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/geo-share-of-answers/SKILL.md
+

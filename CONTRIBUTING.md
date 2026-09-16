@@ -1,9 +1,9 @@
-# Contributing to Core
+# Contributing to AI Marketing OS
 
 Use a task branch and a reviewed PR. Preserve unfinished work. Never force-push,
 auto-stage unrelated files, merge your own change without required review, or
-edit a signed installation. Core owns shared procedures proven in two active
-operating repositories and globally consistent platform contracts. Entity facts,
+edit a signed installation. AI Marketing OS owns shared procedures proven in two
+active operating repositories and globally consistent platform contracts. Entity facts,
 credentials, business outputs and exclusive workflows belong in consumer repos.
 
 Edit procedural source in `sops/<id>/SKILL.md`; use references for conditional

@@ -1,0 +1,18 @@
+id: geo-content-restructure
+version: 0.1.0
+title: GEO Content Restructure
+maturity: released
+inputs:
+- source_url_or_markdown
+- geo_audit_findings
+- target_queries
+- brand_voice
+outputs:
+- '{brain}/geo/restructured/{slug}.md'
+- '{brain}/geo/restructured/{slug}-diff.md'
+- '{brain}/geo/restructured/{slug}-changes.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/geo-content-restructure/SKILL.md
+

@@ -9,6 +9,8 @@ import sys
 import tarfile
 import tempfile
 import unittest
+import shutil
+from unittest.mock import patch
 from pathlib import Path
 
 import yaml
@@ -34,6 +36,42 @@ Build the shared report from approved inputs.
 
 
 class CoreInstallTests(unittest.TestCase):
+    def _public_lock(self, root):
+        path = root / ".multiplai/core.lock.yaml"
+        lock = yaml.safe_load(path.read_text())
+        lock["core"].update(repository="multiplai-ai/ai-marketing-os", access="public")
+        path.write_text(yaml.safe_dump(lock))
+
+    def test_public_consumers_share_one_install_and_detach_independently(self):
+        self._public_lock(self.consumer)
+        second = self.base / "second-client"
+        shutil.copytree(self.consumer, second)
+        with patch("core_install.Path.home", return_value=self.base):
+            first = install_core_bundle(self.consumer, self.artifact, self.manifest, allow_unsigned=True)
+            other = install_core_bundle(second, self.artifact, self.manifest, allow_unsigned=True)
+        self.assertEqual(first["install_root"], other["install_root"])
+        self.assertFalse((self.consumer / ".multiplai/installed-core").exists())
+        remove_core_install(self.consumer)
+        self.assertEqual(verify_core_install(second)["core"], other["core"])
+
+    def test_public_missing_install_never_reads_sibling_core(self):
+        from consumer_sops import ConsumerSopError
+        self._public_lock(self.consumer)
+        with self.assertRaisesRegex(ConsumerSopError, "Do not continue without the skill"):
+            resolve_sop(self.consumer, "shared-task", core_root=self.base / "fake-core")
+
+    def test_shared_tampering_is_not_repaired_silently_for_second_consumer(self):
+        self._public_lock(self.consumer)
+        second = self.base / "second-client"
+        shutil.copytree(self.consumer, second)
+        with patch("core_install.Path.home", return_value=self.base):
+            receipt = install_core_bundle(self.consumer, self.artifact, self.manifest, allow_unsigned=True)
+            skill = Path(receipt["install_root"]) / "sops/shared-task/SKILL.md"
+            skill.chmod(0o644)
+            skill.write_text("tampered")
+            with self.assertRaisesRegex(CoreInstallError, "refusing to overwrite"):
+                install_core_bundle(second, self.artifact, self.manifest, allow_unsigned=True)
+
     def setUp(self) -> None:
         self.temp = tempfile.TemporaryDirectory()
         self.base = Path(self.temp.name)

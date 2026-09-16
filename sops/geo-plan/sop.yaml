@@ -1,0 +1,24 @@
+id: geo-plan
+version: 0.1.1
+title: geo-plan
+maturity: released
+inputs:
+- audit_output_dir
+- share_of_answers_output_dir
+- citation_network_output
+- business_inputs
+- client_name
+outputs:
+- '{brain}/geo/plan/{date}/baselines.json'
+- '{brain}/geo/plan/{date}/initiatives.json'
+- '{brain}/geo/plan/{date}/plan.md'
+- '{brain}/geo/plan/{date}/eng-cards/'
+- '{brain}/geo/plan/{date}/revenue-model.csv'
+- '{brain}/geo/plan/{date}/revenue-model.md'
+- '{brain}/geo/plan/{date}/exec-one-pager.md'
+- '{brain}/geo/plan/{date}/business-case.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/geo-plan/SKILL.md
+

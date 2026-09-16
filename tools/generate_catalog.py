@@ -22,6 +22,11 @@ EVALUATED = {
 # These summaries are written for the person choosing a workflow. The longer
 # technical descriptions in each SKILL.md remain available to the assistant.
 PUBLIC_GUIDE = {
+    "geo-prompt-set-builder": ("GEO Prompt Set", "Build a repeatable set of buyer questions for measuring visibility in AI answers."),
+    "geo-share-of-answers": ("AI Answer Visibility Measurement", "Measure brand and competitor mentions across explicitly selected API models and report errors separately."),
+    "geo-citation-network-mapper": ("AI Citation Map", "Find which sites AI answers cite and prioritize relevant earned-coverage opportunities."),
+    "geo-content-restructure": ("GEO Page Restructure", "Improve one page's clarity and extractability while preserving facts and client voice."),
+    "geo-plan": ("GEO Action Plan", "Turn audits and answer measurements into a prioritized plan, implementation cards, and transparent business scenarios."),
     "ads": ("Paid Advertising Guide", "Choose the right advertising review or planning workflow for the channels you use."),
     "ads-audit": ("Paid Advertising Audit", "Review several advertising channels together and leave with a prioritized fix list."),
     "ads-budget": ("Advertising Budget Review", "Decide where to increase, reduce, or stop advertising spend based on performance and readiness."),
@@ -74,7 +79,7 @@ PUBLIC_GUIDE = {
 
 
 def category(sid: str) -> str:
-    if sid == "geo-audit":
+    if sid.startswith("geo-"):
         return "AI search visibility"
     if sid.startswith("ads"):
         return "Advertising and conversion"
@@ -175,7 +180,7 @@ Claude, you can also select an installed workflow from the `/` or `+` menu.
 
 """
     for group in categories:
-        public = [w for w in workflows if w["category"] == group and w["maturity"] == "released"]
+        public = [w for w in workflows if w["category"] == group and w["maturity"] == "released" and group != "Operations and automation"]
         if not public:
             continue
         text += f"## {group}\n\n| Workflow | What it helps you do | Readiness |\n| --- | --- | --- |\n"
@@ -188,7 +193,7 @@ Claude, you can also select an installed workflow from the `/` or `+` menu.
             text += f'| [{title}](../sops/{item["id"]}/SKILL.md) | {description} | {readiness} |\n'
         text += "\n"
 
-    internal = [w for w in workflows if w["maturity"] != "released"]
+    internal = [w for w in workflows if w["maturity"] != "released" or w["category"] == "Operations and automation"]
     text += """<details>
 <summary><strong>Advanced and system workflows</strong></summary>
 
