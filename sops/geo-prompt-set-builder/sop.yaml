@@ -1,0 +1,19 @@
+id: geo-prompt-set-builder
+version: 0.1.0
+title: GEO Prompt Set Builder
+maturity: released
+inputs:
+- vertical
+- icp_description
+- competitor_list
+- keyword_csv
+- target_prompt_count
+- client_identifier
+outputs:
+- '{brain}/geo/prompts/{vertical}_{YYYY-MM-DD}.csv'
+- '{brain}/geo/prompts/generation_report.md'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/geo-prompt-set-builder/SKILL.md
+

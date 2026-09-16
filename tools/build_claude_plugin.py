@@ -9,7 +9,7 @@ import zipfile
 from pathlib import Path
 
 
-INCLUDED_ROOT_FILES = {"README.md", "START-HERE.md", "LICENSE", "NOTICE"}
+INCLUDED_ROOT_FILES = {"README.md", "START-HERE.md", "LICENSE", "NOTICE", "NOTICE.md", "pyproject.toml"}
 INCLUDED_DIRECTORIES = {".claude-plugin", "sops", "tools", "schemas", "runtime", "templates"}
 VERSION = re.compile(r"^[0-9]+\.[0-9]+\.[0-9]+(?:-rc\.[0-9]+)?$")
 

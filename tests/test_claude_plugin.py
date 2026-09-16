@@ -34,7 +34,7 @@ def test_every_manifest_workflow_is_discoverable_by_claude() -> None:
     }
 
     assert discovered == expected
-    assert len(discovered) == 84
+    assert {"geo-audit", "geo-plan", "geo-share-of-answers", "geo-prompt-set-builder", "geo-content-restructure", "geo-citation-network-mapper"} <= discovered
 
 
 def test_removed_pointer_tree_does_not_return() -> None:
@@ -42,11 +42,12 @@ def test_removed_pointer_tree_does_not_return() -> None:
 
 
 def test_uploadable_plugin_has_manifest_and_all_workflows(tmp_path: Path) -> None:
-    target = build(ROOT, tmp_path, "4.0.0-rc.15")
+    target = build(ROOT, tmp_path, json.loads((ROOT / ".claude-plugin/plugin.json").read_text())["version"])
     with zipfile.ZipFile(target) as archive:
         names = set(archive.namelist())
 
     assert ".claude-plugin/plugin.json" in names
     assert ".claude-plugin/marketplace.json" in names
-    assert len([name for name in names if name.startswith("sops/") and name.endswith("/SKILL.md")]) == 84
+    expected = {f"sops/{sid}/SKILL.md" for sid in yaml.safe_load((ROOT / "sops/manifest.yaml").read_text())["sops"]}
+    assert {name for name in names if name.startswith("sops/") and name.endswith("/SKILL.md")} == expected
     assert not any(name.startswith("generated/") for name in names)

@@ -275,6 +275,8 @@ def resolve_sop(
     if receipt.exists() or require_installed:
         package = load_installed_core_package(root, lock, sop_id)
     else:
+        if lock["core"].get("repository") == "multiplai-ai/ai-marketing-os":
+            raise ConsumerSopError("AI Marketing OS is not installed; run the resolver with --ensure-installed. Do not continue without the skill.")
         resolved_core = locate_core_root(root, core_root)
         package = load_core_package(resolved_core, lock, sop_id)
     binding, binding_path = load_binding(root, sop_id, entity)
@@ -458,6 +460,9 @@ def adapter_text(package: SopPackage) -> str:
             "ROOT=\"$(git rev-parse --show-toplevel)\"\n"
             f"python3 \"$ROOT/.multiplai/tools/resolve_sop.py\" --consumer-root \"$ROOT\" --sop-id {package.sop_id} --ensure-installed\n"
             "```\n\n"
+            "If resolution fails, STOP and show the error. Do not improvise this workflow "
+            "or silently fall back to Core. On success, identify the release and skill "
+            "loaded before starting work. A Core rollback requires an explicit request.\n\n"
             "Then read `SKILL.md` from the absolute `source_ref` directory in the JSON "
             "receipt completely. Read `tool_roots` from the receipt and, for each relative "
             "tool path declared by the SOP, use the first listed root where that path exists. "

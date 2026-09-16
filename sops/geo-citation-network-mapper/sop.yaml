@@ -1,0 +1,19 @@
+id: geo-citation-network-mapper
+version: 0.1.0
+title: GEO Citation Network Mapper
+maturity: released
+inputs:
+- share_of_answers_runs
+- vertical
+- client_identifier
+- competitor_domains
+outputs:
+- '{brain}/geo/citation-network/{vertical-slug}_{YYYY-MM-DD}/citation_network.csv'
+- '{brain}/geo/citation-network/{vertical-slug}_{YYYY-MM-DD}/earned_mentions.md'
+- '{brain}/geo/citation-network/{vertical-slug}_{YYYY-MM-DD}/network_analysis.md'
+- '{brain}/geo/citation-network/{vertical-slug}_{YYYY-MM-DD}/runs.csv'
+tools: []
+approval_classes: []
+tests: []
+source_provenance: core/skills/geo-citation-network-mapper/SKILL.md
+

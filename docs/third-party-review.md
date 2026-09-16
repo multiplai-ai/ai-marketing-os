@@ -6,12 +6,16 @@ unresolved GEO adaptations be excluded. This is the owner's rights attestation;
 source lineage alone was not used as clearance. The existing MIT marker on the
 inherited sync-repo procedure is preserved under that attestation.
 
-The first public snapshot excludes all six `sops/geo-*` packages, their generated
-adapters, the nested GEO/AEO frameworks and historical design notes, and all
-`tools/geo_*.py` tools. This includes adaptations attributed to Graphite, Ethan
-Smith/Lenny's Newsletter, Kevin Indig, Aleyda Solis, Lily Ray, the GEO paper, and
-indirect source attributions. Their permissions and close-paraphrase questions
-remain unresolved. Reintroduction requires a separate source/rights review.
+The first public snapshot excluded the GEO suite. The owner subsequently
+approved the standalone audit, then directed inclusion of all remaining GEO
+procedures and companion tools on September 15, 2026. The original workflow
+steps are retained with client-specific voice assumptions removed and a local
+method guide replacing the missing framework dependencies. This reflects the
+owner's publication direction, not an independent legal clearance.
+
+The nested third-party GEO/AEO research corpus and historical design notes
+remain excluded. Article citations do not grant permission to bundle their
+text, and unsourced numerical research claims are not release requirements.
 
 No font binaries, third-party media, browser binaries, model files, or dependency
 source distributions are bundled. Article links do not grant content reuse rights.

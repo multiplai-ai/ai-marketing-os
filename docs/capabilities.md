@@ -86,6 +86,11 @@ Claude, you can also select an installed workflow from the `/` or `+` menu.
 | Workflow | What it helps you do | Readiness |
 | --- | --- | --- |
 | [GEO Audit](../sops/geo-audit/SKILL.md) | Review how easily AI answer engines can discover, understand, and cite a website, then prioritize improvements. | Good place to start |
+| [AI Citation Map](../sops/geo-citation-network-mapper/SKILL.md) | Find which sites AI answers cite and prioritize relevant earned-coverage opportunities. | Test with your setup |
+| [GEO Page Restructure](../sops/geo-content-restructure/SKILL.md) | Improve one page's clarity and extractability while preserving facts and client voice. | Test with your setup |
+| [GEO Action Plan](../sops/geo-plan/SKILL.md) | Turn audits and answer measurements into a prioritized plan, implementation cards, and transparent business scenarios. | Test with your setup |
+| [GEO Prompt Set](../sops/geo-prompt-set-builder/SKILL.md) | Build a repeatable set of buyer questions for measuring visibility in AI answers. | Test with your setup |
+| [AI Answer Visibility Measurement](../sops/geo-share-of-answers/SKILL.md) | Measure brand and competitor mentions across explicitly selected API models and report errors separately. | Test with your setup |
 
 ## Brand, creative, and presentations
 
@@ -104,14 +109,6 @@ Claude, you can also select an installed workflow from the `/` or `+` menu.
 | [Video Production](../sops/video-production/SKILL.md) | Plan or produce titles, overlays, motion graphics, and edits from an approved brief and visual identity. | Test with your setup |
 | [Shareable Visuals](../sops/visual-content/SKILL.md) | Turn content into editable diagrams, frameworks, infographics, and reference cards. | Test with your setup |
 
-## Operations and automation
-
-| Workflow | What it helps you do | Readiness |
-| --- | --- | --- |
-| [Build an AI Workflow](../sops/build-workflow/SKILL.md) | Design and validate a reusable Claude workflow for a repeated task. | Test with your setup |
-| [Software Work Guide](../sops/dev-process/SKILL.md) | Guide a software change from understanding and planning through implementation, review, and release. | Test with your setup |
-| [Prompt Improver](../sops/prompt-optimizer/SKILL.md) | Turn a rough request into a clear prompt with the context, constraints, output, and success criteria the model needs. | Good place to start |
-
 <details>
 <summary><strong>Advanced and system workflows</strong></summary>
 
@@ -123,9 +120,11 @@ accounts, exports, approval rules, or tools that are not included automatically.
 | --- | --- |
 | [Artifact-First Reporting And Presentation Runbook](../sops/artifact-to-presentation/SKILL.md) | Use this as the default workflow for analytical reports, executive narratives, dashboards, and visual recommendations that may need to become Google Slides, Google Docs, Confluence pages, or other stakeholder-facing d… |
 | [Audit Funnel](../sops/audit-funnel/SKILL.md) | Run an entity's assessment-led sales funnel: a scored diagnostic survey that produces an instant personalized report, segmented follow-up, and a tracked pipeline from completed audit to closed engagement. |
+| [Build an AI Workflow](../sops/build-workflow/SKILL.md) | Design and validate a reusable Claude workflow for a repeated task. |
 | [Calendar, Email and Task Handling](../sops/calendar-email-task-handling/SKILL.md) | Route calendar, email, and task requests through a configured assistant while keeping private content in consumer-owned storage. |
 | [Slack to Notion content intake and mini briefs](../sops/content-ideas-slack-to-notion-browser-handoff/SKILL.md) | Set up a Slack-to-Notion content intake workflow and next-day mini briefs using consumer-configured channels and databases. |
 | [Daily Morning Brief — Cron Prompt Template](../sops/daily-brief-cron-prompt/SKILL.md) | Prepare a daily morning brief and refresh a weekly operating board from configured consumer calendar and task sources. |
+| [Software Work Guide](../sops/dev-process/SKILL.md) | Guide a software change from understanding and planning through implementation, review, and release. |
 | [Ecosystem Partnerships](../sops/ecosystem-partnerships/SKILL.md) | Run the entity's ecosystem-partnership motion: keep the partner map current, drive a small monthly queue of warm relationship moves, execute the joint webinar / newsletter swap / podcast guesting playbooks, track part… |
 | [Engagement Report Runbook](../sops/engagement-report/SKILL.md) | Generate deterministic entity engagement reports from Tableau exports. |
 | [Granola API access](../sops/granola-api-access/SKILL.md) | Fetch authorized Granola meeting notes through a consumer-configured API account and optional local helper. |
@@ -138,6 +137,7 @@ accounts, exports, approval rules, or tools that are not included automatically.
 | [entity Monthly MBR Runbook](../sops/monthly-mbr/SKILL.md) | Prepare a monthly business review package from consumer-provided metrics, reports, and executive priorities. |
 | [entity Monthly Scorecard Runbook](../sops/monthly-scorecard/SKILL.md) | Produce the question-grouped, traffic-light monthly scorecard for the recurring monthly review meeting. |
 | [Morning Brief System — Setup Runbook](../sops/morning-brief-setup/SKILL.md) | Configure or restore a consumer-owned daily and weekly morning brief with verified data sources and delivery settings. |
+| [Prompt Improver](../sops/prompt-optimizer/SKILL.md) | Turn a rough request into a clear prompt with the context, constraints, output, and success criteria the model needs. |
 | [Publishing Runbook](../sops/publish/SKILL.md) | Use this when content is ready to move from local markdown into publishing systems. |
 | [Quarterly Content Planning SOP](../sops/quarterly-content-planning/SKILL.md) | Plan the next quarter of content from the current strategy before choosing individual article topics or filling a weekly calendar. |
 | [Routing and Notifications](../sops/routing-and-notifications/SKILL.md) | Route assistant work to configured owners and apply the consumer notification policy for delegated tasks. |

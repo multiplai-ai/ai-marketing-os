@@ -30,9 +30,9 @@ revision, and date.
 | Reporting | one report workflow used by the operating repository | Does the output use the supplied data at the correct scope and label gaps? |
 | Setup and discovery | Claude plugin and Codex starter setup | Can a fresh user find and invoke the intended workflow without Core access? |
 
-Do not test `geo-plan`, citation mapping, prompt-set building, content
-restructure, or share-of-answers through the public library. Those workflows
-are not included in AI Marketing OS today.
+The full GEO suite is now included. Compare prompt building, answer measurement,
+citation mapping, audit, page restructuring, and planning using the same input
+packet. API calls require configured credentials and an approved budget.
 
 ## Review rubric
 
@@ -57,16 +57,17 @@ python -m pytest -q
 ```
 
 Then test a fresh Claude plugin installation and a fresh Codex starter setup.
-For an operating repository, do this in a separate disposable test copy. Do not
-change its live lock, generated routers, installer, or default repository
-during the comparison.
+For an operating repository, record the exact release receipt with each result.
+The owner authorized cutover on September 15, 2026. Keep a verified prior pin
+for deliberate rollback while comparing real outputs; a failed resolver must
+stop work rather than silently use generic instructions or switch libraries.
 
 ## Go/no-go decision
 
-The owner decides after reviewing the recorded outputs. A cutover can proceed
-only when the selected workflows pass the rubric, setup works without private
-Core access, and every workflow in the consumer's lock exists in AI Marketing
-OS or has been moved or retired deliberately.
+The owner has approved the routing cutover and will review output quality in
+the next working session. Setup must work without private Core access and every
+workflow in the consumer's lock must exist in AI Marketing OS. Record comparison
+failures and explicitly roll back the affected consumer if necessary.
 
 After acceptance, migrate one operating repository at a time: update its lock,
 router generation, installer default, documentation, and validation together;
