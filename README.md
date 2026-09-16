@@ -71,7 +71,9 @@ unsupported claims visibly separate from facts.
 
 ## Use it with Codex
 
-Codex users can clone the repository and create a separate starter workspace:
+Codex users can clone the repository and create a separate starter workspace.
+Install **Python 3.12, Git, zstd, and Minisign** first; the
+[setup guide](docs/member-guide.md#install-prerequisites) has the commands:
 
 ```bash
 git clone https://github.com/multiplai-ai/ai-marketing-os.git

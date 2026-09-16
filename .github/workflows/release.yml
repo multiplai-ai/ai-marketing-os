@@ -88,7 +88,12 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          release_flags=(--latest)
+          if [[ "$RELEASE_VERSION" == *-rc.* ]]; then
+            release_flags=(--prerelease --latest=false)
+          fi
           gh release create "v${RELEASE_VERSION}" dist/* \
             --target "$GITHUB_SHA" \
             --title "AI Marketing OS ${RELEASE_VERSION}" \
-            --prerelease --notes "Signed AI Marketing OS preview ${RELEASE_VERSION}. Start with README.md; live integrations remain opt-in and unverified."
+            "${release_flags[@]}" \
+            --notes "Marketing workflow library for Claude and Codex, including the complete GEO suite. Start with the README and START-HERE guide. Claude users: download the ai-marketing-os-claude-plugin ZIP. Codex users: follow the signed starter setup. Source is MIT licensed; AI subscriptions and optional services are separate. Live integrations require your own setup and review. Existing pinned workspaces stay on their current release until deliberately updated; see docs/cutover-testing.md for retired workflow migrations."
