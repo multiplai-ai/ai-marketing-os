@@ -1,5 +1,5 @@
 id: ads-meta
-version: 0.1.0
+version: 0.2.0
 title: Meta Ads Deep Analysis
 maturity: released
 inputs:
@@ -9,7 +9,9 @@ inputs:
 - audience_setup
 outputs:
 - "artifact_path: {brain}/ads/platforms/meta-ads-audit-{date}.md"
-tools: []
+tools:
+- meta_reporting.py
 approval_classes: []
-tests: []
+tests:
+- tests/test_meta_reporting.py
 source_provenance: core/skills/ads-meta/SKILL.md

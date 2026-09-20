@@ -12,6 +12,10 @@ Audit Facebook and Instagram advertising for tracking health, creative quality, 
 
 Use when the user says "Meta Ads", "Facebook Ads", "Instagram Ads", "Advantage+", or "Meta campaign".
 
+## Recurring reporting mode
+
+For daily or weekly performance reports and a report-only optimization agent, read [references/reporting.md](references/reporting.md) and use the shared `tools/meta_reporting.py` with client-owned goal configuration. This mode compares performance, retains report and decision history, and proposes actions. It has no campaign-write capability. Do not run the full audit or substitute generic audit thresholds for approved client targets unless an audit is also requested.
+
 ## Process
 
 1. Collect Meta Ads data (Ads Manager export, Events Manager screenshot, EMQ scores, campaign settings, creative assets, performance tables)
