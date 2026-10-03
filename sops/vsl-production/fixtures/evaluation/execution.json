@@ -1,15 +1,16 @@
 {
-  "performed_at": "2026-10-03T20:45:48.445260+00:00",
+  "performed_at": "2026-10-03T20:55:36.568714+00:00",
   "actor": "Codex authoring agent",
   "limitations": [
     "Self-review only; independent human maintainer review pending.",
     "Synthetic captions and buyer quotes do not establish source truth.",
     "Diagnostic repository paths normalized to $REPOSITORY.",
     "CLI calls were offline; no external action was called.",
-    "Wrong-route is a recorded agent response, not an automated classifier test."
+    "Wrong-route is a recorded agent response, not an automated classifier test.",
+    "The source-boundary additions were reviewed by the authoring agent. The eleven CLI cases reran; native Claude interaction is unverified."
   ],
   "tool_sha256": "1dc088f49b2a76cf6ac032252b1b3743472939b3a45003bd40acf8092a20b3d3",
-  "skill_sha256": "2a9ad87f4edd9c0e40f6d371c04f4cbf9e6d2bdac7cb2aa125978684cdbcd18d",
+  "skill_sha256": "0283c0f11d30a948f1eeb712e173ef87bf1d47c9c3cc33eabac070125ed647f2",
   "commands": [
     {
       "args": [
@@ -20,7 +21,7 @@
         "methods"
       ],
       "exit_code": 0,
-      "stdout": "{\n  \"stage\": \"methods\",\n  \"artifact_sha256\": \"43e79c76731bb5958868518d6c4059856068c98006a05a2034caac59e8ac438c\",\n  \"status\": \"structurally_ready\",\n  \"defects\": [],\n  \"holds\": [],\n  \"observations\": [],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:45:48.123973+00:00\"\n}\n",
+      "stdout": "{\n  \"stage\": \"methods\",\n  \"artifact_sha256\": \"43e79c76731bb5958868518d6c4059856068c98006a05a2034caac59e8ac438c\",\n  \"status\": \"structurally_ready\",\n  \"defects\": [],\n  \"holds\": [],\n  \"observations\": [],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:55:36.243613+00:00\"\n}\n",
       "stderr": ""
     },
     {
@@ -32,7 +33,7 @@
         "research"
       ],
       "exit_code": 2,
-      "stdout": "{\n  \"stage\": \"research\",\n  \"artifact_sha256\": \"5ed205213cab96714270815646c8a172db3314733aae70fa39b605c676549e32\",\n  \"status\": \"needs_evidence\",\n  \"defects\": [],\n  \"holds\": [\n    \"All sources are synthetic; no buyer observation or market validation is established.\"\n  ],\n  \"observations\": [],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:45:48.157454+00:00\"\n}\n",
+      "stdout": "{\n  \"stage\": \"research\",\n  \"artifact_sha256\": \"5ed205213cab96714270815646c8a172db3314733aae70fa39b605c676549e32\",\n  \"status\": \"needs_evidence\",\n  \"defects\": [],\n  \"holds\": [\n    \"All sources are synthetic; no buyer observation or market validation is established.\"\n  ],\n  \"observations\": [],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:55:36.275182+00:00\"\n}\n",
       "stderr": ""
     },
     {
@@ -44,7 +45,7 @@
         "halo"
       ],
       "exit_code": 0,
-      "stdout": "{\n  \"stage\": \"halo\",\n  \"artifact_sha256\": \"0b5561cb3f4fec669b58014c7dfa790c91e91bded135789f31cb07e157989e4f\",\n  \"status\": \"structurally_ready\",\n  \"defects\": [],\n  \"holds\": [],\n  \"observations\": [],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:45:48.187326+00:00\"\n}\n",
+      "stdout": "{\n  \"stage\": \"halo\",\n  \"artifact_sha256\": \"0b5561cb3f4fec669b58014c7dfa790c91e91bded135789f31cb07e157989e4f\",\n  \"status\": \"structurally_ready\",\n  \"defects\": [],\n  \"holds\": [],\n  \"observations\": [],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:55:36.302801+00:00\"\n}\n",
       "stderr": ""
     },
     {
@@ -56,7 +57,7 @@
         "offer"
       ],
       "exit_code": 2,
-      "stdout": "{\n  \"stage\": \"offer\",\n  \"artifact_sha256\": \"ed04fc5c44a58595aa76f4a0be85831ccf75ec224fb47be7282d64ed81844a71\",\n  \"status\": \"needs_evidence\",\n  \"defects\": [],\n  \"holds\": [\n    \"Commercial terms need owner decision: turnaround\",\n    \"Commercial terms need owner decision: approval_ref\",\n    \"Commercial terms need owner decision: price\"\n  ],\n  \"observations\": [],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:45:48.217311+00:00\"\n}\n",
+      "stdout": "{\n  \"stage\": \"offer\",\n  \"artifact_sha256\": \"ed04fc5c44a58595aa76f4a0be85831ccf75ec224fb47be7282d64ed81844a71\",\n  \"status\": \"needs_evidence\",\n  \"defects\": [],\n  \"holds\": [\n    \"Commercial terms need owner decision: turnaround\",\n    \"Commercial terms need owner decision: approval_ref\",\n    \"Commercial terms need owner decision: price\"\n  ],\n  \"observations\": [],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:55:36.335017+00:00\"\n}\n",
       "stderr": ""
     },
     {
@@ -68,7 +69,7 @@
         "script"
       ],
       "exit_code": 0,
-      "stdout": "{\n  \"stage\": \"script\",\n  \"artifact_sha256\": \"6fa06a00cade6346bb4a392fe9a1c5729c2e871afd777872bc25639a0c36dd44\",\n  \"status\": \"structurally_ready\",\n  \"defects\": [],\n  \"holds\": [],\n  \"observations\": [\n    {\n      \"spoken_words\": 644,\n      \"estimated_minutes_140wpm\": 4.6\n    }\n  ],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:45:48.250067+00:00\"\n}\n",
+      "stdout": "{\n  \"stage\": \"script\",\n  \"artifact_sha256\": \"6fa06a00cade6346bb4a392fe9a1c5729c2e871afd777872bc25639a0c36dd44\",\n  \"status\": \"structurally_ready\",\n  \"defects\": [],\n  \"holds\": [],\n  \"observations\": [\n    {\n      \"spoken_words\": 644,\n      \"estimated_minutes_140wpm\": 4.6\n    }\n  ],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:55:36.371392+00:00\"\n}\n",
       "stderr": ""
     },
     {
@@ -80,7 +81,7 @@
         "shots"
       ],
       "exit_code": 2,
-      "stdout": "{\n  \"stage\": \"shots\",\n  \"artifact_sha256\": \"84de4565fcf5c31e4c4e1be4813219e22114bfda5168f61460b7d6ea295b97fa\",\n  \"status\": \"needs_evidence\",\n  \"defects\": [],\n  \"holds\": [\n    \"V0: production asset planned\",\n    \"V1: production asset planned\",\n    \"V2: production asset planned\",\n    \"V3: production asset planned\",\n    \"V4: production asset planned\",\n    \"V5: production asset planned\"\n  ],\n  \"observations\": [],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:45:48.278102+00:00\"\n}\n",
+      "stdout": "{\n  \"stage\": \"shots\",\n  \"artifact_sha256\": \"84de4565fcf5c31e4c4e1be4813219e22114bfda5168f61460b7d6ea295b97fa\",\n  \"status\": \"needs_evidence\",\n  \"defects\": [],\n  \"holds\": [\n    \"V0: production asset planned\",\n    \"V1: production asset planned\",\n    \"V2: production asset planned\",\n    \"V3: production asset planned\",\n    \"V4: production asset planned\",\n    \"V5: production asset planned\"\n  ],\n  \"observations\": [],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:55:36.402791+00:00\"\n}\n",
       "stderr": ""
     },
     {
@@ -92,7 +93,7 @@
         "$REPOSITORY/sops/vsl-production/fixtures/evaluation/outputs/normal"
       ],
       "exit_code": 2,
-      "stdout": "{\n  \"status\": \"needs_evidence\",\n  \"defects\": [],\n  \"holds\": [\n    \"research: All sources are synthetic; no buyer observation or market validation is established.\",\n    \"offer: Commercial terms need owner decision: turnaround\",\n    \"offer: Commercial terms need owner decision: approval_ref\",\n    \"offer: Commercial terms need owner decision: price\",\n    \"shots: V0: production asset planned\",\n    \"shots: V1: production asset planned\",\n    \"shots: V2: production asset planned\",\n    \"shots: V3: production asset planned\",\n    \"shots: V4: production asset planned\",\n    \"shots: V5: production asset planned\"\n  ],\n  \"stages\": [\n    {\n      \"stage\": \"methods\",\n      \"artifact_sha256\": \"43e79c76731bb5958868518d6c4059856068c98006a05a2034caac59e8ac438c\",\n      \"status\": \"structurally_ready\",\n      \"defects\": [],\n      \"holds\": [],\n      \"observations\": [],\n      \"semantic_review\": \"agent advisory; not certified by this tool\",\n      \"owner_approval\": \"not assessed\"\n    },\n    {\n      \"stage\": \"research\",\n      \"artifact_sha256\": \"5ed205213cab96714270815646c8a172db3314733aae70fa39b605c676549e32\",\n      \"status\": \"needs_evidence\",\n      \"defects\": [],\n      \"holds\": [\n        \"All sources are synthetic; no buyer observation or market validation is established.\"\n      ],\n      \"observations\": [],\n      \"semantic_review\": \"agent advisory; not certified by this tool\",\n      \"owner_approval\": \"not assessed\"\n    },\n    {\n      \"stage\": \"halo\",\n      \"artifact_sha256\": \"0b5561cb3f4fec669b58014c7dfa790c91e91bded135789f31cb07e157989e4f\",\n      \"status\": \"structurally_ready\",\n      \"defects\": [],\n      \"holds\": [],\n      \"observations\": [],\n      \"semantic_review\": \"agent advisory; not certified by this tool\",\n      \"owner_approval\": \"not assessed\"\n    },\n    {\n      \"stage\": \"offer\",\n      \"artifact_sha256\": \"ed04fc5c44a58595aa76f4a0be85831ccf75ec224fb47be7282d64ed81844a71\",\n      \"status\": \"needs_evidence\",\n      \"defects\": [],\n      \"holds\": [\n        \"Commercial terms need owner decision: turnaround\",\n        \"Commercial terms need owner decision: approval_ref\",\n        \"Commercial terms need owner decision: price\"\n      ],\n      \"observations\": [],\n      \"semantic_review\": \"agent advisory; not certified by this tool\",\n      \"owner_approval\": \"not assessed\"\n    },\n    {\n      \"stage\": \"script\",\n      \"artifact_sha256\": \"6fa06a00cade6346bb4a392fe9a1c5729c2e871afd777872bc25639a0c36dd44\",\n      \"status\": \"structurally_ready\",\n      \"defects\": [],\n      \"holds\": [],\n      \"observations\": [\n        {\n          \"spoken_words\": 644,\n          \"estimated_minutes_140wpm\": 4.6\n        }\n      ],\n      \"semantic_review\": \"agent advisory; not certified by this tool\",\n      \"owner_approval\": \"not assessed\"\n    },\n    {\n      \"stage\": \"shots\",\n      \"artifact_sha256\": \"84de4565fcf5c31e4c4e1be4813219e22114bfda5168f61460b7d6ea295b97fa\",\n      \"status\": \"needs_evidence\",\n      \"defects\": [],\n      \"holds\": [\n        \"V0: production asset planned\",\n        \"V1: production asset planned\",\n        \"V2: production asset planned\",\n        \"V3: production asset planned\",\n        \"V4: production asset planned\",\n        \"V5: production asset planned\"\n      ],\n      \"observations\": [],\n      \"semantic_review\": \"agent advisory; not certified by this tool\",\n      \"owner_approval\": \"not assessed\"\n    }\n  ],\n  \"market_validated\": false,\n  \"owner_approved\": false,\n  \"limitation\": \"This tool cannot certify source truth, persuasion, owner approval or market performance.\",\n  \"evaluated_at\": \"2026-10-03T20:45:48.313518+00:00\"\n}\n",
+      "stdout": "{\n  \"status\": \"needs_evidence\",\n  \"defects\": [],\n  \"holds\": [\n    \"research: All sources are synthetic; no buyer observation or market validation is established.\",\n    \"offer: Commercial terms need owner decision: turnaround\",\n    \"offer: Commercial terms need owner decision: approval_ref\",\n    \"offer: Commercial terms need owner decision: price\",\n    \"shots: V0: production asset planned\",\n    \"shots: V1: production asset planned\",\n    \"shots: V2: production asset planned\",\n    \"shots: V3: production asset planned\",\n    \"shots: V4: production asset planned\",\n    \"shots: V5: production asset planned\"\n  ],\n  \"stages\": [\n    {\n      \"stage\": \"methods\",\n      \"artifact_sha256\": \"43e79c76731bb5958868518d6c4059856068c98006a05a2034caac59e8ac438c\",\n      \"status\": \"structurally_ready\",\n      \"defects\": [],\n      \"holds\": [],\n      \"observations\": [],\n      \"semantic_review\": \"agent advisory; not certified by this tool\",\n      \"owner_approval\": \"not assessed\"\n    },\n    {\n      \"stage\": \"research\",\n      \"artifact_sha256\": \"5ed205213cab96714270815646c8a172db3314733aae70fa39b605c676549e32\",\n      \"status\": \"needs_evidence\",\n      \"defects\": [],\n      \"holds\": [\n        \"All sources are synthetic; no buyer observation or market validation is established.\"\n      ],\n      \"observations\": [],\n      \"semantic_review\": \"agent advisory; not certified by this tool\",\n      \"owner_approval\": \"not assessed\"\n    },\n    {\n      \"stage\": \"halo\",\n      \"artifact_sha256\": \"0b5561cb3f4fec669b58014c7dfa790c91e91bded135789f31cb07e157989e4f\",\n      \"status\": \"structurally_ready\",\n      \"defects\": [],\n      \"holds\": [],\n      \"observations\": [],\n      \"semantic_review\": \"agent advisory; not certified by this tool\",\n      \"owner_approval\": \"not assessed\"\n    },\n    {\n      \"stage\": \"offer\",\n      \"artifact_sha256\": \"ed04fc5c44a58595aa76f4a0be85831ccf75ec224fb47be7282d64ed81844a71\",\n      \"status\": \"needs_evidence\",\n      \"defects\": [],\n      \"holds\": [\n        \"Commercial terms need owner decision: turnaround\",\n        \"Commercial terms need owner decision: approval_ref\",\n        \"Commercial terms need owner decision: price\"\n      ],\n      \"observations\": [],\n      \"semantic_review\": \"agent advisory; not certified by this tool\",\n      \"owner_approval\": \"not assessed\"\n    },\n    {\n      \"stage\": \"script\",\n      \"artifact_sha256\": \"6fa06a00cade6346bb4a392fe9a1c5729c2e871afd777872bc25639a0c36dd44\",\n      \"status\": \"structurally_ready\",\n      \"defects\": [],\n      \"holds\": [],\n      \"observations\": [\n        {\n          \"spoken_words\": 644,\n          \"estimated_minutes_140wpm\": 4.6\n        }\n      ],\n      \"semantic_review\": \"agent advisory; not certified by this tool\",\n      \"owner_approval\": \"not assessed\"\n    },\n    {\n      \"stage\": \"shots\",\n      \"artifact_sha256\": \"84de4565fcf5c31e4c4e1be4813219e22114bfda5168f61460b7d6ea295b97fa\",\n      \"status\": \"needs_evidence\",\n      \"defects\": [],\n      \"holds\": [\n        \"V0: production asset planned\",\n        \"V1: production asset planned\",\n        \"V2: production asset planned\",\n        \"V3: production asset planned\",\n        \"V4: production asset planned\",\n        \"V5: production asset planned\"\n      ],\n      \"observations\": [],\n      \"semantic_review\": \"agent advisory; not certified by this tool\",\n      \"owner_approval\": \"not assessed\"\n    }\n  ],\n  \"market_validated\": false,\n  \"owner_approved\": false,\n  \"limitation\": \"This tool cannot certify source truth, persuasion, owner approval or market performance.\",\n  \"evaluated_at\": \"2026-10-03T20:55:36.438412+00:00\"\n}\n",
       "stderr": ""
     },
     {
@@ -104,7 +105,7 @@
         "methods"
       ],
       "exit_code": 1,
-      "stdout": "{\n  \"stage\": \"methods\",\n  \"artifact_sha256\": \"43e79c76731bb5958868518d6c4059856068c98006a05a2034caac59e8ac438c\",\n  \"status\": \"blocked\",\n  \"defects\": [\n    \"Invalid or unavailable input: [Errno 2] No such file or directory: '$REPOSITORY/.audit-local/vsl-evaluation/missing/caption-0.md'\"\n  ],\n  \"holds\": [],\n  \"observations\": [],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:45:48.344190+00:00\"\n}\n",
+      "stdout": "{\n  \"stage\": \"methods\",\n  \"artifact_sha256\": \"43e79c76731bb5958868518d6c4059856068c98006a05a2034caac59e8ac438c\",\n  \"status\": \"blocked\",\n  \"defects\": [\n    \"Invalid or unavailable input: [Errno 2] No such file or directory: '$REPOSITORY/.audit-local/vsl-evaluation/missing/caption-0.md'\"\n  ],\n  \"holds\": [],\n  \"observations\": [],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:55:36.469465+00:00\"\n}\n",
       "stderr": ""
     },
     {
@@ -128,7 +129,7 @@
         "research"
       ],
       "exit_code": 2,
-      "stdout": "{\n  \"stage\": \"research\",\n  \"artifact_sha256\": \"38740c3d37a695ed78dca78097b0199d9a36afd412ff3c7da12053614244fcfe\",\n  \"status\": \"needs_evidence\",\n  \"defects\": [],\n  \"holds\": [\n    \"All sources are synthetic; no buyer observation or market validation is established.\"\n  ],\n  \"observations\": [],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:45:48.410022+00:00\"\n}\n",
+      "stdout": "{\n  \"stage\": \"research\",\n  \"artifact_sha256\": \"38740c3d37a695ed78dca78097b0199d9a36afd412ff3c7da12053614244fcfe\",\n  \"status\": \"needs_evidence\",\n  \"defects\": [],\n  \"holds\": [\n    \"All sources are synthetic; no buyer observation or market validation is established.\"\n  ],\n  \"observations\": [],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:55:36.532597+00:00\"\n}\n",
       "stderr": ""
     },
     {
@@ -140,7 +141,7 @@
         "script"
       ],
       "exit_code": 1,
-      "stdout": "{\n  \"stage\": \"script\",\n  \"artifact_sha256\": \"98394dfb70673b3f229fa96161a66b253f3db1d6b81e23d4f04b496ea9574b92\",\n  \"status\": \"blocked\",\n  \"defects\": [\n    \"Unsupported certainty/scarcity trigger requires removal or specialist review: guaranteed revenue\"\n  ],\n  \"holds\": [],\n  \"observations\": [\n    {\n      \"spoken_words\": 648,\n      \"estimated_minutes_140wpm\": 4.63\n    }\n  ],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:45:48.440085+00:00\"\n}\n",
+      "stdout": "{\n  \"stage\": \"script\",\n  \"artifact_sha256\": \"98394dfb70673b3f229fa96161a66b253f3db1d6b81e23d4f04b496ea9574b92\",\n  \"status\": \"blocked\",\n  \"defects\": [\n    \"Unsupported certainty/scarcity trigger requires removal or specialist review: guaranteed revenue\"\n  ],\n  \"holds\": [],\n  \"observations\": [\n    {\n      \"spoken_words\": 648,\n      \"estimated_minutes_140wpm\": 4.63\n    }\n  ],\n  \"semantic_review\": \"agent advisory; not certified by this tool\",\n  \"owner_approval\": \"not assessed\",\n  \"evaluated_at\": \"2026-10-03T20:55:36.564278+00:00\"\n}\n",
       "stderr": ""
     }
   ]

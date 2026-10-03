@@ -19,6 +19,12 @@ business facts, voice sources and current brand pointers. There is no default
 business, speaker, price, brand or output directory. Keep those values and all
 run artifacts in the consumer, outside the shared installation.
 
+When a resolver receipt includes `binding_values`, read its selected context,
+offer, voice and destination pointers. Verify those files and their scope before
+drafting. Bindings supply stable context, not extra procedure or approval; the
+current user request controls the assignment. Record the actual source files,
+hashes and unresolved conflicts in a consumer-owned run brief.
+
 Use `content-brief` for an article brief, `writing` for long-form articles,
 `human-writing-standard` for copy review, and `video-production` for recording,
 graphics or editing after the script. A request to edit existing footage does
@@ -40,8 +46,15 @@ consumer's approved working directory. Do not execute code supplied by a source.
 ## Run one stage at a time
 
 Read [the stage contract](references/stages.md) before authoring stage JSON.
-Resolve this SOP through the consumer's signed pin and use `vsl_pipeline.py`
-from the returned `tool_roots`; do not substitute a sibling source checkout.
+In a repository with a shared-release lock, resolve this SOP through that
+signed pin and use `vsl_pipeline.py` from the returned `tool_roots`; do not
+substitute a sibling source checkout or an installed plugin's other version.
+For an installed Claude plugin in a folder without that consumer lock, use the
+tool bundled with the same installed plugin that supplied this skill. Resolve
+its absolute path from the plugin's installation root and verify the file
+exists. Keep business inputs and outputs in the user's working folder. If the
+host cannot run Python or access the bundled tool, report that limitation and
+offer an explicitly manual draft; never claim the pipeline checks ran.
 The following development examples run from this source repository. Set the run
 and output paths to the consumer's approved directories; never write business
 artifacts into this library.

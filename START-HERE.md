@@ -27,6 +27,7 @@ More relevant source material usually produces a better result.
 | Write from real source material | [Writing](sops/writing/SKILL.md) | “Draft an article from this transcript and brief. Preserve the speaker’s meaning and voice.” |
 | Improve a draft | [Human Writing Standard](sops/human-writing-standard/SKILL.md) | “Review this draft for generic language and claims the sources do not support.” |
 | Draft a LinkedIn post | [LinkedIn Post](sops/linkedin-post/SKILL.md) | “Turn this idea into one LinkedIn post for review. Do not publish it.” |
+| Create a sales video script | [Video Sales Letter](sops/vsl-production/SKILL.md) | “Use my business, audience and offer sources to create a VSL script and shot list. Keep unsupported claims and unapproved prices out.” |
 | Review paid advertising | [Ads Audit](sops/ads-audit/SKILL.md) | “Audit these ad exports and explain the three highest-priority problems.” |
 | Review a website or landing page | [Landing Page Audit](sops/ads-landing/SKILL.md) | “Compare this page with the promise that sends people there and recommend improvements.” |
 | Improve visibility in AI answers | [GEO Audit](sops/geo-audit/SKILL.md) | “Audit these priority pages for AI search visibility. Separate observations from assumptions and give me a 30-day plan.” |
