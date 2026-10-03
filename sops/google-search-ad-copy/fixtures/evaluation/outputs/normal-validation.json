@@ -1,0 +1,103 @@
+{
+  "status": "format_pass",
+  "errors": [],
+  "manual_review": [],
+  "counts": [
+    {
+      "asset": "ad 1.headlines[1]",
+      "text": "Monthly Books for Consultants",
+      "count": 29,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[2]",
+      "text": "See Your Bookkeeping Package",
+      "count": 28,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[3]",
+      "text": "See Our Monthly Close Process",
+      "count": 29,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[4]",
+      "text": "Help Organizing Your Books",
+      "count": 26,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[5]",
+      "text": "Bank Reconciliation Included",
+      "count": 28,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[6]",
+      "text": "Monthly Reports Included",
+      "count": 24,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[7]",
+      "text": "Transaction Categorization",
+      "count": 26,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[8]",
+      "text": "Book an Introductory Call",
+      "count": 25,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[9]",
+      "text": "Cedar Books for Consultants",
+      "count": 27,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[10]",
+      "text": "Review Your Bookkeeping Needs",
+      "count": 29,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.descriptions[1]",
+      "text": "See monthly package inclusions: transaction categorization, reconciliation and reports.",
+      "count": 87,
+      "limit": 90
+    },
+    {
+      "asset": "ad 1.descriptions[2]",
+      "text": "See how monthly close works: share records, review questions and receive monthly reports.",
+      "count": 89,
+      "limit": 90
+    },
+    {
+      "asset": "ad 1.descriptions[3]",
+      "text": "Monthly bookkeeping for consulting firms. Book an introductory call to discuss your needs.",
+      "count": 90,
+      "limit": 90
+    },
+    {
+      "asset": "ad 1.descriptions[4]",
+      "text": "Get help categorizing transactions and reconciling bank accounts. Explore Cedar Books.",
+      "count": 86,
+      "limit": 90
+    },
+    {
+      "asset": "ad 1.paths[1]",
+      "text": "consultants",
+      "count": 11,
+      "limit": 15
+    },
+    {
+      "asset": "ad 1.paths[2]",
+      "text": "monthly-books",
+      "count": 13,
+      "limit": 15
+    }
+  ]
+}

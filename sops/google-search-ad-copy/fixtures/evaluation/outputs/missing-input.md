@@ -1,0 +1,1 @@
+What is the business and offer, who is it for, and where will the ads run? Please also share the target search theme, landing-page URL or text, desired next action, and any approved proof or copy constraints. A rough brief is enough to start.
