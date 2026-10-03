@@ -1,0 +1,115 @@
+{
+  "status": "format_pass",
+  "errors": [],
+  "manual_review": [],
+  "counts": [
+    {
+      "asset": "ad 1.headlines[1]",
+      "text": "Owner Meeting. What's Open?",
+      "count": 27,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[2]",
+      "text": "Still Chasing the Plumber?",
+      "count": 26,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[3]",
+      "text": "Who Owns the Next Call?",
+      "count": 23,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[4]",
+      "text": "New Coordinator. Same Story?",
+      "count": 28,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[5]",
+      "text": "Tell the Owner Where It Stands",
+      "count": 30,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[6]",
+      "text": "Still the Repair Go-Between?",
+      "count": 28,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[7]",
+      "text": "Help Without Losing Control",
+      "count": 27,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[8]",
+      "text": "Your Repair Budget. Your Call.",
+      "count": 30,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[9]",
+      "text": "Maintenance Coordination",
+      "count": 24,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[10]",
+      "text": "Harbor Maintenance",
+      "count": 18,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[11]",
+      "text": "See How Requests Are Handed On",
+      "count": 30,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.headlines[12]",
+      "text": "Book a Discovery Call",
+      "count": 21,
+      "limit": 30
+    },
+    {
+      "asset": "ad 1.descriptions[1]",
+      "text": "Know what's open at the owner meeting. Harbor coordinates contractors and tracks status.",
+      "count": 88,
+      "limit": 90
+    },
+    {
+      "asset": "ad 1.descriptions[2]",
+      "text": "Retelling a repair's story? See how Harbor hands open requests between coordinators.",
+      "count": 84,
+      "limit": 90
+    },
+    {
+      "asset": "ad 1.descriptions[3]",
+      "text": "You approve repair spending. Get contractor coordination, status tracking and updates.",
+      "count": 86,
+      "limit": 90
+    },
+    {
+      "asset": "ad 1.descriptions[4]",
+      "text": "See how to submit a maintenance request and what to bring to your discovery call.",
+      "count": 81,
+      "limit": 90
+    },
+    {
+      "asset": "ad 1.paths[1]",
+      "text": "maintenance",
+      "count": 11,
+      "limit": 15
+    },
+    {
+      "asset": "ad 1.paths[2]",
+      "text": "coordination",
+      "count": 12,
+      "limit": 15
+    }
+  ]
+}

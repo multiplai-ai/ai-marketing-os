@@ -1,0 +1,31 @@
+{
+  "ads": [
+    {
+      "name": "Harbor Maintenance - property maintenance coordination",
+      "headlines": [
+        "Owner Meeting. What's Open?",
+        "Still Chasing the Plumber?",
+        "Who Owns the Next Call?",
+        "New Coordinator. Same Story?",
+        "Tell the Owner Where It Stands",
+        "Still the Repair Go-Between?",
+        "Help Without Losing Control",
+        "Your Repair Budget. Your Call.",
+        "Maintenance Coordination",
+        "Harbor Maintenance",
+        "See How Requests Are Handed On",
+        "Book a Discovery Call"
+      ],
+      "descriptions": [
+        "Know what's open at the owner meeting. Harbor coordinates contractors and tracks status.",
+        "Retelling a repair's story? See how Harbor hands open requests between coordinators.",
+        "You approve repair spending. Get contractor coordination, status tracking and updates.",
+        "See how to submit a maintenance request and what to bring to your discovery call."
+      ],
+      "paths": [
+        "maintenance",
+        "coordination"
+      ]
+    }
+  ]
+}

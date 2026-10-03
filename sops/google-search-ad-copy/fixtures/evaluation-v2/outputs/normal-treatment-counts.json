@@ -1,0 +1,196 @@
+{
+  "shortlist": [
+    {
+      "id": "H1",
+      "text": "Owner Meeting. What's Open?",
+      "count": 27,
+      "within_30": true
+    },
+    {
+      "id": "H2",
+      "text": "Still Chasing the Plumber?",
+      "count": 26,
+      "within_30": true
+    },
+    {
+      "id": "H3",
+      "text": "Who Owns the Next Call?",
+      "count": 23,
+      "within_30": true
+    },
+    {
+      "id": "H4",
+      "text": "New Coordinator. Same Story?",
+      "count": 28,
+      "within_30": true
+    },
+    {
+      "id": "H5",
+      "text": "Tell the Owner Where It Stands",
+      "count": 30,
+      "within_30": true
+    },
+    {
+      "id": "H6",
+      "text": "A Ticket Isn't a Repair",
+      "count": 23,
+      "within_30": true
+    },
+    {
+      "id": "H7",
+      "text": "Still the Repair Go-Between?",
+      "count": 28,
+      "within_30": true
+    },
+    {
+      "id": "H8",
+      "text": "Who Has the Repair History?",
+      "count": 27,
+      "within_30": true
+    },
+    {
+      "id": "H9",
+      "text": "Day Off, Still Checking In?",
+      "count": 27,
+      "within_30": true
+    },
+    {
+      "id": "H10",
+      "text": "Saturday, Calling Again?",
+      "count": 24,
+      "within_30": true
+    },
+    {
+      "id": "H11",
+      "text": "Help Without Losing Control",
+      "count": 27,
+      "within_30": true
+    },
+    {
+      "id": "H12",
+      "text": "Your Repair Budget. Your Call.",
+      "count": 30,
+      "within_30": true
+    },
+    {
+      "id": "H13",
+      "text": "Property Maintenance Help",
+      "count": 25,
+      "within_30": true
+    },
+    {
+      "id": "H14",
+      "text": "Maintenance Coordination",
+      "count": 24,
+      "within_30": true
+    },
+    {
+      "id": "H15",
+      "text": "Harbor Maintenance",
+      "count": 18,
+      "within_30": true
+    },
+    {
+      "id": "H16",
+      "text": "See How Requests Are Handed On",
+      "count": 30,
+      "within_30": true
+    },
+    {
+      "id": "H17",
+      "text": "See How Coordination Works",
+      "count": 26,
+      "within_30": true
+    },
+    {
+      "id": "H18",
+      "text": "Book a Discovery Call",
+      "count": 21,
+      "within_30": true
+    },
+    {
+      "id": "H19",
+      "text": "Still Explaining the Delays?",
+      "count": 28,
+      "within_30": true
+    },
+    {
+      "id": "H20",
+      "text": "Another Dashboard Won't Call",
+      "count": 28,
+      "within_30": true
+    }
+  ],
+  "treatments": [
+    {
+      "text": "What Will I Tell the Owner?",
+      "count": 27,
+      "within_30": true
+    },
+    {
+      "text": "Owner Meeting. What's Open?",
+      "count": 27,
+      "within_30": true
+    },
+    {
+      "text": "Tell the Owner Where It Stands",
+      "count": 30,
+      "within_30": true
+    },
+    {
+      "text": "Who Owns the Next Call?",
+      "count": 23,
+      "within_30": true
+    },
+    {
+      "text": "Still Chasing the Plumber?",
+      "count": 26,
+      "within_30": true
+    },
+    {
+      "text": "Help With Contractor Follow-Up",
+      "count": 30,
+      "within_30": true
+    },
+    {
+      "text": "Who Has the Repair History?",
+      "count": 27,
+      "within_30": true
+    },
+    {
+      "text": "New Coordinator. Same Story?",
+      "count": 28,
+      "within_30": true
+    },
+    {
+      "text": "See How Requests Are Handed On",
+      "count": 30,
+      "within_30": true
+    },
+    {
+      "text": "See Repair Status",
+      "count": 17,
+      "within_30": true
+    },
+    {
+      "text": "Maintenance Coordination",
+      "count": 24,
+      "within_30": true
+    },
+    {
+      "text": "Another Dashboard Won't Call",
+      "count": 28,
+      "within_30": true
+    },
+    {
+      "text": "See Our Handover Process",
+      "count": 24,
+      "within_30": true
+    },
+    {
+      "text": "Reliable Maintenance Service",
+      "count": 28,
+      "within_30": true
+    }
+  ]
+}
