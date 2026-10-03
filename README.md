@@ -11,6 +11,7 @@ dashboard and you do not need to learn the repository's code to use it.
 
 - Build positioning, ideal-customer, brand, and content strategy
 - Turn source material into briefs, articles, newsletters, and LinkedIn posts
+- Build a researched video sales letter with a recording script and shot list
 - Plan content calendars and campaigns
 - Review SEO, landing pages, creative, and paid advertising
 - Audit how well AI answer engines can understand and cite a website
@@ -127,6 +128,16 @@ error: the assistant must stop, show it, and never improvise the missing skill.
 Existing users can deliberately restore their previous Core pin if needed;
 Core is a rollback source, not a second place to maintain marketing workflows.
 See the [cutover and comparison guide](docs/cutover-testing.md).
+
+For a VSL, select [Video Sales Letter](sops/vsl-production/SKILL.md) and ask:
+
+> Use vsl-production for this business. Read its audience, offer and voice
+> sources, keep unapproved prices out, and produce a script and shot list.
+
+The shared workflow supplies the process; your workspace supplies the facts and
+receives the output. Release 4.1.0 includes this skill and its offline Python
+helper. Existing pinned workspaces must deliberately install that release and
+subscribe to `vsl-production`; merging library source does not update them.
 
 ## Contributing
 
