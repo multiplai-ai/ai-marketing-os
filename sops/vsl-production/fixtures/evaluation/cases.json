@@ -1,0 +1,25 @@
+{
+  "scope": "Synthetic offline forward evaluation. No browsing, live accounts, publication or market test. Outputs were authored and checked by the same agent; independent human review remains required.",
+  "cases": [
+    {
+      "id": "normal",
+      "input": "normal.md",
+      "output": "outputs/normal/recording-script.md"
+    },
+    {
+      "id": "missing-input",
+      "input": "missing-input.md",
+      "output": "execution.json"
+    },
+    {
+      "id": "wrong-route",
+      "input": "wrong-route.md",
+      "output": "outputs/wrong-route.md"
+    },
+    {
+      "id": "untrusted-input",
+      "input": "untrusted-input.md",
+      "output": "outputs/untrusted-input.md"
+    }
+  ]
+}

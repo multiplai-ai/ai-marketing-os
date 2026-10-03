@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "stage": "research",
+  "dependencies": {
+    "methods": "43e79c76731bb5958868518d6c4059856068c98006a05a2034caac59e8ac438c"
+  },
+  "holds": [
+    "All sources are synthetic; no buyer observation or market validation is established."
+  ],
+  "sources": [
+    {
+      "id": "0",
+      "url": "https://example.com/0",
+      "observed_on": "2026-10-02",
+      "excerpt": "Nobody knew who should answer the enquiry."
+    },
+    {
+      "id": "1",
+      "url": "https://example.com/1",
+      "observed_on": "2026-10-02",
+      "excerpt": "The reply was quick but did not answer my availability question."
+    },
+    {
+      "id": "2",
+      "url": "https://example.com/2",
+      "observed_on": "2026-10-02",
+      "excerpt": "We already have several tools and still lose track of the next step."
+    }
+  ],
+  "quotes": [
+    {
+      "id": "Q0",
+      "source_id": "0",
+      "text": "Nobody knew who should answer the enquiry.",
+      "audience_fit": "Invented booking-team scenario",
+      "bias": "Synthetic fixture; not an observed buyer",
+      "category": "pain"
+    },
+    {
+      "id": "Q1",
+      "source_id": "1",
+      "text": "The reply was quick but did not answer my availability question.",
+      "audience_fit": "Invented booking-team scenario",
+      "bias": "Synthetic fixture; not an observed buyer",
+      "category": "pain"
+    },
+    {
+      "id": "Q2",
+      "source_id": "2",
+      "text": "We already have several tools and still lose track of the next step.",
+      "audience_fit": "Invented booking-team scenario",
+      "bias": "Synthetic fixture; not an observed buyer",
+      "category": "pain"
+    }
+  ],
+  "coverage": {
+    "forums": {
+      "status": "complete",
+      "note": "Fixture"
+    },
+    "amazon_reviews": {
+      "status": "complete",
+      "note": "Fixture"
+    },
+    "competitor_google_reviews": {
+      "status": "complete",
+      "note": "Fixture"
+    }
+  }
+}
