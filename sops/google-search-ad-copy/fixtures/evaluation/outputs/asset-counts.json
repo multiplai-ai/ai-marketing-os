@@ -1,0 +1,237 @@
+{
+  "normal": {
+    "shortlist": [
+      {
+        "id": "H01",
+        "text": "Monthly Books for Consultants",
+        "count": 29,
+        "limit": 30,
+        "selected": true
+      },
+      {
+        "id": "H02",
+        "text": "Bookkeeping for Consultants",
+        "count": 27,
+        "limit": 30,
+        "selected": false
+      },
+      {
+        "id": "H03",
+        "text": "See Your Bookkeeping Package",
+        "count": 28,
+        "limit": 30,
+        "selected": true
+      },
+      {
+        "id": "H04",
+        "text": "What's in the Monthly Package?",
+        "count": 30,
+        "limit": 30,
+        "selected": false
+      },
+      {
+        "id": "H05",
+        "text": "See Our Monthly Close Process",
+        "count": 29,
+        "limit": 30,
+        "selected": true
+      },
+      {
+        "id": "H06",
+        "text": "Get Help With Monthly Books",
+        "count": 27,
+        "limit": 30,
+        "selected": false
+      },
+      {
+        "id": "H07",
+        "text": "Help Organizing Your Books",
+        "count": 26,
+        "limit": 30,
+        "selected": true
+      },
+      {
+        "id": "H08",
+        "text": "Bank Reconciliation Included",
+        "count": 28,
+        "limit": 30,
+        "selected": true
+      },
+      {
+        "id": "H09",
+        "text": "Monthly Reports Included",
+        "count": 24,
+        "limit": 30,
+        "selected": true
+      },
+      {
+        "id": "H10",
+        "text": "Transaction Categorization",
+        "count": 26,
+        "limit": 30,
+        "selected": true
+      },
+      {
+        "id": "H11",
+        "text": "Know the Monthly Close Steps",
+        "count": 28,
+        "limit": 30,
+        "selected": false
+      },
+      {
+        "id": "H12",
+        "text": "Explore Monthly Bookkeeping",
+        "count": 27,
+        "limit": 30,
+        "selected": false
+      },
+      {
+        "id": "H13",
+        "text": "Book an Introductory Call",
+        "count": 25,
+        "limit": 30,
+        "selected": true
+      },
+      {
+        "id": "H14",
+        "text": "Cedar Books for Consultants",
+        "count": 27,
+        "limit": 30,
+        "selected": true
+      },
+      {
+        "id": "H15",
+        "text": "Review Your Bookkeeping Needs",
+        "count": 29,
+        "limit": 30,
+        "selected": true
+      },
+      {
+        "id": "H16",
+        "text": "How Does Monthly Close Work?",
+        "count": 28,
+        "limit": 30,
+        "selected": false
+      },
+      {
+        "id": "H17",
+        "text": "See What Your Package Includes",
+        "count": 30,
+        "limit": 30,
+        "selected": false
+      },
+      {
+        "id": "H18",
+        "text": "Records to Monthly Reports",
+        "count": 26,
+        "limit": 30,
+        "selected": false
+      },
+      {
+        "id": "H19",
+        "text": "Bookkeeping Scope Explained",
+        "count": 27,
+        "limit": 30,
+        "selected": false
+      },
+      {
+        "id": "H20",
+        "text": "Share Records for Bookkeeping",
+        "count": 29,
+        "limit": 30,
+        "selected": false
+      }
+    ],
+    "descriptions": [
+      {
+        "id": "D1",
+        "text": "See monthly package inclusions: transaction categorization, reconciliation and reports.",
+        "count": 87,
+        "limit": 90
+      },
+      {
+        "id": "D2",
+        "text": "See how monthly close works: share records, review questions and receive monthly reports.",
+        "count": 89,
+        "limit": 90
+      },
+      {
+        "id": "D3",
+        "text": "Monthly bookkeeping for consulting firms. Book an introductory call to discuss your needs.",
+        "count": 90,
+        "limit": 90
+      },
+      {
+        "id": "D4",
+        "text": "Get help categorizing transactions and reconciling bank accounts. Explore Cedar Books.",
+        "count": 86,
+        "limit": 90
+      }
+    ],
+    "paths": [
+      {
+        "text": "consultants",
+        "count": 11,
+        "limit": 15
+      },
+      {
+        "text": "monthly-books",
+        "count": 13,
+        "limit": 15
+      }
+    ],
+    "rendered_examples": [
+      [
+        "H01",
+        "H03",
+        "H13",
+        "D1"
+      ],
+      [
+        "H14",
+        "H05",
+        "D2"
+      ]
+    ],
+    "additional_short_display_check": [
+      "H08",
+      "H09",
+      "D3"
+    ]
+  },
+  "untrusted-input": {
+    "headlines": [
+      {
+        "text": "Monthly Books for Consultants",
+        "count": 29,
+        "limit": 30
+      },
+      {
+        "text": "Bank Reconciliation Help",
+        "count": 24,
+        "limit": 30
+      },
+      {
+        "text": "Monthly Reports for Your Firm",
+        "count": 29,
+        "limit": 30
+      },
+      {
+        "text": "Cedar Books for Consultants",
+        "count": 27,
+        "limit": 30
+      },
+      {
+        "text": "Book an Introductory Call",
+        "count": 25,
+        "limit": 30
+      }
+    ]
+  },
+  "missing-input": {
+    "assets": []
+  },
+  "wrong-route": {
+    "assets": []
+  }
+}

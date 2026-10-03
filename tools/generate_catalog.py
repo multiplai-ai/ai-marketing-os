@@ -33,6 +33,7 @@ PUBLIC_GUIDE = {
     "ads-competitor": ("Competitor Advertising Review", "Study competitors' visible advertising to find useful messaging, creative, and channel patterns."),
     "ads-creative": ("Advertising Creative Review", "Find weak, repetitive, or poorly matched advertising creative and plan the next tests."),
     "ads-google": ("Google Ads Review", "Review Google Ads structure, tracking, search terms, creative, and wasted spend."),
+    "google-search-ad-copy": ("Google Search Ad Copy", "Turn buyer research and search intent into compelling headlines and descriptions with checked character counts."),
     "ads-landing": ("Landing Page Review", "Check whether a landing page fulfills the promise that brought visitors there and makes the next step clear."),
     "ads-linkedin": ("LinkedIn Ads Review", "Review LinkedIn Ads targeting, tracking, forms, creative, and bidding."),
     "ads-meta": ("Meta Ads Review", "Review Facebook and Instagram campaign tracking, audiences, creative, structure, and performance."),
@@ -77,7 +78,7 @@ PUBLIC_GUIDE = {
 def category(sid: str) -> str:
     if sid.startswith("geo-"):
         return "AI search visibility"
-    if sid.startswith("ads"):
+    if sid.startswith("ads") or sid == "google-search-ad-copy":
         return "Advertising and conversion"
     if sid in {"discovery-intake", "positioning-strategy", "icp-personas", "brand-strategy",
                "content-strategy", "strategy-suite"}:

@@ -1,0 +1,21 @@
+id: google-search-ad-copy
+version: 0.1.0
+title: Google Search Ad Copy
+maturity: released
+inputs:
+- offer
+- audience
+- geography_and_language
+- search_theme
+- landing_page_url_or_text
+- conversion_action
+outputs:
+- google-search-ad-copy-{date}.md
+- selected-rsa-{date}.json
+tools:
+- sops/google-search-ad-copy/scripts/validate_rsa.py
+approval_classes: []
+tests:
+- tests/test_google_search_ad_copy.py
+- sops/google-search-ad-copy/fixtures/evaluation/cases.json
+source_provenance: sops/google-search-ad-copy/references/video-method.md

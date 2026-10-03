@@ -18,3 +18,9 @@ public release. Dependencies are installed separately and retain their own
 licenses. Referenced articles, product names, and external services retain their
 respective owners' rights. No API access, subscription, or third-party content
 rights are bundled with this code.
+
+The Google Search Ad Copy workflow adapts ideas described in Sabri Suby's
+video, "Give Me 24 Minutes and I'll Make You Disgustingly Good at Google Ads,"
+and the functional structure of its Halo research worksheet. The workflow's
+source notes identify the video and distinguish adaptations from source claims.
+The original video, transcript, and Excel worksheet are not bundled or relicensed.

@@ -1,0 +1,29 @@
+{
+  "ads": [
+    {
+      "name": "Cedar Books - monthly bookkeeping for consultants",
+      "headlines": [
+        "Monthly Books for Consultants",
+        "See Your Bookkeeping Package",
+        "See Our Monthly Close Process",
+        "Help Organizing Your Books",
+        "Bank Reconciliation Included",
+        "Monthly Reports Included",
+        "Transaction Categorization",
+        "Book an Introductory Call",
+        "Cedar Books for Consultants",
+        "Review Your Bookkeeping Needs"
+      ],
+      "descriptions": [
+        "See monthly package inclusions: transaction categorization, reconciliation and reports.",
+        "See how monthly close works: share records, review questions and receive monthly reports.",
+        "Monthly bookkeeping for consulting firms. Book an introductory call to discuss your needs.",
+        "Get help categorizing transactions and reconciling bank accounts. Explore Cedar Books."
+      ],
+      "paths": [
+        "consultants",
+        "monthly-books"
+      ]
+    }
+  ]
+}

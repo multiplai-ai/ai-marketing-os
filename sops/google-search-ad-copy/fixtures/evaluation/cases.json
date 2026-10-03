@@ -1,0 +1,9 @@
+{
+  "scope": "Synthetic offline forward test of the new skill only; no live accounts, browsing, publishing, or performance experiment.",
+  "cases": [
+    {"id": "normal", "input": "normal.md", "output": "outputs/normal.md"},
+    {"id": "missing-input", "input": "missing-input.md", "output": "outputs/missing-input.md"},
+    {"id": "wrong-route", "input": "wrong-route.md", "output": "outputs/wrong-route.md"},
+    {"id": "untrusted-input", "input": "untrusted-input.md", "output": "outputs/untrusted-input.md"}
+  ]
+}
