@@ -21,8 +21,16 @@ source distributions are bundled. Article links do not grant content reuse right
 The MIT grant covers the source MultiplAI is entitled to license; dependencies
 and external content retain their own terms.
 
-## Direct dependency metadata
+## Google Search Ad Copy
 
+The Google Search Ad Copy contribution (October 3, 2026) contains newly authored
+instructions, a standard-library Python validator, and an attributed description
+of the Halo research grid. It references Sabri Suby's video without bundling the
+video or transcript. A user supplied the original blank Excel worksheet for
+inspection; it is excluded from the public package because no redistribution
+license was supplied. Source attribution is not presented as a license grant.
+
+## Direct dependency metadata
 These are declared license metadata from the versions inspected during validation,
 not an inventory of bundled code. Dependencies are installed separately; ranges
 can resolve differently later. Preserve the actual distributions' notices if

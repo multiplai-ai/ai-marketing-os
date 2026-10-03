@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Search Ad Copy"
+  short_description: "Write search ads using buyer insight and clear benefits"
+  default_prompt: "Use $google-search-ad-copy to research the buyer's intent and write compelling Google Search headlines and descriptions for this offer and landing page."

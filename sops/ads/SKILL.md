@@ -10,7 +10,7 @@ Comprehensive paid advertising audit and optimization for any business type: rou
 
 Legacy adapter: previously invoked as the `/ads` command via `.claude/commands/cmo/distribution/ads/ads/SKILL.md`; that path is now an adapter, not the canonical mechanism.
 
-Orchestrates 12 specialized sub-skills and 6 subagents. Industry detection for SaaS, e-commerce, local service, B2B enterprise, info products, mobile app, real estate, healthcare, finance, and agency.
+Routes to 13 specialized workflows, including Google Search copywriting, and uses 6 subagents for full audits. Industry detection for SaaS, e-commerce, local service, B2B enterprise, info products, mobile app, real estate, healthcare, finance, and agency.
 
 Triggers on: "ads", "PPC", "paid advertising", "Google Ads", "Meta Ads", "Facebook Ads", "LinkedIn Ads", "TikTok Ads", "Microsoft Ads", "Bing Ads", "ad audit", "campaign audit", "ROAS", "conversion tracking", "creative fatigue", "bid strategy".
 
@@ -31,6 +31,10 @@ Triggers on: "ads", "PPC", "paid advertising", "Google Ads", "Meta Ads", "Facebo
 - ad_account_exports
 - campaign_goal
 
+Inputs depend on the selected route. Google Search copywriting uses the offer,
+audience, search theme, destination and next action; it does not require account
+exports or a monthly advertising budget.
+
 **Outputs:**
 
 - Routing note (optional): `{brain}/ads/ads-router-{date}.md`
@@ -42,6 +46,7 @@ Triggers on: "ads", "PPC", "paid advertising", "Google Ads", "Meta Ads", "Facebo
 |---------|-------------|
 | `/ads audit` | Full multi-platform audit with parallel subagent delegation |
 | `/ads google` | Google Ads deep analysis (Search, PMax, YouTube) |
+| `google-search-ad-copy` | Write Google Search headlines and descriptions from buyer research |
 | `/ads meta` | Meta Ads deep analysis (FB, IG, Advantage+) |
 | `/ads youtube` | YouTube Ads specific analysis |
 | `/ads linkedin` | LinkedIn Ads deep analysis (B2B, Lead Gen) |
@@ -66,6 +71,7 @@ Identify whether the user needs:
 - strategic plan
 - budget and bidding review
 - creative audit
+- Google Search copywriting
 - landing page review
 - competitor intelligence
 
@@ -82,6 +88,7 @@ Use:
 - `ads-budget` for spend and bidding
 - `ads-competitor` for competitive intelligence
 - `ads-creative` for creative fatigue and format quality
+- `google-search-ad-copy` for writing or revising Google Search headlines and descriptions
 - `ads-landing` for post-click conversion quality
 - platform skills (`ads-google`, `ads-meta`, `ads-linkedin`, `ads-microsoft`, `ads-tiktok`, `ads-youtube`) for platform deep dives
 
@@ -178,7 +185,7 @@ Aggregate = Sum(Platform_Score x Platform_Budget_Share)
 
 ## Sub-Skills
 
-This skill orchestrates 12 specialized sub-skills:
+This skill routes to 13 specialized workflows:
 
 1. **ads-audit** — Full multi-platform audit with parallel delegation
 2. **ads-google** — Google Ads deep analysis (Search, PMax, YouTube)
@@ -192,6 +199,7 @@ This skill orchestrates 12 specialized sub-skills:
 10. **ads-budget** — Budget allocation and bidding strategy
 11. **ads-plan** — Strategic ad planning with industry templates
 12. **ads-competitor** — Competitor ad intelligence
+13. **google-search-ad-copy** — Google Search headlines and descriptions from buyer research
 
 ## Subagents
 
