@@ -1,11 +1,13 @@
 ---
 name: google-search-ad-copy
-description: Write or improve Google Search responsive ad copy using Sabri Suby's Coliseum keyword, Halo customer research, and sell-the-click approach. Use for search ad headlines, descriptions, RSA variations, or rewriting bland search ads; not for account audits or bid management.
+description: Run deep Halo customer research and write emotionally specific Google Search ads using Sabri Suby's sell-the-click approach. Use for buyer hopes, fears, competitor complaints, search headlines, descriptions, and rewriting generic ads; not for account audits or bid management.
 ---
 
 # Google Search Ad Copy
 
-Write ads that make the right searcher want the next step. Use the method from Sabri Suby's [video](https://www.youtube.com/watch?v=7xtRHa7b96w), especially 2:41–4:13 and 4:37–8:55: understand valuable search intent, discover the buyer's language, then connect a concrete benefit with a useful reason to click.
+Sell the click by answering the question the searcher is privately asking. The service is a means; the buyer wants something consequential to change in their life or work. Find that consequence and make it recognizable in the ad. Aim for bold, emotionally charged, unusually specific copy that a category competitor would hesitate to write, while giving the reader a useful, truthful reason to visit.
+
+Use Sabri Suby's [video](https://www.youtube.com/watch?v=7xtRHa7b96w), especially 4:37–8:55: research the buyer's hopes, fears, pains and doubts, then sell the answer they want. The deeper research cycles and editorial gates below are this skill's adaptations, not steps claimed to appear in the video.
 
 This skill creates reviewable copy. Publishing, changing campaigns, and spending are separate actions. Keep each client's facts, voice, research, and outputs separate. Use the selected client's approved sources; never borrow another client's claims.
 
@@ -17,9 +19,9 @@ Read [the source notes](references/video-method.md) when interpreting the framew
 
 Reuse information already supplied or available in the selected project's brief and voice guidance. Get the offer, audience, geography/language, target search theme, landing page or its supplied text, and conversion action. Collect approved differentiators, proof, constraints, and existing copy when available. Ask only for gaps that materially change the work; bundle them into one short question.
 
-If the business, offer, or intended searcher is unknown, resolve that before writing specific ads. If research or the page is unavailable, draft from known facts and label the limitation. Mark speculative insights as hypotheses; never manufacture customer quotations, performance history, proof, or landing-page content. Put unverified ideas in a separate concept section, outside the recommended assets.
+If the business, offer, or intended searcher is unknown, resolve that before writing specific ads. If the page is unavailable, request its contents or label destination fit unverified. If research is missing, perform the Halo scan for a research-and-copy assignment; do not substitute a plausible persona and call the research complete. A user-requested provisional draft can proceed from known facts, clearly labeled as such. Mark speculative insights as hypotheses; never manufacture customer quotations, performance history, proof, or landing-page content. Put unverified ideas in a separate concept section, outside the recommended assets.
 
-Match the requested scope. A request for five headlines should get five headlines, without forcing a full research report. A full ad request should get the workflow and deliverable below.
+Match the requested scope. A request for five headlines should get five headlines, reusing relevant existing research without forcing a fresh scan. A full research assignment uses the six-cycle scan below. A research-only request stops at the research and angle brief; honor any explicit request to review that before writing ads. A source-limited or offline request stays within that boundary and reports incomplete coverage honestly.
 
 ## Find the valuable intent
 
@@ -31,7 +33,16 @@ Write one sentence: “Someone searching [theme] wants [outcome], worries about 
 
 ## Build the Halo research sheet
 
-Read [the supplied Halo worksheet guide](references/halo-grid.md) before doing research. Use its three categories: Hopes & Dreams, Pains & Fears, and Barriers & Uncertainties. Start with customer interviews, reviews, sales questions, or approved research. When live research is useful and permitted, inspect relevant public discussions, reviews, Reddit, Quora, and forums for the actual audience. A few well-matched sources are more useful than a large generic scrape. Keep source URLs and distinguish direct language from your interpretation. Competitor marketing is positioning evidence, not proof of what customers believe.
+Read [the supplied Halo worksheet guide](references/halo-grid.md) and [the deep research protocol](references/deep-halo-research.md) before a new Halo scan. Reuse the client's existing grid, evidence and voice sources when revising copy. The default new scan has **six documented cycles: an initial scan plus five additional research cycles**. Each cycle must change the question, follow new evidence or test an interpretation; six synonyms entered into search do not count.
+
+0. **Map the buying situation.** Who is searching, what just happened, what must change, and what sources contain their own words?
+1. **Find the lived scene.** Follow the incident into the wasted evening, repeated workaround, difficult conversation or task still on the buyer's desk.
+2. **Find the feared consequence.** Trace practical failure into money, trust, standing, relationships, control or job risk when the evidence supports that connection. Distinguish explicit statements from inferred stakes.
+3. **Find the biggest hope.** Research what relief and success look like in a specific day: what they could do, stop doing, protect or feel proud of. Do not reduce every campaign to fear.
+4. **Investigate failed alternatives and competitor complaints.** Find why previous attempts disappointed, what buyers resent, what makes them switch, and what would make them believe this time.
+5. **Challenge and triangulate.** Seek contrary accounts, satisfied buyers and different contexts. Test the strongest insights against independent sources and identify whose experience each insight actually describes.
+
+Use the protocol's evidence ledger and completion gate. Aim for at least 20 distinct relevant first-person accounts across four source families on a full live scan; this is a coverage target, not permission to collect irrelevant material or claim a representative sample. Go beyond reviews and forums when available: authorized sales calls, win/loss notes, support, cancellations and customer interviews often reveal consequences that public posts omit. Inspect the underlying source, not just search snippets. When access or coverage is weak, ask the user for specific missing source types and continue independent research. Do not silently deliver a shallow scan as completed deep research.
 
 Use a compact grid:
 
@@ -43,30 +54,47 @@ Use a compact grid:
 
 Also produce the worksheet's glossary: Term, Description, Additional Notes. Attach source IDs, observed counts where available, and the reason for the importance judgment in a compact evidence ledger. Frequency means frequency within the inspected sample, not market prevalence. Scores are explicit editorial judgments, not measured conversion effects. Keep unknown ranks and scores unavailable instead of inventing precision. Keep hypotheses separate from observed rankings.
 
-Capture consequential specifics: the uncertainty before committing, the task they want to avoid, the outcome they want, and the proof needed to trust it. Turn high-priority desires into benefit angles, pains into respectful problem-solving angles, barriers into objection answers, and glossary terms into natural copy. If research is unavailable, use an explicitly labeled hypothesis grid and continue within known facts. If an Excel research deliverable is requested, use the user's supplied template when available; otherwise create the grid and glossary described here. Preserve supplied structure and leave any original blank template untouched.
+For each shortlisted insight, retain the triggering scene, immediate problem, feared consequence or desired relief, failed alternative, emotional language, and the question the buyer wants answered. Keep competitor complaints in the evidence ledger even though the original grid has no separate competitor row. Preserve inconvenient details instead of collapsing everything into "save time," "quality" or "peace of mind."
+
+Distinguish **direct language**, **faithful paraphrase**, and **creative interpretation**. A private thought can be written as a creative synthesis; it is not a customer quote or a universal psychological diagnosis. Do not invent job-loss fear to intensify an account that only mentions a slow process. Conversely, when a buyer actually describes fear of losing credibility or a job, do not sanitize it into "efficiency concerns." If an Excel research deliverable is requested, use the user's supplied template when available; otherwise create the grid and glossary described here. Preserve supplied structure and leave any original blank template untouched.
 
 ## Decide what earns the click
 
-Choose two or three distinct angles from the evidence, such as:
+Choose two or three emotionally distinct angles from the strongest research: a costly failure they fear, an outcome they deeply want, a specific complaint about the last solution, or a question they cannot settle before committing. Prefer the concrete private concern over the category's advertised benefit. Controversy is useful when it challenges a documented assumption or exposes a recognizable failure; provocation alone is not an angle.
 
-- An answer to the decision blocking purchase: price factors, fit, process, timing, or what happens next.
-- A concrete desired outcome, paired with a credible reason to believe it.
-- Relief from a specific objection or avoidable hassle.
-- A useful checklist or comparison, only if the destination actually delivers it.
+Build an **insight-to-ad bridge** for each angle before writing the shortlist:
 
-For each angle, connect search intent → buyer concern → specific promise → landing-page section → CTA. Choose a lead angle and explain its fit in one sentence. If a proposed promise requires a new page or asset, label it as a future concept and write the current-page alternative now.
+| Insight ID and source IDs | Source wording / faithful paraphrase | Situation and stakes | Private thought (label inference) | Answer wanted | Exact headline + description candidate | Destination section / next step |
+|---|---|---|---|---|---|---|
 
-Sell a qualified click: make the benefit of visiting clear while identifying the relevant service or product. Intrigue should come from a useful question or detail, not withholding what is being advertised. Avoid vague teasers, invented secrets, fabricated urgency, fear pressure, and unsupported superlatives. Do not copy the video's provocative examples or its claims about searchers' demographics.
+The bridge is mandatory for the lead angles when copy is requested. For research-only work, deliver the source, situation, stakes, private question, desired answer and potential angle; leave exact ad copy for the authorized writing stage. It must connect the research to actual copy, not merely attach an evidence table after generic ads have been written. Trace search intent → situation → stakes → private question → earned click → supported offer. Explain why the top insight deserves to lead, considering emotional intensity, decision relevance, observed repetition and source confidence separately. A rare severe concern can justify a test, but not a claim that most buyers share it.
+
+Sell the answer, with enough service relevance to qualify the visitor. A provocative question can be the strongest headline. If the current page cannot fulfill that angle, retain it as a clearly labeled page/content concept and write an evidence-led current-page alternative. Do not discard the best insight merely because a bland page is easier to summarize. Never invent a guide, checklist, diagnostic, candidate, guarantee or outcome at the destination.
+
+Specific emotional recognition is encouraged. Manufactured threats and clickbait are not: do not tell a reader they will be fired, abandoned or harmed unless they buy. Translate an evidenced career fear into a recognizable decision or accountability question, then offer something useful. Apply current policy to the exact asset and context; a policy check must not become a blanket ban on mentioning real frustration, fear, distrust, ambition or relief.
 
 ## Generate widely, then edit hard
 
-For a full request, explore more candidates than needed and return the strongest 20-headline shortlist per requested theme unless the user wants a smaller set. Vary the idea, not just synonyms. Cover relevant intent, benefit, question, proof, objection, and next-step angles where the evidence supports them. Do not pad a weak evidence base to reach a quota.
+For a full request, explore more candidates than needed and return the strongest 20-headline shortlist per requested theme unless the user wants a smaller set. Vary the psychological angle, not just synonyms. At least half the shortlist should express a specific research-backed situation, hope, fear, complaint or private question; support assets such as brand, service, proof and CTA supply relevance and credibility. For a smaller requested set, preserve that balance where the format permits. If evidence cannot support it, disclose the gap instead of filling the bank with generic slogans.
+
+For each lead insight, try three treatments before selecting: the buyer's blunt internal question, the consequence in a concrete scene, and the desired relief or answer. Compare a direct version with a bolder version that challenges a documented assumption. Return the strongest truthful version, not the safest-sounding average. Do not equate intensity with profanity, exclamation marks, personal insults or unsupported catastrophe. Do not pad a weak evidence base to reach a quota.
 
 Build a recommended RSA from the strongest compatible assets: aim for 10–15 distinct headlines and four descriptions when justified. Keep the 20-candidate idea bank separate from the selected RSA. Include natural keyword relevance without repeating the same phrase in every line. If the exact query is too long, retain its meaning or put it in a description; do not split a phrase across headlines that may reorder.
 
-Descriptions should add information: what the visitor gets, why to trust the offer, a relevant qualification or objection answer, and a truthful CTA. Use the space for concrete detail, not a stack of adjectives or repeated headlines. Prefer precise nouns and verbs over “best,” “premium,” “innovative,” or “solutions.” Preserve the brand's approved tone; do not mimic the speaker's aggressive personality.
+Descriptions should add information: what the visitor gets, why to trust the offer, a relevant qualification or objection answer, and a truthful CTA. Use the space for concrete detail, not a stack of adjectives or repeated headlines. Prefer precise nouns and verbs over “best,” “premium,” “innovative,” or “solutions.” Use the client's voice exemplar to make the phrasing natural, not to erase the stakes. A warm brand can still name an uncomfortable problem. Read the selected copy aloud and remove corporate abstractions, stilted phrasing and identical rhetorical patterns. If a voice constraint genuinely conflicts with an angle, explain the tradeoff and retain the stronger version as a labeled option.
 
-Review candidates against intent fit, specificity, click value, distinctiveness, and evidence. Discard a clever line that fails relevance or truthfulness. A plain but specific line is better than a dramatic unsupported one. Treat scores as editorial judgment, never predicted results.
+### Reject generic copy before assembly
+
+Run these editorial checks on the actual recommended ads, not only the research or unused shortlist:
+
+- **Recognition:** Could the buyer point to a specific moment in their day and say "that is what I mean"? Name that moment and the source behind it.
+- **Emotional fidelity:** Is the strongest hope, fear or complaint still visible in a selected lead headline or description? If it only appears in the strategy note, rewrite.
+- **Substitution:** After swapping the brand/category label, would the line work just as well for a different buying situation without knowing this research? If so, the lead is probably generic: rewrite it around the source-specific scene, stakes or question. Shared wording between competitors serving the same problem is not itself a failure. Brand/service labels can be generic support assets.
+- **Click value:** What exact answer or next step does the visitor expect, and where will they get it? A threatening statement without an earned answer fails.
+- **Specificity without fiction:** Are the person, scene, stakes and claims justified? Reject invented quotations, fabricated consequences, unsupported comparisons and arbitrary numbers even when they sound powerful.
+- **Range and combinations:** Do the selected assets include distinct emotional ideas and credible answers? Avoid a whole RSA of accusatory questions, several near-identical hooks, or support-only combinations that lose the lead insight. Use justified pinning when needed to preserve it.
+
+Write one before/after example showing how a bland candidate became a specific one, with the source insight that changed it. Do not treat a keyword/character-count pass as a creative pass. If the selected lead fails any check, rewrite and recheck before delivery; report any unresolved evidence or destination limitation. These are editorial judgments, never predicted performance scores.
 
 ## Assemble and verify
 
@@ -91,8 +119,8 @@ For a full request, return:
 1. A short strategy note: search theme, buyer insight, lead angle, and evidence limitations. For a full research-and-copy request, include the completed Halo grid and glossary; for a copy-only revision, reuse and briefly cite existing research.
 2. The 20-headline shortlist in a table: ID, exact copy, count, angle, selected/not selected. Adapt quantity to scope and evidence.
 3. The recommended RSA: exact selected headlines and descriptions with counts, final URL, optional display paths, and any justified pin recommendations. Keep explanations outside the copy cells. Reference headline IDs to avoid printing identical lists twice.
-4. A compact evidence map for material claims and promised page content, plus unresolved items that prevent launch readiness.
-5. Two illustrative rendered combinations, labeled as examples rather than guaranteed layouts, and one alternative angle to test.
+4. The insight-to-ad bridges for the selected lead angles, plus a compact evidence map for material claims and promised page content. For new research, include the six-cycle log, sample/coverage limits and any specific source request; show unresolved items that prevent launch readiness.
+5. Two illustrative rendered combinations, labeled as examples rather than guaranteed layouts, one alternative emotional angle to test, and the editorial gate result with a meaningful bland-to-specific before/after.
 
 When the user requests an import file, verify the target Google Ads Editor or API schema before exporting. Do not call a generic review table upload-ready. Save artifacts to the user's requested destination or normal project output location; use chat when no file is needed.
 

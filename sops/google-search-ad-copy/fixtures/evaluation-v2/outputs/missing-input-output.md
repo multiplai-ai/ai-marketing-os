@@ -1,0 +1,1 @@
+What is the business and offer, who should the ads reach (including geography and language), what would they search for, and which landing page or page text and conversion action should the ads support? Include any approved proof or claims to use.

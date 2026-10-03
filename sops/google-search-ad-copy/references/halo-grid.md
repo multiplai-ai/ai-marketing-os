@@ -18,6 +18,8 @@ The source contains one worksheet named `Sheet1`.
 
 The template provides labels and blank space. It does not specify a sampling method, an importance-scoring rubric, or a way to attribute multiple entries. The procedures below are skill adaptations, not instructions claimed to be in the workbook.
 
+Read [the deep scan protocol](deep-halo-research.md) for a new research assignment: initial discovery plus five distinct follow-up cycles, source coverage, a competitor-complaint view and an evidence ledger. The grid is a synthesis of that work, not a substitute for it.
+
 ## Research and ranking
 
 Collect relevant language with source IDs, short quotations or faithful paraphrases, audience context, and the concern it expresses. Keep observations separate from hypotheses. Group synonymous concerns without erasing useful customer wording. Do not count the same review republished across sites multiple times or equate marketer copy with customer testimony.
@@ -37,8 +39,8 @@ For each term, give its audience meaning and useful notes: exact source, spellin
 Translate the grid into candidate angles:
 
 - Hopes & Dreams → desired outcome or specific benefit.
-- Pains & Fears → a problem the offer credibly helps resolve, without escalating fear.
+- Pains & Fears → a problem the offer credibly helps resolve, preserving the evidenced stakes and the buyer's private question without inventing a threat.
 - Barriers & Uncertainties → a decision question, proof requirement, or objection to answer.
 - Glossary → natural vocabulary that makes the ad sound relevant to this buyer.
 
-For each selected insight, record its source, the ad angle, the supporting page section, and a draft headline. A research finding cannot establish a product claim by itself: the advertiser's evidence and destination must support the promise.
+For each selected insight, record its source language, triggering scene, stakes or desired relief, private question, ad angle, supporting page section, and exact headline/description candidate. Label creative interpretations; make the insight visible in the selected copy. A research finding cannot establish a product claim by itself: the advertiser's evidence and destination must support the promise.

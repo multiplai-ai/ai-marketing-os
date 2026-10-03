@@ -1,0 +1,3 @@
+This is an account audit and should use `ads-google`. Ad copy would not diagnose the tracking, keyword waste, bidding or campaign structure you asked about.
+
+Please provide read-only account access or exports covering the same recent complete period: campaign settings and bid strategies, search terms and keywords with spend and conversion results, conversion-action and tracking setup, and campaign/ad-group structure. Include the business goal, which conversions are qualified outcomes, and any known conversion lag. With those inputs, the audit can distinguish tracking problems from wasted spend and structural or bidding issues. No account findings can be established from the information supplied.

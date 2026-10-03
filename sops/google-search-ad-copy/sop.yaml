@@ -1,5 +1,5 @@
 id: google-search-ad-copy
-version: 0.1.0
+version: 0.2.0
 title: Google Search Ad Copy
 maturity: released
 inputs:
@@ -12,10 +12,12 @@ inputs:
 outputs:
 - google-search-ad-copy-{date}.md
 - selected-rsa-{date}.json
+- halo-research-{date}.md (for new research assignments)
 tools:
 - sops/google-search-ad-copy/scripts/validate_rsa.py
 approval_classes: []
 tests:
 - tests/test_google_search_ad_copy.py
 - sops/google-search-ad-copy/fixtures/evaluation/cases.json
+- sops/google-search-ad-copy/fixtures/evaluation-v2/cases.json
 source_provenance: sops/google-search-ad-copy/references/video-method.md

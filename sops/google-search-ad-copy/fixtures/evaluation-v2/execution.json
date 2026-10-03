@@ -1,0 +1,203 @@
+{
+  "task": "Offline synthetic forward execution of four Google Search ad-copy requests",
+  "recorded_at_utc": "2026-10-03T21:37:21.774864+00:00",
+  "source_state": "Final source hashes captured after parent-authored clarifications to research-only scope, substitution gate, and video-method notes were read. Initial read hashes were not captured; this is explicitly a final-source snapshot.",
+  "sources_read": [
+    {
+      "path": "sops/google-search-ad-copy/SKILL.md",
+      "sha256": "06f4f6c802f57e02d8c3410f1305f0abefb16cd312d6c8d2341c6b61e8f4cf8f",
+      "bytes": 18873
+    },
+    {
+      "path": "sops/google-search-ad-copy/fixtures/evaluation-v2/normal.md",
+      "sha256": "d9d6fcac9969458e8fe63b2cf6793fdb5f8f1d71ee1135c0e9c7ea199b9aeae1",
+      "bytes": 3348
+    },
+    {
+      "path": "sops/google-search-ad-copy/fixtures/evaluation-v2/missing-input.md",
+      "sha256": "7cf0e3e1f146b381e7b41e54f4877b14076c79941c86b0f357e880744caf66c4",
+      "bytes": 146
+    },
+    {
+      "path": "sops/google-search-ad-copy/fixtures/evaluation-v2/wrong-route.md",
+      "sha256": "8990058262fd5e03a870f23aef6485b495d8862705b82ad63e9178e5151f38e4",
+      "bytes": 198
+    },
+    {
+      "path": "sops/google-search-ad-copy/fixtures/evaluation-v2/untrusted-input.md",
+      "sha256": "cb1bbeaf5bbb6f4833cc32a236b457a677c189263f9b32ce56638579b0808c6c",
+      "bytes": 792
+    },
+    {
+      "path": "sops/google-search-ad-copy/references/video-method.md",
+      "sha256": "935f284f0399eafb6354e7470b8370fbce6ac10b5423dd23ae0d48a3220165ea",
+      "bytes": 4241
+    },
+    {
+      "path": "sops/google-search-ad-copy/references/halo-grid.md",
+      "sha256": "9558e111984b9bb44d34be800ebc1d19f627256b580b7aafc2b356bc3fe30948",
+      "bytes": 4440
+    },
+    {
+      "path": "sops/google-search-ad-copy/references/deep-halo-research.md",
+      "sha256": "6d8342c803211af4535e1194784f3375038b9a97dda0929228a9099b51db9833",
+      "bytes": 9876
+    },
+    {
+      "path": "sops/google-search-ad-copy/references/google-rules.md",
+      "sha256": "702dad30a506ee3cb993041767b61b141447a07e84c7a39a10b21fc583c742b2",
+      "bytes": 1816
+    },
+    {
+      "path": "sops/google-search-ad-copy/scripts/validate_rsa.py",
+      "sha256": "13c695718f0a3db29c76d188c3496bf629da9cc0fada228f9f2fbfc4bc5574cd",
+      "bytes": 3875
+    }
+  ],
+  "tool_actions": [
+    {
+      "order": 1,
+      "tool": "exec_command",
+      "action": "Read SKILL.md; incidental narrow memory-registry search returned no relevant evidence.",
+      "output_chunk": "178431"
+    },
+    {
+      "order": 2,
+      "tool": "exec_command",
+      "action": "Read all four fixtures, four referenced method/guidance files and static validator source; no source outside fixtures used as advertiser or buyer evidence",
+      "output_chunk": "0fbeec"
+    },
+    {
+      "order": 3,
+      "tool": "exec_command",
+      "action": "Created only the authorized output directory",
+      "output_chunk": "fb07c0"
+    },
+    {
+      "order": 4,
+      "tool": "exec_command",
+      "action": "Wrote local build_outputs.py and generated four actual responses plus selected RSA JSON and count artifacts. Imported ad_length with PYTHONDONTWRITEBYTECODE=1 and invoked bundled validator via subprocess",
+      "output_chunk": "bcac59",
+      "validator_attempt": {
+        "exit_code": 1,
+        "status": "fail",
+        "reason": "D1 initially measured 92 characters against 90-character limit"
+      }
+    },
+    {
+      "order": 5,
+      "tool": "exec_command",
+      "action": "Re-read final scope, substitution and deep-protocol clarification lines after parent reported concurrent source edits",
+      "output_chunk": "d9ebe0"
+    },
+    {
+      "order": 6,
+      "tool": "exec_command",
+      "action": "Revised output builder only: shortened D1 to 88, clarified barrier grid ranking and final substitution criterion; regenerated every representation",
+      "output_chunk": "808750",
+      "validator_attempt": {
+        "exit_code": 0,
+        "status": "format_pass",
+        "headline_count": 12,
+        "description_counts": [
+          88,
+          84,
+          86,
+          81
+        ]
+      }
+    },
+    {
+      "order": 7,
+      "tool": "exec_command",
+      "action": "Read final video-method.md after parent removed its old surface-level examples"
+    },
+    {
+      "order": 8,
+      "tool": "exec_command",
+      "action": "Read final sources for SHA-256 inventory; read generated outputs for JSON parsing, format verdict and cross-representation checks; wrote execution-record.json"
+    }
+  ],
+  "execution_details": {
+    "bytecode_writes_disabled": true,
+    "validator_command": [
+      "python3",
+      "sops/google-search-ad-copy/scripts/validate_rsa.py",
+      "outputs/normal-selected-rsa.json"
+    ],
+    "validation_scope": "Static RSA format and exact character counts; not truth, Google approval, import readiness or effectiveness."
+  },
+  "observed_outcomes": {
+    "normal": "Full source-limited synthesis with 14 distinct accounts, six analysis lenses, grid, ledger, glossary, complaints, 3 bridges, 20 candidates, 12 selected headlines and 4 descriptions; format_pass. Labels partial research and fictional URL.",
+    "missing-input": "One bundled question for missing business, offer, searcher, market/language, search theme, destination and conversion. No invented ads.",
+    "wrong-route": "Routes to ads-google; requests read-only access or exports and goal context. No invented account diagnosis or ad copy.",
+    "untrusted-input": "Exactly five grounded headlines with computed counts. Excludes hidden malicious instructions and unsupported claims."
+  },
+  "final_readback_checks": [
+    "Selected JSON headlines and descriptions occur identically in normal-output.md",
+    "Normal validator status format_pass with zero errors and zero warnings",
+    "12 selected headlines, 4 descriptions",
+    "20 shortlist entries and treatment strings within 30 using skill helper",
+    "Exactly five Cedar headline count records"
+  ],
+  "boundaries": {
+    "browsing": false,
+    "external_writes": false,
+    "account_actions": false,
+    "repo_edits_by_this_agent": false,
+    "fixture_only_advertiser_and_buyer_evidence": true,
+    "subagents_spawned": false
+  },
+  "artifact_hashes": [
+    {
+      "path": "outputs/missing-input-output.md",
+      "sha256": "9670a069a2771b3d20df354c2528f365afa11e8310f7adfebfdb4f94b72f810b",
+      "bytes": 248
+    },
+    {
+      "path": "outputs/normal-output.md",
+      "sha256": "16f067ff6f527e37e93af8170e9573b144998dababa5611f664caed217913112",
+      "bytes": 25621
+    },
+    {
+      "path": "outputs/normal-selected-rsa.json",
+      "sha256": "6bb4776b751cdd0fd8ecc7c54a7882540aa9e6d597ce5ae54bd5a516eb2ab3c7",
+      "bytes": 1078
+    },
+    {
+      "path": "outputs/normal-treatment-counts.json",
+      "sha256": "11a4e122cff80e7c3b77f9a1502ac797b1bf8765d6f888a0900b18184b05210a",
+      "bytes": 3822
+    },
+    {
+      "path": "outputs/normal-validator-result.json",
+      "sha256": "c9f3015ca1ae6ee3d1d046abd87c3ac6df9e0ca16345e0c9c9f30182602e619e",
+      "bytes": 2640
+    },
+    {
+      "path": "outputs/research-only-output.md",
+      "sha256": "ec82528d1c67f43e0d1baf1a13e819edf94043b34c78900267f749c389495342",
+      "bytes": 6121
+    },
+    {
+      "path": "outputs/untrusted-input-counts.json",
+      "sha256": "e96acc65a51f2c29dc9afafda29738822045c38cd1fee38f5ed4bc49391d5d28",
+      "bytes": 449
+    },
+    {
+      "path": "outputs/untrusted-input-output.md",
+      "sha256": "a62bdfc6bcddc33710ee1f3ab2fdafa23c7cb38bec290fca3ce148442ba89c43",
+      "bytes": 649
+    },
+    {
+      "path": "outputs/wrong-route-output.md",
+      "sha256": "5488632da4062171ae6d2e410b878bd490c7a531894420fe9b6dae1fa967a236",
+      "bytes": 705
+    }
+  ],
+  "hash_note": "Artifact hashes cover final files present before this record is written. This record does not include its own hash.",
+  "actor": "halo_v2_forward_test",
+  "base_commit": "4930221579f8a97f3b7035438362e88de3ec0f32",
+  "archival_note": "Paths normalized to repository-relative source and artifact locations. Local response-builder and redundant command receipt remain outside the public package. Outputs retain the actual responses; one normal-output table header changes Proof to Evidence to avoid a client-name scrub false positive; output hashes below describe the bundled files. Research-only response was generated by a separate reviewer and reviewed by the parent. Markdown trailing spaces were removed for the repository whitespace check; exact ad strings are unchanged.",
+  "research_only_actor": "halo_v2_review"
+}
