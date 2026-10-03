@@ -1,0 +1,23 @@
+id: vsl-production
+version: 0.2.0
+title: Video Sales Letter
+maturity: released
+inputs:
+- video_method_sources
+- business_and_audience_context
+- speaker_language_and_voice_sources
+- buyer_research
+- offer_and_conversion_action
+outputs:
+- source_traced_method_rubric
+- halo_research_artifact
+- offer_and_hook_test_plan
+- recording_script_and_shot_list
+- evaluation_and_revision_receipts
+tools:
+- tools/vsl_pipeline.py
+approval_classes: []
+tests:
+- tests/test_vsl_pipeline.py
+- sops/vsl-production/fixtures/evaluation/cases.json
+source_provenance: sops/vsl-production/references/method-provenance.md

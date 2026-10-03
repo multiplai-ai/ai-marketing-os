@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "stage": "shots",
+  "dependencies": {
+    "methods": "43e79c76731bb5958868518d6c4059856068c98006a05a2034caac59e8ac438c",
+    "research": "5ed205213cab96714270815646c8a172db3314733aae70fa39b605c676549e32",
+    "halo": "0b5561cb3f4fec669b58014c7dfa790c91e91bded135789f31cb07e157989e4f",
+    "offer": "ed04fc5c44a58595aa76f4a0be85831ccf75ec224fb47be7282d64ed81844a71",
+    "script": "6fa06a00cade6346bb4a392fe9a1c5729c2e871afd777872bc25639a0c36dd44"
+  },
+  "holds": [],
+  "shots": [
+    {
+      "id": "V0",
+      "section_id": "S01",
+      "mode": "slide",
+      "visual": "Fictional booking path with owner and next action",
+      "on_screen": "Opening",
+      "assets": [
+        "Editable booking diagram"
+      ],
+      "asset_status": "planned",
+      "production_note": "Label invented examples. Record audio and inspect pacing before publication."
+    },
+    {
+      "id": "V1",
+      "section_id": "S02",
+      "mode": "slide",
+      "visual": "Fictional booking path with owner and next action",
+      "on_screen": "Teaching",
+      "assets": [
+        "Editable booking diagram"
+      ],
+      "asset_status": "planned",
+      "production_note": "Label invented examples. Record audio and inspect pacing before publication."
+    },
+    {
+      "id": "V2",
+      "section_id": "S03",
+      "mode": "slide",
+      "visual": "Fictional booking path with owner and next action",
+      "on_screen": "Demonstration",
+      "assets": [
+        "Editable booking diagram"
+      ],
+      "asset_status": "planned",
+      "production_note": "Label invented examples. Record audio and inspect pacing before publication."
+    },
+    {
+      "id": "V3",
+      "section_id": "S04",
+      "mode": "slide",
+      "visual": "Fictional booking path with owner and next action",
+      "on_screen": "Objections",
+      "assets": [
+        "Editable booking diagram"
+      ],
+      "asset_status": "planned",
+      "production_note": "Label invented examples. Record audio and inspect pacing before publication."
+    },
+    {
+      "id": "V4",
+      "section_id": "S05",
+      "mode": "slide",
+      "visual": "Fictional booking path with owner and next action",
+      "on_screen": "Offer",
+      "assets": [
+        "Editable booking diagram"
+      ],
+      "asset_status": "planned",
+      "production_note": "Label invented examples. Record audio and inspect pacing before publication."
+    },
+    {
+      "id": "V5",
+      "section_id": "S06",
+      "mode": "slide",
+      "visual": "Fictional booking path with owner and next action",
+      "on_screen": "Cta",
+      "assets": [
+        "Editable booking diagram"
+      ],
+      "asset_status": "planned",
+      "production_note": "Label invented examples. Record audio and inspect pacing before publication."
+    }
+  ]
+}

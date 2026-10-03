@@ -1,0 +1,99 @@
+{
+  "status": "needs_evidence",
+  "defects": [],
+  "holds": [
+    "research: All sources are synthetic; no buyer observation or market validation is established.",
+    "offer: Commercial terms need owner decision: turnaround",
+    "offer: Commercial terms need owner decision: approval_ref",
+    "offer: Commercial terms need owner decision: price",
+    "shots: V0: production asset planned",
+    "shots: V1: production asset planned",
+    "shots: V2: production asset planned",
+    "shots: V3: production asset planned",
+    "shots: V4: production asset planned",
+    "shots: V5: production asset planned"
+  ],
+  "stages": [
+    {
+      "stage": "methods",
+      "artifact_sha256": "43e79c76731bb5958868518d6c4059856068c98006a05a2034caac59e8ac438c",
+      "status": "structurally_ready",
+      "defects": [],
+      "holds": [],
+      "observations": [],
+      "semantic_review": "agent advisory; not certified by this tool",
+      "owner_approval": "not assessed"
+    },
+    {
+      "stage": "research",
+      "artifact_sha256": "5ed205213cab96714270815646c8a172db3314733aae70fa39b605c676549e32",
+      "status": "needs_evidence",
+      "defects": [],
+      "holds": [
+        "All sources are synthetic; no buyer observation or market validation is established."
+      ],
+      "observations": [],
+      "semantic_review": "agent advisory; not certified by this tool",
+      "owner_approval": "not assessed"
+    },
+    {
+      "stage": "halo",
+      "artifact_sha256": "0b5561cb3f4fec669b58014c7dfa790c91e91bded135789f31cb07e157989e4f",
+      "status": "structurally_ready",
+      "defects": [],
+      "holds": [],
+      "observations": [],
+      "semantic_review": "agent advisory; not certified by this tool",
+      "owner_approval": "not assessed"
+    },
+    {
+      "stage": "offer",
+      "artifact_sha256": "ed04fc5c44a58595aa76f4a0be85831ccf75ec224fb47be7282d64ed81844a71",
+      "status": "needs_evidence",
+      "defects": [],
+      "holds": [
+        "Commercial terms need owner decision: turnaround",
+        "Commercial terms need owner decision: approval_ref",
+        "Commercial terms need owner decision: price"
+      ],
+      "observations": [],
+      "semantic_review": "agent advisory; not certified by this tool",
+      "owner_approval": "not assessed"
+    },
+    {
+      "stage": "script",
+      "artifact_sha256": "6fa06a00cade6346bb4a392fe9a1c5729c2e871afd777872bc25639a0c36dd44",
+      "status": "structurally_ready",
+      "defects": [],
+      "holds": [],
+      "observations": [
+        {
+          "spoken_words": 644,
+          "estimated_minutes_140wpm": 4.6
+        }
+      ],
+      "semantic_review": "agent advisory; not certified by this tool",
+      "owner_approval": "not assessed"
+    },
+    {
+      "stage": "shots",
+      "artifact_sha256": "84de4565fcf5c31e4c4e1be4813219e22114bfda5168f61460b7d6ea295b97fa",
+      "status": "needs_evidence",
+      "defects": [],
+      "holds": [
+        "V0: production asset planned",
+        "V1: production asset planned",
+        "V2: production asset planned",
+        "V3: production asset planned",
+        "V4: production asset planned",
+        "V5: production asset planned"
+      ],
+      "observations": [],
+      "semantic_review": "agent advisory; not certified by this tool",
+      "owner_approval": "not assessed"
+    }
+  ],
+  "market_validated": false,
+  "owner_approved": false,
+  "limitation": "This tool cannot certify source truth, persuasion, owner approval or market performance."
+}

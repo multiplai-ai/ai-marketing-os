@@ -51,6 +51,7 @@ Claude, you can also select an installed workflow from the `/` or `+` menu.
 | [Content Production](../sops/content-produce/SKILL.md) | Move one content idea from an approved brief through drafting, review, and publish-ready files. | Test with your setup |
 | [Human Writing Review](../sops/human-writing-standard/SKILL.md) | Keep writing grounded in a real author's words, evidence, judgment, and natural rhythm. | Good place to start |
 | [LinkedIn Post](../sops/linkedin-post/SKILL.md) | Turn a real idea or source into one voice-matched LinkedIn post, or a deliberately varied batch. | Good place to start |
+| [Video Sales Letter](../sops/vsl-production/SKILL.md) | Turn source methods, buyer research and an offer into a reviewed recording script, hook candidates and shot list. | Test with your setup |
 | [Article and Newsletter Writing](../sops/writing/SKILL.md) | Draft source-faithful long-form writing from a brief, transcript, interview, research set, or notes. | Good place to start |
 | [Writing Setup](../sops/writing-setup/SKILL.md) | Set up voice examples, source rules, and output formats for repeatable writing work. | Test with your setup |
 

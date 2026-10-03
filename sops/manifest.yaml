@@ -48,5 +48,6 @@ sops:
 - templates
 - video-production
 - visual-content
+- vsl-production
 - writing
 - writing-setup

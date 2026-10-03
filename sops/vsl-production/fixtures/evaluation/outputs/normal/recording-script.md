@@ -1,0 +1,95 @@
+# VSL recording draft
+
+Status: draft for review. See package-status.json for unresolved evidence and commercial decisions.
+
+## S01 opening
+
+An enquiry arrives while your team is serving a customer. Someone sees it,
+someone intends to reply, and later you discover that nobody actually owned the
+next step. Buying another scheduling tool may leave that problem exactly where
+it started.
+
+For this fictional example, imagine a small appointment-based business with a
+shared inbox and a busy front desk. We will look at one enquiry together and
+show how to decide what needs attention before adding automation. This is an
+illustration of a review method, not a customer success story.
+
+## S02 teaching
+
+Start with the last enquiry that did not become a booking. Put the original
+message, the team's reply and the final outcome beside each other. If the
+outcome is unknown, write unknown. A blank calendar entry does not explain why
+someone failed to book.
+
+Now mark three things: what the person asked for, who owned the response, and
+what needed to happen next. You might discover that the reply was fast but did
+not answer a question about availability. Or the answer was clear, but nobody
+followed up after offering a time. Those are different problems and deserve
+different changes.
+
+Do the same with a recent successful booking. Compare the sequence, rather than
+assuming that every lost enquiry was a slow-response problem. A few examples
+can reveal questions to investigate. They cannot establish a reliable booking
+rate or prove why customers made their decisions.
+
+## S03 demonstration
+
+In our invented example, a prospect asks whether an evening appointment is
+available. The receptionist sends a general booking link. The prospect never
+books, and the record is marked closed. We do not know whether the price, the
+available times or something else caused that outcome.
+
+A useful first change could be to make the availability question visible to
+the person replying. The draft response would answer it before introducing the
+booking link. A person still checks the actual schedule and approves the reply.
+If availability cannot be confirmed, the draft should say so and assign the
+next action to someone who can check.
+
+You could test that change on a defined set of incoming enquiries. Record
+whether the question was answered, whether the customer replied, and whether a
+booking followed. Also record corrections and extra work. A faster response
+that needs repeated correction may not help the team.
+
+## S04 objections
+
+This review can start with tools you already use. The first deliverable is a
+clearer picture of the work: the steps, the owner of each step, the missing
+information and the decisions that need human judgment. A new system becomes
+an option only when there is a specific job for it to do.
+
+If your records are incomplete, the review should identify that limit. It should
+not turn missing data into a confident promise. And if your team is already at
+capacity, adding more bookings may be the wrong immediate objective. You may
+need to address scheduling, staffing or service quality first.
+
+## S05 offer
+
+The proposed Booking Journey Review follows this process with your team. Its
+scope is one enquiry-to-booking path. The proposed deliverables are a map of
+that path, an evidence and ownership review, and a prioritized plan for a small
+test. Implementation would be a separate decision.
+
+You would need access to relevant records and someone who understands the
+daily work. Any examples shared for the review should follow your privacy
+rules. The written scope would explain the information required, fee and
+timing before you accept. Those terms are still proposed in this fictional
+demonstration, so no price or delivery promise is stated here.
+
+## S06 cta
+
+If this is the kind of problem you want to examine, apply for the review.
+Describe where an enquiry gets stuck and who currently handles the next step.
+The application starts a fit review, followed by a written scope for you to
+consider. It does not commit you to buying software or an implementation.
+
+## Alternate openings
+
+Replace the main opening with one of these. Keep the same body and CTA. None has been market tested.
+
+### A1
+
+Your booking tool can be working while the next step still has no owner.
+
+### A2
+
+A quick response is useful only if it answers the question the customer asked.

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "stage": "halo",
+  "dependencies": {
+    "methods": "43e79c76731bb5958868518d6c4059856068c98006a05a2034caac59e8ac438c",
+    "research": "5ed205213cab96714270815646c8a172db3314733aae70fa39b605c676549e32"
+  },
+  "holds": [],
+  "insights": [
+    {
+      "id": "H0",
+      "category": "pain",
+      "interpretation": "Ownership and unanswered availability questions are hypotheses to investigate.",
+      "quote_ids": [
+        "Q0",
+        "Q1"
+      ],
+      "limitation": "Synthetic observations cannot establish prevalence or conversion impact."
+    },
+    {
+      "id": "H1",
+      "category": "fear",
+      "interpretation": "Ownership and unanswered availability questions are hypotheses to investigate.",
+      "quote_ids": [
+        "Q0",
+        "Q1"
+      ],
+      "limitation": "Synthetic observations cannot establish prevalence or conversion impact."
+    },
+    {
+      "id": "H2",
+      "category": "desire",
+      "interpretation": "Ownership and unanswered availability questions are hypotheses to investigate.",
+      "quote_ids": [
+        "Q0",
+        "Q1"
+      ],
+      "limitation": "Synthetic observations cannot establish prevalence or conversion impact."
+    },
+    {
+      "id": "H3",
+      "category": "objection",
+      "interpretation": "Ownership and unanswered availability questions are hypotheses to investigate.",
+      "quote_ids": [
+        "Q0",
+        "Q1"
+      ],
+      "limitation": "Synthetic observations cannot establish prevalence or conversion impact."
+    },
+    {
+      "id": "H4",
+      "category": "failed_alternative",
+      "interpretation": "Ownership and unanswered availability questions are hypotheses to investigate.",
+      "quote_ids": [
+        "Q0",
+        "Q1"
+      ],
+      "limitation": "Synthetic observations cannot establish prevalence or conversion impact."
+    },
+    {
+      "id": "H5",
+      "category": "messaging",
+      "interpretation": "Ownership and unanswered availability questions are hypotheses to investigate.",
+      "quote_ids": [
+        "Q0",
+        "Q1"
+      ],
+      "limitation": "Synthetic observations cannot establish prevalence or conversion impact."
+    }
+  ]
+}

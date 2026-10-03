@@ -69,6 +69,7 @@ PUBLIC_GUIDE = {
     "strategy-suite": ("Strategy Guide", "Review what strategy already exists and guide the next decision across discovery, positioning, customers, brand, and content."),
     "templates": ("Brand Templates", "Create reusable, editable templates for common social, presentation, and campaign formats."),
     "video-production": ("Video Production", "Plan or produce titles, overlays, motion graphics, and edits from an approved brief and visual identity."),
+    "vsl-production": ("Video Sales Letter", "Turn source methods, buyer research and an offer into a reviewed recording script, hook candidates and shot list."),
     "visual-content": ("Shareable Visuals", "Turn content into editable diagrams, frameworks, infographics, and reference cards."),
     "writing": ("Article and Newsletter Writing", "Draft source-faithful long-form writing from a brief, transcript, interview, research set, or notes."),
     "writing-setup": ("Writing Setup", "Set up voice examples, source rules, and output formats for repeatable writing work."),
@@ -85,7 +86,7 @@ def category(sid: str) -> str:
         return "Strategy and customers"
     if sid in {"content-brief", "content-calendar", "content-campaign", "content-produce",
                "human-writing-standard", "linkedin-post", "writing", "writing-setup",
-               "ai-tool-review"}:
+               "ai-tool-review", "vsl-production"}:
         return "Content and writing"
     if sid in {"seo", "seo-qc", "cro"}:
         return "SEO and websites"

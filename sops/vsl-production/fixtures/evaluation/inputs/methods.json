@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "stage": "methods",
+  "dependencies": {},
+  "holds": [],
+  "videos": [
+    {
+      "id": "video-id-00",
+      "url": "https://www.youtube.com/watch?v=video-id-00",
+      "transcript_path": "caption-0.md",
+      "sha256": "ff2a1cfde7739cf2cde37325447357c8782530a694a04f7e115bfbb75533a64f"
+    },
+    {
+      "id": "video-id-01",
+      "url": "https://www.youtube.com/watch?v=video-id-01",
+      "transcript_path": "caption-1.md",
+      "sha256": "5c6b98c6076f276f96ea393b3565d0b85ff06f0232a31af455109aab143ae483"
+    },
+    {
+      "id": "video-id-02",
+      "url": "https://www.youtube.com/watch?v=video-id-02",
+      "transcript_path": "caption-2.md",
+      "sha256": "f9a781d60e4cd7456af98b30406491f3b853effde80ddd319c92f18a375ed6cf"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "M0",
+      "video_id": "video-id-00",
+      "timestamp": "00:00",
+      "rule": "Teach a concrete diagnostic before the offer.",
+      "kind": "editorial",
+      "application": "Teach a concrete diagnostic before the offer."
+    },
+    {
+      "id": "M1",
+      "video_id": "video-id-01",
+      "timestamp": "00:00",
+      "rule": "Identify illustrative examples and unsupported outcome claims.",
+      "kind": "editorial",
+      "application": "Identify illustrative examples and unsupported outcome claims."
+    },
+    {
+      "id": "M2",
+      "video_id": "video-id-02",
+      "timestamp": "00:00",
+      "rule": "End with one application action and a written scope.",
+      "kind": "editorial",
+      "application": "End with one application action and a written scope."
+    }
+  ]
+}
