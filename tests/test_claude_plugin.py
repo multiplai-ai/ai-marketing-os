@@ -34,6 +34,7 @@ def test_every_manifest_workflow_is_discoverable_by_claude() -> None:
     }
 
     assert discovered == expected
+    assert {"godfather-offer", "client-icp-research"} <= discovered
     assert {"geo-audit", "geo-plan", "geo-share-of-answers", "geo-prompt-set-builder", "geo-content-restructure", "geo-citation-network-mapper"} <= discovered
 
 
@@ -51,3 +52,4 @@ def test_uploadable_plugin_has_manifest_and_all_workflows(tmp_path: Path) -> Non
     expected = {f"sops/{sid}/SKILL.md" for sid in yaml.safe_load((ROOT / "sops/manifest.yaml").read_text())["sops"]}
     assert {name for name in names if name.startswith("sops/") and name.endswith("/SKILL.md")} == expected
     assert not any(name.startswith("generated/") for name in names)
+    assert not any(".DS_Store" in name.split("/") for name in names)

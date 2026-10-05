@@ -15,7 +15,7 @@ VERSION = re.compile(r"^[0-9]+\.[0-9]+\.[0-9]+(?:-rc\.[0-9]+)?$")
 
 
 def included(relative: Path) -> bool:
-    if "__pycache__" in relative.parts or relative.suffix in {".pyc", ".pyo"}:
+    if any(part in {"__pycache__", ".DS_Store"} for part in relative.parts) or relative.suffix in {".pyc", ".pyo"}:
         return False
     return (
         relative.as_posix() in INCLUDED_ROOT_FILES

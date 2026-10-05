@@ -1,7 +1,7 @@
 # Workflow library
 
 This is the human-readable map of AI Marketing OS. Each workflow is a reusable
-set of instructions for Claude or Codex. Click a workflow name to read the full
+set of instructions for Claude, ChatGPT or Codex. Click a workflow name to read the full
 instructions the assistant follows.
 
 You do not need to configure all of them. Choose one outcome, give the assistant
@@ -34,8 +34,10 @@ Claude, you can also select an installed workflow from the `/` or `+` menu.
 | Workflow | What it helps you do | Readiness |
 | --- | --- | --- |
 | [Brand Strategy and Key Messages](../sops/brand-strategy/SKILL.md) | Turn positioning and customer research into a clear message hierarchy, proof points, and voice guidance. | Evidence reviewed |
+| [ICP and Anti-ICP Research](../sops/client-icp-research/SKILL.md) | Research whom to pursue, whom to exclude, and what evidence to test before scaling. | Test with your setup |
 | [Content Strategy](../sops/content-strategy/SKILL.md) | Decide what to publish, for whom, on which channels, and how the work supports business goals. | Good place to start |
 | [Business Discovery](../sops/discovery-intake/SKILL.md) | Organize business, customer, marketing, evidence, and constraint information before strategy work begins. | Evidence reviewed |
+| [Godfather Offer](../sops/godfather-offer/SKILL.md) | Research a service offer, talk through the decisions, and create a practical project or retainer offer document. | Test with your setup |
 | [Ideal Customers and Buyer Personas](../sops/icp-personas/SKILL.md) | Define the companies, people, buying roles, and real work patterns most likely to fit the offer. | Evidence reviewed |
 | [Positioning Strategy](../sops/positioning-strategy/SKILL.md) | Choose the market alternative to compete against and explain why the offer is meaningfully different. | Evidence reviewed |
 | [Strategy Guide](../sops/strategy-suite/SKILL.md) | Review what strategy already exists and guide the next decision across discovery, positioning, customers, brand, and content. | Good place to start |

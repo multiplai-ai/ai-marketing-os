@@ -16,6 +16,7 @@ sops:
 - ai-tool-review
 - brand-guide
 - brand-strategy
+- client-icp-research
 - components
 - content-brief
 - content-calendar
@@ -35,6 +36,7 @@ sops:
 - geo-plan
 - geo-prompt-set-builder
 - geo-share-of-answers
+- godfather-offer
 - google-search-ad-copy
 - human-writing-standard
 - icp-personas
