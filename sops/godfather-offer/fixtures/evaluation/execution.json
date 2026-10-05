@@ -1,0 +1,42 @@
+{
+  "actor": "Codex subagent /root/offer_evaluation",
+  "date": "2026-10-05",
+  "receipt_saved_at": "2026-10-05T22:43:43.051519+00:00",
+  "source_hashes": {
+    "SKILL.md": "6e440fde7996980b485d3d520a6c7c15c8c3af5a06c33eb42024b67a6f19e3ed",
+    "references/research-protocol.md": "5f145b672f9aca9885de0ae75ae9f6c89753eda82b4e9b31bd5255b912b53363",
+    "references/build-workflow.md": "e55861623b08acfa959d9c0e8ef7c156a04f72e4f48b2aa0e8bc5aa5108a3dfd",
+    "references/result-contract.md": "f9755cc50d8a5436ac18e21487d1e0736c0eb34b5939671a390879a3fa2f8661",
+    "references/method-reference.md": "a81785d36167d5bbf7fc6717e9a44d3c7d59e78f8ce9008e441335837a9304e1"
+  },
+  "hash_timing": "Hashes captured at evidence persistence after outputs were generated; not a claim of a prior immutable snapshot.",
+  "actual_tool_actions": [
+    "Read SKILL.md with exec_command cat",
+    "Read the four linked references with exec_command cat",
+    "Computed cost, contribution, margin, target floor and downside in functions.exec JavaScript",
+    "Generated four actual assistant response outputs in one evaluation turn",
+    "After parent requested persistence, checked destination with ls; it did not exist",
+    "First require_escalated mkdir was rejected for sibling read-only boundary; no write occurred",
+    "Received exact direct-user migration authorization from parent and retried once with that evidence; mkdir succeeded",
+    "Saved verbatim case output text with a final newline, cases.json, and this execution receipt; computed SHA-256 source hashes during persistence"
+  ],
+  "calculation_result": {
+    "cost": 1400,
+    "contribution": 1600,
+    "margin": 0.5333333333333333,
+    "floor": 2800,
+    "downside": 890,
+    "downsideMargin": 0.2966666666666667
+  },
+  "limits": [
+    "Synthetic offline responses, not live integrations or independent model reruns",
+    "No web research or original external source retrieval performed",
+    "No host editable artifact or Word export created or tested",
+    "No live customer, demand, publishing, email, or spending actions",
+    "Wrong-route output requests the media; it does not demonstrate video editing capability",
+    "Untrusted-input case assumes no business identity or service was supplied elsewhere",
+    "Normal-case document delivery remains explicitly incomplete",
+    "Separate reviewer evaluation is outside this receipt"
+  ],
+  "authorization_evidence_from_parent": "okay let’s just add this to the ai marketer os repo in a clean format that users can install with the rest of the repo either in chat or claude"
+}

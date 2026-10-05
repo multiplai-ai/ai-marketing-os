@@ -1,0 +1,20 @@
+id: godfather-offer
+version: 0.2.0
+title: Godfather Offer
+maturity: released
+inputs:
+- business_and_current_service
+- target_buyer_and_market
+- available_public_sources
+- user_delivery_and_commercial_decisions
+outputs:
+- source_traced_offer_document
+- research_receipt
+- internal_delivery_economics
+- draft_direct_response_flow
+- bounded_pilot_and_open_decisions
+tools: []
+approval_classes: []
+tests:
+- sops/godfather-offer/fixtures/evaluation/cases.json
+source_provenance: sops/godfather-offer/references/method-reference.md

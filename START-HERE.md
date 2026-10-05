@@ -80,3 +80,42 @@ change an account.
 The [workflow library](docs/capabilities.md) groups the available workflows by
 the job they help accomplish. Each name links directly to the full instructions.
 Start with one workflow and one real task. You do not need to configure the entire library.
+
+## Build a Godfather offer
+
+After installing the library, ask:
+
+> Use godfather-offer to research and build an offer for [business and website].
+> Guide me one question at a time; I may dictate my answers.
+
+The workflow researches the business, alternatives, buyer evidence, LinkedIn, X
+and YouTube, then helps you design a project or retainer. It ends with an editable
+offer document and Word download where the host supports it. Missing source or
+export access stays visible. No separate browser form or private plugin is needed.
+
+In a chat with repository access, ask it to read `sops/godfather-offer/SKILL.md`
+and its linked references before starting. A URL alone does not grant private
+repository access. You may instead upload that entire skill folder as a ZIP and
+ask the assistant to read it; this is a one-chat source upload, not installation.
+
+## ChatGPT library package
+
+When available in Releases, download `ai-marketing-os-chatgpt-plugin-<version>.zip`.
+Import it using the plugin-upload option available to your account/workspace.
+Upload availability depends on account permissions; this repository does not
+create a public ChatGPT directory listing or grant web/document capabilities.
+If plugin upload is unavailable, use repository access or the source-upload route
+above. The Claude installer remains a separate file for Claude's plugin format.
+
+Maintainers generate both installers from the same canonical `sops/` source:
+
+```bash
+python tools/build_claude_plugin.py --version 4.1.0 --output /tmp/ai-marketing-os-preview
+python tools/build_chatgpt_plugin.py --version 4.1.0 --output /tmp/ai-marketing-os-preview
+```
+
+Those commands build local previews of the checked-out source; they do not publish
+or update an installed plugin. Use the version in `.claude-plugin/plugin.json`
+if it differs from the example. New source additions are available in downloadable
+release assets only after a reviewed release. Existing downloaded copies do not
+update themselves; GitHub-synced installations follow their configured sync.

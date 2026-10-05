@@ -144,3 +144,28 @@ subscribe to `vsl-production`; merging library source does not update them.
 This repository is the canonical home for shared workflows. Maintainers edit
 `sops/<workflow>/SKILL.md`, validate the change, and submit a reviewed pull
 request. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Build a Godfather offer
+
+After installing the library, ask:
+
+> Use godfather-offer to research and build an offer for [business and website].
+> Guide me one question at a time; I may dictate my answers.
+
+The workflow researches the business, alternatives, buyer evidence, LinkedIn, X
+and YouTube, then helps you design a project or retainer. It ends with an editable
+offer document and Word download where the host supports it. Missing source or
+export access stays visible. No separate browser form or private plugin is needed.
+
+In a chat with repository access, ask it to read `sops/godfather-offer/SKILL.md`
+and its linked references before starting. A URL alone does not grant private
+repository access. You may instead upload that entire skill folder as a ZIP and
+ask the assistant to read it; this is a one-chat source upload, not installation.
+
+## Use it in ChatGPT
+
+The [start guide](START-HERE.md#chatgpt-library-package) covers the library's
+ChatGPT ZIP, account-dependent upload access, and a source-reading fallback.
+Both host packages are generated from the same canonical workflows. New additions
+reach release downloads only after a reviewed release; a GitHub commit does not
+silently update an installed private or public plugin.
