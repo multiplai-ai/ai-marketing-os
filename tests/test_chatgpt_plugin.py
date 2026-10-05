@@ -22,6 +22,7 @@ def test_library_package_preserves_every_workflow_and_reference(tmp_path):
         assert len(manifest['extensions']['com.openai']['interface']['shortDescription'])<=30
         ids=yaml.safe_load((ROOT/'sops/manifest.yaml').read_text())['sops']
         assert {x.split('/')[2] for x in names if x.startswith('ai-marketing-os/skills/') and x.endswith('/SKILL.md')}==set(ids)
+        assert {'godfather-offer', 'client-icp-research'} <= set(ids)
         for sid in ids:
             router=z.read(f'ai-marketing-os/skills/{sid}/SKILL.md').decode()
             assert f'../../sops/{sid}/SKILL.md' in router

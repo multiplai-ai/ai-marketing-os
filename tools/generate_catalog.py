@@ -22,6 +22,7 @@ EVALUATED = {
 # These summaries are written for the person choosing a workflow. The longer
 # technical descriptions in each SKILL.md remain available to the assistant.
 PUBLIC_GUIDE = {
+    "client-icp-research": ("ICP and Anti-ICP Research", "Research whom to pursue, whom to exclude, and what evidence to test before scaling."),
     "godfather-offer": ("Godfather Offer", "Research a service offer, talk through the decisions, and create a practical project or retainer offer document."),
     "geo-prompt-set-builder": ("GEO Prompt Set", "Build a repeatable set of buyer questions for measuring visibility in AI answers."),
     "geo-share-of-answers": ("AI Answer Visibility Measurement", "Measure brand and competitor mentions across explicitly selected API models and report errors separately."),
@@ -83,7 +84,7 @@ def category(sid: str) -> str:
     if sid.startswith("ads") or sid == "google-search-ad-copy":
         return "Advertising and conversion"
     if sid in {"discovery-intake", "positioning-strategy", "icp-personas", "brand-strategy",
-               "content-strategy", "strategy-suite", "godfather-offer"}:
+               "content-strategy", "strategy-suite", "godfather-offer", "client-icp-research"}:
         return "Strategy and customers"
     if sid in {"content-brief", "content-calendar", "content-campaign", "content-produce",
                "human-writing-standard", "linkedin-post", "writing", "writing-setup",

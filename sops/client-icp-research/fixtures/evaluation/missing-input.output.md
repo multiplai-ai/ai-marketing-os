@@ -1,0 +1,1 @@
+Which business and specific offer should this ICP cover, and what customer market or geography are you considering? A short description or an existing offer page is enough to begin. I need the business and offer to avoid researching the wrong audience. No research has started, and there is no ICP finding or saved artifact yet.

@@ -21,6 +21,7 @@ More relevant source material usually produces a better result.
 | If you want to… | Start with | Ask Claude… |
 | --- | --- | --- |
 | Clarify your market position | [Strategy Suite](sops/strategy-suite/SKILL.md) | “Review what we already have and guide me through the next missing strategy decision.” |
+| Research whom to pursue and exclude | [ICP and Anti-ICP Research](sops/client-icp-research/SKILL.md) | “Use client-icp-research for [business] and [offer]. Research the market and produce an ICP and anti-ICP.” |
 | Define your best customers | [ICP & Personas](sops/icp-personas/SKILL.md) | “Build our ideal-customer profiles from these interviews and sales notes. Show assumptions separately.” |
 | Plan what to publish | [Content Strategy](sops/content-strategy/SKILL.md) | “Create a content strategy from our positioning, customer research, and business goals.” |
 | Prepare an article | [Content Brief](sops/content-brief/SKILL.md) | “Turn these sources into a content brief. Flag missing research and unsupported claims.” |
@@ -110,8 +111,8 @@ above. The Claude installer remains a separate file for Claude's plugin format.
 Maintainers generate both installers from the same canonical `sops/` source:
 
 ```bash
-python tools/build_claude_plugin.py --version 4.1.0 --output /tmp/ai-marketing-os-preview
-python tools/build_chatgpt_plugin.py --version 4.1.0 --output /tmp/ai-marketing-os-preview
+python tools/build_claude_plugin.py --version 4.2.0 --output /tmp/ai-marketing-os-preview
+python tools/build_chatgpt_plugin.py --version 4.2.0 --output /tmp/ai-marketing-os-preview
 ```
 
 Those commands build local previews of the checked-out source; they do not publish

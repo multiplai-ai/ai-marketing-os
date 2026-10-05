@@ -1,0 +1,1 @@
+Only resize my logo.

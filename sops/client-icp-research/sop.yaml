@@ -1,0 +1,20 @@
+id: client-icp-research
+version: 0.2.0
+title: ICP and Anti-ICP Research
+maturity: released
+inputs:
+- business_and_offer
+- market_and_customer_type
+- available_sources
+- prior_profile_if_refreshing
+outputs:
+- research_findings_and_evidence_ledger
+- icp_and_anti_icp_brief
+- buyer_roles_and_candidate_checks
+- validation_and_revision_plan
+tools: []
+approval_classes: []
+tests:
+- sops/client-icp-research/tests/scenarios.md
+- sops/client-icp-research/fixtures/evaluation/manifest.json
+source_provenance: sops/client-icp-research/references/method-sources.md

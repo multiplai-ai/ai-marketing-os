@@ -34,6 +34,7 @@ def test_every_manifest_workflow_is_discoverable_by_claude() -> None:
     }
 
     assert discovered == expected
+    assert {"godfather-offer", "client-icp-research"} <= discovered
     assert {"geo-audit", "geo-plan", "geo-share-of-answers", "geo-prompt-set-builder", "geo-content-restructure", "geo-citation-network-mapper"} <= discovered
 
 

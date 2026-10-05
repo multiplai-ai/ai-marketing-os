@@ -169,3 +169,13 @@ ChatGPT ZIP, account-dependent upload access, and a source-reading fallback.
 Both host packages are generated from the same canonical workflows. New additions
 reach release downloads only after a reviewed release; a GitHub commit does not
 silently update an installed private or public plugin.
+
+## Research your ICP and anti-ICP
+
+> Use client-icp-research for [business] and [offer]. Research the market and
+> produce an ICP and anti-ICP.
+
+This workflow conducts the research round and delivers evidence, inclusion and
+exclusion criteria, buying roles, candidate checks and a validation plan. It
+distinguishes poor fit from temporary timing and unknown information. The
+existing `icp-personas` workflow remains available for persona and journey work.

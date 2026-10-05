@@ -46,6 +46,7 @@ jobs:
           python3 -m zipfile -e "dist/ai-marketing-os-chatgpt-plugin-${RELEASE_VERSION}.zip" "$RUNNER_TEMP/chatgpt-plugin"
           test -f "$RUNNER_TEMP/chatgpt-plugin/ai-marketing-os/plugin.json"
           test -f "$RUNNER_TEMP/chatgpt-plugin/ai-marketing-os/skills/godfather-offer/SKILL.md"
+          test -f "$RUNNER_TEMP/chatgpt-plugin/ai-marketing-os/skills/client-icp-research/SKILL.md"
           test -f "$RUNNER_TEMP/chatgpt-plugin/ai-marketing-os/sops/godfather-offer/references/research-protocol.md"
       - name: Validate the Claude upload package
         run: |
@@ -104,4 +105,4 @@ jobs:
             --target "$GITHUB_SHA" \
             --title "AI Marketing OS ${RELEASE_VERSION}" \
             "${release_flags[@]}" \
-            --notes "Marketing workflow library for Claude and Codex, including the complete GEO suite. Start with the README and START-HERE guide. Claude users: download the ai-marketing-os-claude-plugin ZIP. ChatGPT users with plugin-upload access: download the ai-marketing-os-chatgpt-plugin ZIP; otherwise use the source-reading instructions in START-HERE. Codex users: follow the signed starter setup. Source is MIT licensed; AI subscriptions and optional services are separate. Live integrations require your own setup and review. Existing pinned workspaces stay on their current release until deliberately updated; see docs/cutover-testing.md for retired workflow migrations."
+            --notes "Marketing workflow library for Claude, ChatGPT and Codex. This release adds Godfather Offer, ICP and Anti-ICP Research, and a ChatGPT library installer. Start with the README and START-HERE guide. Claude users: download the ai-marketing-os-claude-plugin ZIP. ChatGPT users with plugin-upload access: download the ai-marketing-os-chatgpt-plugin ZIP; otherwise use the source-reading instructions in START-HERE. Codex users: follow the signed starter setup. Source is MIT licensed; AI subscriptions and optional services are separate. Live integrations require your own setup and review. Existing pinned workspaces stay on their current release until deliberately updated; see docs/cutover-testing.md for retired workflow migrations."
