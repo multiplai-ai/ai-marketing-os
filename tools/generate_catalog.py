@@ -37,6 +37,7 @@ PUBLIC_GUIDE = {
     "ads-google": ("Google Ads Review", "Review Google Ads structure, tracking, search terms, creative, and wasted spend."),
     "google-search-ad-copy": ("Google Search Ad Copy", "Turn buyer research and search intent into compelling headlines and descriptions with checked character counts."),
     "ads-landing": ("Landing Page Review", "Check whether a landing page fulfills the promise that brought visitors there and makes the next step clear."),
+    "suby-landing-page": ("Suby Consultation Landing Page", "Draft a consultation booking page from Halo research and sales material; exact video prompts require supplied text."),
     "ads-linkedin": ("LinkedIn Ads Review", "Review LinkedIn Ads targeting, tracking, forms, creative, and bidding."),
     "ads-meta": ("Meta Ads Review", "Review Facebook and Instagram campaign tracking, audiences, creative, structure, and performance."),
     "ads-microsoft": ("Microsoft Ads Review", "Review Microsoft and Bing campaigns, including imported settings, tracking, targeting, and search traffic."),
@@ -81,7 +82,7 @@ PUBLIC_GUIDE = {
 def category(sid: str) -> str:
     if sid.startswith("geo-"):
         return "AI search visibility"
-    if sid.startswith("ads") or sid == "google-search-ad-copy":
+    if sid.startswith("ads") or sid in {"google-search-ad-copy", "suby-landing-page"}:
         return "Advertising and conversion"
     if sid in {"discovery-intake", "positioning-strategy", "icp-personas", "brand-strategy",
                "content-strategy", "strategy-suite", "godfather-offer", "client-icp-research"}:

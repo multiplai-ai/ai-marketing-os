@@ -1,0 +1,4 @@
+interface:
+  display_name: "Suby Landing Page"
+  short_description: "Research-led consultation booking page drafts"
+  default_prompt: "Use $suby-landing-page to draft a consultation booking page from my offer, Halo research and sales-pitch material; show unsupported claims and pending exact-prompt requirements."
