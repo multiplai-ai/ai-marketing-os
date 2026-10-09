@@ -1,0 +1,21 @@
+id: suby-landing-page
+version: 0.1.0
+title: Suby Consultation Landing Page
+# Catalog eligibility is not a published release or an exact-prompt claim.
+# The contribution remains a draft PR pending the requested supplied prompts.
+maturity: released
+inputs:
+- service_and_audience
+- traffic_promise_and_conversion_action
+- consultation_terms
+- halo_research_or_authorized_sources
+- owner_pitch_or_sales_material
+- approved_proof_and_voice
+outputs:
+- consultation-page-brief-and-copy-{date}.md
+- evidence_readiness_and_test_notes
+tools: []
+approval_classes: []
+tests:
+- sops/suby-landing-page/fixtures/evaluation/cases.json
+source_provenance: sops/suby-landing-page/references/source-and-prompts.md

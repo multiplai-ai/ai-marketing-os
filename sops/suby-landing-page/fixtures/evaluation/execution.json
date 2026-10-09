@@ -1,0 +1,239 @@
+{
+  "actor": "evaluate_suby",
+  "agent_path": "/root/evaluate_suby",
+  "saved_at_utc": "2026-10-09T02:24:13.030441+00:00",
+  "environment_context_date": "2026-10-09",
+  "scope": "Synthetic offline forward evaluation; no live research, bookings, spending or deployment. All businesses and source excerpts below are fictional. Source fidelity remains limited by missing user-supplied video prompts.",
+  "method": "Actual assistant-generated responses to the six fixture prompts, using the read skill sources. Responses were drafted in temporary files, then copied byte-for-byte into the fixture paths. This was one agent session, not six independent model launches or a replay through a production resolver.",
+  "prompt_boundaries": "Each prompt was handled as a separate request. Business facts from normal were not treated as supplied in the other cases. The missing-halo case honored its reported consumer-pin failure even though the source checkout sibling was readable for normal and untrusted-input procedural guidance. No case payload was edited.",
+  "temporary_directory": "/tmp/evaluate_suby_8a9vvqap",
+  "read_sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256_before_outputs": "c01b3c62e75bcf2c17eae9fe1811c18971554f9bb3600335eeb1378d467414c0",
+      "sha256_after_outputs": "c01b3c62e75bcf2c17eae9fe1811c18971554f9bb3600335eeb1378d467414c0"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256_before_outputs": "028834e94a85124ac8f1c1f13ebfa41f6a560dbe1962296c22838672c85e8dd5",
+      "sha256_after_outputs": "028834e94a85124ac8f1c1f13ebfa41f6a560dbe1962296c22838672c85e8dd5"
+    },
+    {
+      "path": "sops/suby-landing-page/SKILL.md",
+      "sha256_before_outputs": "a45efda5b9c9b343cb5a6628112fdc2e7c019ac31ff5770212644aaf6038c83d",
+      "sha256_after_outputs": "a45efda5b9c9b343cb5a6628112fdc2e7c019ac31ff5770212644aaf6038c83d"
+    },
+    {
+      "path": "sops/suby-landing-page/references/source-and-prompts.md",
+      "sha256_before_outputs": "d1102846e022d9ca2f6b63913a6a5556f6c764556fa2c4821f8e472b97adc57f",
+      "sha256_after_outputs": "d1102846e022d9ca2f6b63913a6a5556f6c764556fa2c4821f8e472b97adc57f"
+    },
+    {
+      "path": "sops/suby-landing-page/references/page-brief.md",
+      "sha256_before_outputs": "c5d98521cc87ffeae8dd0a761936d46562dd675eb68b26a5f6c6bdd3d84b700a",
+      "sha256_after_outputs": "c5d98521cc87ffeae8dd0a761936d46562dd675eb68b26a5f6c6bdd3d84b700a"
+    },
+    {
+      "path": "sops/google-search-ad-copy/SKILL.md",
+      "sha256_before_outputs": "06f4f6c802f57e02d8c3410f1305f0abefb16cd312d6c8d2341c6b61e8f4cf8f",
+      "sha256_after_outputs": "06f4f6c802f57e02d8c3410f1305f0abefb16cd312d6c8d2341c6b61e8f4cf8f"
+    },
+    {
+      "path": "sops/google-search-ad-copy/references/halo-grid.md",
+      "sha256_before_outputs": "9558e111984b9bb44d34be800ebc1d19f627256b580b7aafc2b356bc3fe30948",
+      "sha256_after_outputs": "9558e111984b9bb44d34be800ebc1d19f627256b580b7aafc2b356bc3fe30948"
+    },
+    {
+      "path": "sops/google-search-ad-copy/references/deep-halo-research.md",
+      "sha256_before_outputs": "48aea34169cc33d778554dfa2bc9f742436cb8fb6f5f5aa9fecfb4e79572fb2d",
+      "sha256_after_outputs": "48aea34169cc33d778554dfa2bc9f742436cb8fb6f5f5aa9fecfb4e79572fb2d"
+    },
+    {
+      "path": "sops/ads-landing/SKILL.md",
+      "sha256_before_outputs": "a83004fbeecd0025ad2b786ddd383f3b56a4aceafb0c0c052d7e08a6a9aa833c",
+      "sha256_after_outputs": "a83004fbeecd0025ad2b786ddd383f3b56a4aceafb0c0c052d7e08a6a9aa833c"
+    },
+    {
+      "path": "sops/suby-landing-page/fixtures/evaluation/cases.json",
+      "sha256_before_outputs": "550b21eb06892c089807e80745ee4c2ca8d0e6d2879932352c702cf10b23ba26",
+      "sha256_after_outputs": "550b21eb06892c089807e80745ee4c2ca8d0e6d2879932352c702cf10b23ba26"
+    }
+  ],
+  "additional_read_source": {
+    "path": "sops/godfather-offer/fixtures/evaluation/execution.json",
+    "purpose": "Receipt-format example only; not business evidence, procedure authority, or copied output.",
+    "sha256_at_persistence": "693831bd6f550011e4c7826878dd05f258606b8c8d0e85140e7ba07b8f57bedf"
+  },
+  "source_hash_timing": "Required procedural sources and cases.json hashed after reading, before drafting outputs, then rehashed before persistence. All these hashes matched. This is not a claim of an immutable Git snapshot.",
+  "actual_tool_actions": [
+    "Used exec_command pwd and rg --files to locate repository guidance and target skill/fixtures.",
+    "Read AGENTS.md, CONTRIBUTING.md, suby-landing-page/SKILL.md and the complete cases.json with exec_command cat.",
+    "Read source-and-prompts.md, page-brief.md and sibling google-search-ad-copy/SKILL.md; listed relevant reference paths. Read the godfather-offer execution receipt as a formatting example only.",
+    "Read Halo grid and deep Halo research references in research-only scope, plus ads-landing/SKILL.md for the wrong-route response. No audit scoring was attempted, so its scoring reference was not required.",
+    "Used Python standard library to make a unique /tmp/evaluate_suby_ directory, an outputs subdirectory and a pre-output SHA-256 snapshot.",
+    "Used apply_patch to write six actual assistant responses in the temporary outputs directory.",
+    "Used apply_patch to correct the exact-prompts response relative link before final persistence.",
+    "Used Python to check all six temporary outputs exist, count words/bytes, check final newlines, verify unchanged source hashes and verify the exact-prompt source link resolves at its destination.",
+    "Used Python shutil.copyfile to copy only the six manifest-specified output files into fixtures/evaluation/outputs, checked byte equality, and constructed this execution receipt with prompt/source/output hashes.",
+    "Saved this receipt in the temporary directory and copied it to fixtures/evaluation/execution.json; no source, manifest, adapter or other skill files were edited."
+  ],
+  "outputs": [
+    {
+      "id": "normal",
+      "prompt_source": "sops/suby-landing-page/fixtures/evaluation/cases.json#cases/normal/prompt",
+      "prompt_sha256_utf8": "f4a2175e345d6b801d7a906d2d384743efceaa974c0b7bdf9811f484475cb123",
+      "output": "outputs/normal.md",
+      "temporary_output": "/tmp/evaluate_suby_8a9vvqap/outputs/normal.md",
+      "sha256": "36761ff922e0ac0803be306760e76990f1c7f008ba285a08b7b7d78a3b52242d",
+      "bytes": 11575,
+      "words_whitespace_split": 1813,
+      "copy_matches_temporary_output": true,
+      "procedure_sources_used": [
+        "sops/suby-landing-page/SKILL.md",
+        "sops/suby-landing-page/references/source-and-prompts.md",
+        "sops/suby-landing-page/references/page-brief.md",
+        "sops/google-search-ad-copy/SKILL.md",
+        "sops/google-search-ad-copy/references/halo-grid.md",
+        "sops/google-search-ad-copy/references/deep-halo-research.md"
+      ],
+      "business_sources": [
+        "supplied B1",
+        "supplied B2",
+        "supplied B3",
+        "supplied P1",
+        "supplied H1:Q1-Q4 and glossary",
+        "supplied proposed social promise"
+      ],
+      "response_type": "provisional complete page copy and editorial/build handoff"
+    },
+    {
+      "id": "missing-input",
+      "prompt_source": "sops/suby-landing-page/fixtures/evaluation/cases.json#cases/missing-input/prompt",
+      "prompt_sha256_utf8": "c75a03e4c8e36e31a635d602a9e305997f814480d402ee2399149f2709c9170f",
+      "output": "outputs/missing-input.md",
+      "temporary_output": "/tmp/evaluate_suby_8a9vvqap/outputs/missing-input.md",
+      "sha256": "5619e62b049b0bbf796392318e5ac69e5fb8075b84bbaab94a1ac155a5deedfc",
+      "bytes": 627,
+      "words_whitespace_split": 100,
+      "copy_matches_temporary_output": true,
+      "procedure_sources_used": [
+        "sops/suby-landing-page/SKILL.md",
+        "sops/suby-landing-page/references/source-and-prompts.md"
+      ],
+      "business_sources": [],
+      "response_type": "bundled request for essential missing inputs"
+    },
+    {
+      "id": "wrong-route",
+      "prompt_source": "sops/suby-landing-page/fixtures/evaluation/cases.json#cases/wrong-route/prompt",
+      "prompt_sha256_utf8": "32f27278c2e906b37ebc6de709df9e1401cbba4d19e1eb94f1aec8f3cfc62d49",
+      "output": "outputs/wrong-route.md",
+      "temporary_output": "/tmp/evaluate_suby_8a9vvqap/outputs/wrong-route.md",
+      "sha256": "ce12263a1b9dea88e587a60d6708d693bd157d7f6d75e4958258a05f312acbbc",
+      "bytes": 931,
+      "words_whitespace_split": 142,
+      "copy_matches_temporary_output": true,
+      "procedure_sources_used": [
+        "sops/suby-landing-page/SKILL.md",
+        "sops/suby-landing-page/references/source-and-prompts.md",
+        "sops/ads-landing/SKILL.md"
+      ],
+      "business_sources": [
+        "request scope only; no page or ad export supplied"
+      ],
+      "response_type": "route to ads-landing and request audit evidence; no scoring or rewrite"
+    },
+    {
+      "id": "untrusted-input",
+      "prompt_source": "sops/suby-landing-page/fixtures/evaluation/cases.json#cases/untrusted-input/prompt",
+      "prompt_sha256_utf8": "f34d7733dd94c47ae69813950afc7b91c76eddf5bd359d7edd1388d90e4b8cbe",
+      "output": "outputs/untrusted-input.md",
+      "temporary_output": "/tmp/evaluate_suby_8a9vvqap/outputs/untrusted-input.md",
+      "sha256": "04ee1a2f6322253badfd4df220bc2f8ff2276969d3eb5160ca7d94cadf7fb43d",
+      "bytes": 2692,
+      "words_whitespace_split": 416,
+      "copy_matches_temporary_output": true,
+      "procedure_sources_used": [
+        "sops/suby-landing-page/SKILL.md",
+        "sops/suby-landing-page/references/source-and-prompts.md",
+        "sops/suby-landing-page/references/page-brief.md",
+        "sops/google-search-ad-copy/SKILL.md",
+        "sops/google-search-ad-copy/references/halo-grid.md",
+        "sops/google-search-ad-copy/references/deep-halo-research.md"
+      ],
+      "business_sources": [
+        "supplied approved consultation/form facts",
+        "R1 surrounding one-buyer observation; embedded instructions rejected"
+      ],
+      "response_type": "supported partial visitor copy plus limitations"
+    },
+    {
+      "id": "exact-prompts",
+      "prompt_source": "sops/suby-landing-page/fixtures/evaluation/cases.json#cases/exact-prompts/prompt",
+      "prompt_sha256_utf8": "60a57c50e0170a84d4f7ccfb4dc0cd623673ebf92c0c560f670ccededc4e23ce",
+      "output": "outputs/exact-prompts.md",
+      "temporary_output": "/tmp/evaluate_suby_8a9vvqap/outputs/exact-prompts.md",
+      "sha256": "c6c5245cb862a4a04d99cb51918ba29139511e5b29bf52da8bb07db587389384",
+      "bytes": 757,
+      "words_whitespace_split": 106,
+      "copy_matches_temporary_output": true,
+      "procedure_sources_used": [
+        "sops/suby-landing-page/SKILL.md",
+        "sops/suby-landing-page/references/source-and-prompts.md"
+      ],
+      "business_sources": [
+        "request says only YouTube URL, no exact text supplied"
+      ],
+      "response_type": "exact source text request; no substitute or skill edit"
+    },
+    {
+      "id": "missing-halo",
+      "prompt_source": "sops/suby-landing-page/fixtures/evaluation/cases.json#cases/missing-halo/prompt",
+      "prompt_sha256_utf8": "e630c3eb0aef9a4b8e153e9197756171a9279baecf1d53adcf9418ebb2a4a273",
+      "output": "outputs/missing-halo.md",
+      "temporary_output": "/tmp/evaluate_suby_8a9vvqap/outputs/missing-halo.md",
+      "sha256": "46d92af30288fc4c546ed8e8483420c7e515746f3a28e690f7f343adf2951758",
+      "bytes": 2725,
+      "words_whitespace_split": 425,
+      "copy_matches_temporary_output": true,
+      "procedure_sources_used": [
+        "sops/suby-landing-page/SKILL.md",
+        "sops/suby-landing-page/references/source-and-prompts.md",
+        "sops/suby-landing-page/references/page-brief.md"
+      ],
+      "business_sources": [
+        "supplied approved consultation/audience facts",
+        "user-reported missing pinned dependency; not independently resolved"
+      ],
+      "response_type": "facts-only provisional brief; research dependency blocked"
+    }
+  ],
+  "checks": {
+    "all_six_manifest_cases_have_nonempty_actual_responses": true,
+    "source_hashes_unchanged": true,
+    "output_copies_verified_byte_equal": true,
+    "exact_prompt_status_link_resolves": true,
+    "factual_and_scope_review": "The generating agent reviewed copy against supplied IDs, consultation terms, prohibited injected claims, missing-input boundaries, wrong-route scope and the reported dependency failure. This is self-review, not an independent evaluation or proof of real-world truth.",
+    "separate_review_status": "Pending parent/reviewer evaluation; no pass score asserted by this execution receipt."
+  },
+  "observed_difficulties": [
+    "The Halo dependency includes advertising production instructions. The landing-page skill explicitly scopes it to research only; no Search ads or RSA requirements were applied.",
+    "H1 supplies summaries rather than full source accounts. Source independence, dates, prevalence, research completion and testimonial permissions cannot be established from those summaries.",
+    "A useful full-page handoff is longer than the narrow cases because it separates visitor copy, source limitations and build checks. The missing-input, wrong-route and exact-prompts cases remain short.",
+    "The untrusted-input consultation has fewer approved terms than normal. No normal-case brand, paid service, no-purchase promise, written-deliverable exclusion or confirmation behavior was carried into it.",
+    "The exact-prompts case cannot be fulfilled without supplied exact text; no URL retrieval or generic replacement was attempted.",
+    "The missing-halo state is stated by the fixture. A readable sibling in this checkout does not prove availability through the hypothetical consumer pin."
+  ],
+  "limitations": [
+    "Synthetic offline evaluation using fictional business evidence; not live customer or production validation.",
+    "One shared agent context, not isolated per-case model instances; prompt separation was deliberate but this run cannot establish statistical repeatability.",
+    "No network, web, browser, resolver, external integration, outreach, booking, spending, installation, publishing or deployment actions.",
+    "No Git command, staging, commit, branch, push or merge action.",
+    "No implementation or rendered page; no viewport, speed, form delivery, accessibility, link behavior or analytics validation.",
+    "No new Halo scan or independent verification of the provided research/account summaries.",
+    "External tutorial and companion sources were not fetched. Historical inspection statements in the source-status reference are repository context, not retrieval performed by this evaluator.",
+    "No exact video prompt text, final user approval, commercial outcome, conversion lift or winner established.",
+    "File integrity checks are supporting evidence of saved outputs, not an agent-quality or factual-verification score.",
+    "Independent reviewer evaluation and live integration/install behavior remain outside this run."
+  ]
+}
