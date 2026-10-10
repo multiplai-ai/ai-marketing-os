@@ -1,8 +1,7 @@
 id: suby-landing-page
-version: 0.1.0
-title: Suby Consultation Landing Page
-# Catalog eligibility is not a published release or an exact-prompt claim.
-# The contribution remains a draft PR pending the requested supplied prompts.
+version: 0.2.0
+title: Suby Sixteen-Step Landing Page
+# Source-grounded method; release publication remains a separate maintainer action.
 maturity: released
 inputs:
 - service_and_audience
@@ -14,6 +13,7 @@ inputs:
 outputs:
 - consultation-page-brief-and-copy-{date}.md
 - evidence_readiness_and_test_notes
+- sixteen_step_execution_and_video_derived_evaluation
 tools: []
 approval_classes: []
 tests:

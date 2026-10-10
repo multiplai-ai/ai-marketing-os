@@ -37,7 +37,7 @@ PUBLIC_GUIDE = {
     "ads-google": ("Google Ads Review", "Review Google Ads structure, tracking, search terms, creative, and wasted spend."),
     "google-search-ad-copy": ("Google Search Ad Copy", "Turn buyer research and search intent into compelling headlines and descriptions with checked character counts."),
     "ads-landing": ("Landing Page Review", "Check whether a landing page fulfills the promise that brought visitors there and makes the next step clear."),
-    "suby-landing-page": ("Suby Consultation Landing Page", "Draft a consultation booking page from Halo research and sales material; exact video prompts require supplied text."),
+    "suby-landing-page": ("Suby Sixteen-Step Landing Page", "Build and evaluate a lead-generation page with the sixteen-step method, seventeen-part structure, Halo research and sales material."),
     "ads-linkedin": ("LinkedIn Ads Review", "Review LinkedIn Ads targeting, tracking, forms, creative, and bidding."),
     "ads-meta": ("Meta Ads Review", "Review Facebook and Instagram campaign tracking, audiences, creative, structure, and performance."),
     "ads-microsoft": ("Microsoft Ads Review", "Review Microsoft and Bing campaigns, including imported settings, tracking, targeting, and search traffic."),
