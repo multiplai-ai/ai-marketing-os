@@ -37,3 +37,13 @@ permission to advertise an answer absent from the destination. Research the
 current audience's own stakes and language. See the fictional worked examples
 in [deep-halo-research.md](deep-halo-research.md) for the difference between a
 specific emotional hook and an invented service promise.
+
+## Landing-page research refinement (2026-10-09)
+
+The mixed-review comparison in the deep protocol draws on approximately
+01:43–02:40 of [Suby's landing-page tutorial](https://www.youtube.com/watch?v=Env9wuka0oA),
+checked through its [transcript mirror](https://moderncreator.app/2026-10-07-sabri-suby-landing-page-tutorial-the-2026-free-course-for-beginners).
+It adds a focused evidence-reading tactic without replacing the six cycles,
+coverage targets, contrary evidence, glossary or research-only behavior.
+Direct video and exact on-screen prompt text were not verified. No source
+prompts or transcript are bundled.

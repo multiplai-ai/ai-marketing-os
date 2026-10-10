@@ -1,0 +1,4 @@
+interface:
+  display_name: "Suby Landing Page"
+  short_description: "Sixteen-step landing pages and commercial evaluation"
+  default_prompt: "Use $suby-landing-page to build my page with the sixteen-step method and seventeen-part selling structure, then evaluate the exact copy and design against the video-derived tests."

@@ -1,0 +1,21 @@
+id: suby-landing-page
+version: 0.2.0
+title: Suby Sixteen-Step Landing Page
+# Source-grounded method; release publication remains a separate maintainer action.
+maturity: released
+inputs:
+- service_and_audience
+- traffic_promise_and_conversion_action
+- consultation_terms
+- halo_research_or_authorized_sources
+- owner_pitch_or_sales_material
+- approved_proof_and_voice
+outputs:
+- consultation-page-brief-and-copy-{date}.md
+- evidence_readiness_and_test_notes
+- sixteen_step_execution_and_video_derived_evaluation
+tools: []
+approval_classes: []
+tests:
+- sops/suby-landing-page/fixtures/evaluation/cases.json
+source_provenance: sops/suby-landing-page/references/source-and-prompts.md

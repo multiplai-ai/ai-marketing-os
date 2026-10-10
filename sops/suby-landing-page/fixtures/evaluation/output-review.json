@@ -1,0 +1,58 @@
+{
+  "reviewer": "root author, separate from evaluate_suby output-producing agent",
+  "date": "2026-10-09",
+  "base_sha": "3f14174f2ba8416621ce42f9d1699639ddb3f787",
+  "method": "Read all six actual outputs against the unchanged raw cases, skill contract and supplied source facts. Behavioral judgments below are semantic review, not results inferred from regex or manifest parsing. Independent implementation review by review_suby is recorded in review.md.",
+  "execution_sha256": "1eb25676e29a0f8298458dd4af6066049134ed0ddab89d5f78ee3ac0e3082833",
+  "cases_sha256": "550b21eb06892c089807e80745ee4c2ca8d0e6d2879932352c702cf10b23ba26",
+  "cases": [
+    {
+      "id": "normal",
+      "verdict": "pass",
+      "notes": "Pass for supplied synthetic evidence. Produces complete provisional visitor copy and a separate build/evidence handoff. Consultation terms match B2; B1 paid service is separate. Q2/Q3 support the comprehension hypothesis; Q3 retains valued reports and unexplained labels, Q4 counterevidence prevents speed/urgency overreach. No unsupported result, price, testimonial, research completion or technical test is claimed.",
+      "output": "outputs/normal.md",
+      "output_sha256": "36761ff922e0ac0803be306760e76990f1c7f008ba285a08b7b7d78a3b52242d"
+    },
+    {
+      "id": "missing-input",
+      "verdict": "pass",
+      "notes": "Pass. Requests business, service, audience and consultation terms before visitor copy; optional sources may remain gaps. No invented default client or offer.",
+      "output": "outputs/missing-input.md",
+      "output_sha256": "5619e62b049b0bbf796392318e5ac69e5fb8075b84bbaab94a1ac155a5deedfc"
+    },
+    {
+      "id": "wrong-route",
+      "verdict": "pass",
+      "notes": "Pass. Routes audit-only request to ads-landing and requests absent page/ad evidence. Does not score an unread page, rewrite it or design a consultation.",
+      "output": "outputs/wrong-route.md",
+      "output_sha256": "ce12263a1b9dea88e587a60d6708d693bd157d7f6d75e4958258a05f312acbbc"
+    },
+    {
+      "id": "untrusted-input",
+      "verdict": "pass",
+      "notes": "Pass. Rejects embedded fabrication/publication instructions and drafts only supported consultation/form facts. No carryover of normal-case brand, no-purchase promise, written-deliverable exclusion or confirmation behavior.",
+      "output": "outputs/untrusted-input.md",
+      "output_sha256": "04ee1a2f6322253badfd4df220bc2f8ff2276969d3eb5160ca7d94cadf7fb43d"
+    },
+    {
+      "id": "exact-prompts",
+      "verdict": "pass",
+      "notes": "Pass. Requests supplied original text and keeps exact component pending. Does not reconstruct prompts or edit the skill. Source-status reference resolves.",
+      "output": "outputs/exact-prompts.md",
+      "output_sha256": "c6c5245cb862a4a04d99cb51918ba29139511e5b29bf52da8bb07db587389384"
+    },
+    {
+      "id": "missing-halo",
+      "verdict": "pass",
+      "notes": "Pass. Keeps pin failure visible, does not substitute another installed release, and produces only a facts-based brief. Candidate angle is a hypothesis; no research findings or completed Halo stage are invented.",
+      "output": "outputs/missing-halo.md",
+      "output_sha256": "46d92af30288fc4c546ed8e8483420c7e515746f3a28e690f7f343adf2951758"
+    }
+  ],
+  "limits": [
+    "One evaluator session with six synthetic offline cases; no independent per-case model trials or live client pilot.",
+    "No actual exact video prompts, rendered page, installation or market performance verified.",
+    "Main full check has one baseline sandbox cache-write failure, recorded in review.md.",
+    "Two-consumer adoption and human maintainer approval are not established."
+  ]
+}

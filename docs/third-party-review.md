@@ -30,6 +30,14 @@ video or transcript. A user supplied the original blank Excel worksheet for
 inspection; it is excluded from the public package because no redistribution
 license was supplied. Source attribution is not presented as a license grant.
 
+## Suby Landing Page
+
+The Suby Landing Page contribution (October 9, 2026) adds an original, bounded
+implementation with a brief attributed method summary. Its source reference
+records the unverified exact-prompt gap. No video, transcript, source prompts,
+swipe file or companion PDF is bundled. The linked King Kong companion retains
+its own copyright. This draft does not claim redistribution rights for it.
+
 ## Direct dependency metadata
 These are declared license metadata from the versions inspected during validation,
 not an inventory of bundled code. Dependencies are installed separately; ranges

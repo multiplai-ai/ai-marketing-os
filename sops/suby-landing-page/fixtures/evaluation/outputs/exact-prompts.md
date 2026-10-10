@@ -1,0 +1,3 @@
+Please paste or upload the video's prompt text, with its original punctuation and boundaries. The YouTube URL alone does not provide verified exact wording, so the exact-prompt component remains pending. I have not edited your skill or substituted generic prompts.
+
+The skill's [source and prompt status](../../../references/source-and-prompts.md) explicitly says: “When the user requests exact reproduction, request their pasted/uploaded text and keep that component pending.” That is the missing input here. Once supplied, I can compare the saved block against the original before calling it exact. If the destination is this public MIT repository, its redistribution scope also needs to be established before including third-party prompt text there.

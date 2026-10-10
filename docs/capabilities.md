@@ -75,6 +75,7 @@ Claude, you can also select an installed workflow from the `/` or `+` menu.
 | [TikTok Ads Review](../sops/ads-tiktok/SKILL.md) | Review TikTok campaign tracking, creative, bidding, structure, and shopping setup. | Test with your setup |
 | [YouTube Ads Review](../sops/ads-youtube/SKILL.md) | Review YouTube campaign formats, video creative, audiences, and measurement. | Test with your setup |
 | [Google Search Ad Copy](../sops/google-search-ad-copy/SKILL.md) | Turn buyer research and search intent into compelling headlines and descriptions with checked character counts. | Test with your setup |
+| [Suby Sixteen-Step Landing Page](../sops/suby-landing-page/SKILL.md) | Build and evaluate a lead-generation page with the sixteen-step method, seventeen-part structure, Halo research and sales material. | Test with your setup |
 
 ## SEO and websites
 

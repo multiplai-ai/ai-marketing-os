@@ -18,6 +18,11 @@ a research question, not because they are easy to scrape:
   friction, refunds and implementation retrospectives.
 - Independent reviews: detailed positive, mixed and negative accounts of the
   offer category or alternatives. Distinguish verified experience from hearsay.
+  For dissatisfaction research, inspect mixed ratings (such as two to four
+  stars) for both valued features and unmet expectations. Record that contrast
+  in the ledger; rating alone does not establish relevance or credibility.
+  Keep the positive/negative counterexamples and deduplication checks below.
+  This refinement follows the landing-page tutorial noted in [source notes](video-method.md).
 - Peer discussions: practitioner forums, professional communities, relevant
   Reddit threads, public Q&A and substantive comment discussions.
 - Workarounds and switching: migration accounts, buyer-written comparisons,
