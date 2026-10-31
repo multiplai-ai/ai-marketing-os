@@ -1,0 +1,25 @@
+id: linkedin-program
+version: 0.1.0
+title: LinkedIn Program
+maturity: released
+inputs:
+- selected_job
+- consumer_context
+- period_and_capacity
+- source_records
+- purpose_mix
+- audience_filters
+- ownership
+- performance_evidence
+outputs:
+- monthly_slot_plan
+- purpose_allocation
+- post_briefs
+- audience_room_rules
+- engagement_drafts
+- performance_review
+- experiment_proposal
+tools: []
+approval_classes: []
+tests: []
+source_provenance: owner-directed-linkedin-methods-2026-10

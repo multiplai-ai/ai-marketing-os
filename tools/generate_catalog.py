@@ -62,6 +62,8 @@ PUBLIC_GUIDE = {
     "geo-audit": ("GEO Audit", "Review how easily AI answer engines can discover, understand, and cite a website, then prioritize improvements."),
     "human-writing-standard": ("Human Writing Review", "Keep writing grounded in a real author's words, evidence, judgment, and natural rhythm."),
     "icp-personas": ("Ideal Customers and Buyer Personas", "Define the companies, people, buying roles, and real work patterns most likely to fit the offer."),
+    "linkedin-profile": ("LinkedIn Profile", "Make a profile clear to its buyers and connect verified credibility to useful next steps."),
+    "linkedin-program": ("LinkedIn Program", "Plan the content mix, audience rooms, engagement, and outcome review for one brand."),
     "linkedin-post": ("LinkedIn Post", "Turn a real idea or source into one voice-matched LinkedIn post, or a deliberately varied batch."),
     "mood": ("Visual Direction", "Compare a few visual directions and choose the feeling, texture, energy, and composition the brand should use."),
     "positioning-strategy": ("Positioning Strategy", "Choose the market alternative to compete against and explain why the offer is meaningfully different."),
@@ -87,7 +89,7 @@ def category(sid: str) -> str:
                "content-strategy", "strategy-suite", "godfather-offer", "client-icp-research"}:
         return "Strategy and customers"
     if sid in {"content-brief", "content-calendar", "content-campaign", "content-produce",
-               "human-writing-standard", "linkedin-post", "writing", "writing-setup",
+               "human-writing-standard", "linkedin-post", "linkedin-profile", "linkedin-program", "writing", "writing-setup",
                "ai-tool-review", "vsl-production"}:
         return "Content and writing"
     if sid in {"seo", "seo-qc", "cro"}:

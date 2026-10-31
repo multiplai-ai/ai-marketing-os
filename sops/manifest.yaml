@@ -41,6 +41,8 @@ sops:
 - human-writing-standard
 - icp-personas
 - linkedin-post
+- linkedin-profile
+- linkedin-program
 - mood
 - positioning-strategy
 - research

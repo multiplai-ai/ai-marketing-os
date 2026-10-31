@@ -19,11 +19,11 @@ def load_yaml(path: Path):
     return yaml.safe_load(read(path))
 
 
-def test_metadata_declares_portable_v020_contract():
+def test_metadata_declares_portable_v030_contract():
     metadata = load_yaml(PACKAGE / "sop.yaml")
 
     assert metadata["id"] == "linkedin-post"
-    assert metadata["version"] == "0.2.0"
+    assert metadata["version"] == "0.3.0"
     assert "mode" in metadata["inputs"]
     assert "source_article" in metadata["inputs"]
     assert "evidence_ledger_or_handoff" in metadata["inputs"]

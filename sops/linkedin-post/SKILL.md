@@ -36,6 +36,14 @@ Load `references/article-batch.md` only for `article_batch`. Its claim controls 
 5. **Do not publish.** Return review-ready copy and any requested file artifacts. Publishing, scheduling, tagging people, and external messages require a separate authorized workflow.
 6. **Treat platform conventions as choices, not universal laws.** Length, punctuation, capitalization, emoji, bullets, links, and closing questions should follow the supplied voice and campaign goal.
 
+## Content purpose and buyer relevance
+
+When supplied with a program brief, preserve its intended buyer, primary purpose,
+source IDs, and destination readiness. Read
+[content purpose](references/content-purpose.md) when a purpose is specified or
+when the user needs help deciding what the post should accomplish. An isolated
+post does not require a monthly calendar or a four-bucket assignment first.
+
 ## Voice calibration
 
 Before drafting, read any supplied voice profile and at least two relevant exemplars when they exist. Extract:
