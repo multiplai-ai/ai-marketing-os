@@ -1,0 +1,19 @@
+id: linkedin-profile
+version: 0.1.0
+title: LinkedIn Profile
+maturity: released
+inputs:
+- profile_snapshot
+- identity_and_positioning
+- audience
+- approved_evidence
+- voice_and_visual_brand
+- offer_and_destination_inventory
+outputs:
+- profile_recommendation_pack
+- proposed_profile_copy
+- destination_readiness_and_gaps
+tools: []
+approval_classes: []
+tests: []
+source_provenance: owner-directed-linkedin-methods-2026-10

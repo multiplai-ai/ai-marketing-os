@@ -1,5 +1,5 @@
 id: linkedin-post
-version: 0.2.0
+version: 0.3.0
 title: LinkedIn Post
 maturity: released
 inputs:
@@ -11,6 +11,7 @@ inputs:
 - exemplar_posts
 - audience_and_campaign_objective
 - destination_page
+- program_brief_and_primary_purpose
 outputs:
 - review_ready_linkedin_post
 - source_and_evidence_audit
